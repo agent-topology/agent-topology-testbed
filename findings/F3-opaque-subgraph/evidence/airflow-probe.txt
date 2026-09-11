@@ -1,0 +1,17 @@
+dag id     : demo
+roots      : ['start']
+leaves     : ['end']
+task groups: ['nested']
+
+task           downstream                   fan-out mode
+a              nested.inner1                -
+b              nested.inner1                -
+end                                         -
+fork           left,right                   concurrent
+joined         router                       -
+left           joined                       -
+nested.inner1  nested.inner2                -
+nested.inner2  end                          -
+right          joined                       -
+router         a,b                          exclusive
+start          fork                         -

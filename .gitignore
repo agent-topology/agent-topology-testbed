@@ -1,0 +1,4 @@
+node_modules/
+.airflow/
+__pycache__/
+*.pyc
