@@ -1,0 +1,949 @@
+{
+  "case_id": "A1",
+  "cases": {
+    "graph-forward": {
+      "messages": [
+        {
+          "content": "forward",
+          "created_at": "2026-09-12T11:54:34.471651Z",
+          "id": "afe7b469-010b-4048-a6e0-993e02e10f46",
+          "metadata": {},
+          "models_usage": null,
+          "source": "user",
+          "type": "TextMessage"
+        },
+        {
+          "content": "alpha-reply",
+          "created_at": "2026-09-12T11:54:34.473159Z",
+          "id": "c1b6920d-7bd4-4bba-8038-6ae7410a6c12",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 21
+          },
+          "source": "alpha",
+          "type": "TextMessage"
+        },
+        {
+          "content": "beta-reply",
+          "created_at": "2026-09-12T11:54:34.473992Z",
+          "id": "bf95370d-9a7c-4049-85e8-928dfd66b330",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 22
+          },
+          "source": "beta",
+          "type": "TextMessage"
+        }
+      ],
+      "model_calls": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "selector_calls": [],
+      "static": {
+        "component": {
+          "component_type": "team",
+          "component_version": 1,
+          "config": {
+            "description": "A team of agents",
+            "graph": {
+              "nodes": {
+                "alpha": {
+                  "activation": "all",
+                  "edges": [
+                    {
+                      "activation_condition": "all",
+                      "activation_group": "beta",
+                      "target": "beta"
+                    }
+                  ],
+                  "name": "alpha"
+                },
+                "beta": {
+                  "activation": "all",
+                  "edges": [],
+                  "name": "beta"
+                }
+              }
+            },
+            "max_turns": 2,
+            "name": "GraphFlow",
+            "participants": [
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "alpha-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "alpha",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              },
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "beta-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "beta",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              }
+            ]
+          },
+          "description": "A team that runs a group chat following a Directed Graph execution pattern.",
+          "label": "GraphFlow",
+          "provider": "autogen_agentchat.teams.GraphFlow",
+          "version": 1
+        },
+        "edges": [
+          [
+            "alpha",
+            "beta"
+          ]
+        ],
+        "graph": {
+          "default_start_node": null,
+          "nodes": {
+            "alpha": {
+              "activation": "all",
+              "edges": [
+                {
+                  "activation_condition": "all",
+                  "activation_group": "beta",
+                  "condition": null,
+                  "target": "beta"
+                }
+              ],
+              "name": "alpha"
+            },
+            "beta": {
+              "activation": "all",
+              "edges": [],
+              "name": "beta"
+            }
+          }
+        },
+        "leaves": [
+          "beta"
+        ],
+        "model_calls": {
+          "alpha": 0,
+          "beta": 0
+        },
+        "participants": [
+          "alpha",
+          "beta"
+        ],
+        "roots": [
+          "alpha"
+        ],
+        "selector_calls": []
+      },
+      "stop_reason": "Digraph execution is complete"
+    },
+    "graph-reverse": {
+      "messages": [
+        {
+          "content": "reverse",
+          "created_at": "2026-09-12T11:54:34.475647Z",
+          "id": "10eceef8-250b-4a4d-94e4-6920b0d0bbb7",
+          "metadata": {},
+          "models_usage": null,
+          "source": "user",
+          "type": "TextMessage"
+        },
+        {
+          "content": "alpha-reply",
+          "created_at": "2026-09-12T11:54:34.476930Z",
+          "id": "529cb358-1ca9-49b4-8d5e-f92fdb699b25",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 21
+          },
+          "source": "alpha",
+          "type": "TextMessage"
+        },
+        {
+          "content": "beta-reply",
+          "created_at": "2026-09-12T11:54:34.477851Z",
+          "id": "46fc5fa3-bbd5-4cbe-93f4-55f733e29001",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 22
+          },
+          "source": "beta",
+          "type": "TextMessage"
+        }
+      ],
+      "model_calls": {
+        "alpha": 1,
+        "beta": 1
+      },
+      "selector_calls": [],
+      "static": {
+        "component": {
+          "component_type": "team",
+          "component_version": 1,
+          "config": {
+            "description": "A team of agents",
+            "graph": {
+              "nodes": {
+                "alpha": {
+                  "activation": "all",
+                  "edges": [
+                    {
+                      "activation_condition": "all",
+                      "activation_group": "beta",
+                      "target": "beta"
+                    }
+                  ],
+                  "name": "alpha"
+                },
+                "beta": {
+                  "activation": "all",
+                  "edges": [],
+                  "name": "beta"
+                }
+              }
+            },
+            "max_turns": 2,
+            "name": "GraphFlow",
+            "participants": [
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "alpha-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "alpha",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              },
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "beta-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "beta",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              }
+            ]
+          },
+          "description": "A team that runs a group chat following a Directed Graph execution pattern.",
+          "label": "GraphFlow",
+          "provider": "autogen_agentchat.teams.GraphFlow",
+          "version": 1
+        },
+        "edges": [
+          [
+            "alpha",
+            "beta"
+          ]
+        ],
+        "graph": {
+          "default_start_node": null,
+          "nodes": {
+            "alpha": {
+              "activation": "all",
+              "edges": [
+                {
+                  "activation_condition": "all",
+                  "activation_group": "beta",
+                  "condition": null,
+                  "target": "beta"
+                }
+              ],
+              "name": "alpha"
+            },
+            "beta": {
+              "activation": "all",
+              "edges": [],
+              "name": "beta"
+            }
+          }
+        },
+        "leaves": [
+          "beta"
+        ],
+        "model_calls": {
+          "alpha": 0,
+          "beta": 0
+        },
+        "participants": [
+          "alpha",
+          "beta"
+        ],
+        "roots": [
+          "alpha"
+        ],
+        "selector_calls": []
+      },
+      "stop_reason": "Digraph execution is complete"
+    },
+    "selector-forward": {
+      "messages": [
+        {
+          "content": "forward",
+          "created_at": "2026-09-12T11:54:34.462285Z",
+          "id": "69fa0c2e-d491-4d63-88f2-afb7c13daed2",
+          "metadata": {},
+          "models_usage": null,
+          "source": "user",
+          "type": "TextMessage"
+        },
+        {
+          "content": "alpha-reply",
+          "created_at": "2026-09-12T11:54:34.465081Z",
+          "id": "e1b2624c-37c4-4c24-bf37-90528ccdc0d5",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 21
+          },
+          "source": "alpha",
+          "type": "TextMessage"
+        },
+        {
+          "content": "beta-reply",
+          "created_at": "2026-09-12T11:54:34.466212Z",
+          "id": "012c4275-ca30-4028-a044-7c5a89e46403",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 22
+          },
+          "source": "beta",
+          "type": "TextMessage"
+        }
+      ],
+      "model_calls": {
+        "alpha": 1,
+        "beta": 1,
+        "selector": 0
+      },
+      "selector_calls": [
+        "alpha",
+        "beta"
+      ],
+      "static": {
+        "component": {
+          "component_type": "team",
+          "component_version": 1,
+          "config": {
+            "allow_repeated_speaker": false,
+            "description": "A team of agents.",
+            "emit_team_events": false,
+            "max_selector_attempts": 3,
+            "max_turns": 2,
+            "model_client": {
+              "component_type": "replay_chat_completion_client",
+              "component_version": 1,
+              "config": {
+                "chat_completions": [],
+                "model_info": {
+                  "family": "unknown",
+                  "function_calling": false,
+                  "json_output": false,
+                  "structured_output": false,
+                  "vision": false
+                }
+              },
+              "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+              "label": "ReplayChatCompletionClient",
+              "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+              "version": 1
+            },
+            "model_client_streaming": false,
+            "name": "SelectorGroupChat",
+            "participants": [
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "alpha-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "alpha",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              },
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "beta-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "beta",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              }
+            ],
+            "selector_prompt": "You are in a role play game. The following roles are available:\n{roles}.\nRead the following conversation. Then select the next role from {participants} to play. Only return the role.\n\n{history}\n\nRead the above conversation. Then select the next role from {participants} to play. Only return the role.\n"
+          },
+          "description": "A group chat team that have participants takes turn to publish a message\n    to all, using a ChatCompletion model to select the next speaker after each message.",
+          "label": "SelectorGroupChat",
+          "provider": "autogen_agentchat.teams.SelectorGroupChat",
+          "version": 1
+        },
+        "model_calls": {
+          "alpha": 0,
+          "beta": 0,
+          "selector": 0
+        },
+        "participants": [
+          "alpha",
+          "beta"
+        ],
+        "selector_calls": []
+      },
+      "stop_reason": "Maximum number of turns 2 reached."
+    },
+    "selector-reverse": {
+      "messages": [
+        {
+          "content": "reverse",
+          "created_at": "2026-09-12T11:54:34.467937Z",
+          "id": "fbf54944-59c8-4455-8d82-ca85d71058a8",
+          "metadata": {},
+          "models_usage": null,
+          "source": "user",
+          "type": "TextMessage"
+        },
+        {
+          "content": "beta-reply",
+          "created_at": "2026-09-12T11:54:34.469444Z",
+          "id": "5698f252-8d8f-4991-a3ee-e7093f11fbe9",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 21
+          },
+          "source": "beta",
+          "type": "TextMessage"
+        },
+        {
+          "content": "alpha-reply",
+          "created_at": "2026-09-12T11:54:34.470252Z",
+          "id": "8edd7918-3784-4488-aca4-ba6727696397",
+          "metadata": {},
+          "models_usage": {
+            "completion_tokens": 1,
+            "prompt_tokens": 22
+          },
+          "source": "alpha",
+          "type": "TextMessage"
+        }
+      ],
+      "model_calls": {
+        "alpha": 1,
+        "beta": 1,
+        "selector": 0
+      },
+      "selector_calls": [
+        "beta",
+        "alpha"
+      ],
+      "static": {
+        "component": {
+          "component_type": "team",
+          "component_version": 1,
+          "config": {
+            "allow_repeated_speaker": false,
+            "description": "A team of agents.",
+            "emit_team_events": false,
+            "max_selector_attempts": 3,
+            "max_turns": 2,
+            "model_client": {
+              "component_type": "replay_chat_completion_client",
+              "component_version": 1,
+              "config": {
+                "chat_completions": [],
+                "model_info": {
+                  "family": "unknown",
+                  "function_calling": false,
+                  "json_output": false,
+                  "structured_output": false,
+                  "vision": false
+                }
+              },
+              "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+              "label": "ReplayChatCompletionClient",
+              "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+              "version": 1
+            },
+            "model_client_streaming": false,
+            "name": "SelectorGroupChat",
+            "participants": [
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "alpha-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "alpha",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              },
+              {
+                "component_type": "agent",
+                "component_version": 2,
+                "config": {
+                  "description": "An agent that provides assistance with ability to use tools.",
+                  "max_tool_iterations": 1,
+                  "metadata": {},
+                  "model_client": {
+                    "component_type": "replay_chat_completion_client",
+                    "component_version": 1,
+                    "config": {
+                      "chat_completions": [
+                        "beta-reply"
+                      ],
+                      "model_info": {
+                        "family": "unknown",
+                        "function_calling": false,
+                        "json_output": false,
+                        "structured_output": false,
+                        "vision": false
+                      }
+                    },
+                    "description": "A mock chat completion client that replays predefined responses using an index-based approach.",
+                    "label": "ReplayChatCompletionClient",
+                    "provider": "autogen_ext.models.replay.ReplayChatCompletionClient",
+                    "version": 1
+                  },
+                  "model_client_stream": false,
+                  "model_context": {
+                    "component_type": "chat_completion_context",
+                    "component_version": 1,
+                    "config": {},
+                    "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+                    "label": "UnboundedChatCompletionContext",
+                    "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+                    "version": 1
+                  },
+                  "name": "beta",
+                  "reflect_on_tool_use": false,
+                  "system_message": "You are a helpful AI assistant. Solve tasks using your tools. Reply with TERMINATE when the task has been completed.",
+                  "tool_call_summary_format": "{result}",
+                  "workbench": [
+                    {
+                      "component_type": "workbench",
+                      "component_version": 1,
+                      "config": {
+                        "tool_overrides": {},
+                        "tools": []
+                      },
+                      "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution, and supports streaming results.",
+                      "label": "StaticStreamWorkbench",
+                      "provider": "autogen_core.tools.StaticStreamWorkbench",
+                      "version": 1
+                    }
+                  ]
+                },
+                "description": "An agent that provides assistance with tool use.\n    The :meth:`on_messages` returns a :class:`~autogen_agentchat.base.Response`\n    in which :attr:`~autogen_agentchat.base.Response.chat_message` is the final\n    response message.",
+                "label": "AssistantAgent",
+                "provider": "autogen_agentchat.agents.AssistantAgent",
+                "version": 2
+              }
+            ],
+            "selector_prompt": "You are in a role play game. The following roles are available:\n{roles}.\nRead the following conversation. Then select the next role from {participants} to play. Only return the role.\n\n{history}\n\nRead the above conversation. Then select the next role from {participants} to play. Only return the role.\n"
+          },
+          "description": "A group chat team that have participants takes turn to publish a message\n    to all, using a ChatCompletion model to select the next speaker after each message.",
+          "label": "SelectorGroupChat",
+          "provider": "autogen_agentchat.teams.SelectorGroupChat",
+          "version": 1
+        },
+        "model_calls": {
+          "alpha": 0,
+          "beta": 0,
+          "selector": 0
+        },
+        "participants": [
+          "alpha",
+          "beta"
+        ],
+        "selector_calls": []
+      },
+      "stop_reason": "Maximum number of turns 2 reached."
+    }
+  },
+  "evidence_class": "execution",
+  "hashes": {
+    ".python-version": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223",
+    "expected.json": "9d3af85a7057280f37451757905409a83bf4c4e81a26aa9cb030d76d50c8c756",
+    "probe.py": "fba0932e801b2d23e603f211522d52714820ab8149fe86dd148d18029ae66d8e",
+    "requirements.lock": "22870bd3344048582f0fffe759cf57bbcd949a75e8257b480af42f352729e496",
+    "requirements.txt": "062c03c9f592366dc5b46a0e88e622f8d4fb7f7e2d632020ff973c7a728c3803",
+    "test_probe.py": "d3ceaef18be6b28b1f03ff8f83444bb2e36c878c9f185f6393fc6a5b81519d07",
+    "verify.py": "3bac790f5cf8927cceda03af833d2d1e470e6db8c77ed6d72f6ed3cd4a9810ed"
+  },
+  "python": "3.11.16",
+  "versions": {
+    "autogen-agentchat": "0.7.5",
+    "autogen-core": "0.7.5",
+    "autogen-ext": "0.7.5"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "selector-forward": [["user", "forward"], ["alpha", "alpha-reply"], ["beta", "beta-reply"]],
+  "selector-reverse": [["user", "reverse"], ["beta", "beta-reply"], ["alpha", "alpha-reply"]],
+  "graph-forward": [["user", "forward"], ["alpha", "alpha-reply"], ["beta", "beta-reply"]],
+  "graph-reverse": [["user", "reverse"], ["alpha", "alpha-reply"], ["beta", "beta-reply"]]
+}
