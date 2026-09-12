@@ -1,0 +1,557 @@
+[
+  {
+    "ecosystem": "python",
+    "name": "agent-topology-langgraph",
+    "version": "0.1.0b2",
+    "url": "https://files.pythonhosted.org/packages/9f/db/1d3ea035aacd159d163012d00ae7752f52584c23bc9f961a9133a358aa96/agent_topology_langgraph-0.1.0b2-py3-none-any.whl",
+    "sha256": "a6926ef43af0a48a34ab2d29d24f3fa6d257bdd0aa0e84ee24897463ea009d16"
+  },
+  {
+    "ecosystem": "python",
+    "name": "agent-topology-spec",
+    "version": "0.1.0b2",
+    "url": "https://files.pythonhosted.org/packages/f5/1f/7654b90ad7c6ff6a2d5307f974260a3dd5bb4740e440de160c58b1bb14ad/agent_topology_spec-0.1.0b2-py3-none-any.whl",
+    "sha256": "14aa6083e5d32dbec527ccb9422e91d99f4415c3d3b0a30d5677f108401a8873"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langgraph",
+    "version": "1.2.11",
+    "url": "https://files.pythonhosted.org/packages/0a/7f/c5c30e4be99ff821029c7ac872a480676bb179c9f3df85ea3f38d13f86d4/langgraph-1.2.11-py3-none-any.whl",
+    "sha256": "8bab70de7b2d00b5300fb289bcf38d8b241400f3184c1e95e8ce706fb0e8686b"
+  },
+  {
+    "ecosystem": "python",
+    "name": "jsonschema",
+    "version": "4.26.0",
+    "url": "https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl",
+    "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langchain-core",
+    "version": "1.6.3",
+    "url": "https://files.pythonhosted.org/packages/e6/18/cf18cfec118b02e003f35300b54d6a1173dc6e4905cffdf5ea49e390a7f9/langchain_core-1.6.3-py3-none-any.whl",
+    "sha256": "114fe1868c9ed60606662b9dd0074bf3152cc6b0b1522ba37cbd6b04f55ca77d"
+  },
+  {
+    "ecosystem": "python",
+    "name": "httpx",
+    "version": "0.28.1",
+    "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+    "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"
+  },
+  {
+    "ecosystem": "python",
+    "name": "httpcore",
+    "version": "1.0.9",
+    "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+    "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55"
+  },
+  {
+    "ecosystem": "python",
+    "name": "jsonpatch",
+    "version": "1.33",
+    "url": "https://files.pythonhosted.org/packages/73/07/02e16ed01e04a374e644b575638ec7987ae846d25ad97bcc9945a3ee4b0e/jsonpatch-1.33-py2.py3-none-any.whl",
+    "sha256": "0ae28c0cd062bbd8b8ecc26d7d164fbbea9652a1a3693f3b956c1eae5145dade"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langgraph-checkpoint",
+    "version": "4.2.0",
+    "url": "https://files.pythonhosted.org/packages/05/71/3b475f09bd57d3a5649792c66353312b4432afd843f301739dfcebd157f0/langgraph_checkpoint-4.2.0-py3-none-any.whl",
+    "sha256": "0547fd228935a0b758865de3a3d6d7a2537c308895d0f9ab092ce9151b5da942"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langgraph-prebuilt",
+    "version": "1.1.0",
+    "url": "https://files.pythonhosted.org/packages/e9/43/3fe1a700b8490ed02679cdbbc8c915eb23a092faf496c9c1118abcd10be3/langgraph_prebuilt-1.1.0-py3-none-any.whl",
+    "sha256": "51e311747d755b751d5c6b39b0c1446124d3a7643d2515017e6714b323508fc9"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langgraph-sdk",
+    "version": "0.4.4",
+    "url": "https://files.pythonhosted.org/packages/43/d5/2ad7f3a835c6fcebf58b6669552536ecd52d2dfe4cf49c6c36648fd83572/langgraph_sdk-0.4.4-py3-none-any.whl",
+    "sha256": "39afe416c91742925e6f8a93715f566d499b36e1b636b804a4ffe3190e4f4e64"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langsmith",
+    "version": "0.12.4",
+    "url": "https://files.pythonhosted.org/packages/d1/b1/d0c6f84cde25b2443bcdca81f9b30732fc3af602c46f5114fcbe5246b978/langsmith-0.12.4-py3-none-any.whl",
+    "sha256": "b2edaa49baeec0c7347a84ca0f755039dcff9e9e52f0b9dc26423ec2a98a4dab"
+  },
+  {
+    "ecosystem": "python",
+    "name": "httpx2",
+    "version": "2.12.0",
+    "url": "https://files.pythonhosted.org/packages/c8/95/411ba65569158e862368917aaf56597f3e5fa3b91b0502919638465a08f3/httpx2-2.12.0-py3-none-any.whl",
+    "sha256": "cc8b6eecb8661c146b8f89a60e97456ee086e91a784ed31ac450c3a9e613dd36"
+  },
+  {
+    "ecosystem": "python",
+    "name": "httpcore2",
+    "version": "2.12.0",
+    "url": "https://files.pythonhosted.org/packages/d2/74/d370e55600d9bcfa0d9794b0166126d49291a3d2b20c268fc98c453a4948/httpcore2-2.12.0-py3-none-any.whl",
+    "sha256": "7e04258ce01013d7d615e5b910a3b27fac937d7a95038227e79652b4ba3b4ceb"
+  },
+  {
+    "ecosystem": "python",
+    "name": "pydantic",
+    "version": "2.13.5",
+    "url": "https://files.pythonhosted.org/packages/eb/47/c95ffc2009878c7aac0c5e08528022dcb885933252a88b5f170058014464/pydantic-2.13.5-py3-none-any.whl",
+    "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73"
+  },
+  {
+    "ecosystem": "python",
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "url": "https://files.pythonhosted.org/packages/ae/d5/d8a4eb6d6c7f66b91dd37c576d76e9e60fba900caf5372c17bcf949febc2/pydantic_core-2.46.5-cp314-cp314-macosx_11_0_arm64.whl",
+    "sha256": "1a353f84de772f423b5ffb11d7ae352fbbef0f446f3c0b0af0f8236d7233606e"
+  },
+  {
+    "ecosystem": "python",
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "url": "https://files.pythonhosted.org/packages/bd/9c/4d95bb87eb2063d20db7b60faa3840c1b18025517ae857371c4dd55a6b3a/pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl",
+    "sha256": "34d5fcd24b8445fadc33f9cf348c1047101756fd760b4dacb5c3e99755703310"
+  },
+  {
+    "ecosystem": "python",
+    "name": "tenacity",
+    "version": "9.1.4",
+    "url": "https://files.pythonhosted.org/packages/d7/c1/eb8f9debc45d3b7918a32ab756658a0904732f75e555402972246b0b8e71/tenacity-9.1.4-py3-none-any.whl",
+    "sha256": "6095a360c919085f28c6527de529e76a06ad89b23659fa881ae0649b867a9d55"
+  },
+  {
+    "ecosystem": "python",
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+    "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+  },
+  {
+    "ecosystem": "python",
+    "name": "uuid_utils",
+    "version": "0.17.1",
+    "url": "https://files.pythonhosted.org/packages/3a/ea/c735de118ef5c4a6ada1846699e65b3adcac92044e79b83345f90c792fe5/uuid_utils-0.17.1-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl",
+    "sha256": "f974aa1097b0b8245d8f29550eaac3b431c891ba7c76cc4beaa6ec7bf8cd27b6"
+  },
+  {
+    "ecosystem": "python",
+    "name": "websockets",
+    "version": "16.1.1",
+    "url": "https://files.pythonhosted.org/packages/0f/45/ebec83e6269536aa5932533c67b0af5c781f3e73fdbcd68672dcf43f4f44/websockets-16.1.1-cp314-cp314-macosx_11_0_arm64.whl",
+    "sha256": "fce6c48559c86d1ac3632ccb1bebc7d5442fbe79bd9bb0e40379ee54be2a4051"
+  },
+  {
+    "ecosystem": "python",
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "url": "https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl",
+    "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0"
+  },
+  {
+    "ecosystem": "python",
+    "name": "anyio",
+    "version": "4.15.1",
+    "url": "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl",
+    "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101"
+  },
+  {
+    "ecosystem": "python",
+    "name": "attrs",
+    "version": "26.1.0",
+    "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+    "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+  },
+  {
+    "ecosystem": "python",
+    "name": "distro",
+    "version": "1.9.0",
+    "url": "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl",
+    "sha256": "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2"
+  },
+  {
+    "ecosystem": "python",
+    "name": "h11",
+    "version": "0.16.0",
+    "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+    "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+  },
+  {
+    "ecosystem": "python",
+    "name": "idna",
+    "version": "3.19",
+    "url": "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl",
+    "sha256": "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
+  },
+  {
+    "ecosystem": "python",
+    "name": "jsonpointer",
+    "version": "3.1.1",
+    "url": "https://files.pythonhosted.org/packages/9e/6a/a83720e953b1682d2d109d3c2dbb0bc9bf28cc1cbc205be4ef4be5da709d/jsonpointer-3.1.1-py3-none-any.whl",
+    "sha256": "8ff8b95779d071ba472cf5bc913028df06031797532f08a7d5b602d8b2a488ca"
+  },
+  {
+    "ecosystem": "python",
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "url": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+    "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+  },
+  {
+    "ecosystem": "python",
+    "name": "langchain-protocol",
+    "version": "0.0.19",
+    "url": "https://files.pythonhosted.org/packages/80/c9/f6cbf357d48ccbd18bb394433b1fd7ad9be004eed9377ad08bb85777e5e6/langchain_protocol-0.0.19-py3-none-any.whl",
+    "sha256": "4cdf879a492a35980fd859ae792d3c65458ccaae504e183c9a10d7eac1f0720f"
+  },
+  {
+    "ecosystem": "python",
+    "name": "orjson",
+    "version": "3.12.0",
+    "url": "https://files.pythonhosted.org/packages/8a/0e/b4a4f1e305367245877b967a0bad70fcf001d77c54ac4339a120b66fdae4/orjson-3.12.0-cp314-cp314-macosx_15_0_arm64.whl",
+    "sha256": "8c3bb86dd10f39b3fbf434b7d5dc7cac77d6fc8ac572ae30a10731ede2c4b647"
+  },
+  {
+    "ecosystem": "python",
+    "name": "ormsgpack",
+    "version": "1.12.2",
+    "url": "https://files.pythonhosted.org/packages/94/16/24d18851334be09c25e87f74307c84950f18c324a4d3c0b41dabdbf19c29/ormsgpack-1.12.2-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl",
+    "sha256": "bc68dd5915f4acf66ff2010ee47c8906dc1cf07399b16f4089f8c71733f6e36c"
+  },
+  {
+    "ecosystem": "python",
+    "name": "packaging",
+    "version": "26.3",
+    "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+    "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+  },
+  {
+    "ecosystem": "python",
+    "name": "referencing",
+    "version": "0.37.0",
+    "url": "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl",
+    "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+  },
+  {
+    "ecosystem": "python",
+    "name": "requests",
+    "version": "2.34.2",
+    "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+    "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+  },
+  {
+    "ecosystem": "python",
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "url": "https://files.pythonhosted.org/packages/e9/40/095ce62fa078483cccc1fa2b36e6bc9580b85422a20ee9f925341c50e44f/charset_normalizer-3.5.1-cp314-cp314-macosx_10_15_universal2.whl",
+    "sha256": "c428c6c31eb5f4277d7f8eccaf767fbd548ddd5ce3c8b4f4cbbfab3d96b5904c"
+  },
+  {
+    "ecosystem": "python",
+    "name": "urllib3",
+    "version": "2.7.0",
+    "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+    "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
+  },
+  {
+    "ecosystem": "python",
+    "name": "certifi",
+    "version": "2026.7.22",
+    "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
+    "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+  },
+  {
+    "ecosystem": "python",
+    "name": "requests-toolbelt",
+    "version": "1.0.0",
+    "url": "https://files.pythonhosted.org/packages/3f/51/d4db610ef29373b879047326cbf6fa98b6c1969d6f6dc423279de2b1be2c/requests_toolbelt-1.0.0-py2.py3-none-any.whl",
+    "sha256": "cccfdd665f0a24fcf4726e690f65639d272bb0637b9b92dfd91a5568ccf6bd06"
+  },
+  {
+    "ecosystem": "python",
+    "name": "rpds-py",
+    "version": "2026.6.3",
+    "url": "https://files.pythonhosted.org/packages/ba/54/f785cc3d3f60839ca57a5af4927a9f347b07b2799c373fc20f7949f87c7e/rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl",
+    "sha256": "d7469697dce35be237db177d42e2a2ee26e6dcc5fc052078a6fefabd288c6edd"
+  },
+  {
+    "ecosystem": "python",
+    "name": "sniffio",
+    "version": "1.3.1",
+    "url": "https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl",
+    "sha256": "2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2"
+  },
+  {
+    "ecosystem": "python",
+    "name": "truststore",
+    "version": "0.10.4",
+    "url": "https://files.pythonhosted.org/packages/19/97/56608b2249fe206a67cd573bc93cd9896e1efb9e98bce9c163bcdc704b88/truststore-0.10.4-py3-none-any.whl",
+    "sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981"
+  },
+  {
+    "ecosystem": "python",
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "url": "https://files.pythonhosted.org/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl",
+    "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147"
+  },
+  {
+    "ecosystem": "python",
+    "name": "xxhash",
+    "version": "4.0.1",
+    "url": "https://files.pythonhosted.org/packages/90/9d/f66cf6935f528e575f1ae4d6560d376e7587569747186f4fae8777cadc1b/xxhash-4.0.1-cp314-cp314-macosx_11_0_arm64.whl",
+    "sha256": "d9f3848ffaf010bdbabdbf4c25641fa258b6227ff27bc74a4d06edef521a4873"
+  },
+  {
+    "ecosystem": "python",
+    "name": "zstandard",
+    "version": "0.25.0",
+    "url": "https://files.pythonhosted.org/packages/8d/09/d0a2a14fc3439c5f874042dca72a79c70a532090b7ba0003be73fee37ae2/zstandard-0.25.0-cp314-cp314-macosx_11_0_arm64.whl",
+    "sha256": "05df5136bc5a011f33cd25bc9f506e7426c0c9b3f9954f056831ce68f3b6689f"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@agent-topology/langgraph",
+    "version": "0.1.0-beta.2",
+    "url": "https://registry.npmjs.org/@agent-topology/langgraph/-/langgraph-0.1.0-beta.2.tgz",
+    "integrity": "sha512-9mnx3QCQmVYWT33Kzd4zvxtRicUn3wWBb0bpp+IXAnj6fdXPPO2nUgaKQ6lUgqSh5vFqJOIqx+JLbmPbT088fw==",
+    "sha256": "4a13dfe6b5044ae7754708dbdf30ff0cf9f7baccabeb543ed13677311f9daeb1"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@agent-topology/spec",
+    "version": "0.1.0-beta.2",
+    "url": "https://registry.npmjs.org/@agent-topology/spec/-/spec-0.1.0-beta.2.tgz",
+    "integrity": "sha512-H0Qsn/OBoMSkfV8iDChUfcPY2irQEzY7KYLc722HiwsYYDjwG5bIND9/pV16imAmVI555CiIj54rS5+HLy84nQ==",
+    "sha256": "373fbb08548ebcf8d62abb952b5f1e711be3d2616579cbe86e8c30f89e8aa9bc"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@cfworker/json-schema",
+    "version": "4.1.1",
+    "url": "https://registry.npmjs.org/@cfworker/json-schema/-/json-schema-4.1.1.tgz",
+    "integrity": "sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og==",
+    "sha256": "f3a8076b450505f0671fa78a6efb5e7726883e2c6dfb13b29261872803610203"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/core",
+    "version": "1.2.11",
+    "url": "https://registry.npmjs.org/@langchain/core/-/core-1.2.11.tgz",
+    "integrity": "sha512-8yuWLLloTSYA453akm2JSadOVa8kGDY8v+kTzQ6kTY6aIETTEIxgysjZWyKrWQLo3UazctsSoGJ8JrdCGFL4/w==",
+    "sha256": "a1db9610759b6a5b237dccf76c1983cf7dc1831b49c30c330080e2fabdea9d0d"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/langgraph",
+    "version": "1.4.14",
+    "url": "https://registry.npmjs.org/@langchain/langgraph/-/langgraph-1.4.14.tgz",
+    "integrity": "sha512-uWAdRYTllfKCnTrlyovExPJCHJwcf3Wl2LzUlnaqsT7Rmoo3aCeYtq/7MV/Pw4q11motG8pR8bjr6T6V8Pe1gQ==",
+    "sha256": "db38730acc9506edbedb3afb701e3f37f998b0b049126b31ec15ba20a27e16ba"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/langgraph-checkpoint",
+    "version": "1.1.5",
+    "url": "https://registry.npmjs.org/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-1.1.5.tgz",
+    "integrity": "sha512-BwDwl5VeTOh6CVuiIPgsUgfK51vTJDMSbFcSCUfjJWsl8/DPdK/mbv+ejxJstkSk/BlSPMP4JfXWcN6jD2ea2Q==",
+    "sha256": "ee7a6894ffec4f8f100b6d419b7a12340ed736668086d09f9ac1f4c99fce7383"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/langgraph-sdk",
+    "version": "1.10.2",
+    "url": "https://registry.npmjs.org/@langchain/langgraph-sdk/-/langgraph-sdk-1.10.2.tgz",
+    "integrity": "sha512-86qsfdBZWu1ZgywLN8AThU/jXi9rjPDZPWcTJp4SA1A/L62ypTNoSXbvtiwZt1odokXccYTxK1XWS8tmVdvEmw==",
+    "sha256": "95c63171164352ef1ba981e8cb4dae37e0d91597805861951b009ec1ef1b2c2d"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/langgraph-sdk/node_modules/eventemitter3",
+    "version": "5.0.4",
+    "url": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.4.tgz",
+    "integrity": "sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==",
+    "sha256": "21d4a36175672b9e6640c39a68613af73f9a4c47a4a4da39993e8cd085564eb6"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/langgraph-sdk/node_modules/p-queue",
+    "version": "9.3.3",
+    "url": "https://registry.npmjs.org/p-queue/-/p-queue-9.3.3.tgz",
+    "integrity": "sha512-NXAOdnEe5FsZJfT4oK84lE1Y5cFFdWlRuOo5tww8DyNMxyRXwn39fIkUtNLKppcPC+UYU/bXujNCUGDv01y7CA==",
+    "sha256": "03955c45657d2b3c4f415eaf8f92fe7c9c35f81ca5cbcb78e15c08a453b7f2a0"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/langgraph-sdk/node_modules/p-timeout",
+    "version": "7.0.1",
+    "url": "https://registry.npmjs.org/p-timeout/-/p-timeout-7.0.1.tgz",
+    "integrity": "sha512-AxTM2wDGORHGEkPCt8yqxOTMgpfbEHqF51f/5fJCmwFC3C/zNcGT63SymH2ttOAaiIws2zVg4+izQCjrakcwHg==",
+    "sha256": "0a39ef5e2e147e571a668c47a1e8b33961ae6764379ce65bc523e6bc80b13c02"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@langchain/protocol",
+    "version": "0.0.19",
+    "url": "https://registry.npmjs.org/@langchain/protocol/-/protocol-0.0.19.tgz",
+    "integrity": "sha512-9hKcRrH7cBX6gfutdfXPoft1OCchHe4FEpALoDJMl5Qu+n/YG5ynZmyu8+8cxORlPwHBoKTxggvXz+76M1yX1Q==",
+    "sha256": "f191cdda9556900a000d99492623a45073512f0038bbccdf44058d96e9170765"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@standard-schema/spec",
+    "version": "1.1.0",
+    "url": "https://registry.npmjs.org/@standard-schema/spec/-/spec-1.1.0.tgz",
+    "integrity": "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==",
+    "sha256": "a7cb7268be280ab518d450f8c3b07c86f23417225c0ab53691ed59b3067cceaf"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/@types/json-schema",
+    "version": "7.0.15",
+    "url": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz",
+    "integrity": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==",
+    "sha256": "12dcb1dcff7099bff0663fc220551ba53fcf23c136a22375e323bb6626d95724"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/ajv",
+    "version": "8.20.0",
+    "url": "https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz",
+    "integrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
+    "sha256": "b2f0b3a893bbb8cc5efb6814f08b1499e19e31d5dd73683f5893382f48f6e7b3"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/ajv-formats",
+    "version": "3.0.1",
+    "url": "https://registry.npmjs.org/ajv-formats/-/ajv-formats-3.0.1.tgz",
+    "integrity": "sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==",
+    "sha256": "f4d6980fd367381fd29199066911e863db8d97496613b6c2c5b91563a150acc5"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/base64-js",
+    "version": "1.5.1",
+    "url": "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz",
+    "integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==",
+    "sha256": "b1b7a945b52685269083425216d6597e33d97bf21699d656e92fdb3eb5210a85"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/eventemitter3",
+    "version": "4.0.7",
+    "url": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
+    "integrity": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==",
+    "sha256": "703cdecfa6951d9ad258f615ab96895750add3cb2d95e3727837b78709975de8"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/fast-deep-equal",
+    "version": "3.1.3",
+    "url": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+    "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+    "sha256": "b019a0980f27638dc3f85836b0e478f188e00d7a6e5852c0819fa86f56e47b8f"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/fast-uri",
+    "version": "3.1.7",
+    "url": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.7.tgz",
+    "integrity": "sha512-dOvZVzjdZdz7phd9v6jCbwxrBW3fK6n8Rc0CtdmM4bumzMnxywBYhuph6J819RRw/ku+rLbelwfMunktuzVVHg==",
+    "sha256": "3fa380284be4ecbf471c1dbb8c5da6f517c95f54279f88c2037985d03fdc6d92"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/is-network-error",
+    "version": "1.3.2",
+    "url": "https://registry.npmjs.org/is-network-error/-/is-network-error-1.3.2.tgz",
+    "integrity": "sha512-PhBY86zaxNZUuWP6h13Vu5oFe0XY6/UlKzQnYFELzGVHygP3MxmvTfYSG7GN3aIab/iWudSMgjSnG9Dq+nHrgA==",
+    "sha256": "2ff61ad2b1a78b09c66284f71fc4a9ad2010c34276e7e18fdf0320da56815f9c"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/js-tiktoken",
+    "version": "1.0.21",
+    "url": "https://registry.npmjs.org/js-tiktoken/-/js-tiktoken-1.0.21.tgz",
+    "integrity": "sha512-biOj/6M5qdgx5TKjDnFT1ymSpM5tbd3ylwDtrQvFQSu0Z7bBYko2dF+W/aUkXUPuk6IVpRxk/3Q2sHOzGlS36g==",
+    "sha256": "3b1f24b185565ca9a8d8f51466dfc4f99d67f1f05bc009258710ddb7a8d810fa"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/json-schema-traverse",
+    "version": "1.0.0",
+    "url": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
+    "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+    "sha256": "023222622df29fc274bde5d3590e47aa1d4a8e3c1d6e2aba029948ed79799b21"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/langsmith",
+    "version": "0.10.3",
+    "url": "https://registry.npmjs.org/langsmith/-/langsmith-0.10.3.tgz",
+    "integrity": "sha512-QQjH27gbMHGfEwCMN7wcE2a+AV3GrVAL3dZX33ZMGC45a6XeGtSB4Qnl1JiNdWe4QS4P3dsYQLsuCnN1Liztmw==",
+    "sha256": "facffd963677b6027c541d3b46d67082e6acb68d82ff51f74493bcbbe54fd704"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/mustache",
+    "version": "4.2.0",
+    "url": "https://registry.npmjs.org/mustache/-/mustache-4.2.0.tgz",
+    "integrity": "sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==",
+    "sha256": "05ea84bf212d37d84fb201aa77a82b347a6f744a3fcaef750c88e58f889c357c"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/p-finally",
+    "version": "1.0.0",
+    "url": "https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz",
+    "integrity": "sha512-LICb2p9CB7FS+0eR1oqWnHhp0FljGLZCWBE9aix0Uye9W8LTQPwMTYVGWQWIw9RdQiDg4+epXQODwIYJtSJaow==",
+    "sha256": "effd84e09e1330542a84a243f1f4da21a700d459b83761eaca16070eb1fb8841"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/p-queue",
+    "version": "6.6.2",
+    "url": "https://registry.npmjs.org/p-queue/-/p-queue-6.6.2.tgz",
+    "integrity": "sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==",
+    "sha256": "4d94fe81f32ce77f88f6d7b676fdff3a844a1ac445da522b2a1d9467b86a405d"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/p-retry",
+    "version": "7.1.1",
+    "url": "https://registry.npmjs.org/p-retry/-/p-retry-7.1.1.tgz",
+    "integrity": "sha512-J5ApzjyRkkf601HpEeykoiCvzHQjWxPAHhyjFcEUP2SWq0+35NKh8TLhpLw+Dkq5TZBFvUM6UigdE9hIVYTl5w==",
+    "sha256": "a639892b23828ffda8056e5c5e122db3e3e35b56fd338403f7ce707350a3f3f2"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/p-timeout",
+    "version": "3.2.0",
+    "url": "https://registry.npmjs.org/p-timeout/-/p-timeout-3.2.0.tgz",
+    "integrity": "sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==",
+    "sha256": "226b0886e0a837928501e3f5f96c5ec2f4c97aa2e287719b50d5341678da1c67"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/require-from-string",
+    "version": "2.0.2",
+    "url": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+    "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+    "sha256": "cb694a4965908f7775a0c757f00cf4e624d193cd71d77988fbcca0f597b88d82"
+  },
+  {
+    "ecosystem": "npm",
+    "name": "node_modules/zod",
+    "version": "4.6.2",
+    "url": "https://registry.npmjs.org/zod/-/zod-4.6.2.tgz",
+    "integrity": "sha512-lh5RCAGFa1Cm2hjtNwLQhSs/AsqdWnTQaBER9fEwN/88pSh7KOtJavtBx/0VlkN/uFd61SwYmljLMDAsHlvzBQ==",
+    "sha256": "ee46901482c264bcf8a270a9ffb071a3e5e7ba28334a4c8fa83b7405a89c4526"
+  }
+]

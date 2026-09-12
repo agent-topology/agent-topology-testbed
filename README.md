@@ -3,6 +3,10 @@
 Evidence for decisions about the [`agent-topology`](https://github.com/agent-topology/agent-topology)
 format, gathered by consuming it.
 
+[D1](observations/D1/README.md) records published beta.2 producer determinism across
+small Python/TypeScript LangGraph transformations, fresh-process repetitions and
+structural positive controls, with a bounded non-finding disposition.
+
 Claims here must be tied to their evidence class and reproduction. The repository
 exists so that
 a question about the format — *can a consumer draw this correctly? can a second

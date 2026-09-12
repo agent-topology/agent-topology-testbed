@@ -39,6 +39,12 @@ integrated consumer evidence. These cross-cutting relationships do not settle F7
 
 ## Dispositions and unresolved evidence
 
+[D1](../observations/D1/README.md) records a bounded **producer-determinism
+non-finding** for published beta.2: 208 describes in 104 fresh processes retain
+structure/hash under the tested irrelevant changes, while node/edge changes and
+join-to-independent-edge controls remain distinct. This adds registry-artifact
+evidence without changing F1–F8, qualifying a release or publishing upstream.
+
 The [47-claim ledger](completed-cohort-dispositions.md) routes all ten completed
 P0–P6/C1/S1/T1 groups to findings, corrections, rejected hypotheses, bounded
 limitations or precise follow-up candidates. F7 is the only distinct new finding

@@ -1,0 +1,916 @@
+{
+  "linear-base": {
+    "shape": "linear",
+    "variant": "base",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "linear-node-order": {
+    "shape": "linear",
+    "variant": "node-order",
+    "recipe": {
+      "nodes": [
+        "b",
+        "a"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "linear-edge-order": {
+    "shape": "linear",
+    "variant": "edge-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "b",
+          "__end__"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "__start__",
+          "a"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "linear-dictionary-order": {
+    "shape": "linear",
+    "variant": "dictionary-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "beta": "two",
+        "alpha": "one"
+      }
+    }
+  },
+  "linear-comment": {
+    "shape": "linear",
+    "variant": "comment",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "linear-named": {
+    "shape": "linear",
+    "variant": "named",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "named",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "linear-node-change": {
+    "shape": "linear",
+    "variant": "node-change",
+    "recipe": {
+      "nodes": [
+        "renamed",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "renamed"
+        ],
+        [
+          "renamed",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "linear-edge-change": {
+    "shape": "linear",
+    "variant": "edge-change",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b",
+          "__end__"
+        ],
+        [
+          "a",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-base": {
+    "shape": "fanout",
+    "variant": "base",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-node-order": {
+    "shape": "fanout",
+    "variant": "node-order",
+    "recipe": {
+      "nodes": [
+        "b",
+        "a"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-edge-order": {
+    "shape": "fanout",
+    "variant": "edge-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "b",
+          "__end__"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "__start__",
+          "a"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-dictionary-order": {
+    "shape": "fanout",
+    "variant": "dictionary-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "beta": "two",
+        "alpha": "one"
+      }
+    }
+  },
+  "fanout-comment": {
+    "shape": "fanout",
+    "variant": "comment",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-named": {
+    "shape": "fanout",
+    "variant": "named",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "named",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-node-change": {
+    "shape": "fanout",
+    "variant": "node-change",
+    "recipe": {
+      "nodes": [
+        "renamed",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "renamed"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "renamed",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "fanout-edge-change": {
+    "shape": "fanout",
+    "variant": "edge-change",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "a",
+          "__end__"
+        ],
+        [
+          "b",
+          "__end__"
+        ],
+        [
+          "a",
+          "b"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-base": {
+    "shape": "join",
+    "variant": "base",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-node-order": {
+    "shape": "join",
+    "variant": "node-order",
+    "recipe": {
+      "nodes": [
+        "c",
+        "b",
+        "a"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-edge-order": {
+    "shape": "join",
+    "variant": "edge-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "c",
+          "__end__"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "__start__",
+          "a"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-dictionary-order": {
+    "shape": "join",
+    "variant": "dictionary-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "beta": "two",
+        "alpha": "one"
+      }
+    }
+  },
+  "join-comment": {
+    "shape": "join",
+    "variant": "comment",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-named": {
+    "shape": "join",
+    "variant": "named",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "named",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-node-change": {
+    "shape": "join",
+    "variant": "node-change",
+    "recipe": {
+      "nodes": [
+        "renamed",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "renamed"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "renamed",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-edge-change": {
+    "shape": "join",
+    "variant": "edge-change",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ],
+        [
+          "a",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "a",
+            "b"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-join-source-order": {
+    "shape": "join",
+    "variant": "join-source-order",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ]
+      ],
+      "joins": [
+        [
+          [
+            "b",
+            "a"
+          ],
+          "c"
+        ]
+      ],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  },
+  "join-independent": {
+    "shape": "join",
+    "variant": "independent",
+    "recipe": {
+      "nodes": [
+        "a",
+        "b",
+        "c"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a"
+        ],
+        [
+          "__start__",
+          "b"
+        ],
+        [
+          "c",
+          "__end__"
+        ],
+        [
+          "a",
+          "c"
+        ],
+        [
+          "b",
+          "c"
+        ]
+      ],
+      "joins": [],
+      "callable": "lambda",
+      "metadata": {
+        "alpha": "one",
+        "beta": "two"
+      }
+    }
+  }
+}

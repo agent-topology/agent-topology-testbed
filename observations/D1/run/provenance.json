@@ -1,0 +1,17 @@
+{
+  "completedAt": "2026-09-12T13:17:52.746260+00:00",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "subprocessSeconds": 36.630005792983866,
+  "sources": {
+    "worker.py": "f73e8681e8c5a03d8677500c777ab87f9753be795b5605c078e46830cbea024a",
+    "recipes.json": "1770fd551581b8091bff1ff6b7d14ae6234f0a11bc288cf4db76548c0eb4e6fe",
+    "run.py": "e5b1ef2c166b713801ece4e4a4c64ee3d98f2b0476e09e60b1c3b4655fad916f",
+    "setup.py": "969f051a257e9d9cda9b9528fe2efdcfefe905e7b96f1f7dbd91972524e7a107",
+    "worker.mts": "740dde5efe271d2d70924e627a52e769a078165329d2702e7d5baa53f75b4180",
+    "verify.py": "5dab8711af653dff76834ec09f7ba2479d9fefebbc49adfd83684e28a5037cea",
+    "locks/requirements.txt": "32501113d119a15a5ab3b252314df31334e22a7fa8b9749fd5ee2acedd95cba2",
+    "locks/package-lock.json": "5e024bc00e81c4167770e645b7b80b0143833e9419388bb6c2a1ef94fdbd349e",
+    "locks/package.json": "26792986f100e1adb1a88957a35fbfebe393e7970466101a8fcdb302cc66c1ff"
+  }
+}

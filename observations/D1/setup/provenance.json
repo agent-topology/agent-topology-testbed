@@ -1,0 +1,11 @@
+{
+  "completedAt": "2026-09-12T13:14:30.811448+00:00",
+  "platform": "darwin",
+  "runtime": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "sourceSha256": "969f051a257e9d9cda9b9528fe2efdcfefe905e7b96f1f7dbd91972524e7a107",
+  "locks": {
+    "requirements.txt": "32501113d119a15a5ab3b252314df31334e22a7fa8b9749fd5ee2acedd95cba2",
+    "package-lock.json": "5e024bc00e81c4167770e645b7b80b0143833e9419388bb6c2a1ef94fdbd349e",
+    "package.json": "26792986f100e1adb1a88957a35fbfebe393e7970466101a8fcdb302cc66c1ff"
+  }
+}
