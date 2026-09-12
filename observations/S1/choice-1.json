@@ -1,0 +1,50 @@
+{
+  "case_id": "S1-asl-choice",
+  "evidence_class": "static",
+  "fixture": "choice.json",
+  "fixture_sha256": "aa38ddb1326e970db0eb3a91bf9543017bd072b4879caedfc09781c192a52f31",
+  "json_parsed": true,
+  "probe_disclaimer": "Successful JSON parsing and this probe's own bounded structural checks (state-type vocabulary, scoped StartAt/Next/Default/Choice reference resolution) are not authoritative ASL validation and not AWS Step Functions execution evidence. No expression evaluator, simulator, or cloud request is implemented.",
+  "python": "3.14.7",
+  "scopes": [
+    {
+      "choice_rules": {
+        "CheckStatus": {
+          "default": "Pending",
+          "ordered_targets": [
+            "Approved",
+            "Rejected"
+          ]
+        }
+      },
+      "map_config": {},
+      "next_edges": {},
+      "parallel_branch_counts": {},
+      "scope_id": "root",
+      "start_at": "CheckStatus",
+      "state_names": [
+        "Approved",
+        "CheckStatus",
+        "Pending",
+        "Rejected"
+      ],
+      "state_types": {
+        "Approved": "Pass",
+        "CheckStatus": "Choice",
+        "Pending": "Pass",
+        "Rejected": "Pass"
+      },
+      "terminal_states": [
+        "Approved",
+        "Pending",
+        "Rejected"
+      ]
+    }
+  ],
+  "source_sha256": "dc4d4a4f5afcecacf7963ff26fecfcd05cd7ee9c4f47fa7385ebf1b3d80befbf",
+  "spec": {
+    "retrieved": "2026-09-11",
+    "revision_note": "states-language.net carries no dated revision tag as of retrieval; the retrieval date stands in for a spec revision identifier.",
+    "source_url": "https://states-language.net/spec.html"
+  }
+}

@@ -40,7 +40,7 @@ design seven new ones.
 | Apache Airflow | 2.10.5 | Declarative DAG authored in Python (TaskFlow + classic operators); structure is fixed at parse time, independent of runtime data. |
 | Dagster (ops/graphs) | 1.13.22 | Declarative `GraphDefinition`/`JobDefinition` composed from Python-decorated ops; structure is fixed at definition time. Assets and partitions are out of scope (epic non-goal). |
 | CrewAI Flows | Untested here; version to be pinned and recorded in [#13](https://github.com/agent-topology/agent-topology-testbed/issues/13). | Python `@start`/`@listen`/`@router`-decorated flow methods; not yet probed. |
-| Amazon States Language (ASL) | Untested here; spec revision to be recorded in [#14](https://github.com/agent-topology/agent-topology-testbed/issues/14). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
+| Amazon States Language (ASL) | [states-language.net spec](https://states-language.net/spec.html), retrieved 2026-09-11 (no dated revision tag published); see [S1](../observations/S1/README.md). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions, a general workflow engine (not agent-specific), scoped here as a boundary/control probe. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
 | Temporal (Python SDK) | Untested here; SDK version to be pinned and recorded in [#15](https://github.com/agent-topology/agent-topology-testbed/issues/15). | Imperative Python workflow code; per [F1's note](../findings/F1-fan-out-semantics/README.md#note-on-the-core-field-test), structure is not statically available without execution — this is itself a candidate-boundary fact, not an assumed impossibility. |
 | Prefect 3 | Untested here; SDK version to be pinned and recorded in [#16](https://github.com/agent-topology/agent-topology-testbed/issues/16). | Python-decorated flows/tasks; structure is inferred from the decorated call graph versus runtime task invocation; not yet probed. |
 | AutoGen SelectorGroupChat | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent group chat; a selector function chooses the next speaker at runtime, not from a pre-declared edge set. |
@@ -58,7 +58,7 @@ model. No cell infers a negative from missing evidence.
 | Airflow | support | support | partial | partial | partial | untested | partial |
 | Dagster | partial | partial | partial | partial | partial | untested | partial |
 | CrewAI Flows | untested | untested | untested | untested | untested | untested | untested |
-| ASL | untested | untested | untested | untested | untested | untested | untested |
+| ASL | support | support | partial | partial | support | partial | partial |
 | Temporal (Python) | untested | untested | untested | untested | untested | untested | untested |
 | Prefect 3 | untested | untested | untested | untested | untested | untested | untested |
 | AutoGen SelectorGroupChat | untested | untested | untested | untested | untested | untested | untested |
@@ -85,6 +85,9 @@ model. No cell infers a negative from missing evidence.
   restricted to documented-public accessors alone remains an open gap. This is
   the native-capability-versus-public-extractability distinction, not a claim
   that the structure is unavailable.
+- **ASL — support.** The whole state machine parses with Python's
+  standard-library `json.loads` alone — no decorator execution, no SDK
+  import, no framework runtime of any kind: [S1](../observations/S1/README.md).
 
 ### Q2 — explicit nodes and edges
 
@@ -99,6 +102,13 @@ model. No cell infers a negative from missing evidence.
   two invocations (`left`, `right`) of the same `GraphDefinition` keep distinct
   invocation-scoped node identities, and an extractor that reads only the
   shared definition name loses them.
+- **ASL — support.** State names and every `Next`/`Default`/`Choices[].Next`
+  target are explicit JSON keys, never inferred from naming convention or a
+  side channel: [S1](../observations/S1/README.md). Two `Parallel` branches
+  that reuse the same local state name (`"Step"`) keep independently scoped
+  identity (`root/RunBoth/branch0/Step` versus `root/RunBoth/branch1/Step`)
+  purely from each branch's own `States` object, without a naming convention
+  disambiguating them.
 
 ### Q3 — fan-out selection and execution semantics
 
@@ -117,6 +127,13 @@ model. No cell infers a negative from missing evidence.
   say which outputs a given run emits; only **execution** evidence
   distinguishes `none`/`single`/`multiple` and shows which consumers were
   skipped. See [P2's claim record](../observations/P2/README.md#claim-record).
+- **ASL — partial.** A `Choice` state's `Choices` list plus `Default` is a
+  static, declared exclusive-selection *mechanism* — evaluated in list order,
+  first match wins, `Default` as a distinct fallback slot — stronger than
+  Airflow's merely symmetric declared downstream set: [S1](../observations/S1/README.md).
+  This probe implements no expression evaluator, so which rule a given input
+  actually selects is untested here, the same evidence-class separation as
+  Airflow P1/Dagster P2.
 
 ### Q4 — AND/OR convergence semantics
 
@@ -142,6 +159,13 @@ model. No cell infers a negative from missing evidence.
   here). The normative comparison this caution requires belongs to CrewAI's
   own AND/OR investigation ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)),
   not to Dagster.
+- **ASL — partial.** A `Parallel` state's declared semantics — all branches
+  declared and run, the state converges or fails as a unit, subject to
+  documented `Catch`/`Retry` handling — are cited from the
+  [spec](https://states-language.net/spec.html), not executed or measured:
+  [S1](../observations/S1/README.md). No local engine exists to execute an
+  ASL document against, so this is documentation-class evidence only, weaker
+  than the execution-confirmed partial recorded for Airflow/Dagster.
 
 ### Q5 — opaque nested-graph visibility and boundaries
 
@@ -165,13 +189,28 @@ model. No cell infers a negative from missing evidence.
   [P4's claim record](../observations/P4/README.md#comparison-and-claim-record),
   which also states Dagster nested graphs and Airflow `TaskGroup`s are **not
   established** as equivalent to each other.
+- **ASL — support.** A `Parallel` branch's `Branches[i].States` and a `Map`
+  state's `ItemProcessor.States` are ordinary nested JSON, present in the same
+  document with zero execution and no API layer to have a documented-public
+  gap in: [S1](../observations/S1/README.md). This is a stronger positive
+  control than Airflow/Dagster's public-attribute access, since there is no
+  accessor to be public or private about — the nested structure is the
+  document itself.
 
 ### Q6 — interrupt/HITL concepts and structural visibility
 
-**Untested for every framework listed above.** No existing probe constructs an
-interrupt or human-in-the-loop case; none of #13–#17 is scoped to this
-question either. This is a follow-up candidate, not a claim that any of these
-frameworks lacks the concept.
+**Untested for Airflow, Dagster, CrewAI Flows, Temporal, Prefect 3, and both
+AutoGen shapes.** No probe among P0–P6 or #13/#15–#17 constructs an interrupt
+or human-in-the-loop case; this remains a follow-up candidate for those
+frameworks, not a claim that any of them lacks the concept.
+
+- **ASL — partial, documentation-only.** ASL names a callback-task
+  integration pattern structurally, via a `Task` state's `Resource` field
+  suffix (`.waitForTaskToken`) — a human-in-the-loop-shaped concept nameable
+  without invoking any AWS service: [S1](../observations/S1/README.md). [S1](../observations/S1/README.md)
+  does not add a `Task` state or exercise this pattern (out of its own scope);
+  this cell cites the spec's own vocabulary rather than a fixture-backed
+  observation, unlike every other ASL cell in this matrix.
 
 ### Q7 — stable definition identifiers across runs
 
@@ -188,11 +227,17 @@ frameworks lacks the concept.
   the shared child `GraphDefinition` name they both instantiate
   ([P4](../observations/P4/README.md)). Both are separate from the run's own
   generated run ID, excluded from comparison.
-- **Both frameworks, explicitly bounded.** Each case above compares exactly
-  two runs per definition/cardinality (`cmp`, byte-identical). Two stable runs
-  show the identifier did not change between those two runs; they do not
-  establish that it is stable across arbitrary future runs, code changes, or
-  framework versions — see [evidence conventions](../docs/evidence.md).
+- **ASL — partial.** State names are definition-level, scope-qualified
+  identifiers (`root/RunBoth/branch0/Step` distinct from
+  `root/RunBoth/branch1/Step` despite the identical local name):
+  [S1](../observations/S1/README.md). Framed for ASL specifically as scoped
+  definition names, not execution IDs, per the issue's own scope: there is no
+  execution here and thus no generated execution ID to separate from it.
+- **All three frameworks, explicitly bounded.** Each case above compares
+  exactly two runs per definition/cardinality/fixture (`cmp`, byte-identical).
+  Two stable runs show the identifier did not change between those two runs;
+  they do not establish that it is stable across arbitrary future runs, code
+  changes, or framework/spec versions — see [evidence conventions](../docs/evidence.md).
 
 ## Priority
 
@@ -470,6 +515,41 @@ no execution evidence. `test_dynamic.py` checks that dependency-kind loss,
 `is_dynamic`-flag loss, a duplicate mapping key, a wrong cardinality, and an
 unsupported version all exit nonzero under `-O`; it also prevents execution
 entry points in a standalone static run.
+
+## Reproduce S1
+
+Amazon States Language has no SDK, package, or execution engine — no venv,
+lock file, or `uv` install step applies here. The probe uses only Python's
+standard library and its own committed fixtures. Read
+[the ASL probe](step-functions/asl_probe.py),
+[its fixtures](step-functions/fixtures/), and
+[S1's question/expected facts](../observations/S1/README.md) before running.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for fixture in choice parallel map; do
+  for n in 1 2; do
+    python3 -O probes/step-functions/asl_probe.py --fixture "$fixture" \
+      --output ".probe-runs/asl-$fixture-$n.json"
+  done
+  cmp ".probe-runs/asl-$fixture-1.json" ".probe-runs/asl-$fixture-2.json"
+done
+for fixture in invalid_missing_target invalid_cross_boundary; do
+  if python3 -O probes/step-functions/asl_probe.py --fixture "$fixture" \
+      --output ".probe-runs/asl-$fixture.json"; then
+    echo "unexpected success: $fixture" >&2
+    exit 1
+  fi
+done
+python3 -m unittest discover -s probes/step-functions -p "test_asl_probe.py"
+```
+
+The two `invalid_*` fixtures are expected to exit nonzero (`ASLReferenceError`);
+see [S1's negative checks](../observations/S1/README.md#negative-checks) for
+the exact exception each one raises, and `test_asl_probe.py` for four further
+deliberate `EXPECTED_FACTS` corruption checks under `python -O`. Every
+positive fixture's two runs are byte-identical (`cmp` exit 0).
 
 ## Failure interpretation
 

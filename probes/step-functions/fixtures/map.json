@@ -1,0 +1,19 @@
+{
+  "Comment": "S1 fixture: inline Map with a one-state ItemProcessor and explicit MaxConcurrency=1",
+  "StartAt": "ProcessItems",
+  "States": {
+    "ProcessItems": {
+      "Type": "Map",
+      "ItemsPath": "$.items",
+      "MaxConcurrency": 1,
+      "ItemProcessor": {
+        "ProcessorConfig": { "Mode": "INLINE" },
+        "StartAt": "HandleItem",
+        "States": {
+          "HandleItem": { "Type": "Pass", "End": true }
+        }
+      },
+      "End": true
+    }
+  }
+}
