@@ -66,3 +66,38 @@ inside, `subgraphId` says where to find it once expanded.
 projection (`_NODE_HASH_FIELDS`), so this can be trialled as
 `x-topology-opaque-subgraph` without moving any published hash — the same route
 F1 took.
+
+## Correction (P3)
+
+The "Cross-framework check" above prints `task groups: ['nested']` and leaves
+it there, as evidence that the *concept* of a node hiding more structure exists
+in Airflow too. [P3](../../observations/P3/README.md) (issue
+[#5](https://github.com/agent-topology/agent-topology-testbed/issues/5))
+measured what a `TaskGroup` actually exposes, and the concept is narrower than
+the cross-framework check implies.
+
+**What grouping proves.** A `TaskGroup`'s membership, its qualified task IDs,
+and its own boundary edges (`upstream_task_ids`/`downstream_task_ids`) are all
+discoverable through public attributes without executing anything or expanding
+a black box — confirming, with a direct measurement rather than a one-line
+print, that Airflow does not need a `depth` parameter to tell a consumer a
+group exists and what touches it. Every member task keeps its own identity,
+its own qualified ID, and its own dependency edges throughout; nothing about
+crossing the boundary changed scheduling behavior in P3's execution case, and a
+two-source convergence downstream of the group ran under the same trigger-rule
+semantics P1 already established for two ungrouped sibling sources.
+
+**What is still missing for subgraph equivalence.** F3's claim is about a
+single node that can hide an entire graph behind `subgraphId`, discoverable
+only once a consumer re-derives at a deeper `depth`. A `TaskGroup` is not that:
+it is not one node — it is a label attached to a set of already-enumerable
+tasks and edges, with no boundary node of its own that could carry a
+`hasSubgraph` marker, fail as a unit, or gate what a consumer sees by default.
+P3 never had to "expand" anything to see `g_a`/`g_b`; they were always present
+in `dag.task_ids`, just with a `group_id` prefix. So the print in this finding's
+"Cross-framework check" is accurate as far as it goes — Airflow does expose
+*something* here — but it does not show Airflow has an opaque-subgraph node in
+F3's sense, and no claim of that equivalence should be drawn from it.
+`probes/airflow/airflow_probe.py` and its example DAG are unchanged by this
+correction; their `task groups: ['nested']` line remains a true but narrower
+fact than a reader might infer from sitting next to F3's claim.

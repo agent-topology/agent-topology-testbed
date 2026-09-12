@@ -1,0 +1,87 @@
+{
+  "case_id": "P3-airflow-grouping",
+  "evidence_class": "static",
+  "framework": "apache-airflow",
+  "lock_sha256": "0c863388ef77d1519e2e58f751b4dac42d16405c3062fed215e8a9199e26713d",
+  "python": "3.11.16",
+  "source_sha256": "3b27f1f95ae0a72f1394f9ab17ff0235ef349bd8231a21c76eec6e4527ed09af",
+  "static": {
+    "dag_id": "p3_grouping",
+    "dependencies": [
+      [
+        "before",
+        "g.g_a"
+      ],
+      [
+        "before",
+        "g.g_b"
+      ],
+      [
+        "g.g_a",
+        "join"
+      ],
+      [
+        "g.g_b",
+        "join"
+      ],
+      [
+        "join",
+        "after"
+      ]
+    ],
+    "group_boundary": {
+      "g": {
+        "downstream_task_ids": [
+          "join"
+        ],
+        "upstream_task_ids": [
+          "before"
+        ]
+      }
+    },
+    "group_internal_roots_leaves": {
+      "g": {
+        "leaves": [
+          "g.g_a",
+          "g.g_b"
+        ],
+        "roots": [
+          "g.g_a",
+          "g.g_b"
+        ]
+      }
+    },
+    "group_membership": {
+      "g": [
+        "g.g_a",
+        "g.g_b"
+      ]
+    },
+    "join_trigger_rule": "none_failed_min_one_success",
+    "leaves": [
+      "after"
+    ],
+    "roots": [
+      "before"
+    ],
+    "task_ids": [
+      "after",
+      "before",
+      "g.g_a",
+      "g.g_b",
+      "join"
+    ],
+    "top_level_children": {
+      "group": [
+        "g"
+      ],
+      "task": [
+        "after",
+        "before",
+        "join"
+      ]
+    }
+  },
+  "temporary_state_removed": true,
+  "version": "2.10.5"
+}
