@@ -110,10 +110,11 @@ error and package identity.
   across the measured package transition. This does not qualify beta.3, change
   hash policy or imply upstream approval.
 - **Unresolved evidence:** V2 contains no numeric extension and therefore does
-  not settle F8 on beta.3. The smallest already-planned follow-up is E2
-  [#54](https://github.com/agent-topology/agent-topology-testbed/issues/54), which
-  replays E1's numeric population through these beta.3 runners. No broader input
-  or framework run is needed for V2's bounded question.
+  not itself settle F8 on beta.3. The planned E2 follow-up
+  [#54](https://github.com/agent-topology/agent-topology-testbed/issues/54) has now
+  [replayed E1's numeric population](../E2/README.md) through these installations
+  and resolved F8 within that bounded corpus. No broader input or framework run
+  is needed for V2's bounded question.
 
 ## Reproduce
 

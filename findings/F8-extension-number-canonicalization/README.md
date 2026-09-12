@@ -6,13 +6,16 @@ accept identical valid JSON but return different full canonical UTF-8 bytes
 for numeric extension payloads. This is a full-document serialization finding,
 not a structure-hash defect or a schema-shape proposal.
 
-**Beta.3 boundary (V2, 2026-09-12).** [V2](../../observations/V2/README.md)
-found equal canonical bytes and hash tuples across beta.2→beta.3 for V1's nine
-fixed documents, but the pre-run inspection confirmed that none contains a
-numeric extension. V2 is therefore a bounded non-finding for that corpus, not a
-beta.3 replay or resolution of F8. E2
-[#54](https://github.com/agent-topology/agent-topology-testbed/issues/54) remains
-the planned numeric-population re-observation.
+**Published beta.3 addendum (E2, 2026-09-12).** [E2](../../observations/E2/README.md)
+replayed E1's exact saved 600-line population and all 16 minimized candidates
+twice in fresh lock-only beta.2/beta.3 environments. The 84 historical beta.2
+canonical differences reproduce unchanged, while published beta.3 Python/npm
+produce identical full canonical bytes for all 600 rows and every minimum.
+Validation remains accepted and complete structure-hash tuples remain equal.
+F8 is therefore resolved within E1's bounded population on published beta.3;
+the beta.2 claim, inputs and provenance remain unchanged. Two separate unsafe
+integer cases record ADR 0010's beta.2 parity rejection→beta.3 narrowing
+compatibility transition and are not relabeled as F8 defects.
 
 [E1](../../observations/E1/README.md) supplies retrospective callable evidence:
 three seeds × 100 base examples, each with a structural permutation, repeated

@@ -140,7 +140,9 @@ including artifact identities, raw results and a bounded non-finding disposition
 isolated published beta.2/beta.3 Python and npm spec installations. All 27
 requested transition/cross-language comparisons retain acceptance, full canonical
 bytes and structure-hash tuples; because the corpus has no numeric extension, this
-is a bounded non-finding and leaves F8's beta.3 numeric replay to E2.
+is a bounded non-finding. [E2](observations/E2/README.md) separately replays E1's
+saved numeric population and all 16 minima, resolving F8 within that bounded corpus
+on published beta.3 while preserving the beta.2 finding.
 
 [K1](observations/K1/README.md) reuses V1's isolated installations and minimal
 document to test six controlled single-field mutations (an unsupported

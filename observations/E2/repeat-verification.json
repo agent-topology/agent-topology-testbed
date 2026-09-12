@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "runs": [
+    "observations/E2/run-a",
+    "observations/E2/run-b"
+  ],
+  "normalization": [
+    "identity.executable",
+    "identity.imported_path"
+  ],
+  "compared_without_normalization": [
+    "validation",
+    "canonical",
+    "structureHash",
+    "properties",
+    "input_sha256",
+    "identity.version",
+    "identity.runtime",
+    "setup/artifacts.json"
+  ],
+  "population_cases": 600,
+  "minimized_candidates": 16,
+  "boundary_cases": 2,
+  "generator_rerun": false
+}

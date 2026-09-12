@@ -1,0 +1,62 @@
+{
+  "expectations": {
+    "question": "Do published beta.3 Python and npm spec packages produce identical full canonical bytes for E1's saved population and minimized counterexamples, while retaining the complete structure-hash tuples observed on beta.2?",
+    "recorded_before_replay_at": "2026-09-12",
+    "generator_rerun": false,
+    "input_sources": {
+      "population_gzip": "observations/E1/run-a/inputs.jsonl.gz",
+      "population_gzip_sha256": "f6c66aa3e76cb1eee4ec35e510b3ed371f247657e62445e7200049992c91b2ed",
+      "population_uncompressed_sha256": "d011b42bd3454be7292e50c7d6d6decdbb840a5b5dece4ee2922c794c5849b48",
+      "cases": "observations/E1/run-a/cases.json",
+      "cases_sha256": "6085d9dd7e6f2863e23793692611aaf04d04a9281950a81d6a6b72c40d49f791",
+      "population_lines": 600,
+      "minimized_directory": "observations/E1/run-a/minimized",
+      "minimized_sha256": [
+        "086298c22c3abaa302f6ddb632b2f431d78ddd855314dd1060b16424c106f4d7",
+        "10198b7eb9ca120ff48c752f83d33eebd6b95704a38f4982ce15ec1b36c687a1",
+        "1fb3d6a651028a22246594d95c28da989ba7c4794c7a39bdc444a4659d26dc4e",
+        "2292ec196cb9eb383900ff6c347a806dc7525dacbe3697095764a77b919b2528",
+        "28c6434a369f2c73d1bab2bc7c3c3170a5cbc673701e349ed1a991d3b6ecc195",
+        "2dcfd24a23114f601c1e960aaa9eb4ee7515191b3f18a0332f0514f497fcd92a",
+        "46492af71cb8108c40ba9beb4c38eaf843bbcd940d3f9e100af784c03f16dc16",
+        "6d35caaac88783afabd2ac7d424311b41ef536b8edc4d01560e542292925de29",
+        "721ce2e7010faedbc47851c8b6b0fb6d0269b58a1af918f54f81e73e15d31e4d",
+        "9561a0ba6f67710b7a48d3c7bb379444f20989b0ee40eb0bf0be628733474481",
+        "a0b64ee0e0f6f26540907f599e11956f1c42b837c1e06b4ea867b44e531efe3c",
+        "aaaea078f7f46e707146c6d06ed47bf4b630d7d137d5c8e800b80a2375d4322a",
+        "e0ed707d79a0fe208a9d14fa335436101f57e6fd76a2b48923755d955fcf9d7a",
+        "e0f3cdf662d80f0f2f5359ce233e923ae655ac68f5b637ed57060c33da94ae4d",
+        "e91e8c0e2827a362b3bf3bcf228148240108b71bb90eede01daeb2de0b1b6384",
+        "ee86a4edb23649b446b91e1cbb54141c54381d423310ea9f7d9e968b895fd1ae"
+      ]
+    },
+    "population_and_minimized": {
+      "validation": "accepted-in-all-four-installations",
+      "beta3_cross_language_canonical_bytes": "equal",
+      "all_structure_hash_tuples": "equal",
+      "beta2_to_beta3_canonical_bytes": "record-equal-or-different-separately"
+    },
+    "boundary_cases": {
+      "unsafe-negative.json": {
+        "sha256": "d8c9a28b7a96c101ed99132e745af03b0325cca1d6430d13de643f2acdb6bf5f",
+        "literal": "-9007199254740993",
+        "beta2": "validation-accepted-but-rejected-from-cross-language-byte-parity",
+        "beta3": "validation-accepted-and-narrowed-to--9007199254740992-with-byte-parity",
+        "structure_hash_tuple": "equal"
+      },
+      "unsafe-positive.json": {
+        "sha256": "57c748574463544eab38350d21f973017f5f092d19af0bb447207233e0a97684",
+        "literal": "9007199254740993",
+        "beta2": "validation-accepted-but-rejected-from-cross-language-byte-parity",
+        "beta3": "validation-accepted-and-narrowed-to-9007199254740992-with-byte-parity",
+        "structure_hash_tuple": "equal"
+      }
+    },
+    "basis": "ADR 0009 defines ECMAScript Number::toString canonical spelling without changing hash version 1; ADR 0010 narrows unsafe integer literals to binary64; the 0.1 contract at 848b179 retains topologyVersion 0.1 and the complete sha256/algorithmVersion 1 tuple. Beta.2 parity rejection here is a comparator classification, not package validation rejection."
+  },
+  "verified_at": "2026-09-12T20:39:14.070401+00:00",
+  "generator_rerun": false,
+  "verified_population_cases": 600,
+  "verified_minimized_candidates": 16,
+  "verified_boundary_cases": 2
+}
