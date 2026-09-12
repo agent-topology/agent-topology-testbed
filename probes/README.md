@@ -41,7 +41,7 @@ design seven new ones.
 | Dagster (ops/graphs) | 1.13.22 | Declarative `GraphDefinition`/`JobDefinition` composed from Python-decorated ops; structure is fixed at definition time. Assets and partitions are out of scope (epic non-goal). |
 | CrewAI Flows | 1.15.21, recorded in [C1](../observations/C1/README.md) ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)). | Python `@start`/`@listen`/`@router`-decorated flow methods; a public, no-kickoff `Flow.flow_definition()` classmethod (and the exported `crewai.flow.build_flow_structure()` projection of it) extracts the whole declared graph, including each listener's literal `and_()`/`or_()` `condition_type`, from the class alone. |
 | Amazon States Language (ASL) | [states-language.net spec](https://states-language.net/spec.html), retrieved 2026-09-11 (no dated revision tag published); see [S1](../observations/S1/README.md). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions, a general workflow engine (not agent-specific), scoped here as a boundary/control probe. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
-| Temporal (Python SDK) | Untested here; SDK version to be pinned and recorded in [#15](https://github.com/agent-topology/agent-topology-testbed/issues/15). | Imperative Python workflow code; per [F1's note](../findings/F1-fan-out-semantics/README.md#note-on-the-core-field-test), structure is not statically available without execution — this is itself a candidate-boundary fact, not an assumed impossibility. |
+| Temporal (Python SDK) | 1.18.0, recorded in [T1](../observations/T1/README.md) ([#15](https://github.com/agent-topology/agent-topology-testbed/issues/15)). | Imperative decorated workflow/activity definitions. Public authoring and registration do not themselves export invocation edges; T1 found no public definition-to-graph API in its bounded review. Source reasoning and execution-history export remain distinct paths, not a framework-wide impossibility claim. |
 | Prefect 3 | Untested here; SDK version to be pinned and recorded in [#16](https://github.com/agent-topology/agent-topology-testbed/issues/16). | Python-decorated flows/tasks; structure is inferred from the decorated call graph versus runtime task invocation; not yet probed. |
 | AutoGen SelectorGroupChat | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent group chat; a selector function chooses the next speaker at runtime, not from a pre-declared edge set. |
 | AutoGen GraphFlow | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent flow over an explicitly constructed digraph of agents; a potential positive control against GroupChat-based negative claims. |
@@ -59,7 +59,7 @@ model. No cell infers a negative from missing evidence.
 | Dagster | partial | partial | partial | partial | partial | untested | partial |
 | CrewAI Flows | support | support | partial | support | untested | untested | untested |
 | ASL | support | support | partial | partial | support | partial | partial |
-| Temporal (Python) | untested | untested | untested | untested | untested | untested | untested |
+| Temporal (Python) | partial | partial | untested | untested | untested | partial | partial |
 | Prefect 3 | untested | untested | untested | untested | untested | untested | untested |
 | AutoGen SelectorGroupChat | untested | untested | untested | untested | untested | untested | untested |
 | AutoGen GraphFlow | untested | untested | untested | untested | untested | untested | untested |
@@ -99,6 +99,12 @@ model. No cell infers a negative from missing evidence.
   standard-library `json.loads` alone — no decorator execution, no SDK
   import, no framework runtime of any kind: [S1](../observations/S1/README.md).
 
+- **Temporal — partial.** Decorated definitions retain inspectable Python
+  names/signatures, but these do not encode either fixture's invocation graph.
+  SDK-native definition records use private accessors; public authoring is not
+  public metadata retrieval. No public graph export was found in the bounded,
+  pinned-source review: [T1](../observations/T1/README.md#public-api-and-graphexport-search).
+
 ### Q2 — explicit nodes and edges
 
 - **Airflow — support.** Same static sections as Q1 carry typed `task_ids` and
@@ -125,6 +131,12 @@ model. No cell infers a negative from missing evidence.
   identity (`root/RunBoth/branch0/Step` versus `root/RunBoth/branch1/Step`)
   purely from each branch's own `States` object, without a naming convention
   disambiguating them.
+
+- **Temporal — partial.** Supplied definitions are enumerable, and authored
+  Temporal type names are explicit source facts, deliberately different from
+  Python names. No invocation IDs or edges were extracted. A Worker registration
+  inventory does not state which workflow calls which activity:
+  [T1](../observations/T1/README.md#observations).
 
 ### Q3 — fan-out selection and execution semantics
 
@@ -159,6 +171,11 @@ model. No cell infers a negative from missing evidence.
   This probe implements no expression evaluator, so which rule a given input
   actually selects is untested here, the same evidence-class separation as
   Airflow P1/Dagster P2.
+
+- **Temporal — untested.** Linear A→B versus input-dependent A/B is source
+  reasoning, not a declared SDK fan-out graph, measured selection, or scheduled
+  work. No workflow or activity body was called:
+  [T1](../observations/T1/README.md#seven-question-matrix-answers).
 
 ### Q4 — AND/OR convergence semantics
 
@@ -211,6 +228,10 @@ model. No cell infers a negative from missing evidence.
   ASL document against, so this is documentation-class evidence only, weaker
   than the execution-confirmed partial recorded for Airflow/Dagster.
 
+- **Temporal — untested.** Sequential awaits do not exercise multi-source
+  AND/OR convergence; neither fixture contains a join:
+  [T1](../observations/T1/README.md#seven-question-matrix-answers).
+
 ### Q5 — opaque nested-graph visibility and boundaries
 
 - **Airflow — partial.** A `TaskGroup`'s membership, qualified task IDs, and
@@ -241,10 +262,14 @@ model. No cell infers a negative from missing evidence.
   accessor to be public or private about — the nested structure is the
   document itself.
 
+- **Temporal — untested.** No child-workflow fixture was added. Child-workflow
+  API availability alone does not establish nested membership/ports or a static
+  opaque graph boundary: [T1](../observations/T1/README.md#seven-question-matrix-answers).
+
 ### Q6 — interrupt/HITL concepts and structural visibility
 
-**Untested for Airflow, Dagster, CrewAI Flows, Temporal, Prefect 3, and both
-AutoGen shapes.** No probe among P0–P6 or #13/#15–#17 constructs an interrupt
+**Untested for Airflow, Dagster, CrewAI Flows, Prefect 3, and both
+AutoGen shapes.** No probe among P0–P6 or #13/#16–#17 constructs an interrupt
 or human-in-the-loop case; this remains a follow-up candidate for those
 frameworks, not a claim that any of them lacks the concept.
 
@@ -255,6 +280,11 @@ frameworks, not a claim that any of them lacks the concept.
   does not add a `Task` state or exercise this pattern (out of its own scope);
   this cell cites the spec's own vocabulary rather than a fixture-backed
   observation, unlike every other ASL cell in this matrix.
+
+- **Temporal — partial, documentation-only.** Signal/update decorators name
+  message handlers; receiving a message can start a handler task. This does not
+  locate a before/after interrupt on a static invocation node. T1 adds no HITL
+  execution case: [T1](../observations/T1/README.md#seven-question-matrix-answers).
 
 ### Q7 — stable definition identifiers across runs
 
@@ -282,6 +312,12 @@ frameworks, not a claim that any of them lacks the concept.
   Two stable runs show the identifier did not change between those two runs;
   they do not establish that it is stable across arbitrary future runs, code
   changes, or framework/spec versions — see [evidence conventions](../docs/evidence.md).
+
+- **Temporal — partial.** Python definition metadata repeats across two imports;
+  configured Temporal type strings are separately recorded as source facts.
+  Public Info schemas distinguish workflow type, workflow ID, run ID, and activity
+  type/ID, but no runtime values were generated. Two imports establish no
+  universal identity stability: [T1](../observations/T1/README.md#seven-question-matrix-answers).
 
 ## Priority
 
@@ -634,6 +670,15 @@ see [S1's negative checks](../observations/S1/README.md#negative-checks) for
 the exact exception each one raises, and `test_asl_probe.py` for four further
 deliberate `EXPECTED_FACTS` corruption checks under `python -O`. Every
 positive fixture's two runs are byte-identical (`cmp` exit 0).
+
+## Temporal public definition inspection (T1)
+
+The isolated probe is under [`boundaries/temporal/`](boundaries/temporal/).
+Read [T1's question, API search, limitations, and complete reproduction commands](../observations/T1/README.md)
+before setup. It pins `temporalio==1.18.0` and Python 3.11.16 in its own
+`.venvs/temporal` environment. Two fresh-process static inspections, an optimized
+comparison, and three integrity tests require no Temporal server or worker.
+There is no callable or framework-execution evidence in T1.
 
 ## Failure interpretation
 
