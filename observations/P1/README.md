@@ -157,3 +157,9 @@ per case, not a decision made from runtime data; this probe evaluates the
 scheduler's response to a given return value, not arbitrary callback logic
 (out of scope per the epic's non-goals). No `agent-topology` document is produced,
 no schema or wire-format extension is proposed, and no upstream decision is made.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p1)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.

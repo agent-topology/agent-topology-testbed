@@ -202,3 +202,9 @@ paths, timestamps, durations, and host details are absent from semantic records;
 Python/SDK versions and source/lock hashes remain. Missing dependencies, wrong
 versions, API errors, or expectation failures exit nonzero. Always inspect exit
 status before trusting any existing output file.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#t1)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.

@@ -155,3 +155,9 @@ Generated run IDs, timestamps, durations, PIDs, temporary paths, and raw logs
 are excluded. No timing or sibling-order claim is made. Other versions,
 executors, dynamic mapping, optional/failing inputs, assets, and deeper nesting
 remain untested.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p4)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.

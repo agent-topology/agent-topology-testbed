@@ -230,3 +230,14 @@ decision is made. In particular, nothing here establishes that an Airflow
 `agent-topology`'s `subgraphId`/depth-gating raises — see the correction
 appended to [F3](../../findings/F3-opaque-subgraph/README.md#correction-p3)
 for why grouping and opaque-subgraph containment are not the same claim.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p3)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.
+
+**Provenance qualification (2026-09-12, #29):** The saved `source_sha256`
+differs from the checked-in probe source, although the saved measured sections
+match its literal assertions. See the ledger’s [provenance limits](../../findings/completed-cohort-dispositions.md#provenance-limits)
+for exact digests and the minimal follow-up. This is not a fresh reproduction.
