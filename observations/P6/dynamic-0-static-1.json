@@ -1,0 +1,45 @@
+{
+  "case_id": "P6-dagster-dynamic-0",
+  "evidence_class": "static",
+  "framework": "dagster",
+  "lock_sha256": "838c90c91336b78e6f86acce7d3563200b1edd41ec3aaab7ff5d43b13aa564b5",
+  "python": "3.11.16",
+  "source_sha256": "c8d8ecb452d1a1471da068b845377af18fbe57ecee5761fab5d4b1d1fd7dd92f",
+  "static": {
+    "dependencies": [
+      [
+        "dynamic_source",
+        "result",
+        "mapped",
+        "value",
+        "direct"
+      ],
+      [
+        "mapped",
+        "result",
+        "collect",
+        "values",
+        "dynamic_collect"
+      ]
+    ],
+    "job_name": "p6_dynamic",
+    "op_names": [
+      "collect",
+      "dynamic_source",
+      "mapped"
+    ],
+    "output_is_dynamic": {
+      "collect": {
+        "result": false
+      },
+      "dynamic_source": {
+        "result": true
+      },
+      "mapped": {
+        "result": false
+      }
+    }
+  },
+  "temporary_state_removed": true,
+  "version": "1.13.22"
+}
