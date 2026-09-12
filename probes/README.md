@@ -6,6 +6,9 @@ per question, *which unresolved framework facts would change a topology
 contract recommendation or producer-candidate assessment* — see
 [issue #12](https://github.com/agent-topology/agent-topology-testbed/issues/12)
 and [epic #1](https://github.com/agent-topology/agent-topology-testbed/issues/1).
+The [completed-cohort ledger](../findings/completed-cohort-dispositions.md) routes
+P0–P6/C1/S1/T1 claims to their dispositions; the [findings index](../findings/README.md)
+separates historical versions from current upstream status.
 It backfills existing P0–P6 evidence; it invents no new results and runs no new
 experiments.
 
@@ -39,7 +42,7 @@ design seven new ones.
 | --- | --- | --- |
 | Apache Airflow | 2.10.5 | Declarative DAG authored in Python (TaskFlow + classic operators); structure is fixed at parse time, independent of runtime data. |
 | Dagster (ops/graphs) | 1.13.22 | Declarative `GraphDefinition`/`JobDefinition` composed from Python-decorated ops; structure is fixed at definition time. Assets and partitions are out of scope (epic non-goal). |
-| CrewAI Flows | 1.15.21, recorded in [C1](../observations/C1/README.md) ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)). | Python `@start`/`@listen`/`@router`-decorated flow methods; a public, no-kickoff `Flow.flow_definition()` classmethod (and the exported `crewai.flow.build_flow_structure()` projection of it) extracts the whole declared graph, including each listener's literal `and_()`/`or_()` `condition_type`, from the class alone. |
+| CrewAI Flows | 1.15.21, recorded in [C1](../observations/C1/README.md) ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)). | Python `@start`/`@listen`/`@router`-decorated flow methods; a public, no-kickoff `Flow.flow_definition()` classmethod (and the exported `crewai.flow.build_flow_structure()` projection of it) extracts the whole declared graph, including each listener's literal `and_()`/`or_()` `condition_type`, from the class alone. These accessors are source-visible/exported, not documented in C1's pinned Flows guide. |
 | Amazon States Language (ASL) | [states-language.net spec](https://states-language.net/spec.html), retrieved 2026-09-11 (no dated revision tag published); see [S1](../observations/S1/README.md). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions, a general workflow engine (not agent-specific), scoped here as a boundary/control probe. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
 | Temporal (Python SDK) | 1.18.0, recorded in [T1](../observations/T1/README.md) ([#15](https://github.com/agent-topology/agent-topology-testbed/issues/15)). | Imperative decorated workflow/activity definitions. Public authoring and registration do not themselves export invocation edges; T1 found no public definition-to-graph API in its bounded review. Source reasoning and execution-history export remain distinct paths, not a framework-wide impossibility claim. |
 | Prefect 3 | 3.6.22, recorded in [P8](../observations/P8/README.md) ([#16](https://github.com/agent-topology/agent-topology-testbed/issues/16)). | Imperative Python-decorated flows/tasks, direct synchronous calls. Static metadata identifies supplied definitions; visualization evaluates flow code; public task-run records retain observed invocation multiplicity and dependencies. |
@@ -89,9 +92,9 @@ model. No cell infers a negative from missing evidence.
   and `crewai.flow.build_flow_structure()` (exported in `crewai.flow.__all__`)
   read the whole declared graph from the class alone, no `kickoff()`:
   [C1](../observations/C1/README.md). Native, source-visible extractability
-  and public, exported extractability both hold here — sharper than
-  Dagster's gap. The nuance: `build_flow_structure()` itself is not mentioned
-  in the pinned docs page, and a router's own possible output labels are only
+  is supported; neither accessor is documented in C1's pinned Flows guide.
+  Export status alone does not establish a documented-public extractor contract.
+  A router's own possible output labels are only
   statically enumerable when the author opts into `emit=`/a `Literal` return
   annotation — otherwise they are execution-only facts, a distinct,
   narrower gap than Q1 (see [C1](../observations/C1/README.md#what-public-definition-inspection-exposes-without-kickoff)).
@@ -175,10 +178,9 @@ model. No cell infers a negative from missing evidence.
 - **CrewAI Flows — partial.** A router's declared downstream label set is
   only statically visible when the author opts into `emit=`/a `Literal`
   return annotation (Q1); the static section is otherwise identical
-  regardless of which label a router selects, and does not say how many
-  listeners a given label triggers — **execution** evidence
-  (`kickoff()`) is what shows a single selected label triggering two
-  listeners at once, or zero: [C1](../observations/C1/README.md#router-cardinality-one-label-two-listeners-cardinality-is-a-runtime-fact).
+  regardless of which label a router selects. Static listener declarations
+  expose label associations, but actual participation needs **execution**
+  evidence (`kickoff()`): one selected label reaches two listeners, or zero: [C1](../observations/C1/README.md#router-cardinality-one-label-two-listeners-cardinality-is-a-runtime-fact).
   One label need not imply one listener, the CrewAI-specific analogue of
   Airflow's and Dagster's multi-target-selection counterexamples above.
 - **ASL — partial.** A `Choice` state's `Choices` list plus `Default` is a
@@ -225,26 +227,23 @@ model. No cell infers a negative from missing evidence.
   a completeness claim about Dagster overall (assets/sensors are out of scope
   here). The normative comparison this caution requires belongs to CrewAI's
   own AND/OR investigation, resolved below, not to Dagster.
-- **CrewAI Flows — support.** `and_()`/`or_()` (`crewai.flow.dsl._conditions`)
-  are a first-class, literal AND/OR distinction from the moment the decorator
-  runs, preserved through both `flow_definition()` and the exported
-  `build_flow_structure()` as a `condition_type` field, and behaviorally
-  distinct at execution: AND fires exactly once, only once every named
-  trigger has completed; OR fires exactly once, as soon as the first named
-  trigger completes, and is not re-armed by a later one outside a
-  router-driven cyclic-flow path: [C1](../observations/C1/README.md#andor-convergence-the-distinction-survives-both-structurally-and-behaviorally).
-  Checked against the upstream normative contract itself
-  ([C1](../observations/C1/README.md#the-upstream-joins-contract-already-models-and-or-is-an-ordinary-edge-relationship)):
-  `agent-topology`'s `joins[]` is already AND-only by construction (no
-  `type`/`mode` field; the Python spec's own docstring and the consuming-guide
-  state "AND convergence" outright), and an OR-style convergence needs no new
-  construct — ordinary independent edges already mean it. **No information
-  loss was reproduced; the F7 hypothesis is withdrawn as unsupported** — see
-  [C1's claim record](../observations/C1/README.md#claim-record). Separately,
-  replicating the pinned docs' own `or_()` example against the pinned
-  installation does not reproduce the docs' claimed output (logger fires once
-  where the docs show twice) — a documentation-versus-execution mismatch, not
-  a contract gap.
+- **CrewAI Flows — support (native capability).** C1's paired static records
+  retain literal AND/OR conditions through `flow_definition()` and the exported
+  `build_flow_structure()`. Neither accessor is documented in the pinned Flows
+  guide. In the saved execution, AND fires once after both sources and never
+  with only `a`; OR fires once before `b` and does not fire again after `b`,
+  including once with only `a`. These are the four fixed inputs, not a universal
+  guarantee about cycles, rearming or races:
+  [C1 results](../observations/C1/README.md#observed-results).
+  **Correction (D4, 2026-09-12):** the former matrix claim that ordinary edges
+  settle OR without information loss is superseded by
+  [F7's contract-grounded disposition](../findings/F7-or-firing-policy/README.md).
+  Target `joins[]` has implicit AND semantics; the original no-semantics
+  hypothesis is withdrawn. Ordinary edges preserve connectivity but do not
+  specify first-trigger/once-only suppression or reset scope. That narrower
+  limitation is supported at `eb0e2d8`; source Q4 support does not certify a
+  lossless target mapping. C1's reported pinned-docs mismatch is separately a
+  framework documentation limitation, not itself a target-format defect.
 - **ASL — partial.** A `Parallel` state's declared semantics — all branches
   declared and run, the state converges or fails as a unit, subject to
   documented `Catch`/`Retry` handling — are cited from the

@@ -1,0 +1,204 @@
+{
+  "checked_at_utc": "2026-09-12T12:20:19Z",
+  "repository": "agent-topology/agent-topology",
+  "source_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "endpoints": [
+    "GET /repos/agent-topology/agent-topology/commits/HEAD",
+    "GET /repos/agent-topology/agent-topology/issues?state=all&per_page=100",
+    "GET /repos/agent-topology/agent-topology/issues/{number}",
+    "GET /repos/agent-topology/agent-topology/pulls/{number}",
+    "GET /repos/agent-topology/agent-topology/releases"
+  ],
+  "issues": [
+    {
+      "number": 94,
+      "title": "Improve topology interpretation from consumer findings",
+      "state": "open",
+      "state_reason": null,
+      "closed_at": null,
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/94"
+    },
+    {
+      "number": 95,
+      "title": "Reconcile and preserve F1\u2013F6 reproduction evidence",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T01:10:10Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/95"
+    },
+    {
+      "number": 96,
+      "title": "Define the experimental consumer-interpretation contract",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T01:12:17Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/96"
+    },
+    {
+      "number": 97,
+      "title": "Emit evidence-backed branch semantics in both producers",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T01:32:46Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/97"
+    },
+    {
+      "number": 98,
+      "title": "Expose opaque subgraphs without dangling graph references",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T02:07:56Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/98"
+    },
+    {
+      "number": 99,
+      "title": "Expose framework sentinel roles through an experimental extension",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T02:23:32Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/99"
+    },
+    {
+      "number": 100,
+      "title": "Distinguish observed graph roots from confirmed execution entry points",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T02:44:50Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/100"
+    },
+    {
+      "number": 101,
+      "title": "Add provenance-preserving join connection helpers to both spec packages",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T02:55:51Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/101"
+    },
+    {
+      "number": 102,
+      "title": "Make ESM-only installation failures actionable",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T11:08:28Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/102"
+    },
+    {
+      "number": 103,
+      "title": "Validate F1\u2013F6 with producer-generated consumer fixtures",
+      "state": "closed",
+      "state_reason": "completed",
+      "closed_at": "2026-09-12T11:21:44Z",
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/103"
+    },
+    {
+      "number": 104,
+      "title": "Prepare beta.3 versions and consumer migration guidance",
+      "state": "open",
+      "state_reason": null,
+      "closed_at": null,
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/104"
+    },
+    {
+      "number": 105,
+      "title": "Qualify beta.3 artifacts on the frozen RC commit",
+      "state": "open",
+      "state_reason": null,
+      "closed_at": null,
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/105"
+    },
+    {
+      "number": 106,
+      "title": "Publish and verify the coordinated beta.3 release",
+      "state": "open",
+      "state_reason": null,
+      "closed_at": null,
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/106"
+    },
+    {
+      "number": 107,
+      "title": "Prepare and deliver the 0.1.0-beta.3 release",
+      "state": "open",
+      "state_reason": null,
+      "closed_at": null,
+      "html_url": "https://github.com/agent-topology/agent-topology/issues/107"
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 108,
+      "title": "add f1-f6 reproduction evidence and skill update",
+      "merged_at": "2026-09-12T00:48:15Z",
+      "merge_commit_sha": "db3b1873841739d3bb2e7968ecb187251116383f",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/108"
+    },
+    {
+      "number": 109,
+      "title": "Add experimental consumer-interpretation contract",
+      "merged_at": "2026-09-12T01:12:15Z",
+      "merge_commit_sha": "67951c789741bf0d07db2d3c6f01384727fadc3d",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/109"
+    },
+    {
+      "number": 110,
+      "title": "emit evidence-backed branch semantics for langgraph producers",
+      "merged_at": "2026-09-12T01:32:45Z",
+      "merge_commit_sha": "957c2bc13fa189fbf3916d0cc658d3b21b24812e",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/110"
+    },
+    {
+      "number": 111,
+      "title": "expose opaque subgraphs",
+      "merged_at": "2026-09-12T02:07:55Z",
+      "merge_commit_sha": "8337c8b4f2ecf61cf302b87e706b25fb88a93d46",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/111"
+    },
+    {
+      "number": 112,
+      "title": "expose framework sentinel roles via extension",
+      "merged_at": "2026-09-12T02:23:31Z",
+      "merge_commit_sha": "f0caceda2cbfa8d43bfb665ccab4e1e4382a82ca",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/112"
+    },
+    {
+      "number": 113,
+      "title": "distinguish graph roots and entry points",
+      "merged_at": "2026-09-12T02:44:49Z",
+      "merge_commit_sha": "cea81d5812593caf813356928738064eaece5171",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/113"
+    },
+    {
+      "number": 114,
+      "title": "Add provenance-preserving join connection helpers",
+      "merged_at": "2026-09-12T02:55:50Z",
+      "merge_commit_sha": "3715dd32a0efc3e7bd500d26d038774d6a37f4e6",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/114"
+    },
+    {
+      "number": 115,
+      "title": "update typescript installation documentation and workflows",
+      "merged_at": "2026-09-12T11:08:27Z",
+      "merge_commit_sha": "23eea4276ba3d196b09cb7dd0878ad588073271c",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/115"
+    },
+    {
+      "number": 116,
+      "title": "Add producer-generated consumer fixtures and regression tests",
+      "merged_at": "2026-09-12T11:21:43Z",
+      "merge_commit_sha": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+      "html_url": "https://github.com/agent-topology/agent-topology/pull/116"
+    }
+  ],
+  "releases": [
+    {
+      "tag_name": "v0.1.0-beta.2",
+      "published_at": "2026-09-11T17:49:49Z",
+      "target_commitish": "cbd2f404a36834fb9ba318500b7832f03ba610da",
+      "html_url": "https://github.com/agent-topology/agent-topology/releases/tag/v0.1.0-beta.2"
+    }
+  ],
+  "reviewed_source_sha256": {
+    "conformance/consumer/README.md": "a958b584fef669a0414052c5e0acf8ec835f8d6e56490a7c714e19e541b687a8",
+    "docs/research/f1-f6-reproduction/README.md": "2f3fe8b2192da7ab50f3ab80fd7bea1a8eb76f1c4f3255f8b59fb3244896d188",
+    "docs/getting-started/typescript.md": "50c5050b1e6b7bad6fd0b915a2730bb714d59bb803ff79c4d39b450e299524c2"
+  }
+}

@@ -45,7 +45,8 @@ contract; none of these probes emits a topology document.
 
 **Historical scope:** F1–F6 began at beta.2/testbed `571e881e6d509b6e26ff8bf14b98e207d12e7ce9`.
 This ledger does not rewrite those artifacts or reconcile all current upstream
-statuses (that is [#30](https://github.com/agent-topology/agent-topology-testbed/issues/30)).
+statuses; the separate [D4 upstream status review](upstream-status.md) now records
+that reconciliation for [#30](https://github.com/agent-topology/agent-topology-testbed/issues/30).
 F7 records beta.2, C1's upstream `3715dd3`, and the pin above separately.
 
 ## Reading the inventory
