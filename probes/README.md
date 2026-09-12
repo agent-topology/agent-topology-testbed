@@ -42,7 +42,7 @@ design seven new ones.
 | CrewAI Flows | 1.15.21, recorded in [C1](../observations/C1/README.md) ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)). | Python `@start`/`@listen`/`@router`-decorated flow methods; a public, no-kickoff `Flow.flow_definition()` classmethod (and the exported `crewai.flow.build_flow_structure()` projection of it) extracts the whole declared graph, including each listener's literal `and_()`/`or_()` `condition_type`, from the class alone. |
 | Amazon States Language (ASL) | [states-language.net spec](https://states-language.net/spec.html), retrieved 2026-09-11 (no dated revision tag published); see [S1](../observations/S1/README.md). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions, a general workflow engine (not agent-specific), scoped here as a boundary/control probe. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
 | Temporal (Python SDK) | 1.18.0, recorded in [T1](../observations/T1/README.md) ([#15](https://github.com/agent-topology/agent-topology-testbed/issues/15)). | Imperative decorated workflow/activity definitions. Public authoring and registration do not themselves export invocation edges; T1 found no public definition-to-graph API in its bounded review. Source reasoning and execution-history export remain distinct paths, not a framework-wide impossibility claim. |
-| Prefect 3 | Untested here; SDK version to be pinned and recorded in [#16](https://github.com/agent-topology/agent-topology-testbed/issues/16). | Python-decorated flows/tasks; structure is inferred from the decorated call graph versus runtime task invocation; not yet probed. |
+| Prefect 3 | 3.6.22, recorded in [P8](../observations/P8/README.md) ([#16](https://github.com/agent-topology/agent-topology-testbed/issues/16)). | Imperative Python-decorated flows/tasks, direct synchronous calls. Static metadata identifies supplied definitions; visualization evaluates flow code; public task-run records retain observed invocation multiplicity and dependencies. |
 | AutoGen SelectorGroupChat | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent group chat; a selector function chooses the next speaker at runtime, not from a pre-declared edge set. |
 | AutoGen GraphFlow | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent flow over an explicitly constructed digraph of agents; a potential positive control against GroupChat-based negative claims. |
 
@@ -60,7 +60,7 @@ model. No cell infers a negative from missing evidence.
 | CrewAI Flows | support | support | partial | support | untested | untested | untested |
 | ASL | support | support | partial | partial | support | partial | partial |
 | Temporal (Python) | partial | partial | untested | untested | untested | partial | partial |
-| Prefect 3 | untested | untested | untested | untested | untested | untested | untested |
+| Prefect 3 | partial | partial | partial | untested | untested | partial | partial |
 | AutoGen SelectorGroupChat | untested | untested | untested | untested | untested | untested | untested |
 | AutoGen GraphFlow | untested | untested | untested | untested | untested | untested | untested |
 
@@ -105,6 +105,12 @@ model. No cell infers a negative from missing evidence.
   public metadata retrieval. No public graph export was found in the bounded,
   pinned-source review: [T1](../observations/T1/README.md#public-api-and-graphexport-search).
 
+- **Prefect 3 — partial.** Public metadata identifies definitions, but no invocation graph requiring
+  no body execution was found in the pinned review. `Flow.visualize()`
+  evaluates flow code before task execution; flow-run graph exports consume execution
+  records.
+  See [P8](../observations/P8/README.md).
+
 ### Q2 — explicit nodes and edges
 
 - **Airflow — support.** Same static sections as Q1 carry typed `task_ids` and
@@ -137,6 +143,11 @@ model. No cell infers a negative from missing evidence.
   Python names. No invocation IDs or edges were extracted. A Worker registration
   inventory does not state which workflow calls which activity:
   [T1](../observations/T1/README.md#observations).
+
+- **Prefect 3 — partial.** Definition names/task keys are explicit. Public task-run
+  UUIDs and `task_inputs` expose repeated invocation nodes and input edges after
+  execution; a supplied task inventory is not selected-flow membership.
+  See [P8](../observations/P8/README.md).
 
 ### Q3 — fan-out selection and execution semantics
 
@@ -176,6 +187,11 @@ model. No cell infers a negative from missing evidence.
   reasoning, not a declared SDK fan-out graph, measured selection, or scheduled
   work. No workflow or activity body was called:
   [T1](../observations/T1/README.md#seven-question-matrix-answers).
+
+- **Prefect 3 — partial.** The same two tasks called in a loop with inputs 0/2 produce
+  0/4 task runs and 0/2 input edges. This measures input-dependent invocation
+  cardinality, not declared fan-out or concurrency.
+  See [P8](../observations/P8/README.md).
 
 ### Q4 — AND/OR convergence semantics
 
@@ -232,6 +248,10 @@ model. No cell infers a negative from missing evidence.
   AND/OR convergence; neither fixture contains a join:
   [T1](../observations/T1/README.md#seven-question-matrix-answers).
 
+- **Prefect 3 — untested.** The linear and repeated A→B pairs have no multi-source join;
+  no AND/OR conclusion follows.
+  See [P8](../observations/P8/README.md).
+
 ### Q5 — opaque nested-graph visibility and boundaries
 
 - **Airflow — partial.** A `TaskGroup`'s membership, qualified task IDs, and
@@ -266,10 +286,14 @@ model. No cell infers a negative from missing evidence.
   API availability alone does not establish nested membership/ports or a static
   opaque graph boundary: [T1](../observations/T1/README.md#seven-question-matrix-answers).
 
+- **Prefect 3 — untested.** No nested flow was executed or statically extracted.
+  Documentary run-graph subflow support does not establish static boundary visibility.
+  See [P8](../observations/P8/README.md).
+
 ### Q6 — interrupt/HITL concepts and structural visibility
 
-**Untested for Airflow, Dagster, CrewAI Flows, Prefect 3, and both
-AutoGen shapes.** No probe among P0–P6 or #13/#16–#17 constructs an interrupt
+**Untested for Airflow, Dagster, CrewAI Flows, and both
+AutoGen shapes.** No probe among P0–P6 or #13/#17 constructs an interrupt
 or human-in-the-loop case; this remains a follow-up candidate for those
 frameworks, not a claim that any of them lacks the concept.
 
@@ -285,6 +309,10 @@ frameworks, not a claim that any of them lacks the concept.
   message handlers; receiving a message can start a handler task. This does not
   locate a before/after interrupt on a static invocation node. T1 adds no HITL
   execution case: [T1](../observations/T1/README.md#seven-question-matrix-answers).
+
+- **Prefect 3 — partial, documentary.** Public pause/resume and typed human input exist.
+  No pause was executed and no static before/after interrupt placement was extracted.
+  See [P8](../observations/P8/README.md).
 
 ### Q7 — stable definition identifiers across runs
 
@@ -318,6 +346,11 @@ frameworks, not a claim that any of them lacks the concept.
   Public Info schemas distinguish workflow type, workflow ID, run ID, and activity
   type/ID, but no runtime values were generated. Two imports establish no
   universal identity stability: [T1](../observations/T1/README.md#seven-question-matrix-answers).
+
+- **Prefect 3 — partial.** Definition names, authored versions and task keys match
+  across two processes. Run IDs and this direct-call path's dynamic keys are generated
+  UUIDs; native records retain them separately. Repeated invocations are not collapsed.
+  See [P8](../observations/P8/README.md).
 
 ## Priority
 
@@ -703,3 +736,14 @@ affected framework and record new provenance.
 uv pip compile probes/airflow/requirements.txt --constraint probes/airflow/constraints-3.11.txt --python-version 3.11.16 --generate-hashes --output-file probes/airflow/requirements.lock
 uv pip compile probes/dagster/requirements.txt --python-version 3.11.16 --generate-hashes --output-file probes/dagster/requirements.lock
 ```
+
+## Prefect definition/runtime boundary (P8)
+
+Prefect 3.6.22 / Python 3.11.16, in a separate environment under
+`probes/boundaries/prefect`. Follow [P8 reproduction](../observations/P8/README.md#reproduction-and-state-isolation)
+for the hash-locked setup, static inspection, two fresh-process local runs,
+normal/optimized verification, and integrity tests. The public test harness uses
+a temporary SQLite database and local API subprocess; no persistent service,
+deployment, or cloud workspace is involved. Native UUID records and normalized
+comparisons remain separate. P8 covers direct synchronous calls with a two-task
+linear flow and loop counts 0/2, not all Prefect programming models or Prefect 2.

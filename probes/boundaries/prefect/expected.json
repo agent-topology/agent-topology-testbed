@@ -1,0 +1,76 @@
+{
+  "static": {
+    "flow_names": [
+      "p8.linear",
+      "p8.loop"
+    ],
+    "task_names": [
+      "p8.a",
+      "p8.b"
+    ],
+    "bodies_entered": []
+  },
+  "cases": {
+    "linear": {
+      "result": [
+        "ab"
+      ],
+      "body_order": [
+        "a",
+        "b"
+      ],
+      "task_names": [
+        "p8.a",
+        "p8.b"
+      ],
+      "dependencies": [
+        [
+          0,
+          1,
+          "value"
+        ]
+      ]
+    },
+    "loop-0": {
+      "result": [],
+      "body_order": [],
+      "task_names": [],
+      "dependencies": []
+    },
+    "loop-2": {
+      "result": [
+        "ab",
+        "ab"
+      ],
+      "body_order": [
+        "a",
+        "b",
+        "a",
+        "b"
+      ],
+      "task_names": [
+        "p8.a",
+        "p8.b",
+        "p8.a",
+        "p8.b"
+      ],
+      "dependencies": [
+        [
+          0,
+          1,
+          "value"
+        ],
+        [
+          2,
+          3,
+          "value"
+        ]
+      ]
+    }
+  },
+  "task_states": [
+    "PENDING",
+    "RUNNING",
+    "COMPLETED"
+  ]
+}
