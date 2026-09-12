@@ -50,3 +50,35 @@ production scheduling, or a universal framework guarantee.
 
 See [P0 records](../observations/P0/README.md) and
 [reproduction commands](../probes/README.md).
+
+## Cross-framework matrix conventions
+
+[The common question matrix](../probes/README.md#common-question-matrix-m1)
+(M1, issue [#12](https://github.com/agent-topology/agent-topology-testbed/issues/12))
+indexes every probe's evidence by seven stable question IDs. These conventions
+apply wherever a probe answers one of those questions:
+
+- Separate **native capability** from **public static extractability**: a fact
+  read through a non-underscore, source-visible accessor is evidence the
+  framework exposes it, not evidence that a documented-public-only extractor
+  can reach it. Record both, and the gap between them, rather than collapsing
+  one into the other — see
+  [P4's `api_coverage`](../observations/P4/README.md#api-coverage-and-bounded-unsupported-inspection).
+- Separate **declared fan-out** (a static, symmetric shape true regardless of
+  which branch a run takes) from **selection cardinality** (what a callback or
+  op config actually chose) and from **scheduled/executed work** (what a
+  scheduler or execution engine actually ran, skipped, or mapped). A declared
+  shape is necessary but never sufficient evidence for the other two — see
+  P1's and P2's evidence-class separation.
+- Separate **structural identifiers** (definition-level IDs, invocation
+  scopes, mapping keys) from **generated run UUIDs** and from
+  **mapped-instance IDs** (`map_index`, dynamic mapping keys). Two runs
+  comparing equal on a structural identifier show it did not change between
+  those two runs; they do not establish that identifier is stable across
+  arbitrary future runs, code changes, or framework versions. Never claim
+  universal identity stability from a byte-identical `cmp` pair alone.
+- Treat a hypothesis label (such as `F7`, reserved for CrewAI's AND/OR
+  investigation) as exactly that — a name for an unresolved claim, not a
+  finding or a confirmed gap. A missing join-mode property in one framework's
+  API does not by itself prove an information gap; check the framework's own
+  normative join semantics before recommending a change.
