@@ -1,0 +1,25 @@
+{
+  "Comment": "S1 fixture: Parallel state with two one-state Pass branches that reuse the same local state name",
+  "StartAt": "RunBoth",
+  "States": {
+    "RunBoth": {
+      "Type": "Parallel",
+      "Branches": [
+        {
+          "StartAt": "Step",
+          "States": {
+            "Step": { "Type": "Pass", "Result": "left", "End": true }
+          }
+        },
+        {
+          "StartAt": "Step",
+          "States": {
+            "Step": { "Type": "Pass", "Result": "right", "End": true }
+          }
+        }
+      ],
+      "Next": "Converge"
+    },
+    "Converge": { "Type": "Pass", "End": true }
+  }
+}

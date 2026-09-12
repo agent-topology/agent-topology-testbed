@@ -1,0 +1,7 @@
+{
+  "Comment": "S1 negative fixture: Next references a state name that does not exist anywhere in the document",
+  "StartAt": "Start",
+  "States": {
+    "Start": { "Type": "Pass", "Next": "Nonexistent" }
+  }
+}
