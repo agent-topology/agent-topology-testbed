@@ -4,8 +4,15 @@ These are internal observation records, not a topology schema or producer API.
 Preserve each framework's identities and native facts without forcing a common
 classification. Historical beta.2 evidence is frozen at
 `571e881e6d509b6e26ff8bf14b98e207d12e7ce9`: keep `findings/`, `gallery/`, and
-the original Airflow files intact. Add new records under `observations/` and link
-corrections explicitly when supported; P0 does not settle historical F1/F3 claims.
+the original Airflow transcripts and trial outputs intact. Add new records under
+`observations/` and link corrections explicitly when supported; P0 does not
+settle historical F1/F3 claims. The one exception is a probe's own unsupported
+classification code: P1 removed the operator-class `exclusive`/`concurrent`
+conclusion from `probes/airflow/airflow_probe.py` and its example comments once
+a counterexample invalidated it, per its explicit correction linked from
+[F1](../findings/F1-fan-out-semantics/README.md). `OUTPUT.txt` still reflects the
+pre-correction script and is kept as the frozen beta.2 transcript, not as current
+script output.
 
 Each record needs:
 

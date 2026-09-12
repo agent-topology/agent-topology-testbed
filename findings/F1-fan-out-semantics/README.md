@@ -99,6 +99,26 @@ The next piece of evidence is the Python LangGraph producer emitting
 published is invalidated — and it is the step that should come before anyone
 proposes a schema change.
 
+## Correction (P1)
+
+The "Cross-framework check" above asserts `router → a,b : exclusive` from
+`BranchPythonOperator`'s operator class alone. [P1](../../observations/P1/README.md)
+(issue [#3](https://github.com/agent-topology/agent-topology-testbed/issues/3))
+tested that claim directly and it does not hold: a `BranchPythonOperator` whose
+callback returns `["a", "b"]` runs both `a` and `b` (`dag.test()`, both task
+instances `success`). Operator class is a static fact; how many targets a given
+run selects is a callback-return fact; which downstream tasks actually execute
+is scheduler evidence. The original check conflated the three, exactly the
+shortcut `AGENTS.md` now names: "No fixture-name, operator-class, or
+return-annotation shortcut establishes runtime semantics."
+
+This does not withdraw F1's core claim — the format still cannot distinguish
+exclusive from concurrent fan-out, and Airflow still resolves that ambiguity for
+its own execution, just not from operator class alone. `probes/airflow/airflow_probe.py`
+and its example DAG were corrected to report the operator-class fact without the
+derived exclusive/concurrent conclusion. `OUTPUT.txt` and `evidence/airflow-probe.txt`
+are left as the original beta.2 transcripts of the pre-correction script.
+
 ## Note on the core field test
 
 The main README's test is *"Would Temporal, Airflow, CrewAI, and LangGraph all be

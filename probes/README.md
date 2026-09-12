@@ -53,6 +53,36 @@ a fresh temporary directory, and removes that state afterwards. Execution first
 runs `python -m airflow db migrate` against its own SQLite database, then
 `dag.test()` at the fixed logical date `2024-01-02T00:00:00Z`.
 
+## Airflow branch/join run (P1)
+
+Same `.venvs/airflow` environment as above; no separate install. Read
+[the branch/join probe](airflow/branch.py) and [P1's question/expected states](../observations/P1/README.md)
+before running.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for case in single multiple none; do
+  for n in 1 2; do
+    .venvs/airflow/bin/python probes/airflow/branch.py --case "$case" --mode static \
+      --output ".probe-runs/branch-$case-static-$n.json" > ".probe-runs/branch-$case-static-$n.log" 2>&1
+    .venvs/airflow/bin/python probes/airflow/branch.py --case "$case" --mode callable \
+      --output ".probe-runs/branch-$case-callable-$n.json" > ".probe-runs/branch-$case-callable-$n.log" 2>&1
+    .venvs/airflow/bin/python probes/airflow/branch.py --case "$case" --mode execution \
+      --output ".probe-runs/branch-$case-$n.json" > ".probe-runs/branch-$case-$n.log" 2>&1
+  done
+  cmp ".probe-runs/branch-$case-static-1.json" ".probe-runs/branch-$case-static-2.json"
+  cmp ".probe-runs/branch-$case-callable-1.json" ".probe-runs/branch-$case-callable-2.json"
+  cmp ".probe-runs/branch-$case-1.json" ".probe-runs/branch-$case-2.json"
+done
+```
+
+Each case builds DAG `p1_branch` with the router's callback hardcoded to that
+case's return value, then isolates state exactly as the P0 Airflow run does.
+`--mode execution` also produces the `static` and `callable` sections; the
+standalone `static`/`callable` modes skip `airflow db migrate` and `dag.test()`
+entirely, so they carry no execution evidence.
+
 ## Dagster setup
 
 ```sh

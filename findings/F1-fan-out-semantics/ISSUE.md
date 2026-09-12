@@ -109,3 +109,11 @@ populating it end to end.
 The natural next step is the Python LangGraph producer emitting
 `x-topology-branch` for real, before any schema change is proposed. Happy to do
 that work if the direction is welcome.
+
+## Correction
+
+The Airflow check above read `exclusive` off operator class alone. A follow-up
+probe (testbed issue #3) found a `BranchPythonOperator` callback returning
+`["a", "b"]` runs both targets — operator class does not establish exclusivity.
+See the "Correction (P1)" section in the linked finding before filing this
+issue upstream as written.

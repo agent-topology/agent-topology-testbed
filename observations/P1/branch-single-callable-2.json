@@ -1,0 +1,60 @@
+{
+  "callable": {
+    "callback_result": "a",
+    "selected_targets_normalized": [
+      "a"
+    ]
+  },
+  "case_id": "P1-airflow-branch-single",
+  "evidence_class": "callable",
+  "framework": "apache-airflow",
+  "lock_sha256": "0c863388ef77d1519e2e58f751b4dac42d16405c3062fed215e8a9199e26713d",
+  "python": "3.11.16",
+  "source_sha256": "74febcc843864a30fd6713301c2fd59d0dd4e38d7b17ba61397de22b56f7d1c0",
+  "static": {
+    "dag_id": "p1_branch",
+    "dependencies": [
+      [
+        "a",
+        "join_all_success"
+      ],
+      [
+        "a",
+        "join_none_failed_min_one_success"
+      ],
+      [
+        "b",
+        "join_all_success"
+      ],
+      [
+        "b",
+        "join_none_failed_min_one_success"
+      ],
+      [
+        "router",
+        "a"
+      ],
+      [
+        "router",
+        "b"
+      ]
+    ],
+    "join_trigger_rules": {
+      "join_all_success": "all_success",
+      "join_none_failed_min_one_success": "none_failed_min_one_success"
+    },
+    "router_downstream_declared": [
+      "a",
+      "b"
+    ],
+    "task_ids": [
+      "a",
+      "b",
+      "join_all_success",
+      "join_none_failed_min_one_success",
+      "router"
+    ]
+  },
+  "temporary_state_removed": true,
+  "version": "2.10.5"
+}
