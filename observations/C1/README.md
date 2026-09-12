@@ -1,6 +1,15 @@
 # C1: CrewAI Flows — router label selection versus listener cardinality, and
 AND/OR convergence
 
+> **Correction/disposition (2026-09-12, issue #27):**
+> [F7 — Unrepresented OR firing policy](../../findings/F7-or-firing-policy/README.md)
+> supersedes the ordinary-edge equivalence and blanket no-loss conclusion below.
+> Implicit AND joins are supported; ordinary edges preserve connectivity but do
+> not establish this probe's first-trigger/once-only OR policy. The original
+> no-semantics hypothesis remains withdrawn. F7 now retains this history and
+> its narrow supported disposition; the ID must not be recycled. Raw records
+> and prior conclusions below are preserved as historical evidence.
+
 Question: can public definition inspection of a CrewAI Flow preserve the
 distinction between `and_()` and `or_()`, and does the existing
 `agent-topology` `joins[]` contract already represent their meaning — without
@@ -214,6 +223,11 @@ independent of and in addition to this probe's own six cases.
 
 ## The upstream joins contract already models AND; OR is an ordinary edge relationship
 
+> **Historical interpretation, corrected by [F7](../../findings/F7-or-firing-policy/README.md#smallest-mapping-and-counterexample).**
+> The AND reading stands. The assertion below that each of `a`/`b` triggers
+> `join` independently does not match the saved once-only `or-both` execution;
+> the contract does not supply the missing suppression rule.
+
 Read at `agent-topology` commit `3715dd32a0efc3e7bd500d26d038774d6a37f4e6`
 (current `main` at investigation time):
 
@@ -238,6 +252,11 @@ independently triggers `join` when it completes; nothing enforces they both
 must).
 
 ## Claim record
+
+> **Historical verdict, superseded by [F7's disposition](../../findings/F7-or-firing-policy/README.md).**
+> The rejected hypothesis and original wording are retained for provenance.
+> The statement below that F7 remains available and that ordinary edges settle
+> all OR meaning is no longer the current conclusion.
 
 **F7 (reserved in [evidence conventions](../../docs/evidence.md#cross-framework-matrix-conventions)
 for this investigation) is withdrawn as unsupported: no counterexample of

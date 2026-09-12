@@ -82,3 +82,6 @@ apply wherever a probe answers one of those questions:
   finding or a confirmed gap. A missing join-mode property in one framework's
   API does not by itself prove an information gap; check the framework's own
   normative join semantics before recommending a change.
+  F7's investigation now has a [published local disposition](../findings/F7-or-firing-policy/README.md):
+  the original no-semantics hypothesis stays withdrawn, while the narrower OR
+  firing-policy limitation is supported. The ID is retained and must not be reused.
