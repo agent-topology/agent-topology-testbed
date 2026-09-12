@@ -1,0 +1,75 @@
+{
+  "contracts": {
+    "beta2": {
+      "commit": "cbd2f404a36834fb9ba318500b7832f03ba610da",
+      "sha256": {
+        "conformance/fixtures/multi-source-join/expected.json": "b4d4b4b63acd151ec3967f20b217bff516fbfc205b557b6b45ab0b35c91b77e3",
+        "conformance/fixtures/multi-source-join/fixture.json": "95ca9794af486aee8ed948d597df794e658b45927dfaf04fe8f1b96d54e6b087",
+        "docs/0.1-contract.md": "8ecfcfbc58515505318db5b4c3e4db2d91bb57f930ff9d9bcae9665bf9a0fcec",
+        "docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md": "bdfb3cf1b045e0258cab6851494d50c6aead67b8bf8401fd16c39631e2194aca",
+        "docs/guides/concepts.md": "2cf18abeeeb3ed323deddc9472d8e33061c34a8b5963a0809905610115fba790",
+        "docs/guides/consuming-documents.md": "82d3b5009d87fcdbdcdd47f78ce43a5c0f5bc932aeee6d41885c3003a374cbaf",
+        "spec/agent-topology.schema.json": "6e98d8b829e9cd3558499abfc2943335d4d0564d21ae1706a0797df4159bf006"
+      }
+    },
+    "c1": {
+      "commit": "3715dd32a0efc3e7bd500d26d038774d6a37f4e6",
+      "sha256": {
+        "conformance/fixtures/multi-source-join/expected.json": "b4d4b4b63acd151ec3967f20b217bff516fbfc205b557b6b45ab0b35c91b77e3",
+        "conformance/fixtures/multi-source-join/fixture.json": "95ca9794af486aee8ed948d597df794e658b45927dfaf04fe8f1b96d54e6b087",
+        "docs/0.1-contract.md": "8ecfcfbc58515505318db5b4c3e4db2d91bb57f930ff9d9bcae9665bf9a0fcec",
+        "docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md": "bdfb3cf1b045e0258cab6851494d50c6aead67b8bf8401fd16c39631e2194aca",
+        "docs/guides/concepts.md": "2cf18abeeeb3ed323deddc9472d8e33061c34a8b5963a0809905610115fba790",
+        "docs/guides/consuming-documents.md": "e11a8312ac10c6854be030a2c42ed7f87c9df7bc2311db21e0ca20c16725e4c6",
+        "packages/python/spec/src/agent_topology/spec/_joins.py": "9b54ff812d5e370a8f7bc94e7fee424fbec2af2961a473a2abea4cf88bc10346",
+        "spec/agent-topology.schema.json": "6e98d8b829e9cd3558499abfc2943335d4d0564d21ae1706a0797df4159bf006",
+        "spec/experimental/interpretation-v1.schema.json": "0e2cf58be4115c251c53b52bf6d92e0bf7fe7a6b86d57bea15231cbe46b49c77"
+      }
+    },
+    "current_2026_09_12": {
+      "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+      "sha256": {
+        "conformance/fixtures/multi-source-join/expected.json": "b4d4b4b63acd151ec3967f20b217bff516fbfc205b557b6b45ab0b35c91b77e3",
+        "conformance/fixtures/multi-source-join/fixture.json": "95ca9794af486aee8ed948d597df794e658b45927dfaf04fe8f1b96d54e6b087",
+        "docs/0.1-contract.md": "8ecfcfbc58515505318db5b4c3e4db2d91bb57f930ff9d9bcae9665bf9a0fcec",
+        "docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md": "bdfb3cf1b045e0258cab6851494d50c6aead67b8bf8401fd16c39631e2194aca",
+        "docs/guides/concepts.md": "2cf18abeeeb3ed323deddc9472d8e33061c34a8b5963a0809905610115fba790",
+        "docs/guides/consuming-documents.md": "e11a8312ac10c6854be030a2c42ed7f87c9df7bc2311db21e0ca20c16725e4c6",
+        "packages/python/spec/src/agent_topology/spec/_joins.py": "9b54ff812d5e370a8f7bc94e7fee424fbec2af2961a473a2abea4cf88bc10346",
+        "spec/agent-topology.schema.json": "6e98d8b829e9cd3558499abfc2943335d4d0564d21ae1706a0797df4159bf006",
+        "spec/experimental/interpretation-v1.schema.json": "0e2cf58be4115c251c53b52bf6d92e0bf7fe7a6b86d57bea15231cbe46b49c77"
+      }
+    }
+  },
+  "evidence_class": "saved-record and contract audit; no new framework execution",
+  "lock_sha256": "75d53c17d94df35e053d601e8ab013bf0919550da165041a8870d190d52e402f",
+  "pair_count": 12,
+  "record_count": 24,
+  "records_sha256": {
+    "observations/C1/c1-and-both-callable-1.json": "a3417e35fa1f333cb9774da3963ff34072ae4b3ef716bd8f084332b1de708386",
+    "observations/C1/c1-and-both-callable-2.json": "a3417e35fa1f333cb9774da3963ff34072ae4b3ef716bd8f084332b1de708386",
+    "observations/C1/c1-and-both-execution-1.json": "8251b78873c41a337520003df407d6e08ce2b8ac1c065c8784ff98137a8722b4",
+    "observations/C1/c1-and-both-execution-2.json": "8251b78873c41a337520003df407d6e08ce2b8ac1c065c8784ff98137a8722b4",
+    "observations/C1/c1-and-both-static-1.json": "8ccf210852261469839d746a189a778400c77f1f6f6bc6605e3c37d52cc51d3c",
+    "observations/C1/c1-and-both-static-2.json": "8ccf210852261469839d746a189a778400c77f1f6f6bc6605e3c37d52cc51d3c",
+    "observations/C1/c1-and-only_a-callable-1.json": "d20999e63ab62499ddded5988020b5be0c31b20e15893ac9875a9c3506587d1e",
+    "observations/C1/c1-and-only_a-callable-2.json": "d20999e63ab62499ddded5988020b5be0c31b20e15893ac9875a9c3506587d1e",
+    "observations/C1/c1-and-only_a-execution-1.json": "4f1c5ec8bfce91a5a4ec94f210b6bd9b7bc0b88b08d1236afbfc9c24bd8a61f7",
+    "observations/C1/c1-and-only_a-execution-2.json": "4f1c5ec8bfce91a5a4ec94f210b6bd9b7bc0b88b08d1236afbfc9c24bd8a61f7",
+    "observations/C1/c1-and-only_a-static-1.json": "fc31fae009b5ab3cac0f695ce80ae1905105d3e59333633ed302eaa67f5d0755",
+    "observations/C1/c1-and-only_a-static-2.json": "fc31fae009b5ab3cac0f695ce80ae1905105d3e59333633ed302eaa67f5d0755",
+    "observations/C1/c1-or-both-callable-1.json": "11ed7a8f40e32da53fd5a9a2cdc0e9cc59a975358d1e2410ceb253249fcc7305",
+    "observations/C1/c1-or-both-callable-2.json": "11ed7a8f40e32da53fd5a9a2cdc0e9cc59a975358d1e2410ceb253249fcc7305",
+    "observations/C1/c1-or-both-execution-1.json": "7d251f7b998e4af16d9534f6e317b76cb64e8fd730f9df872c0e242fd131745e",
+    "observations/C1/c1-or-both-execution-2.json": "7d251f7b998e4af16d9534f6e317b76cb64e8fd730f9df872c0e242fd131745e",
+    "observations/C1/c1-or-both-static-1.json": "1db50c7ac0242386496612785221c13fa311b906bf7809ed470729b2b584dded",
+    "observations/C1/c1-or-both-static-2.json": "1db50c7ac0242386496612785221c13fa311b906bf7809ed470729b2b584dded",
+    "observations/C1/c1-or-only_a-callable-1.json": "d88477928f34159a501d46b8472bf95f34905bfcf5fb00785b4466a9a9ca6ccd",
+    "observations/C1/c1-or-only_a-callable-2.json": "d88477928f34159a501d46b8472bf95f34905bfcf5fb00785b4466a9a9ca6ccd",
+    "observations/C1/c1-or-only_a-execution-1.json": "7bd2a10c38de50899cab97ef3e2b08b9d11e447c4bf0800c03cbc270d1a48ae8",
+    "observations/C1/c1-or-only_a-execution-2.json": "7bd2a10c38de50899cab97ef3e2b08b9d11e447c4bf0800c03cbc270d1a48ae8",
+    "observations/C1/c1-or-only_a-static-1.json": "1b3e94bab4ad0f6d87314daff268025dcf8831bd02f02383ccbc0333eff32ba8",
+    "observations/C1/c1-or-only_a-static-2.json": "1b3e94bab4ad0f6d87314daff268025dcf8831bd02f02383ccbc0333eff32ba8"
+  },
+  "source_sha256": "3caf2e23fc8341f963cf20f9d5859798020b646e7e3085fb5a64fe035ef2c1f9"
+}

@@ -13,8 +13,13 @@ attached. This file is the index.
 | [F4](#f4--join-connections-exist-only-in-joins-never-in-edges) | Join connections absent from `edges[]` | reproduced | not filed |
 | [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Sentinels cannot be hidden neutrally | reproduced | not filed |
 | [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | ESM-only package, unactionable error | reproduced | not filed |
+| [F7](F7-or-firing-policy/) | OR first-trigger/once-only firing policy is unrepresented by ordinary edges; implicit AND is supported. Original “no join semantics” hypothesis withdrawn; C1's blanket edge equivalence corrected. | supported (bounded contract inspection) | [draft](F7-or-firing-policy/ISSUE.md), not filed |
 
-All findings above were observed against `@agent-topology/spec@0.1.0-beta.2`.
+F1–F6 above were observed against `@agent-topology/spec@0.1.0-beta.2`.
+F7 separately compares beta.2, C1's upstream pin `3715dd3`, and current upstream
+`eb0e2d8` (2026-09-12), using CrewAI 1.15.21 records. Its
+[exact mappings and limits](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample)
+preserve rejected claims visibly; F7 is not a reusable hypothesis label.
 
 ## Status lifecycle
 
@@ -25,6 +30,7 @@ trialled     a candidate change is implemented here and its cost measured
 filed        an issue exists upstream
 resolved     upstream changed, or the finding was withdrawn with a reason
 withdrawn    the claim did not survive; the reason stays recorded
+supported    contract inspection and linked observations support a bounded claim
 ```
 
 Two rules that keep this honest:
