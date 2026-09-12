@@ -2,7 +2,9 @@ node_modules/
 .airflow/
 __pycache__/
 *.pyc
-.DS_store
+.venvs/
+.probe-runs/
+.DS_Store
 
 # graft's local graph cache — regenerable, not committed (run `graft build`).
 /graft/

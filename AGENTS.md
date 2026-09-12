@@ -2,31 +2,28 @@
 
 ## Required context
 
-1. Read [ARCHITECTURE.md](ARCHITECTURE.md), [CONVENTIONS.md](CONVENTIONS.md), and
-   [docs/decisions/DECISIONS.md](docs/decisions/DECISIONS.md) before making material changes.
-2. Read the specific ADRs relevant to the change. For upstream integration work,
-   also read [cordboard-upstream-requirements.md](docs/decisions/cordboard-upstream-requirements.md).
-
-Project-wide ADRs live under `docs/decisions`. Follow their existing Markdown
-metadata and update the index when adding or changing a decision. There is no
-`scope: workspace` front-matter convention in this repository.
+Read [README.md](README.md), [evidence conventions](docs/evidence.md), and the
+specific observation or finding relevant to the task before material changes.
+For issue work, also read [issue planning](docs/issue-planning.md) and the parent
+issue's decisions. This repository has no ARCHITECTURE.md, CONVENTIONS.md, or
+ADR index; do not require documents from another project.
 
 ## Project context
 
-Cordboard is a design-only local tool for connecting agent graphs and recording
-their execution. There is no application implementation or build/test setup yet.
-Treat `cord` commands, package layouts, and slice descriptions in the design as
-planned interfaces until they exist in this repository.
+This is agent-topology-testbed: framework probes and a renderer used to gather
+evidence for upstream decisions. It is not Cordboard or an application project.
 
-- The platform consumes manifests, execution APIs, and spans; graph business
-  logic and graph-specific state stay inside the graph.
-- Use public `agent-topology` and `redact-secret` APIs. Their formats and
-  detectors belong upstream; Cordboard policy belongs in `x-cord`.
-- Explicit ADR corrections supersede older examples and HTML artifacts. Check
-  the open documentation issues in `ARCHITECTURE.md` before implementing an
-  affected contract. Do not silently turn conflicting notes into decisions.
-- Preserve existing user work. Documentation edits need reference and
-  consistency checks, not a speculative application build.
+- Framework probes have separate dependencies, use public framework APIs, and
+  produce internal observation records, not agent-topology documents.
+- Keep static inspection, direct callable evaluation, and framework execution
+  evidence distinct. A local execution does not establish universal semantics.
+- Preserve historical beta.2 findings, transcripts, and gallery artifacts at
+  baseline `571e881e6d509b6e26ff8bf14b98e207d12e7ce9`. Add new evidence separately;
+  do not silently rewrite historical claims.
+- Upstream owns topology contracts. No upstream publication or contract change
+  is implied by a local probe task. This testbed does not gate releases.
+- Run only the checks relevant to the change. Framework environments stay
+  isolated; do not add combined heavy-framework CI or speculative app builds.
 
 ## 일 좀 똑바로 하자
 
@@ -97,10 +94,10 @@ preparing issues for implementation. Write all issue and milestone content in
 English; keep ADRs in Korean for now. Use Feature issues directly when one PR is
 sufficient, and add Tasks only for distinct implementation boundaries.
 
-No local feature-gate, issue-resolution, or PR-review workflow skills are
-installed in this repository. Do not assume another project's branch naming,
-commit-subject rules, or PR automation applies. Follow the current task's scope
-and authorization; establish project-specific automation only when it is added.
+Use only workflows explicitly available and authorized for the current task.
+Existing local skills do not establish unrelated package-manager, Cargo, CI,
+or upstream automation requirements. Do not import another repository's skills
+or assume its build setup applies here.
 
 ## Working from a GitHub issue
 
