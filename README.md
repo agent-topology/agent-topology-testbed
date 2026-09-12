@@ -102,6 +102,11 @@ frameworks in one job buys less than it costs.
 
 ## Versions
 
+[E1](observations/E1/README.md) adds 300 generated beta.2 input comparisons,
+structural permutations, minimized counterexamples and a fixed-seed repeat.
+It found full canonical-byte differences for extension numbers ([F8](findings/F8-extension-number-canonicalization/README.md)),
+with equal structure-hash tuples throughout the bounded population.
+
 [V1](observations/V1/README.md) records the retrospective, isolated comparison of
 published beta.1/beta.2 Python and npm spec hashes on nine fixed documents,
 including artifact identities, raw results and a bounded non-finding disposition.

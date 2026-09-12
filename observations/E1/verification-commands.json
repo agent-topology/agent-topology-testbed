@@ -1,0 +1,83 @@
+[
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator/bin/python",
+      "-O",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/generated/verify.py",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/observations/E1/run-a",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/observations/E1/run-b"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 2.055768124999304,
+    "exit": 0,
+    "expected_exit": 0,
+    "stdout": "PASS: 300 base inputs, 600 comparisons, all shrink evaluations and fresh replays reproduce\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator/bin/python",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/generated",
+      "-v"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.28628145800030325,
+    "exit": 0,
+    "expected_exit": 0,
+    "stdout": "",
+    "stderr": "test_algorithm_transition_not_same_algorithm_hash_drift (test_generated.Controls.test_algorithm_transition_not_same_algorithm_hash_drift) ... ok\ntest_altered_adapter_result_fails_cli_under_optimization (test_generated.Controls.test_altered_adapter_result_fails_cli_under_optimization) ... ok\ntest_api_failure_and_incomplete_tuple_are_errors (test_generated.Controls.test_api_failure_and_incomplete_tuple_are_errors) ... ok\ntest_both_rejected_is_not_a_pass (test_generated.Controls.test_both_rejected_is_not_a_pass) ... ok\ntest_canonical_float_difference_is_separate (test_generated.Controls.test_canonical_float_difference_is_separate) ... ok\ntest_invalid_input_outside_population (test_generated.Controls.test_invalid_input_outside_population) ... ok\ntest_one_sided_rejection_retained (test_generated.Controls.test_one_sided_rejection_retained) ... ok\ntest_permutation_leaves_extension_order_untouched (test_generated.Controls.test_permutation_leaves_extension_order_untouched) ... ok\ntest_property_failure_detected (test_generated.Controls.test_property_failure_detected) ... ok\ntest_shrink_preserves_validity_and_signature (test_generated.Controls.test_shrink_preserves_validity_and_signature) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.152s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "probes/published-spec",
+      "-v"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.23491350000040256,
+    "exit": 0,
+    "expected_exit": 0,
+    "stdout": "",
+    "stderr": "test_adapter_error_is_not_rejection (test_compare.ComparisonControls.test_adapter_error_is_not_rejection) ... ok\ntest_algorithm_transition_is_not_hash_drift (test_compare.ComparisonControls.test_algorithm_transition_is_not_hash_drift) ... ok\ntest_canonical_difference_is_not_hash_drift (test_compare.ComparisonControls.test_canonical_difference_is_not_hash_drift) ... ok\ntest_corrupted_expected_hash_exits_one (test_compare.ComparisonControls.test_corrupted_expected_hash_exits_one) ... ok\ntest_missing_repeat_fails (test_compare.ComparisonControls.test_missing_repeat_fails) ... ok\ntest_rejected_input_is_excluded (test_compare.ComparisonControls.test_rejected_input_is_excluded) ... ok\ntest_wrong_identity_fails (test_compare.ComparisonControls.test_wrong_identity_fails) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.173s\n\nOK\n"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator/bin/python",
+      "-O",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/generated/verify.py",
+      "--pair",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/observations/E1/controls/altered-pair.json"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.13251620899973204,
+    "exit": 1,
+    "expected_exit": 1,
+    "stdout": "{\"differences\": [\"structure-hash\"]}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator/bin/python",
+      "-O",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/generated/verify.py",
+      "--pair",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/observations/E1/controls/actual-minimal-pair.json"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.13056183399748988,
+    "exit": 1,
+    "expected_exit": 1,
+    "stdout": "{\"differences\": [\"canonical\"]}\n",
+    "stderr": ""
+  }
+]

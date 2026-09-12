@@ -27,6 +27,7 @@ published package or a fresh local consumer run.
 | [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Core-only sentinel hiding requires framework knowledge; [historical gallery](../gallery/) | beta.2 | Reproduced / improved experimental roles; vendor neutrality remains unproven | [#99](https://github.com/agent-topology/agent-topology/issues/99) closed, [PR #112](https://github.com/agent-topology/agent-topology/pull/112) merged |
 | [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | CommonJS require failure lacks an ESM recovery hint; [package reproduction](upstream-status.md#f6) | beta.2; upstream recheck Node 22.16.0 | Failure reproduced; absent-docs/zero-dependencies claims withdrawn / guidance fixed, synchronous require unsupported | [#102](https://github.com/agent-topology/agent-topology/issues/102) closed, [PR #115](https://github.com/agent-topology/agent-topology/pull/115) merged |
 | [F7](F7-or-firing-policy/README.md) | Ordinary edges do not specify C1's first-trigger/once-only OR policy; [counterexample](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample) | CrewAI 1.15.21; beta.2, `3715dd3`, `eb0e2d8` contracts | Supported, bounded / stronger lossless OR mapping remains unresolved; no-semantics hypothesis withdrawn | [Unposted draft](F7-or-firing-policy/ISSUE.md); no dedicated upstream issue identified in this review |
+| [F8](F8-extension-number-canonicalization/README.md) | Numeric extensions produce different full canonical bytes; [E1](../observations/E1/README.md) retains generated inputs and minimized replays | Published Python 0.1.0b2 / npm 0.1.0-beta.2 | Supported, bounded serialization gap; equal structure hashes / numeric policy remains upstream-owned | Local handoff candidate; not posted or graduated |
 
 [#94](https://github.com/agent-topology/agent-topology/issues/94) is the open
 interpretation **epic**, not a dedicated filing for each finding.
@@ -41,8 +42,10 @@ integrated consumer evidence. These cross-cutting relationships do not settle F7
 The [47-claim ledger](completed-cohort-dispositions.md) routes all ten completed
 P0–P6/C1/S1/T1 groups to findings, corrections, rejected hypotheses, bounded
 limitations or precise follow-up candidates. F7 is the only distinct new finding
-from that cohort; its withdrawn original hypothesis retains the ID. No F8 is
-allocated. The [seven-question matrix](../probes/README.md#common-question-matrix-m1)
+from that cohort; its withdrawn original hypothesis retains the ID. That cohort
+allocated no F8; the separate published-contract investigation now records
+[F8](F8-extension-number-canonicalization/README.md) from E1.
+The [seven-question matrix](../probes/README.md#common-question-matrix-m1)
 records source capability, not automatic target-format representability.
 
 [Remaining gaps](upstream-status.md#remaining-evidence-and-follow-ups) include

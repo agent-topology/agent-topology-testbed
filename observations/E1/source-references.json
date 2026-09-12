@@ -1,0 +1,32 @@
+[
+  {
+    "path": "spec/agent-topology.schema.json",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/agent-topology.schema.json",
+    "sha256": "6e98d8b829e9cd3558499abfc2943335d4d0564d21ae1706a0797df4159bf006"
+  },
+  {
+    "path": "docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md",
+    "sha256": "bdfb3cf1b045e0258cab6851494d50c6aead67b8bf8401fd16c39631e2194aca"
+  },
+  {
+    "path": "packages/typescript/spec/tests/contract.test.mjs",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/spec/tests/contract.test.mjs",
+    "sha256": "0d81c5d8fffcb881810c7c8bc424e3636f7adc1f765c1ed3a36dad90f1700fab"
+  },
+  {
+    "path": "packages/python/spec/tests/test_canonical.py",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/spec/tests/test_canonical.py",
+    "sha256": "43113725ca4f48567a58c6f75cba4e6cda1de22930eaab723013a5682cb8d465"
+  },
+  {
+    "path": "docs/0.1-contract.md",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/0.1-contract.md",
+    "sha256": "8ecfcfbc58515505318db5b4c3e4db2d91bb57f930ff9d9bcae9665bf9a0fcec"
+  }
+]
