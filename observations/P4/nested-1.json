@@ -1,0 +1,224 @@
+{
+  "api_coverage": {
+    "boundary_input_output_mappings": {
+      "attempted_method": "GraphDefinition.input_mappings/output_mappings; InputMapping and OutputMapping fields",
+      "limitation": "Mapping endpoints are local names. Qualified paths are assembled from their observed invocation scope; discovering that scope uses source-visible nodes.",
+      "status": "observed_public"
+    },
+    "consumer_inputs_results_and_scoped_outputs": {
+      "attempted_method": "execute_in_process; ExecuteInProcessResult.output_for_node/output_value; all_events",
+      "limitation": "One successful required-input case, in-process only; no universal barrier, failure/skip policy, or concurrency conclusion.",
+      "status": "observed_public_in_execution_mode"
+    },
+    "invocations_membership_and_definition_reuse": {
+      "attempted_method": "GraphDefinition.nodes; Node.name; Node.definition; GraphDefinition.name",
+      "limitation": "nodes and Node accessors are non-underscore source-visible APIs, not documented public enumeration APIs or a promised compatibility surface.",
+      "status": "source_visible_only"
+    },
+    "parent_and_internal_dependencies": {
+      "attempted_method": "GraphDefinition.dependencies; NodeInvocation.name/alias; DependencyDefinition.node/output",
+      "limitation": "dependencies is a non-underscore property, not a documented public getter. Documented-public-only dependency readback remains unsupported by this attempt.",
+      "status": "source_visible_only"
+    }
+  },
+  "assertions": {
+    "execution": "exact equality with independent EXPECTED_EXECUTION",
+    "static": "exact equality with independent EXPECTED_STATIC"
+  },
+  "case_id": "P4-dagster-nested",
+  "evidence_class": "execution",
+  "execution": {
+    "graph_output": {
+      "left": 20,
+      "right": 30,
+      "sum": 50
+    },
+    "outputs": {
+      "consume": {
+        "left": 20,
+        "right": 30,
+        "sum": 50
+      },
+      "left": 20,
+      "left.finish": 20,
+      "left.seed": 2,
+      "right": 30,
+      "right.finish": 30,
+      "right.seed": 3
+    },
+    "step_failure_keys": [],
+    "step_skipped_keys": [],
+    "step_success_keys": [
+      "consume",
+      "left.finish",
+      "left.seed",
+      "right.finish",
+      "right.seed"
+    ],
+    "success": true
+  },
+  "framework": "dagster",
+  "limitations": [
+    "Source-visible enumeration is not a documented public compatibility guarantee.",
+    "No callable evaluation, arbitrary-depth traversal, or universal runtime/concurrency claim."
+  ],
+  "lock_sha256": "838c90c91336b78e6f86acce7d3563200b1edd41ec3aaab7ff5d43b13aa564b5",
+  "minimal_input": {
+    "execution_input_values": {
+      "left_seed": 1,
+      "right_seed": 2
+    },
+    "graph": "two aliases of one two-op child feeding one two-input consumer"
+  },
+  "python": "3.11.16",
+  "question": "Which nested invocation identities and boundaries are observable, and what does a two-input consumer receive in one local execution?",
+  "source_sha256": "a6d2e434868051d94d52f6613dc4599869e2023e3800ae3234501d21a898d9e6",
+  "static": {
+    "dependencies": {
+      "left": [
+        [
+          "left.seed",
+          "result",
+          "left.finish",
+          "value"
+        ]
+      ],
+      "p4_nested": [
+        [
+          "left",
+          "result",
+          "consume",
+          "left"
+        ],
+        [
+          "right",
+          "result",
+          "consume",
+          "right"
+        ]
+      ],
+      "right": [
+        [
+          "right.seed",
+          "result",
+          "right.finish",
+          "value"
+        ]
+      ]
+    },
+    "graph_name": "p4_nested",
+    "input_mappings": {
+      "left": [
+        [
+          "value",
+          "left.seed",
+          "value",
+          null
+        ]
+      ],
+      "p4_nested": [
+        [
+          "left_seed",
+          "left",
+          "value",
+          null
+        ],
+        [
+          "right_seed",
+          "right",
+          "value",
+          null
+        ]
+      ],
+      "right": [
+        [
+          "value",
+          "right.seed",
+          "value",
+          null
+        ]
+      ]
+    },
+    "invocations": [
+      [
+        "consume",
+        "consume",
+        "op"
+      ],
+      [
+        "left",
+        "child",
+        "graph"
+      ],
+      [
+        "left.finish",
+        "finish",
+        "op"
+      ],
+      [
+        "left.seed",
+        "seed",
+        "op"
+      ],
+      [
+        "right",
+        "child",
+        "graph"
+      ],
+      [
+        "right.finish",
+        "finish",
+        "op"
+      ],
+      [
+        "right.seed",
+        "seed",
+        "op"
+      ]
+    ],
+    "membership": {
+      "left": [
+        "left.finish",
+        "left.seed"
+      ],
+      "p4_nested": [
+        "consume",
+        "left",
+        "right"
+      ],
+      "right": [
+        "right.finish",
+        "right.seed"
+      ]
+    },
+    "output_mappings": {
+      "left": [
+        [
+          "result",
+          "left.finish",
+          "result",
+          false
+        ]
+      ],
+      "p4_nested": [
+        [
+          "result",
+          "consume",
+          "result",
+          false
+        ]
+      ],
+      "right": [
+        [
+          "result",
+          "right.finish",
+          "result",
+          false
+        ]
+      ]
+    },
+    "same_child_definition": true
+  },
+  "temporary_state_removed": true,
+  "version": "1.13.22"
+}

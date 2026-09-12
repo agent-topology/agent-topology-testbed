@@ -164,6 +164,35 @@ the P0 Dagster run does (`DagsterInstance.ephemeral(tempdir=home)`, fresh
 standalone `static` mode never calls `execute_in_process()`, so it carries no
 execution evidence.
 
+## Dagster nested boundaries/convergence run (P4)
+
+Use the same isolated Dagster setup and unchanged lock above. Read
+[the nested input and literal expectations](dagster/nested.py) and
+[P4's question/API limitations](../observations/P4/README.md) first.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for n in 1 2; do
+  .venvs/dagster/bin/python probes/dagster/nested.py --mode static \
+    --output ".probe-runs/nested-static-$n.json" > ".probe-runs/nested-static-$n.log" 2>&1
+  .venvs/dagster/bin/python probes/dagster/nested.py --mode execution \
+    --output ".probe-runs/nested-$n.json" > ".probe-runs/nested-$n.log" 2>&1
+done
+cmp .probe-runs/nested-static-1.json .probe-runs/nested-static-2.json
+cmp .probe-runs/nested-1.json .probe-runs/nested-2.json
+.venvs/dagster/bin/python probes/dagster/test_nested.py
+```
+
+Graph `p4_nested` invokes the same two-op child as `left` and `right`, with
+top-level inputs `1` and `2`, then passes both outputs to `consume`. Five op
+steps execute; the two graph invocations have mapped outputs, not separate op
+step states. The standalone static mode never creates or executes a job.
+Execution uses a fresh temporary home and an ephemeral instance, as in P0/P2.
+`test_nested.py` checks that identity/edge loss, a crossed boundary mapping,
+wrong execution input, and an unsupported version exit nonzero under `-O`;
+it also prevents execution entry points in a standalone static run.
+
 ## Failure interpretation
 
 All commands must exit zero before records count as evidence. Assertions raise
