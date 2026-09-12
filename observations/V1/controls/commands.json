@@ -1,0 +1,64 @@
+[
+  {
+    "command": [
+      "python3",
+      "-O",
+      "probes/published-spec/compare.py",
+      "observations/V1/run",
+      "--expected",
+      "observations/V1/controls/corrupted-expected.json",
+      "--report",
+      "observations/V1/controls/corrupted-comparison.json"
+    ],
+    "exit": 1,
+    "stdout": "{\"rejected\": 0, \"hash_disagreements\": 4, \"algorithm_transitions\": 0, \"canonical_differences\": 0, \"comparisons\": 36}\n",
+    "stderr": "",
+    "recorded_at": "2026-09-12T12:34:29.958086+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "probes/published-spec",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_adapter_error_is_not_rejection (test_compare.ComparisonControls.test_adapter_error_is_not_rejection) ... ok\ntest_algorithm_transition_is_not_hash_drift (test_compare.ComparisonControls.test_algorithm_transition_is_not_hash_drift) ... ok\ntest_canonical_difference_is_not_hash_drift (test_compare.ComparisonControls.test_canonical_difference_is_not_hash_drift) ... ok\ntest_corrupted_expected_hash_exits_one (test_compare.ComparisonControls.test_corrupted_expected_hash_exits_one) ... ok\ntest_missing_repeat_fails (test_compare.ComparisonControls.test_missing_repeat_fails) ... ok\ntest_rejected_input_is_excluded (test_compare.ComparisonControls.test_rejected_input_is_excluded) ... ok\ntest_wrong_identity_fails (test_compare.ComparisonControls.test_wrong_identity_fails) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.171s\n\nOK\n",
+    "recorded_at": "2026-09-12T12:34:30.191132+00:00"
+  },
+  {
+    "command": [
+      "node",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "v22.16.0\n",
+    "stderr": "",
+    "recorded_at": "2026-09-12T12:34:30.208483+00:00"
+  },
+  {
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "11.4.1\n",
+    "stderr": "",
+    "recorded_at": "2026-09-12T12:34:30.273144+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "Python 3.14.7\n",
+    "stderr": "",
+    "recorded_at": "2026-09-12T12:34:30.281580+00:00"
+  }
+]

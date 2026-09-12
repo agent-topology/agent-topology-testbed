@@ -1,0 +1,87 @@
+{
+  "source_revision": "0e127d84d77904dd0a909fab0ea58862282ceae8",
+  "recorded_before_installation_at": "2026-09-12T12:30:43.325118+00:00",
+  "inputs": {
+    "conditional-routing.json": {
+      "sha256": "9510ca558343c3d23cf8b7fc31d15ee3867b771889c9c592a0a8280ec5309abe",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "3726e22eeabf0574d5719fbf0d929e9be6f335b4e7e740c1182b03080136ae5c"
+      },
+      "source": "conformance/fixtures/conditional-routing/expected.json"
+    },
+    "interrupt-before.json": {
+      "sha256": "a0ab7e634b5ed73fd4fbb0b457474371ad3abd21485863b2a6f2c16aa69dad5e",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "8ade0b21e872d211b66ae58c017bb6de3e125e011616c419491fa3515dbd9364"
+      },
+      "source": "conformance/fixtures/interrupt-before/expected.json"
+    },
+    "linear-flow.json": {
+      "sha256": "738c4408d912b3844a068013099ed1eb2cbf9e20246beaf522954075f734d290",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "c20e3b57730a76f8994e6fe62b3d1f6538e1f3ddb0b36f6a9aa77d7ee6516b75"
+      },
+      "source": "conformance/fixtures/linear-flow/expected.json"
+    },
+    "loop.json": {
+      "sha256": "c8b9445427a00806e5e4857a2a8ab0c2ddaf0a9c94333fd97f4c5970d350e661",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "aefffb433065a52fadc55c3c9a748542ec7fe2a9d037f3716af931f489370af4"
+      },
+      "source": "conformance/fixtures/loop/expected.json"
+    },
+    "minimal.json": {
+      "sha256": "cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "source": "locally authored empty graph; independent SHA-256 of compact sorted {graphs:[graph]}"
+    },
+    "multi-source-join.json": {
+      "sha256": "b4d4b4b63acd151ec3967f20b217bff516fbfc205b557b6b45ab0b35c91b77e3",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "7349a60932bf7e969a6295ed586620989ed86a0cf84a13a205b1f707c07b39eb"
+      },
+      "source": "conformance/fixtures/multi-source-join/expected.json"
+    },
+    "nested-subgraph.json": {
+      "sha256": "3a2cb045452517b8fb3aa26392168003965b76732f02add9e7087bf90885c3fa",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "405323b5a06db1fe358b1094077c442785ec605e065655dda192b424b9663b50"
+      },
+      "source": "conformance/fixtures/nested-subgraph/expected.json"
+    },
+    "parallel-fanout.json": {
+      "sha256": "3d9f67ce2a32fa0609fc90da6ff70751afd55708b84c09636b67f5605115b779",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0b4f89b5f118775c55b16ed19e088bb92b058f651b066e60ed238c1c6548afed"
+      },
+      "source": "conformance/fixtures/parallel-fanout/expected.json"
+    },
+    "unknown-routing-targets.json": {
+      "sha256": "b0822fb3a22b48fcc06038c18dcd8526f943fd7ffd36319eb4cafcc4b921ace7",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "00da965b2172598b239ab27d7a48c105b3a9d815ac139e7f629fa00e23f057b8"
+      },
+      "source": "conformance/fixtures/unknown-routing-targets/expected.json"
+    }
+  }
+}

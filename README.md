@@ -101,6 +101,10 @@ frameworks in one job buys less than it costs.
 
 ## Versions
 
+[V1](observations/V1/README.md) records the retrospective, isolated comparison of
+published beta.1/beta.2 Python and npm spec hashes on nine fixed documents,
+including artifact identities, raw results and a bounded non-finding disposition.
+
 Findings are recorded against a specific release and rot without one. The
 historical baseline at commit
 `571e881e6d509b6e26ff8bf14b98e207d12e7ce9` was recorded against:
