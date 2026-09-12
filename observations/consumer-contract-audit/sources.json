@@ -1,0 +1,340 @@
+[
+  {
+    "id": "R-AUTH",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/0.1-contract.md",
+    "local_path": "sources/docs/0.1-contract.md",
+    "lines": [
+      8,
+      12
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/0.1-contract.md#L8-L12",
+    "quote": "The checked-in [`agent-topology.schema.json`](../spec/agent-topology.schema.json) is\nthe authority for the document shape. The shared\n[`conformance/fixtures`](../conformance/fixtures) are the authority for its graph\nmeanings. The [contract README](../spec/README.md) describes the validation API and\nthe complete field-level canonical and hash projection.",
+    "scope": "Authority assignment; no invented precedence between conflicting semantic rules."
+  },
+  {
+    "id": "R-SHAPE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "spec/agent-topology.schema.json",
+    "local_path": "sources/spec/agent-topology.schema.json",
+    "lines": [
+      1,
+      47
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/agent-topology.schema.json#L1-L47",
+    "quote": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"agent-topology.schema.json\",\n  \"title\": \"Agent Topology Document\",\n  \"description\": \"The provisional v0.1 contract for a derived agent topology document.\",\n  \"type\": \"object\",\n  \"required\": [\n    \"topologyVersion\",\n    \"provenance\",\n    \"producerLimitations\",\n    \"structureHash\",\n    \"graphs\",\n    \"completeness\"\n  ],\n  \"properties\": {\n    \"topologyVersion\": {\n      \"const\": \"0.1\",\n      \"description\": \"Version of this document contract; independent of package and hash versions.\"\n    },\n    \"provenance\": {\n      \"$ref\": \"#/$defs/provenance\"\n    },\n    \"producerLimitations\": {\n      \"type\": \"array\",\n      \"description\": \"Producer-wide blind spots that do not make this document incomplete.\",\n      \"items\": {\n        \"$ref\": \"#/$defs/producerLimitation\"\n      }\n    },\n    \"structureHash\": {\n      \"$ref\": \"#/$defs/structureHash\"\n    },\n    \"graphs\": {\n      \"type\": \"array\",\n      \"minItems\": 1,\n      \"items\": {\n        \"$ref\": \"#/$defs/graph\"\n      }\n    },\n    \"completeness\": {\n      \"$ref\": \"#/$defs/completeness\"\n    }\n  },\n  \"patternProperties\": {\n    \"^x-[a-z0-9][a-z0-9._-]*$\": true\n  },\n  \"additionalProperties\": false,",
+    "scope": "Core top-level shape and opaque extension boundary; remaining definitions retained in the same file."
+  },
+  {
+    "id": "R-STRUCT",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "spec/agent-topology.schema.json",
+    "local_path": "sources/spec/agent-topology.schema.json",
+    "lines": [
+      170,
+      238
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/agent-topology.schema.json#L170-L238",
+    "quote": "    \"graphStructure\": {\n      \"type\": \"object\",\n      \"required\": [\"nodes\", \"edges\", \"joins\", \"entryNodeIds\", \"exitNodeIds\"],\n      \"properties\": {\n        \"nodes\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"$ref\": \"#/$defs/node\"\n          }\n        },\n        \"edges\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"$ref\": \"#/$defs/edge\"\n          }\n        },\n        \"joins\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"$ref\": \"#/$defs/join\"\n          }\n        },\n        \"entryNodeIds\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"$ref\": \"#/$defs/identifier\"\n          },\n          \"uniqueItems\": true\n        },\n        \"exitNodeIds\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"$ref\": \"#/$defs/identifier\"\n          },\n          \"uniqueItems\": true\n        }\n      },\n      \"patternProperties\": {\n        \"^x-[a-z0-9][a-z0-9._-]*$\": true\n      },\n      \"additionalProperties\": false\n    },\n    \"node\": {\n      \"type\": \"object\",\n      \"required\": [\"id\"],\n      \"properties\": {\n        \"id\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"type\": {\n          \"type\": \"string\",\n          \"minLength\": 1\n        },\n        \"subgraphId\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"interrupts\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"enum\": [\"before\", \"after\"]\n          },\n          \"uniqueItems\": true\n        }\n      },\n      \"patternProperties\": {\n        \"^x-[a-z0-9][a-z0-9._-]*$\": true\n      },\n      \"additionalProperties\": false\n    },",
+    "scope": "Required collections and optional materialized subgraph reference."
+  },
+  {
+    "id": "R-CONNECTION",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "spec/agent-topology.schema.json",
+    "local_path": "sources/spec/agent-topology.schema.json",
+    "lines": [
+      239,
+      284
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/agent-topology.schema.json#L239-L284",
+    "quote": "    \"edge\": {\n      \"type\": \"object\",\n      \"required\": [\"id\", \"source\", \"target\", \"kind\"],\n      \"properties\": {\n        \"id\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"source\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"target\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"kind\": {\n          \"enum\": [\"direct\", \"conditional\"]\n        }\n      },\n      \"patternProperties\": {\n        \"^x-[a-z0-9][a-z0-9._-]*$\": true\n      },\n      \"additionalProperties\": false\n    },\n    \"join\": {\n      \"type\": \"object\",\n      \"required\": [\"id\", \"sources\", \"target\"],\n      \"properties\": {\n        \"id\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"sources\": {\n          \"type\": \"array\",\n          \"minItems\": 2,\n          \"uniqueItems\": true,\n          \"items\": {\n            \"$ref\": \"#/$defs/identifier\"\n          }\n        },\n        \"target\": {\n          \"$ref\": \"#/$defs/identifier\"\n        }\n      },\n      \"patternProperties\": {\n        \"^x-[a-z0-9][a-z0-9._-]*$\": true\n      },\n      \"additionalProperties\": false\n    },",
+    "scope": "Edge fields/kinds and unique multi-source join shape."
+  },
+  {
+    "id": "R-GAPSHAPE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "spec/agent-topology.schema.json",
+    "local_path": "sources/spec/agent-topology.schema.json",
+    "lines": [
+      285,
+      339
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/agent-topology.schema.json#L285-L339",
+    "quote": "    \"completeness\": {\n      \"type\": \"object\",\n      \"required\": [\"status\", \"gaps\"],\n      \"properties\": {\n        \"status\": {\n          \"enum\": [\"complete\", \"incomplete\"]\n        },\n        \"gaps\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"$ref\": \"#/$defs/gap\"\n          }\n        }\n      },\n      \"patternProperties\": {\n        \"^x-[a-z0-9][a-z0-9._-]*$\": true\n      },\n      \"additionalProperties\": false\n    },\n    \"gap\": {\n      \"type\": \"object\",\n      \"required\": [\"code\", \"message\", \"element\"],\n      \"properties\": {\n        \"code\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"message\": {\n          \"type\": \"string\",\n          \"minLength\": 1\n        },\n        \"element\": {\n          \"$ref\": \"#/$defs/elementReference\"\n        }\n      },\n      \"patternProperties\": {\n        \"^x-[a-z0-9][a-z0-9._-]*$\": true\n      },\n      \"additionalProperties\": false\n    },\n    \"elementReference\": {\n      \"type\": \"object\",\n      \"required\": [\"graphId\", \"kind\", \"id\"],\n      \"properties\": {\n        \"graphId\": {\n          \"$ref\": \"#/$defs/identifier\"\n        },\n        \"kind\": {\n          \"enum\": [\"graph\", \"node\", \"edge\", \"join\"]\n        },\n        \"id\": {\n          \"$ref\": \"#/$defs/identifier\"\n        }\n      },\n      \"additionalProperties\": false\n    }",
+    "scope": "Completeness, gap records and graph-scoped element references."
+  },
+  {
+    "id": "R-VALIDATE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "spec/README.md",
+    "local_path": "sources/spec/README.md",
+    "lines": [
+      94,
+      97
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/README.md#L94-L97",
+    "quote": "JSON Schema validates the document shape and extension boundary. The repository\nvalidator additionally checks identifier uniqueness, node/subgraph references,\ngap element references, and the completeness invariant:\n",
+    "scope": "Document validation adds identity, reference and completeness checks to schema shape."
+  },
+  {
+    "id": "R-MEANING",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/guides/concepts.md",
+    "local_path": "sources/docs/guides/concepts.md",
+    "lines": [
+      26,
+      45
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/guides/concepts.md#L26-L45",
+    "quote": "Each document contains one or more graphs. Inside each graph's `structure`:\n\n| Field | Meaning |\n| --- | --- |\n| `nodes` | Identified workflow elements; may carry a type or static interrupt locations |\n| `edges` | Direct or conditional connections from one node to another |\n| `joins` | A declared connection from several source nodes to one target |\n| `entryNodeIds` | Entry points recorded for the extracted structure |\n| `exitNodeIds` | Terminal points recorded for the extracted structure |\n\nA join with `sources: [\"left\", \"right\"]` is distinct from two independent edges\ninto the same target. Loops are cycles in the edge structure. A conditional edge\ndoes not establish whether destinations are alternatives or all execute, nor how\nmany runtime tasks a fan-out produces.\n\nIdentifiers are scoped to their graph; use `(graphId, nodeId)` to correlate nodes.\nThe current producers use `main` as the root graph ID and retain `__start__` and\n`__end__`. Sentinel markers, traversal depth, and framework names live in\n`x-langgraph`. Consumers should tolerate extensions without treating them as core\nfacts.",
+    "scope": "Structural meanings, graph scope and limits of conditional edges."
+  },
+  {
+    "id": "R-NESTING",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/0.1-contract.md",
+    "local_path": "sources/docs/0.1-contract.md",
+    "lines": [
+      27,
+      35
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/0.1-contract.md#L27-L35",
+    "quote": "Multi-source joins are distinct from several independent incoming edges. The\nschema can link separately described subgraphs with `subgraphId`; opaque\nsubgraphs do not invent contents. The current LangGraph producers instead flatten\ndrawable expansion into the root graph. Current source records an\n`expanded-subgraph-metadata` gap when children are expanded because their\ndeclarations are not fully inspected; this correction is\n[unreleased](../CHANGELOG.md#unreleased). Static interrupt locations may be core\nnode facts. LangGraph-specific facts, including requested traversal depth, remain\nunder `x-langgraph`.",
+    "scope": "Separate subgraph references and opaque contents."
+  },
+  {
+    "id": "R-COMPLETE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/0.1-contract.md",
+    "local_path": "sources/docs/0.1-contract.md",
+    "lines": [
+      65,
+      79
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/0.1-contract.md#L65-L79",
+    "quote": "### Completeness\n\nProducer limitations and gaps make different claims:\n\n- A producer limitation names a category that a producer cannot observe in\n  principle. It does not make an individual document incomplete.\n- A gap records an unknown in the graph being described and identifies the affected\n  graph element. A document is `complete` exactly when its `gaps` array is empty.\n\nFor example, dynamically raised interrupts are a current LangGraph producer\nlimitation. A router whose destinations were not declared creates an\n`unknown-routing-targets` gap on that router and makes that document incomplete.\nPython callers may use `strict=True` to receive `IncompleteTopologyError` for gaps;\nthe exception retains the canonical incomplete document. Producer limitations alone\ndo not make strict extraction fail.",
+    "scope": "Producer limitation versus local gap; completeness follows gap cardinality."
+  },
+  {
+    "id": "R-PRESENT",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/guides/concepts.md",
+    "local_path": "sources/docs/guides/concepts.md",
+    "lines": [
+      55,
+      69
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/guides/concepts.md#L55-L69",
+    "quote": "## Two kinds of uncertainty\n\n`producerLimitations` records categories the producer cannot observe in principle.\nFor example, an interrupt raised inside a node function is invisible to static\ninspection. These limitations do not make every document incomplete.\n\n`completeness.gaps` records unknowns for this particular graph. Each gap identifies\nan affected graph, node, edge, or join. An `unknown-routing-targets` gap names the\nrouter whose destinations could not be determined. Completeness is `complete`\nexactly when the gap list is empty.\n\nAlways present both kinds of uncertainty. `complete` means no recorded\ngraph-specific gaps at the requested scope; it does not prove that all runtime\nbehavior is known or that every possible blind spot was detected. In particular,\nopaque children are not evidence about their internals.",
+    "scope": "Present both uncertainty categories without claiming exhaustive knowledge."
+  },
+  {
+    "id": "R-LIMIT",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0002-record-what-could-not-be-observed.md",
+    "local_path": "sources/docs/decisions/0002-record-what-could-not-be-observed.md",
+    "lines": [
+      75,
+      79
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0002-record-what-could-not-be-observed.md#L75-L79",
+    "quote": "- **Assigning severity to gaps.** Whether an unknown region is acceptable\n  depends on the consumer, and there is one consumer today.\n- **Guaranteeing that the gap list is exhaustive.** We record blind spots we\n  know about. Claiming to know all of them would be the same overconfidence this\n  decision exists to avoid.",
+    "scope": "No gap severity or exhaustive-blind-spot guarantee."
+  },
+  {
+    "id": "R-JOIN",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/guides/consuming-documents.md",
+    "local_path": "sources/docs/guides/consuming-documents.md",
+    "lines": [
+      132,
+      142
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/guides/consuming-documents.md#L132-L142",
+    "quote": "The helper returns one fresh `{joinId, source, target}` record per join source,\nsorted first by `joinId`, then by `source`, using lexicographic Unicode code point\norder (shorter prefixes first, without normalization or locale collation). Empty\njoins produce an empty list. Input objects and arrays are not mutated.\n\nConsumers must read both `structure.edges` and `structure.joins`. Derived links\nretain their join identity even when endpoints coincide with another join or a\ndirect edge. They describe the original join's AND convergence: all its sources\nare required. They do not imply independent edge execution. Keep them separate\nfrom ordinary edges; no ordinary edge `id` or `kind` is assigned. Validate the\ncontaining document at the input boundary; the helper does not validate again.",
+    "scope": "One provenance-preserving connection per join source; AND, not independent execution."
+  },
+  {
+    "id": "R-EXT-AUTH",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      48,
+      76
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L48-L76",
+    "quote": "### Wire shape and ownership\n\nThe separate [extension schema](../../spec/experimental/interpretation-v1.schema.json)\nis normative for shape; this ADR is normative for meaning and evidence.\nIt is not referenced by the core schema or shipped as a new public validator.\nOnly `graphs[i][\"x-topology-interpretation\"]` is a recognized placement:\n\n```json\n{\n  \"version\": \"1\",\n  \"traversalDepth\": 0,\n  \"nodes\": [\n    {\n      \"nodeId\": \"router\",\n      \"branch\": {\"status\": \"unknown\", \"reason\": \"selection-not-observable\"}\n    }\n  ]\n}\n```\n\n`version` is the extension revision, independent of package, topology, and hash\nversions. `traversalDepth` is the nonnegative requested extraction depth for this\nsnapshot, not a promise about how far expansion succeeded. Each record refers\nto exactly one visible node in its containing graph. Records are unique and\nsorted by Unicode code point order of `nodeId`. Omit records without facts.\nThe record's optional `branch`, `subgraph`, `sentinel`, and `entry` fields are\nowned respectively by T3, T4, T5, and T6. Tasks merge their facts into the same\nrecord; they must not replace other Tasks' fields. Nested shapes are closed in\nrevision 1. There are no graph references, edge copies, or synthetic nodes.",
+    "scope": "Extension schema owns shape; ADR owns meaning/evidence; placement and sorted unique visible records."
+  },
+  {
+    "id": "R-ABSENCE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      78,
+      96
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L78-L96",
+    "quote": "### Absent, unknown, and known\n\nAbsence of the extension, a record, or a fact means **no assertion**: legacy,\nunsupported, not inspected, or not applicable are not distinguishable. It is\nnever evidence of a negative value. A recognized producer capability emits\n`unknown` when it inspected an applicable node but cannot establish the fact.\nUnknown has a reason and no value or evidence. Known has a value and evidence,\nand no reason. `null`, empty objects, and invented statuses are invalid.\n\nKnown evidence is an object with `kind` and nonempty `source`. `source` is a\nstable, producer-owned locator for the inspected structural surface (for example\n`compiled.builder.edges`), not a filename heuristic or arbitrary user label.\nThe document's provenance supplies producer/framework versions. Each producer\nmust maintain version-pinned tests explaining how every emitted source locator\nproves its fact, including disqualifying counterexamples. The schema validates\nthe assertion's shape; it cannot prove that the producer told the truth.\nNo callbacks, node bodies, router functions, or graph invocation may be run to\nobtain these assertions. Additional framework-specific details stay in\n`x-langgraph`; consumers do not need them to interpret known values.",
+    "scope": "No assertion versus known/unknown; document validation cannot prove the producer told the truth."
+  },
+  {
+    "id": "R-FACTS",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      98,
+      103
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L98-L103",
+    "quote": "| Fact | Known value | Required evidence kind | Unknown reasons |\n| --- | --- | --- | --- |\n| `branch` | `all-declared` | `unconditional-edges` | `selection-not-observable`, `scope-not-inspected` |\n| `subgraph` | `opaque-child`, `not-child` | `compiled-child`, `ordinary-node` respectively | `identity-unavailable`, `scope-not-inspected` |\n| `sentinel` | `start`, `end`, `ordinary` | `framework-sentinel` for start/end; `ordinary-node` otherwise | `identity-unavailable`, `scope-not-inspected` |\n| `entry` | `confirmed`, `not-entry` | `framework-entry` | `entry-not-established`, `scope-not-inspected` |",
+    "scope": "Exact fact values and matching evidence kinds/reasons."
+  },
+  {
+    "id": "R-ROOT",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      105,
+      110
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L105-L110",
+    "quote": "`entry` additionally requires `observedRoot: boolean` in both known and unknown\nstates. It records a calculation from this snapshot, independent of the entry\nassertion: true iff no core edge or join has this node as its target. Join\nsources have outgoing connectivity; a join target has incoming connectivity.\nCycles may have no observed roots. An observed root can be unconfirmed, and a\nconfirmed entry can have incoming cycle edges.",
+    "scope": "Observed roots independent of entry assertions; joins and cycles included."
+  },
+  {
+    "id": "R-BRANCH",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      112,
+      136
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L112-L136",
+    "quote": "### Branch destinations, selection, and scheduling\n\nCore conditional edges record observable possible destinations; they do not\npromise that the list is exhaustive where a routing gap exists. `branch` says\nonly what the producer can establish about selection at the named node.\n\n`all-declared` means at least two outgoing **ordinary direct edges** were\nobserved as unconditional declarations at that scope. It asserts that those\ndeclarations are not alternatives selected by a router. It does not assert\nsimultaneous scheduling, success, actual task execution, fan-out width, or a\nselection rule for joins. Emit it only if the same node has no conditional\nrouting, dynamic destination declaration, or unresolved routing evidence.\nThe evidence review must establish that the inspected declaration surface is\ncomplete for that node. A drawable edge marked direct alone is insufficient.\n\nEmit `unknown` for every inspected conditional router, including single- and\nlist-returning callbacks, return-annotated routers, loops with routing, Send,\nunknown targets, multiple routers, and mixed direct/conditional routing.\nA node with only one direct edge or no outgoing routing has no `branch` fact.\nA multi-source join does not prove the policy of its upstream divergence.\nRevision 1 deliberately has no known `exclusive`, `concurrent`, or\n`all-possible-targets` value. Adding one requires a new revision with a source\nthat proves selection separately from possible destinations and execution.\nFixture names, operator class alone, and return annotations do not supply that\nproof. The testbed's `x-topology-branch` trial is not an alias for this contract.",
+    "scope": "Declaration versus selection/execution; direct drawable edges alone are insufficient."
+  },
+  {
+    "id": "R-CHILD",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      138,
+      155
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L138-L155",
+    "quote": "### Child identity and sentinel roles\n\n`opaque-child` means a node is confirmed to contain a compiled child graph and\nthat child is not represented as a separate graph document in this snapshot.\nIt permits a consumer to offer an expansion attempt; it promises neither\nsuccessful expansion nor complete child metadata. `not-child` requires an\ninspected ordinary-node representation that rules out a compiled child at the\nsupported structural surface. Failed inspection, a wrapper that hides identity,\na display name, a callable class, and TaskGroup analogy cannot establish it.\nThere is no invented `subgraphId` and no placeholder child graph.\n\n`start` and `end` identify framework-owned sentinels from the supported compiled\ngraph's identity and reserved sentinel mechanism. `ordinary` requires positive\nordinary-node membership. A producer may use its framework's actual sentinel\nconstants after verifying ownership; a consumer must not match literal IDs.\nNames such as `start`, `end`, or `__start__-user` are not role evidence.\nPresentation choices stay with consumers. Hiding a sentinel never authorizes\nmutating the stored core or losing its edges, joins, gaps, or trace identity.",
+    "scope": "Opaque/negative child evidence, no expansion guarantee, no name-based sentinel inference."
+  },
+  {
+    "id": "R-ENTRY",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      157,
+      175
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L157-L175",
+    "quote": "### Observed roots versus confirmed entries\n\nKeep `entryNodeIds` exactly as the producer currently emits it. `confirmed`\nmeans the framework declares that node an entry into this graph's execution,\nnot merely a node with no observed predecessor. For the current LangGraph\nscope the framework START sentinel is the confirmed entry; its direct or\nconditional successors are not thereby alternative confirmed entries.\n`not-entry` requires affirmative framework evidence excluding that node as an\nentry, not merely an incoming edge. For revision 1 LangGraph emits this only\nfor a confirmed END sentinel. Other inspected nodes use `unknown` unless a\nfuture version-pinned structural proof establishes exclusion.\n\nFor F2, START is observed-root/confirmed and `target` is observed-root/unknown\nwith reason `entry-not-established`. The existing gap stays on `router`.\nThere is no `causedBy`, inferred router-to-orphan link, invented edge, or gap\non the target. Multiple unknown routers, disconnected candidates, joins, and\nroots in a graph without routing gaps follow the same rule. A consumer may\nshow a candidate plus uncertainty; it must not promote it to an execution\nentry. Legacy entry arrays alone remain candidates for this interpretation.",
+    "scope": "Confirmed/not-entry, F2 causality prohibition and legacy candidates."
+  },
+  {
+    "id": "R-SCOPE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      177,
+      196
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L177-L196",
+    "quote": "### Traversal scope and completeness\n\nAt depth 0, inspect the root compiled graph's structural declarations. At every\npositive depth, annotate only visible nodes whose identities can be mapped\nunambiguously to inspected structural evidence. Retained root nodes can retain\nfacts if that evidence still describes their visible connections. Rewritten,\nflattened, or child nodes without that mapping use `scope-not-inspected` for\napplicable facts; never inherit root selection or sentinel roles by name.\n`entry.observedRoot` is still calculated from the emitted snapshot.\nAn opaque child still visible at a positive depth can remain `opaque-child`.\nAn expanded-away parent has no record. A separately materialized child graph\nuses core `subgraphId` only when that graph actually exists; revision 1 does not\nintroduce a new materialization path or a known expanded-child value.\n\nUnknown extension facts do not add core gaps, change completeness, or fail\nstrict extraction. Producer-wide inability remains a producer limitation under\nADR 0002; graph-specific existing routing and expanded-metadata gaps remain\nunchanged. Local unknown facts communicate uncertainty without inventing a\nnew completeness contract. Unsupported structural evidence cannot be silently\nreplaced with a plausible known fact to satisfy a fixture.",
+    "scope": "Visible scoped assertions and independence of unknown facts from core completeness."
+  },
+  {
+    "id": "R-EXT-VALID",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      198,
+      220
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L198-L220",
+    "quote": "### Independent validation and deterministic output\n\nValidation has three distinct layers:\n\n1. The existing core validator checks the topology, references and completeness.\n   It remains extension-agnostic, even for malformed recognized extensions.\n2. Opt-in extension validation checks revision/shape, placement, unique visible\n   node references, sorted records, observed-root calculations, evidence-kind\n   compatibility, and `all-declared` structural preconditions. A start/end\n   sentinel cannot be an opaque child; a known start cannot be `not-entry`,\n   and a known end cannot be `confirmed`.\n3. Producer conformance checks the truth of evidence using real minimum graphs,\n   no-user-execution assertions and supported framework versions. A document\n   alone cannot prove the absence of hidden routing or identity of a callable.\n\nA consumer distinguishes absent, supported-valid, unsupported-revision and\ninvalid extension results. Unsupported and invalid facts provide no trusted\ninterpretation; report their local status and continue exposing the valid core.\nDo not coerce them to known or claim that core validation proved the extension.\nThe schema and [document cases](../../spec/experimental/interpretation-cases.json)\nare shared across languages. They are authored contract examples, explicitly\nnot captured producer output. The repository's example tests provide a\nframework-free reference check; production validator APIs are not added here.",
+    "scope": "Three validation layers; cross-fact constraints; invalid/unsupported do not supply trusted facts."
+  },
+  {
+    "id": "R-REVISION",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+    "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+    "lines": [
+      230,
+      246
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#L230-L246",
+    "quote": "### Compatibility and promotion\n\nKeep `topologyVersion: \"0.1\"`, hash algorithm `1`, all existing hashed fields,\nand the core schema unchanged. Equal structure hashes do not establish equal\nextension metadata, selection information, child identity, or sentinel/entry\ninterpretation. Adding, removing or changing this extension leaves a graph's\nstructure hash unchanged. Consumers caching interpretation must compare the\nextension revision and canonical extension content as well as core identity;\nstructure hash alone is insufficient.\n\nRevision 1 readers use exact version negotiation. Changes to fields, accepted\nvalues, evidence meaning, or array semantics require a new revision and shared\nmigration cases, even during the experiment. A producer correction under an\nunchanged definition changes its package version and must document that old\nfacts may differ; do not rewrite historical documents. Unrecognized revisions\nare opaque. Removing experimental support requires package release/migration\nnotes. None of this alters published beta.2 history or qualifies beta.3 artifacts.",
+    "scope": "Exact revision negotiation, opaque unsupported revisions, separate core hash."
+  },
+  {
+    "id": "R-BRANCH-CHECK",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-implementation-criteria.md",
+    "local_path": "sources/docs/decisions/0008-implementation-criteria.md",
+    "lines": [
+      38,
+      51
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-implementation-criteria.md#L38-L51",
+    "quote": "| Minimum input | Required outcome |\n| --- | --- |\n| One source with two unconditional direct destinations | Known `all-declared`, evidence `unconditional-edges` after inspecting the complete declaration surface; no concurrency claim. |\n| Same declared destination pair, callback returns one versus a list | Both `unknown/selection-not-observable`, including return annotations. |\n| Conditional loop, Send routing, unknown destination router | Unknown; preserve existing local routing gap where applicable. |\n| Same source has direct plus conditional or unresolved routing | Unknown, never known all-declared. |\n| Join with two sources | Join alone never establishes a branch mode; no duplicated core edges. |\n| Linear edge or terminal node | No branch fact. |\n| Expanded source without matching inspected declarations | Unknown scope; do not promote drawable direct edges to proof. |\n\nValidate at least two outgoing direct edges for all-declared, reject conditional\nedges or a local unknown-routing-targets gap at the same source. Producer tests\nmust additionally detect dynamic declarations that a document cannot reveal.\nDo not introduce exclusive or concurrent values in revision 1.",
+    "scope": "Document-verifiable branch preconditions separate from producer truth."
+  },
+  {
+    "id": "R-CHILD-CHECK",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0008-implementation-criteria.md",
+    "local_path": "sources/docs/decisions/0008-implementation-criteria.md",
+    "lines": [
+      57,
+      69
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-implementation-criteria.md#L57-L69",
+    "quote": "| Minimum input | Required outcome |\n| --- | --- |\n| One outer node containing a one-node compiled child at depth 0 | Known `opaque-child` with `compiled-child` evidence. |\n| Ordinary node with the same ID and display name | Known `not-child` only if structural inspection rules out a child; otherwise unknown identity. |\n| Wrapper obscuring compiled identity | `unknown/identity-unavailable`; no false negative. |\n| Child remains opaque at positive depth | Opaque-child remains permitted with evidence. |\n| Parent disappears during expansion | No dangling record for the removed parent. |\n| Child/grandchild flattened without identity mapping | Unknown scope, retain expanded-subgraph-metadata gap. |\n\nNo invented `subgraphId` or child graph; reject an opaque-child assertion on a\nnode already linked by `subgraphId` to a materialized graph. Expansion is an\nattempt offered by a consumer, not a guaranteed operation or completeness claim.\nTaskGroup analogy and class/display names are not child evidence.",
+    "scope": "Opaque child versus materialized subgraph and scope boundaries."
+  },
+  {
+    "id": "R-ENTRY-GUIDE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/guides/consuming-documents.md",
+    "local_path": "sources/docs/guides/consuming-documents.md",
+    "lines": [
+      249,
+      276
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/guides/consuming-documents.md#L249-L276",
+    "quote": "`observedRoot` is true exactly when no emitted edge or join targets that node.\nIt describes this snapshot's connectivity independently of the entry assertion\nand `entryNodeIds`. A confirmed entry may have incoming cycle edges, and a join\ntarget is not an observed root. Neither incoming connections nor their absence\nestablish execution-entry meaning.\n\n| Entry fact | Consumer meaning |\n| --- | --- |\n| `known/confirmed`, evidence `framework-entry` | The inspected framework declares this execution entry. Current LangGraph producers assert this only for the confirmed START sentinel. |\n| `known/not-entry`, evidence `framework-entry` | Affirmative framework evidence excludes this entry. Current LangGraph producers assert this only for the confirmed END sentinel. |\n| `unknown/entry-not-established` | Entry meaning could not be established for this inspected root-scope node. Show candidate uncertainty locally when `observedRoot` is true. |\n| `unknown/scope-not-inspected` | No mapping to inspected scope supports entry meaning, including expanded child identities. The observed-root calculation still applies. |\n| Absent extension, record or entry fact | No assertion. Absence is not a negative, and other fact families do not supply a missing entry assertion. |\n\nIn the minimal unknown-routing example, `entryNodeIds` still contains START and\n`target`. START is confirmed; target is an observed candidate with unknown entry\nmeaning. Keep the `unknown-routing-targets` gap on `router`. Do not attribute the\ncandidate to a particular router, invent a connecting edge, or remove the\ncandidate to improve a drawing. The same uncertainty applies to a disconnected\ncandidate even when `completeness.status` is `complete` and there are no gaps:\nshow \u201cobserved candidate; entry not established\u201d at that node. Unknown entry\nfacts do not change core completeness or Python strict extraction.\n\nFor migration, treat legacy entry arrays as observed candidates for this\ninterpretation. Keep unsupported revisions opaque; invalid or unsupported\nmetadata supplies no trusted entry facts. Expose the valid core and local\ninterpretation status, retaining connections, identities and existing gaps.\nDo not match literal sentinel IDs to manufacture missing entry metadata.",
+    "scope": "Observed roots, per-fact absence, gap-free candidate uncertainty and legacy migration."
+  },
+  {
+    "id": "R-EXT-SHAPE",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "spec/experimental/interpretation-v1.schema.json",
+    "local_path": "sources/spec/experimental/interpretation-v1.schema.json",
+    "lines": [
+      1,
+      413
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/experimental/interpretation-v1.schema.json",
+    "quote": "\"title\": \"Experimental graph interpretation revision 1\"",
+    "scope": "Full retained closed schema: branch/subgraph/sentinel/entry oneOf alternatives, evidence, observedRoot, required fields. See JSON pointers /properties/nodes/items/properties and /required."
+  }
+]

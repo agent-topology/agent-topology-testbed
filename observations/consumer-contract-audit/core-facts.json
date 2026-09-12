@@ -1,0 +1,1706 @@
+{
+  "F00": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "left",
+      "right",
+      "router"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:router:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "router"
+      },
+      {
+        "id": "edge:left:__end__:direct:1",
+        "kind": "direct",
+        "source": "left",
+        "target": "__end__"
+      },
+      {
+        "id": "edge:right:__end__:direct:1",
+        "kind": "direct",
+        "source": "right",
+        "target": "__end__"
+      },
+      {
+        "id": "edge:router:left:conditional:1",
+        "kind": "conditional",
+        "source": "router",
+        "target": "left"
+      },
+      {
+        "id": "edge:router:right:conditional:1",
+        "kind": "conditional",
+        "source": "router",
+        "target": "right"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "left",
+        "right",
+        "router"
+      ],
+      "left": [
+        "__end__"
+      ],
+      "right": [
+        "__end__"
+      ],
+      "router": [
+        "__end__",
+        "left",
+        "right"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F01": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "write"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:write:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "write"
+      },
+      {
+        "id": "edge:write:__end__:direct:1",
+        "kind": "direct",
+        "source": "write",
+        "target": "__end__"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "write"
+      ],
+      "write": [
+        "__end__"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F02": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "first",
+      "second"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:first:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "first"
+      },
+      {
+        "id": "edge:first:second:direct:1",
+        "kind": "direct",
+        "source": "first",
+        "target": "second"
+      },
+      {
+        "id": "edge:second:__end__:direct:1",
+        "kind": "direct",
+        "source": "second",
+        "target": "__end__"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "first",
+        "second"
+      ],
+      "first": [
+        "__end__",
+        "second"
+      ],
+      "second": [
+        "__end__"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F03": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "retry"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:retry:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "retry"
+      },
+      {
+        "id": "edge:retry:__end__:conditional:1",
+        "kind": "conditional",
+        "source": "retry",
+        "target": "__end__"
+      },
+      {
+        "id": "edge:retry:retry:conditional:1",
+        "kind": "conditional",
+        "source": "retry",
+        "target": "retry"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "retry"
+      ],
+      "retry": [
+        "__end__",
+        "retry"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "retry"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F04": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "joined",
+      "left",
+      "right"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:left:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "left"
+      },
+      {
+        "id": "edge:__start__:right:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "right"
+      },
+      {
+        "id": "edge:joined:__end__:direct:1",
+        "kind": "direct",
+        "source": "joined",
+        "target": "__end__"
+      }
+    ],
+    "joins": [
+      {
+        "id": "join:left+right:joined",
+        "sources": [
+          "left",
+          "right"
+        ],
+        "target": "joined"
+      }
+    ],
+    "join_connections": [
+      {
+        "joinId": "join:left+right:joined",
+        "source": "left",
+        "target": "joined"
+      },
+      {
+        "joinId": "join:left+right:joined",
+        "source": "right",
+        "target": "joined"
+      }
+    ],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "joined",
+        "left",
+        "right"
+      ],
+      "joined": [
+        "__end__"
+      ],
+      "left": [
+        "__end__",
+        "joined"
+      ],
+      "right": [
+        "__end__",
+        "joined"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "__start__"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F05": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "nested"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:nested:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "nested"
+      },
+      {
+        "id": "edge:nested:__end__:direct:1",
+        "kind": "direct",
+        "source": "nested",
+        "target": "__end__"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "nested"
+      ],
+      "nested": [
+        "__end__"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F06": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "fork",
+      "left",
+      "right"
+    ],
+    "listed_candidates": [
+      "__start__"
+    ],
+    "observed_roots": [
+      "__start__"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:fork:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "fork"
+      },
+      {
+        "id": "edge:fork:left:direct:1",
+        "kind": "direct",
+        "source": "fork",
+        "target": "left"
+      },
+      {
+        "id": "edge:fork:right:direct:1",
+        "kind": "direct",
+        "source": "fork",
+        "target": "right"
+      },
+      {
+        "id": "edge:left:__end__:direct:1",
+        "kind": "direct",
+        "source": "left",
+        "target": "__end__"
+      },
+      {
+        "id": "edge:right:__end__:direct:1",
+        "kind": "direct",
+        "source": "right",
+        "target": "__end__"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "__end__",
+        "fork",
+        "left",
+        "right"
+      ],
+      "fork": [
+        "__end__",
+        "left",
+        "right"
+      ],
+      "left": [
+        "__end__"
+      ],
+      "right": [
+        "__end__"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "fork"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "F07": {
+    "graph_id": "main",
+    "node_ids": [
+      "__end__",
+      "__start__",
+      "router",
+      "target"
+    ],
+    "listed_candidates": [
+      "__start__",
+      "target"
+    ],
+    "observed_roots": [
+      "__start__",
+      "target"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "edge:__start__:router:direct:1",
+        "kind": "direct",
+        "source": "__start__",
+        "target": "router"
+      },
+      {
+        "id": "edge:target:__end__:direct:1",
+        "kind": "direct",
+        "source": "target",
+        "target": "__end__"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "__end__": [],
+      "__start__": [
+        "router"
+      ],
+      "router": [],
+      "target": [
+        "__end__"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [
+          {
+            "code": "unknown-routing-targets",
+            "element": {
+              "graphId": "main",
+              "id": "router",
+              "kind": "node"
+            },
+            "message": "Not every destination of this router could be determined."
+          }
+        ],
+        "status": "incomplete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X00": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X01": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X02": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X03": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X04": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "b",
+      "split"
+    ],
+    "listed_candidates": [
+      "split"
+    ],
+    "observed_roots": [
+      "split"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "split-a",
+        "kind": "direct",
+        "source": "split",
+        "target": "a"
+      },
+      {
+        "id": "split-b",
+        "kind": "direct",
+        "source": "split",
+        "target": "b"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "a": [],
+      "b": [],
+      "split": [
+        "a",
+        "b"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "split"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X05": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "b",
+      "router"
+    ],
+    "listed_candidates": [
+      "router"
+    ],
+    "observed_roots": [
+      "router"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "router-a",
+        "kind": "conditional",
+        "source": "router",
+        "target": "a"
+      },
+      {
+        "id": "router-b",
+        "kind": "conditional",
+        "source": "router",
+        "target": "b"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "a": [],
+      "b": [],
+      "router": [
+        "a",
+        "b"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X06": {
+    "graph_id": "main",
+    "node_ids": [
+      "end",
+      "router",
+      "start",
+      "target"
+    ],
+    "listed_candidates": [
+      "start",
+      "target"
+    ],
+    "observed_roots": [
+      "start",
+      "target"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "start-router",
+        "kind": "direct",
+        "source": "start",
+        "target": "router"
+      },
+      {
+        "id": "target-end",
+        "kind": "direct",
+        "source": "target",
+        "target": "end"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "end": [],
+      "router": [],
+      "start": [
+        "router"
+      ],
+      "target": [
+        "end"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [
+          {
+            "code": "unknown-routing-targets",
+            "element": {
+              "graphId": "main",
+              "id": "router",
+              "kind": "node"
+            },
+            "message": "Targets unavailable."
+          }
+        ],
+        "status": "incomplete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X07": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "b",
+      "joined"
+    ],
+    "listed_candidates": [
+      "a",
+      "b"
+    ],
+    "observed_roots": [
+      "a",
+      "b"
+    ],
+    "ordinary_edges": [],
+    "joins": [
+      {
+        "id": "join",
+        "sources": [
+          "a",
+          "b"
+        ],
+        "target": "joined"
+      }
+    ],
+    "join_connections": [
+      {
+        "joinId": "join",
+        "source": "a",
+        "target": "joined"
+      },
+      {
+        "joinId": "join",
+        "source": "b",
+        "target": "joined"
+      }
+    ],
+    "structural_reachability": {
+      "a": [
+        "joined"
+      ],
+      "b": [
+        "joined"
+      ],
+      "joined": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X08": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "start"
+    ],
+    "listed_candidates": [],
+    "observed_roots": [],
+    "ordinary_edges": [
+      {
+        "id": "a-start",
+        "kind": "direct",
+        "source": "a",
+        "target": "start"
+      },
+      {
+        "id": "start-a",
+        "kind": "direct",
+        "source": "start",
+        "target": "a"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "a": [
+        "a",
+        "start"
+      ],
+      "start": [
+        "a",
+        "start"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X09": {
+    "graph_id": "main",
+    "node_ids": [
+      "child"
+    ],
+    "listed_candidates": [
+      "child"
+    ],
+    "observed_roots": [
+      "child"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "child": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X10": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X11": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X12": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "b",
+      "router"
+    ],
+    "listed_candidates": [
+      "router"
+    ],
+    "observed_roots": [
+      "router"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "router-a",
+        "kind": "conditional",
+        "source": "router",
+        "target": "a"
+      },
+      {
+        "id": "router-b",
+        "kind": "conditional",
+        "source": "router",
+        "target": "b"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "a": [],
+      "b": [],
+      "router": [
+        "a",
+        "b"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X13": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "b",
+      "split"
+    ],
+    "listed_candidates": [
+      "split"
+    ],
+    "observed_roots": [
+      "split"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "split-a",
+        "kind": "direct",
+        "source": "split",
+        "target": "a"
+      },
+      {
+        "id": "split-b",
+        "kind": "direct",
+        "source": "split",
+        "target": "b"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "a": [],
+      "b": [],
+      "split": [
+        "a",
+        "b"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "split"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X14": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X15": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X16": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X17": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X18": {
+    "graph_id": "main",
+    "node_ids": [
+      "a",
+      "b",
+      "router"
+    ],
+    "listed_candidates": [
+      "router"
+    ],
+    "observed_roots": [
+      "router"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "router-a",
+        "kind": "conditional",
+        "source": "router",
+        "target": "a"
+      },
+      {
+        "id": "router-b",
+        "kind": "conditional",
+        "source": "router",
+        "target": "b"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "a": [],
+      "b": [],
+      "router": [
+        "a",
+        "b"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X19": {
+    "graph_id": "main",
+    "node_ids": [
+      "end",
+      "router",
+      "start",
+      "target"
+    ],
+    "listed_candidates": [
+      "start",
+      "target"
+    ],
+    "observed_roots": [
+      "start",
+      "target"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "start-router",
+        "kind": "direct",
+        "source": "start",
+        "target": "router"
+      },
+      {
+        "id": "target-end",
+        "kind": "direct",
+        "source": "target",
+        "target": "end"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "end": [],
+      "router": [],
+      "start": [
+        "router"
+      ],
+      "target": [
+        "end"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [
+          {
+            "code": "unknown-routing-targets",
+            "element": {
+              "graphId": "main",
+              "id": "router",
+              "kind": "node"
+            },
+            "message": "Targets unavailable."
+          }
+        ],
+        "status": "incomplete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X20": {
+    "graph_id": "main",
+    "node_ids": [
+      "end",
+      "router",
+      "start",
+      "target"
+    ],
+    "listed_candidates": [
+      "start",
+      "target"
+    ],
+    "observed_roots": [
+      "start",
+      "target"
+    ],
+    "ordinary_edges": [
+      {
+        "id": "start-router",
+        "kind": "direct",
+        "source": "start",
+        "target": "router"
+      },
+      {
+        "id": "target-end",
+        "kind": "direct",
+        "source": "target",
+        "target": "end"
+      }
+    ],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "end": [],
+      "router": [],
+      "start": [
+        "router"
+      ],
+      "target": [
+        "end"
+      ]
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [
+          {
+            "code": "unknown-routing-targets",
+            "element": {
+              "graphId": "main",
+              "id": "router",
+              "kind": "node"
+            },
+            "message": "Targets unavailable."
+          }
+        ],
+        "status": "incomplete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [
+      "router"
+    ],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X21": {
+    "graph_id": "main",
+    "node_ids": [
+      "node"
+    ],
+    "listed_candidates": [
+      "node"
+    ],
+    "observed_roots": [
+      "node"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "node": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  },
+  "X22": {
+    "graph_id": "main",
+    "node_ids": [
+      "start",
+      "target"
+    ],
+    "listed_candidates": [
+      "start",
+      "target"
+    ],
+    "observed_roots": [
+      "start",
+      "target"
+    ],
+    "ordinary_edges": [],
+    "joins": [],
+    "join_connections": [],
+    "structural_reachability": {
+      "start": [],
+      "target": []
+    },
+    "recorded_uncertainty": {
+      "completeness": {
+        "gaps": [],
+        "status": "complete"
+      },
+      "producerLimitations": []
+    },
+    "materialized_child_links": [],
+    "branch_question_nodes": [],
+    "derivation": {
+      "listed_candidates": "Verbatim /graphs/0/structure/entryNodeIds; R-STRUCT/R-MEANING.",
+      "observed_roots": "Manual absence-of-target inspection over every edge and join; L-ROOT/R-ROOT.",
+      "connections": "Edges/joins are verbatim records; the two join cases have literal source-to-target links per R-JOIN.",
+      "structural_reachability": "Literal path table from the inspected topology; L-PATH. No consumer result or graph algorithm authored this table.",
+      "recorded_uncertainty": "Verbatim /completeness and /producerLimitations; R-COMPLETE/R-PRESENT.",
+      "materialized_child_links": "Each node inspected; no node in this input has subgraphId; R-STRUCT/R-NESTING.",
+      "branch_question_nodes": "Manual multi-destination/routing-gap scope inspection as defined by CQ5."
+    }
+  }
+}

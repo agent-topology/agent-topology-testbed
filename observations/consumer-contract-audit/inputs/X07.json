@@ -1,0 +1,77 @@
+{
+  "completeness": {
+    "gaps": [],
+    "status": "complete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [],
+        "entryNodeIds": [
+          "a",
+          "b"
+        ],
+        "exitNodeIds": [
+          "joined"
+        ],
+        "joins": [
+          {
+            "id": "join",
+            "sources": [
+              "a",
+              "b"
+            ],
+            "target": "joined"
+          }
+        ],
+        "nodes": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "joined"
+          }
+        ]
+      },
+      "x-topology-interpretation": {
+        "nodes": [
+          {
+            "entry": {
+              "observedRoot": false,
+              "reason": "entry-not-established",
+              "status": "unknown"
+            },
+            "nodeId": "joined"
+          }
+        ],
+        "traversalDepth": 0,
+        "version": "1"
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "fc36bb92c911fb7648836666d7abf4765cc52a7a24ec8d8805edd7b891e11e3b"
+  },
+  "topologyVersion": "0.1"
+}

@@ -1,0 +1,80 @@
+{
+  "completeness": {
+    "gaps": [],
+    "status": "complete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [
+          {
+            "id": "router-a",
+            "kind": "conditional",
+            "source": "router",
+            "target": "a"
+          },
+          {
+            "id": "router-b",
+            "kind": "conditional",
+            "source": "router",
+            "target": "b"
+          }
+        ],
+        "entryNodeIds": [
+          "router"
+        ],
+        "exitNodeIds": [
+          "a",
+          "b"
+        ],
+        "joins": [],
+        "nodes": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "router"
+          }
+        ]
+      },
+      "x-topology-interpretation": {
+        "nodes": [
+          {
+            "branch": {
+              "reason": "selection-not-observable",
+              "status": "unknown"
+            },
+            "nodeId": "router"
+          }
+        ],
+        "traversalDepth": 0,
+        "version": "1"
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "b4a53104590b7718c04fe397ee8afb323fb73327c78770864470830818e09300"
+  },
+  "topologyVersion": "0.1"
+}

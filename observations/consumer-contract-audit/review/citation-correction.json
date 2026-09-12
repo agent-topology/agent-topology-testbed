@@ -1,0 +1,30 @@
+{
+  "stage": "Post-label integrity check",
+  "reason": "The initial integrity check rejected a citation ending at line 81 in a 79-line file. Python slicing had retained the correct quotation but did not expose the out-of-bounds end line. Corrected only the span and matching URL; no quotation, judgment or expected value changed.",
+  "before": {
+    "id": "R-LIMIT",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0002-record-what-could-not-be-observed.md",
+    "local_path": "sources/docs/decisions/0002-record-what-could-not-be-observed.md",
+    "lines": [
+      75,
+      81
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0002-record-what-could-not-be-observed.md#L75-L81",
+    "quote": "- **Assigning severity to gaps.** Whether an unknown region is acceptable\n  depends on the consumer, and there is one consumer today.\n- **Guaranteeing that the gap list is exhaustive.** We record blind spots we\n  know about. Claiming to know all of them would be the same overconfidence this\n  decision exists to avoid.",
+    "scope": "No gap severity or exhaustive-blind-spot guarantee."
+  },
+  "after": {
+    "id": "R-LIMIT",
+    "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "path": "docs/decisions/0002-record-what-could-not-be-observed.md",
+    "local_path": "sources/docs/decisions/0002-record-what-could-not-be-observed.md",
+    "lines": [
+      75,
+      79
+    ],
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0002-record-what-could-not-be-observed.md#L75-L79",
+    "quote": "- **Assigning severity to gaps.** Whether an unknown region is acceptable\n  depends on the consumer, and there is one consumer today.\n- **Guaranteeing that the gap list is exhaustive.** We record blind spots we\n  know about. Claiming to know all of them would be the same overconfidence this\n  decision exists to avoid.",
+    "scope": "No gap severity or exhaustive-blind-spot guarantee."
+  }
+}

@@ -1,0 +1,1239 @@
+{
+  "F00": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F01": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F02": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F03": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F04": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F05": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F06": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "F07": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "X00": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "absent",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "No recognized extension occurs in the document."
+    }
+  },
+  "X01": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X02": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X03": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X04": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X05": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X06": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X07": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X08": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X09": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  },
+  "X10": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "unsupported-revision",
+      "revision_1_object_shape": "not-applicable",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/version"
+      ],
+      "rules": [
+        "R-REVISION",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Revision 2 is not revision 1. Keep opaque; do not treat revision 1 shape failure as the negotiated outcome."
+    }
+  },
+  "X11": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "invalid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/subgraph",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-ABSENCE"
+      ],
+      "derivation": "Known opaque-child lacks required evidence."
+    }
+  },
+  "X12": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "invalid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/branch/value",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-ABSENCE"
+      ],
+      "derivation": "Unknown branch contains forbidden value."
+    }
+  },
+  "X13": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "invalid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/branch/value",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-FACTS"
+      ],
+      "derivation": "exclusive is not a revision 1 known branch value."
+    }
+  },
+  "X14": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "invalid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/subgraph/evidence/kind",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-FACTS"
+      ],
+      "derivation": "opaque-child requires compiled-child, not ordinary-node."
+    }
+  },
+  "X15": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/nodeId",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-AUTH",
+        "R-EXT-VALID"
+      ],
+      "derivation": "missing is not a visible node."
+    }
+  },
+  "X16": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-AUTH"
+      ],
+      "derivation": "Two records refer to node; records must be unique."
+    }
+  },
+  "X17": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/entry/observedRoot",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-ROOT",
+        "R-EXT-VALID"
+      ],
+      "derivation": "false contradicts the empty target collections for node. This is invalid input, not contradictory contract."
+    }
+  },
+  "X18": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/branch",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-BRANCH",
+        "R-BRANCH-CHECK"
+      ],
+      "derivation": "all-declared is attached to a router with only conditional outgoing edges."
+    }
+  },
+  "X19": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-VALID"
+      ],
+      "derivation": "Known end sentinel is also known confirmed entry, forbidden by ADR 0008."
+    }
+  },
+  "X20": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-EXT-AUTH"
+      ],
+      "derivation": "target,start,router,end is reverse order; extension records must be sorted, not silently repaired."
+    }
+  },
+  "X21": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "invalid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/x-topology-interpretation",
+        "/graphs/0/structure"
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-EXT-AUTH"
+      ],
+      "derivation": "Recognized extension is at document root, not graph level. Core x-* legality does not authorize this interpretation placement."
+    }
+  },
+  "X22": {
+    "core": {
+      "judgment": "determined",
+      "expected": "valid",
+      "input_pointers": [
+        ""
+      ],
+      "rules": [
+        "R-SHAPE",
+        "R-STRUCT",
+        "R-CONNECTION",
+        "R-GAPSHAPE",
+        "R-VALIDATE",
+        "R-COMPLETE"
+      ],
+      "derivation": "Manual full-document shape review plus graph/kind identity, reference and completeness checks. Required fields/scalars and allowed x-* placements are present, core identifiers are unique and references resolve; gap cardinality matches status. No validator execution or stored-hash verification claimed."
+    },
+    "core_only_extension": {
+      "judgment": "determined",
+      "expected": "not-interpreted",
+      "rules": [
+        "L-PROFILE"
+      ]
+    },
+    "opt_in_extension": {
+      "judgment": "determined",
+      "expected": "supported-valid",
+      "revision_1_object_shape": "valid",
+      "input_pointers": [
+        "/graphs/0/structure",
+        "/graphs/0/x-topology-interpretation"
+      ],
+      "rules": [
+        "R-EXT-SHAPE",
+        "R-EXT-AUTH",
+        "R-FACTS",
+        "R-ROOT",
+        "R-BRANCH-CHECK",
+        "R-CHILD-CHECK",
+        "R-EXT-VALID"
+      ],
+      "derivation": "Manual full shape and document-verifiable semantic review: revision/placement, closed facts, evidence kinds, sorted unique visible records, roots, branch preconditions, and child/sentinel/entry compatibility satisfy the cited rules. Producer truth remains unverified."
+    }
+  }
+}

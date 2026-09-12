@@ -1,0 +1,421 @@
+{
+  "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "sources": [
+    {
+      "upstream_path": "docs/0.1-contract.md",
+      "local_path": "sources/docs/0.1-contract.md",
+      "sha256": "8ecfcfbc58515505318db5b4c3e4db2d91bb57f930ff9d9bcae9665bf9a0fcec"
+    },
+    {
+      "upstream_path": "docs/guides/concepts.md",
+      "local_path": "sources/docs/guides/concepts.md",
+      "sha256": "2cf18abeeeb3ed323deddc9472d8e33061c34a8b5963a0809905610115fba790"
+    },
+    {
+      "upstream_path": "docs/guides/consuming-documents.md",
+      "local_path": "sources/docs/guides/consuming-documents.md",
+      "sha256": "e11a8312ac10c6854be030a2c42ed7f87c9df7bc2311db21e0ca20c16725e4c6"
+    },
+    {
+      "upstream_path": "docs/decisions/0002-record-what-could-not-be-observed.md",
+      "local_path": "sources/docs/decisions/0002-record-what-could-not-be-observed.md",
+      "sha256": "c6d225ab9cfed4a72e5d48d17f19c4369b9704915fc8fa861db3a6fd907532e7"
+    },
+    {
+      "upstream_path": "docs/decisions/0004-rendering-is-not-part-of-the-core-document.md",
+      "local_path": "sources/docs/decisions/0004-rendering-is-not-part-of-the-core-document.md",
+      "sha256": "74eeb9e6830377a7149254786249e89c76936e9c9cd216e5d5bcaf48db82a3b6"
+    },
+    {
+      "upstream_path": "docs/decisions/0008-experimental-consumer-interpretation.md",
+      "local_path": "sources/docs/decisions/0008-experimental-consumer-interpretation.md",
+      "sha256": "f8cf99f88c1b926e9a1fd2ad403c1a8fef1493d44401998c8a68d2a686592f2c"
+    },
+    {
+      "upstream_path": "docs/decisions/0008-implementation-criteria.md",
+      "local_path": "sources/docs/decisions/0008-implementation-criteria.md",
+      "sha256": "7e70eef287fcb58c2a3e4eb26ff904aeeaa1d8179293726bee83aef247523fc0"
+    },
+    {
+      "upstream_path": "spec/README.md",
+      "local_path": "sources/spec/README.md",
+      "sha256": "791996c0cb77f41384ea4677d005ab0a0d3049d36f8c1f1c7f2766b86ae5c89d"
+    },
+    {
+      "upstream_path": "spec/agent-topology.schema.json",
+      "local_path": "sources/spec/agent-topology.schema.json",
+      "sha256": "6e98d8b829e9cd3558499abfc2943335d4d0564d21ae1706a0797df4159bf006"
+    },
+    {
+      "upstream_path": "spec/experimental/README.md",
+      "local_path": "sources/spec/experimental/README.md",
+      "sha256": "a429a074be31d5ec24c0d030d574501f153827c5d8772da3fcea205153c3ae90"
+    },
+    {
+      "upstream_path": "spec/experimental/interpretation-v1.schema.json",
+      "local_path": "sources/spec/experimental/interpretation-v1.schema.json",
+      "sha256": "0e2cf58be4115c251c53b52bf6d92e0bf7fe7a6b86d57bea15231cbe46b49c77"
+    },
+    {
+      "upstream_path": "conformance/fixtures/conditional-routing/fixture.json",
+      "local_path": "sources/conformance/fixtures/conditional-routing/fixture.json",
+      "sha256": "50929bc29edeae68d8ff3070c005888153f58d14cab0dc2aad946fd849975f05",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/interrupt-before/fixture.json",
+      "local_path": "sources/conformance/fixtures/interrupt-before/fixture.json",
+      "sha256": "ca80810bf8031d1ee8af797bebfaa9307e4d5715edb22e7584b4ff0edec6e06d",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/linear-flow/fixture.json",
+      "local_path": "sources/conformance/fixtures/linear-flow/fixture.json",
+      "sha256": "b65a51d72a714cec800335cb8a8638b15b0115db4c173075084a024b29ded5a5",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/loop/fixture.json",
+      "local_path": "sources/conformance/fixtures/loop/fixture.json",
+      "sha256": "f29c2f04c57b3e358f38a15ef1e1e72e203e68e756d4d7142b33af45ad2d08fd",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/multi-source-join/fixture.json",
+      "local_path": "sources/conformance/fixtures/multi-source-join/fixture.json",
+      "sha256": "95ca9794af486aee8ed948d597df794e658b45927dfaf04fe8f1b96d54e6b087",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/nested-subgraph/fixture.json",
+      "local_path": "sources/conformance/fixtures/nested-subgraph/fixture.json",
+      "sha256": "089c15e94b2e423d8af9b714d1ab11e61471778d1913a1b598cf96d5daede674",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/parallel-fanout/fixture.json",
+      "local_path": "sources/conformance/fixtures/parallel-fanout/fixture.json",
+      "sha256": "629b4d18e39dbd8561f0b2933442fbc53df67fffd545bf84d8a6cb0d34c5f501",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    },
+    {
+      "upstream_path": "conformance/fixtures/unknown-routing-targets/fixture.json",
+      "local_path": "sources/conformance/fixtures/unknown-routing-targets/fixture.json",
+      "sha256": "d22402d8e582a3a2bf77a77c3a6fdd8b66dd08a6f2cca7586dd688db183a4b4b",
+      "authority_scope": "Fixture recipe context only; not additional consumer input or evidence for facts absent from expected.json."
+    }
+  ],
+  "inputs": [
+    {
+      "id": "F00",
+      "label": "conditional-routing",
+      "upstream_path": "conformance/fixtures/conditional-routing/expected.json",
+      "source_sha256": "9510ca558343c3d23cf8b7fc31d15ee3867b771889c9c592a0a8280ec5309abe",
+      "source_pointer": "",
+      "local_path": "inputs/F00.json",
+      "sha256": "9510ca558343c3d23cf8b7fc31d15ee3867b771889c9c592a0a8280ec5309abe",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F01",
+      "label": "interrupt-before",
+      "upstream_path": "conformance/fixtures/interrupt-before/expected.json",
+      "source_sha256": "a0ab7e634b5ed73fd4fbb0b457474371ad3abd21485863b2a6f2c16aa69dad5e",
+      "source_pointer": "",
+      "local_path": "inputs/F01.json",
+      "sha256": "a0ab7e634b5ed73fd4fbb0b457474371ad3abd21485863b2a6f2c16aa69dad5e",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F02",
+      "label": "linear-flow",
+      "upstream_path": "conformance/fixtures/linear-flow/expected.json",
+      "source_sha256": "738c4408d912b3844a068013099ed1eb2cbf9e20246beaf522954075f734d290",
+      "source_pointer": "",
+      "local_path": "inputs/F02.json",
+      "sha256": "738c4408d912b3844a068013099ed1eb2cbf9e20246beaf522954075f734d290",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F03",
+      "label": "loop",
+      "upstream_path": "conformance/fixtures/loop/expected.json",
+      "source_sha256": "c8b9445427a00806e5e4857a2a8ab0c2ddaf0a9c94333fd97f4c5970d350e661",
+      "source_pointer": "",
+      "local_path": "inputs/F03.json",
+      "sha256": "c8b9445427a00806e5e4857a2a8ab0c2ddaf0a9c94333fd97f4c5970d350e661",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F04",
+      "label": "multi-source-join",
+      "upstream_path": "conformance/fixtures/multi-source-join/expected.json",
+      "source_sha256": "b4d4b4b63acd151ec3967f20b217bff516fbfc205b557b6b45ab0b35c91b77e3",
+      "source_pointer": "",
+      "local_path": "inputs/F04.json",
+      "sha256": "b4d4b4b63acd151ec3967f20b217bff516fbfc205b557b6b45ab0b35c91b77e3",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F05",
+      "label": "nested-subgraph",
+      "upstream_path": "conformance/fixtures/nested-subgraph/expected.json",
+      "source_sha256": "3a2cb045452517b8fb3aa26392168003965b76732f02add9e7087bf90885c3fa",
+      "source_pointer": "",
+      "local_path": "inputs/F05.json",
+      "sha256": "3a2cb045452517b8fb3aa26392168003965b76732f02add9e7087bf90885c3fa",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F06",
+      "label": "parallel-fanout",
+      "upstream_path": "conformance/fixtures/parallel-fanout/expected.json",
+      "source_sha256": "3d9f67ce2a32fa0609fc90da6ff70751afd55708b84c09636b67f5605115b779",
+      "source_pointer": "",
+      "local_path": "inputs/F06.json",
+      "sha256": "3d9f67ce2a32fa0609fc90da6ff70751afd55708b84c09636b67f5605115b779",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "F07",
+      "label": "unknown-routing-targets",
+      "upstream_path": "conformance/fixtures/unknown-routing-targets/expected.json",
+      "source_sha256": "b0822fb3a22b48fcc06038c18dcd8526f943fd7ffd36319eb4cafcc4b921ace7",
+      "source_pointer": "",
+      "local_path": "inputs/F07.json",
+      "sha256": "b0822fb3a22b48fcc06038c18dcd8526f943fd7ffd36319eb4cafcc4b921ace7",
+      "kind": "core conformance document"
+    },
+    {
+      "id": "X00",
+      "label": "legacy-absent",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/0/document",
+      "local_path": "inputs/X00.json",
+      "sha256": "168f200f73d64b02fa67909d6c772ea646f854e86f56f1d520fe735510a9e166",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X01",
+      "label": "known-negative-ordinary",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/1/document",
+      "local_path": "inputs/X01.json",
+      "sha256": "672b2ff63f8a0e6532d36c4f11251ef7d82c4cbc9c0bbd53b9a7bf0c8112efe1",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X02",
+      "label": "known-positive-opaque",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/2/document",
+      "local_path": "inputs/X02.json",
+      "sha256": "0bf16a9dbdbb28c2f8fbae703d9972e1243e03108c200090ce5cd529e59098ca",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X03",
+      "label": "unknown-identity",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/3/document",
+      "local_path": "inputs/X03.json",
+      "sha256": "8d5db2f08a8b35781fca4e6cc6f065a5658cc9b7b3e5f4567a502f39e3c724ad",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X04",
+      "label": "known-direct-declarations",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/4/document",
+      "local_path": "inputs/X04.json",
+      "sha256": "748623eb5201c30a261618161e452d676e0209c7ad0fd3fe75f5c83ff58eb908",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X05",
+      "label": "conditional-selection-unknown",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/5/document",
+      "local_path": "inputs/X05.json",
+      "sha256": "e4d187aa832ff8e2b3304de125e9e7efa3459037b57c5f684fbf0917b1bc8b9f",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X06",
+      "label": "observed-root-is-not-confirmed-entry",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/6/document",
+      "local_path": "inputs/X06.json",
+      "sha256": "07e5d099ddb6286a643573f1a0359696f956bebe3ff8e18952f0fa8fb43763a9",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X07",
+      "label": "join-target-not-root",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/7/document",
+      "local_path": "inputs/X07.json",
+      "sha256": "699794e5faa73629630500931d0c753a1e12bf626c51f1ff341da9d17a2a6d13",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X08",
+      "label": "confirmed-entry-with-incoming-cycle",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/8/document",
+      "local_path": "inputs/X08.json",
+      "sha256": "5a80331995ed5a1a389733a320c5c5c243206b8ecb318090c489c9115e652339",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X09",
+      "label": "expanded-unmapped-unknown",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/9/document",
+      "local_path": "inputs/X09.json",
+      "sha256": "b8ebf604e8acbc7de3efa154f88c127c8faded7b82e613ad6e7cb00a65b9423e",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X10",
+      "label": "unsupported-revision",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/10/document",
+      "local_path": "inputs/X10.json",
+      "sha256": "5a53f54a9eb652bec9cf157291a062f4c93f619263e4d8a6f95ee9536360c755",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X11",
+      "label": "known-without-evidence",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/11/document",
+      "local_path": "inputs/X11.json",
+      "sha256": "ea0327192aa019eb6610bcdb2483aa190f3405d34b89e9e24c3b5b091abc7e1d",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X12",
+      "label": "unknown-with-value",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/12/document",
+      "local_path": "inputs/X12.json",
+      "sha256": "b42adf89e00693aefbe85a1274f343ea13ca4ffbf922100fcb2cc051f798f78c",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X13",
+      "label": "unapproved-exclusive",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/13/document",
+      "local_path": "inputs/X13.json",
+      "sha256": "003b14a8dc47f62822f40aed14681497dd64be7588b83474a5b291dff21ec059",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X14",
+      "label": "mismatched-evidence",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/14/document",
+      "local_path": "inputs/X14.json",
+      "sha256": "76c3cf9fa7de9e89321261ddbaf72ca42c6b30cb742eb98ce4db812ddcc60fc8",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X15",
+      "label": "dangling-node",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/15/document",
+      "local_path": "inputs/X15.json",
+      "sha256": "1f074d3174757dd248a7935f5bd74ab659e183286c2d537e33783f10a5345f1a",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X16",
+      "label": "duplicate-node",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/16/document",
+      "local_path": "inputs/X16.json",
+      "sha256": "32ecb863a11850c47be7b8a7454e5472e6ee05081e1c597b2dbb8d5f6ab30adc",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X17",
+      "label": "wrong-observed-root",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/17/document",
+      "local_path": "inputs/X17.json",
+      "sha256": "6310c75a858a09df4c8be4ca828c4ad20f18f18aae4760b639c52e3bad910e48",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X18",
+      "label": "conditional-cannot-prove-all",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/18/document",
+      "local_path": "inputs/X18.json",
+      "sha256": "999486830846a022a38cebba668099e7f8bdee98cbef5607187c89b7d9688c0e",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X19",
+      "label": "sentinel-entry-contradiction",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/19/document",
+      "local_path": "inputs/X19.json",
+      "sha256": "0610cc08b53830b65a4fe94f5b33b0a8fd2a5ef744043a4199303743090c234d",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X20",
+      "label": "unsorted-records",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/20/document",
+      "local_path": "inputs/X20.json",
+      "sha256": "18b72742042edfa235914d9c229c51ea36e0fd5a21c4852e3bf4f222bb8b91ec",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X21",
+      "label": "wrong-placement",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/21/document",
+      "local_path": "inputs/X21.json",
+      "sha256": "ef4af1950c7d6f925e993233a746f67f13838f3394842e8e5849fc097eb2557b",
+      "kind": "authored extension contract document"
+    },
+    {
+      "id": "X22",
+      "label": "disconnected-candidate-with-complete-core",
+      "upstream_path": "spec/experimental/interpretation-cases.json",
+      "source_sha256": "ef6367d77ede53d346c173cb9eb9485a7225365ed2ae858162958c9296665281",
+      "source_pointer": "/22/document",
+      "local_path": "inputs/X22.json",
+      "sha256": "69a966c5c8a9b4e55ea484043ed1d05379bf33f0a1e8bcb22f571d097c566838",
+      "kind": "authored extension contract document"
+    }
+  ],
+  "serialization": "Fixture copies retain exact bytes. X documents extracted by JSON pointer, serialized with Python json.dumps(indent=2, ensure_ascii=False) plus LF; extracted digest is not upstream canonicalSha256."
+}

@@ -1,0 +1,86 @@
+{
+  "id": "X01/opt-in/CQ4",
+  "input_id": "X01",
+  "profile": "opt-in",
+  "question": "CQ4",
+  "graph_id": "main",
+  "prerequisites_ref": "prerequisites.json#/X01",
+  "answers": [
+    {
+      "part": "materialized_child_links",
+      "judgment": "determined",
+      "expected": {
+        "expected_ref": "core-facts.json#/X01/materialized_child_links"
+      },
+      "scope": "main",
+      "input_pointers": [
+        "/graphs/0/structure/nodes"
+      ],
+      "rules": [
+        "R-STRUCT",
+        "R-NESTING"
+      ],
+      "basis": "contract-and-input",
+      "derivation": "No inspected node has subgraphId; this empty link set is not a negative child assertion."
+    },
+    {
+      "part": "trusted_child_assertions",
+      "judgment": "determined",
+      "expected": {
+        "node": {
+          "status": "known",
+          "value": "not-child",
+          "evidence": {
+            "kind": "ordinary-node",
+            "source": "contract-example.structural-surface"
+          }
+        }
+      },
+      "scope": "main",
+      "input_pointers": [
+        "/graphs/0/structure/nodes",
+        "/graphs/0",
+        "/"
+      ],
+      "rules": [
+        "L-PROFILE",
+        "R-ABSENCE",
+        "R-EXT-VALID",
+        "R-CHILD"
+      ],
+      "basis": "contract-and-profile",
+      "derivation": "Apply prerequisites.json#/X01; retain literal admitted facts per visible node, including reasons/evidence. Otherwise record missing/untrusted interpretation without manufacturing a negative. Entry observedRoot is separately audited in CQ1 and prerequisites."
+    },
+    {
+      "part": "expansion_success_and_contents",
+      "judgment": "underdetermined",
+      "scope": "document",
+      "input_pointers": [
+        "/graphs/0/structure/nodes",
+        "/graphs/0"
+      ],
+      "rules": [
+        "R-NESTING",
+        "R-CHILD",
+        "R-SCOPE"
+      ],
+      "reason_kind": "contract-non-guarantee",
+      "derivation": "Even an admitted opaque-child only permits an attempt. No child contents or successful expansion can be supplied from these documents."
+    },
+    {
+      "part": "unresolved_child_identity",
+      "judgment": "determined",
+      "expected": [],
+      "scope": "main",
+      "input_pointers": [
+        "/graphs/0/x-topology-interpretation/nodes/0/subgraph"
+      ],
+      "rules": [
+        "R-CHILD",
+        "R-FACTS"
+      ],
+      "basis": "contract-and-input",
+      "derivation": "The sole visible node has an admitted known child classification. This is interpretation of its assertion, not producer-truth verification."
+    }
+  ]
+}

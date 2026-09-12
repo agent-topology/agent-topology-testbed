@@ -3,6 +3,12 @@
 Evidence for decisions about the [`agent-topology`](https://github.com/agent-topology/agent-topology)
 format, gathered by consuming it.
 
+[The consumer contract audit](observations/consumer-contract-audit/README.md)
+defines five structural question groups and source-backed judgments for 31
+documents under core-only and experimental opt-in profiles. Its 310 reviewed
+groups preserve underdetermined answers without expected values; this is document
+evidence for a future comparison device, not a consumer execution or release gate.
+
 [Q1](observations/Q1/README.md) records two fresh registry installations of each
 documented quickstart: all five executable entry points pass, with unchanged
 snippets, artifact identities and a bounded non-finding disposition.

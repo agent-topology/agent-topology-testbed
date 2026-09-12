@@ -1,0 +1,249 @@
+{
+  "stage": "Post-freeze comparison only; these labels were not expectation authority",
+  "upstream_commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "path": "spec/experimental/interpretation-cases.json",
+  "rows": [
+    {
+      "input_id": "X00",
+      "source_pointer": "/0",
+      "upstream_extensionStatus": "absent",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "absent",
+      "audit_revision_1_object_shape": "not-applicable",
+      "status_comparison": "agrees",
+      "shape_comparison": "not-comparable",
+      "shape_note": "Upstream true is its absent-case label; this audit has no extension object to shape-check."
+    },
+    {
+      "input_id": "X01",
+      "source_pointer": "/1",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X02",
+      "source_pointer": "/2",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X03",
+      "source_pointer": "/3",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X04",
+      "source_pointer": "/4",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X05",
+      "source_pointer": "/5",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X06",
+      "source_pointer": "/6",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X07",
+      "source_pointer": "/7",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X08",
+      "source_pointer": "/8",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X09",
+      "source_pointer": "/9",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X10",
+      "source_pointer": "/10",
+      "upstream_extensionStatus": "unsupported",
+      "upstream_shapeValid": false,
+      "audit_extension_status": "unsupported-revision",
+      "audit_revision_1_object_shape": "not-applicable",
+      "status_comparison": "agrees",
+      "shape_comparison": "not-comparable",
+      "shape_note": "Upstream false describes applying revision 1 schema to revision 2; this audit negotiates unsupported before interpretation and records shape not-applicable."
+    },
+    {
+      "input_id": "X11",
+      "source_pointer": "/11",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": false,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "invalid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X12",
+      "source_pointer": "/12",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": false,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "invalid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X13",
+      "source_pointer": "/13",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": false,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "invalid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X14",
+      "source_pointer": "/14",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": false,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "invalid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X15",
+      "source_pointer": "/15",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X16",
+      "source_pointer": "/16",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X17",
+      "source_pointer": "/17",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X18",
+      "source_pointer": "/18",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X19",
+      "source_pointer": "/19",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X20",
+      "source_pointer": "/20",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X21",
+      "source_pointer": "/21",
+      "upstream_extensionStatus": "invalid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "invalid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    },
+    {
+      "input_id": "X22",
+      "source_pointer": "/22",
+      "upstream_extensionStatus": "valid",
+      "upstream_shapeValid": true,
+      "audit_extension_status": "supported-valid",
+      "audit_revision_1_object_shape": "valid",
+      "status_comparison": "agrees",
+      "shape_comparison": "agrees"
+    }
+  ],
+  "comparison_method": {
+    "status_aliases": {
+      "absent": "absent",
+      "valid": "supported-valid",
+      "unsupported": "unsupported-revision",
+      "invalid": "invalid"
+    },
+    "shape": "Compare only the 21 applicable revision-1 objects; X00/X10 are explicitly non-comparable. No stored canonicalSha256 or package execution compared.",
+    "semantic_expectations_changed_to_match_labels": false
+  }
+}

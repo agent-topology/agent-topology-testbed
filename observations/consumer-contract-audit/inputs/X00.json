@@ -1,0 +1,47 @@
+{
+  "completeness": {
+    "gaps": [],
+    "status": "complete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [],
+        "entryNodeIds": [
+          "node"
+        ],
+        "exitNodeIds": [
+          "node"
+        ],
+        "joins": [],
+        "nodes": [
+          {
+            "id": "node"
+          }
+        ]
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "1ee36112e66dc64175eaead8a95c6e71af89009e81f19bf31aa1d1044b277be9"
+  },
+  "topologyVersion": "0.1"
+}

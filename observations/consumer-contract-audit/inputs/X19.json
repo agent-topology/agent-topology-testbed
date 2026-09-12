@@ -1,0 +1,147 @@
+{
+  "completeness": {
+    "gaps": [
+      {
+        "code": "unknown-routing-targets",
+        "element": {
+          "graphId": "main",
+          "id": "router",
+          "kind": "node"
+        },
+        "message": "Targets unavailable."
+      }
+    ],
+    "status": "incomplete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [
+          {
+            "id": "start-router",
+            "kind": "direct",
+            "source": "start",
+            "target": "router"
+          },
+          {
+            "id": "target-end",
+            "kind": "direct",
+            "source": "target",
+            "target": "end"
+          }
+        ],
+        "entryNodeIds": [
+          "start",
+          "target"
+        ],
+        "exitNodeIds": [
+          "end",
+          "router"
+        ],
+        "joins": [],
+        "nodes": [
+          {
+            "id": "end"
+          },
+          {
+            "id": "router"
+          },
+          {
+            "id": "start"
+          },
+          {
+            "id": "target"
+          }
+        ]
+      },
+      "x-topology-interpretation": {
+        "nodes": [
+          {
+            "entry": {
+              "evidence": {
+                "kind": "framework-entry",
+                "source": "contract-example.structural-surface"
+              },
+              "observedRoot": false,
+              "status": "known",
+              "value": "confirmed"
+            },
+            "nodeId": "end",
+            "sentinel": {
+              "evidence": {
+                "kind": "framework-sentinel",
+                "source": "contract-example.structural-surface"
+              },
+              "status": "known",
+              "value": "end"
+            }
+          },
+          {
+            "branch": {
+              "reason": "selection-not-observable",
+              "status": "unknown"
+            },
+            "entry": {
+              "observedRoot": false,
+              "reason": "entry-not-established",
+              "status": "unknown"
+            },
+            "nodeId": "router"
+          },
+          {
+            "entry": {
+              "evidence": {
+                "kind": "framework-entry",
+                "source": "contract-example.structural-surface"
+              },
+              "observedRoot": true,
+              "status": "known",
+              "value": "confirmed"
+            },
+            "nodeId": "start",
+            "sentinel": {
+              "evidence": {
+                "kind": "framework-sentinel",
+                "source": "contract-example.structural-surface"
+              },
+              "status": "known",
+              "value": "start"
+            }
+          },
+          {
+            "entry": {
+              "observedRoot": true,
+              "reason": "entry-not-established",
+              "status": "unknown"
+            },
+            "nodeId": "target"
+          }
+        ],
+        "traversalDepth": 0,
+        "version": "1"
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "405ad51127cd3cb6ce5f569fb908291f0c368af0e543c3c10e80f67ff5e225d4"
+  },
+  "topologyVersion": "0.1"
+}

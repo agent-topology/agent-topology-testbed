@@ -1,0 +1,84 @@
+{
+  "completeness": {
+    "gaps": [],
+    "status": "complete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [
+          {
+            "id": "split-a",
+            "kind": "direct",
+            "source": "split",
+            "target": "a"
+          },
+          {
+            "id": "split-b",
+            "kind": "direct",
+            "source": "split",
+            "target": "b"
+          }
+        ],
+        "entryNodeIds": [
+          "split"
+        ],
+        "exitNodeIds": [
+          "a",
+          "b"
+        ],
+        "joins": [],
+        "nodes": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "split"
+          }
+        ]
+      },
+      "x-topology-interpretation": {
+        "nodes": [
+          {
+            "branch": {
+              "evidence": {
+                "kind": "unconditional-edges",
+                "source": "contract-example.structural-surface"
+              },
+              "status": "known",
+              "value": "exclusive"
+            },
+            "nodeId": "split"
+          }
+        ],
+        "traversalDepth": 0,
+        "version": "1"
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "b04ebc28ade7087e87b622aaf7cded86634f96ab41554cfeb2d07ff6fe13457f"
+  },
+  "topologyVersion": "0.1"
+}

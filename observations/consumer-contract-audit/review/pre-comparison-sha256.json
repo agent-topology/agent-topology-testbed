@@ -1,0 +1,9 @@
+{
+  "stage": "After input-and-rule rereview/corrections, before upstream outcome comparison",
+  "files": {
+    "sources.json": "57925d9d006f46a962d5748f2391a118544dbc2289b52e6a2afee7a92991e7e3",
+    "core-facts.json": "05725677f371338e209e2a7d8ac992014dd387c67114d8f9e60550c6950fb496",
+    "prerequisites.json": "751b5201885664d51f75f03c907a88eb57e68d057647020827354a650b7be6e0",
+    "matrix.jsonl": "abb6ef55696949a16ec9d8e77c9b9ae64b30ec301cd5dd4f03496b207811cb3f"
+  }
+}

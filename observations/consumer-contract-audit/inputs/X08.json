@@ -1,0 +1,77 @@
+{
+  "completeness": {
+    "gaps": [],
+    "status": "complete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [
+          {
+            "id": "a-start",
+            "kind": "direct",
+            "source": "a",
+            "target": "start"
+          },
+          {
+            "id": "start-a",
+            "kind": "direct",
+            "source": "start",
+            "target": "a"
+          }
+        ],
+        "entryNodeIds": [],
+        "exitNodeIds": [],
+        "joins": [],
+        "nodes": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "start"
+          }
+        ]
+      },
+      "x-topology-interpretation": {
+        "nodes": [
+          {
+            "entry": {
+              "evidence": {
+                "kind": "framework-entry",
+                "source": "contract-example.structural-surface"
+              },
+              "observedRoot": false,
+              "status": "known",
+              "value": "confirmed"
+            },
+            "nodeId": "start"
+          }
+        ],
+        "traversalDepth": 0,
+        "version": "1"
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "aee146cd18a189455f0459039b3c6d60fc29f1dbd60cec6d0fca67a8efa1481b"
+  },
+  "topologyVersion": "0.1"
+}

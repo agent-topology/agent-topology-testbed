@@ -1,0 +1,65 @@
+{
+  "completeness": {
+    "gaps": [],
+    "status": "complete"
+  },
+  "graphs": [
+    {
+      "id": "main",
+      "structure": {
+        "edges": [],
+        "entryNodeIds": [
+          "child"
+        ],
+        "exitNodeIds": [
+          "child"
+        ],
+        "joins": [],
+        "nodes": [
+          {
+            "id": "child"
+          }
+        ]
+      },
+      "x-topology-interpretation": {
+        "nodes": [
+          {
+            "entry": {
+              "observedRoot": true,
+              "reason": "scope-not-inspected",
+              "status": "unknown"
+            },
+            "nodeId": "child",
+            "subgraph": {
+              "reason": "scope-not-inspected",
+              "status": "unknown"
+            }
+          }
+        ],
+        "traversalDepth": 2,
+        "version": "1"
+      }
+    }
+  ],
+  "producerLimitations": [],
+  "provenance": {
+    "framework": {
+      "name": "example",
+      "version": "1"
+    },
+    "generatedAt": "2026-09-11T00:00:00Z",
+    "producer": {
+      "name": "contract-example",
+      "version": "1"
+    },
+    "source": {
+      "kind": "compiled-object"
+    }
+  },
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "5cab5177bd58c7c634283341bc42f9972b813e045a6bce97cafbdbf5d9331659"
+  },
+  "topologyVersion": "0.1"
+}
