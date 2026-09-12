@@ -223,6 +223,39 @@ Execution uses a fresh temporary home and an ephemeral instance, as in P0/P2.
 wrong execution input, and an unsupported version exit nonzero under `-O`;
 it also prevents execution entry points in a standalone static run.
 
+## Dagster dynamic-mapping run (P6)
+
+Use the same isolated Dagster setup and unchanged lock above. Read
+[the dynamic-mapping probe](dagster/dynamic.py) and
+[P6's question/expected states](../observations/P6/README.md) first.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for case in 0 1 2; do
+  for n in 1 2; do
+    .venvs/dagster/bin/python probes/dagster/dynamic.py --case "$case" --mode static \
+      --output ".probe-runs/dynamic-$case-static-$n.json" > ".probe-runs/dynamic-$case-static-$n.log" 2>&1
+    .venvs/dagster/bin/python probes/dagster/dynamic.py --case "$case" --mode execution \
+      --output ".probe-runs/dynamic-$case-$n.json" > ".probe-runs/dynamic-$case-$n.log" 2>&1
+  done
+  cmp ".probe-runs/dynamic-$case-static-1.json" ".probe-runs/dynamic-$case-static-2.json"
+  cmp ".probe-runs/dynamic-$case-1.json" ".probe-runs/dynamic-$case-2.json"
+done
+.venvs/dagster/bin/python probes/dagster/test_dynamic.py
+```
+
+Job `p6_dynamic` wires one `DynamicOut()` source into one mapped op via
+`.map()` and one collect consumer via `.collect()`, then isolates state
+exactly as the P0/P2/P4 Dagster runs do. Each case's op config sets
+`dynamic_source`'s emitted mapping keys to `[]`, `["k0"]`, or `["k0",
+"k1"]`. `--mode execution` also produces the `static` section; the
+standalone `static` mode never calls `execute_in_process()`, so it carries
+no execution evidence. `test_dynamic.py` checks that dependency-kind loss,
+`is_dynamic`-flag loss, a duplicate mapping key, a wrong cardinality, and an
+unsupported version all exit nonzero under `-O`; it also prevents execution
+entry points in a standalone static run.
+
 ## Failure interpretation
 
 All commands must exit zero before records count as evidence. Assertions raise
