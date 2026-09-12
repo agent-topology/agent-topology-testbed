@@ -1,0 +1,17 @@
+{
+  "Comment": "S1 fixture: Choice state with two ordered rules and a Default fallback",
+  "StartAt": "CheckStatus",
+  "States": {
+    "CheckStatus": {
+      "Type": "Choice",
+      "Choices": [
+        { "Variable": "$.status", "StringEquals": "APPROVED", "Next": "Approved" },
+        { "Variable": "$.status", "StringEquals": "REJECTED", "Next": "Rejected" }
+      ],
+      "Default": "Pending"
+    },
+    "Approved": { "Type": "Pass", "End": true },
+    "Rejected": { "Type": "Pass", "End": true },
+    "Pending": { "Type": "Pass", "End": true }
+  }
+}

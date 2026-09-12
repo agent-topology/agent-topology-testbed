@@ -1,0 +1,74 @@
+{
+  "case_id": "S1-asl-parallel",
+  "evidence_class": "static",
+  "fixture": "parallel.json",
+  "fixture_sha256": "0e642b3e364f2d84c11ab08e282f075d0b34d0752f00eafbddd2b4af3d186532",
+  "json_parsed": true,
+  "probe_disclaimer": "Successful JSON parsing and this probe's own bounded structural checks (state-type vocabulary, scoped StartAt/Next/Default/Choice reference resolution) are not authoritative ASL validation and not AWS Step Functions execution evidence. No expression evaluator, simulator, or cloud request is implemented.",
+  "python": "3.14.7",
+  "scopes": [
+    {
+      "choice_rules": {},
+      "map_config": {},
+      "next_edges": {
+        "RunBoth": "Converge"
+      },
+      "parallel_branch_counts": {
+        "RunBoth": 2
+      },
+      "scope_id": "root",
+      "start_at": "RunBoth",
+      "state_names": [
+        "Converge",
+        "RunBoth"
+      ],
+      "state_types": {
+        "Converge": "Pass",
+        "RunBoth": "Parallel"
+      },
+      "terminal_states": [
+        "Converge"
+      ]
+    },
+    {
+      "choice_rules": {},
+      "map_config": {},
+      "next_edges": {},
+      "parallel_branch_counts": {},
+      "scope_id": "root/RunBoth/branch0",
+      "start_at": "Step",
+      "state_names": [
+        "Step"
+      ],
+      "state_types": {
+        "Step": "Pass"
+      },
+      "terminal_states": [
+        "Step"
+      ]
+    },
+    {
+      "choice_rules": {},
+      "map_config": {},
+      "next_edges": {},
+      "parallel_branch_counts": {},
+      "scope_id": "root/RunBoth/branch1",
+      "start_at": "Step",
+      "state_names": [
+        "Step"
+      ],
+      "state_types": {
+        "Step": "Pass"
+      },
+      "terminal_states": [
+        "Step"
+      ]
+    }
+  ],
+  "source_sha256": "dc4d4a4f5afcecacf7963ff26fecfcd05cd7ee9c4f47fa7385ebf1b3d80befbf",
+  "spec": {
+    "retrieved": "2026-09-11",
+    "revision_note": "states-language.net carries no dated revision tag as of retrieval; the retrieval date stands in for a spec revision identifier.",
+    "source_url": "https://states-language.net/spec.html"
+  }
+}

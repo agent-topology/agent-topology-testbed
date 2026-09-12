@@ -1,0 +1,19 @@
+{
+  "Comment": "S1 negative fixture: a Parallel branch state's Next targets a name defined only in the parent scope, not in the branch's own States",
+  "StartAt": "RunBoth",
+  "States": {
+    "RunBoth": {
+      "Type": "Parallel",
+      "Branches": [
+        {
+          "StartAt": "Step",
+          "States": {
+            "Step": { "Type": "Pass", "Next": "Converge" }
+          }
+        }
+      ],
+      "Next": "Converge"
+    },
+    "Converge": { "Type": "Pass", "End": true }
+  }
+}
