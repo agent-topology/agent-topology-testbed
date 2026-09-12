@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "-O",
+    "probes/published-spec/generated/diagnose.py",
+    "observations/E1/run-a"
+  ],
+  "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+  "seconds": 0.10582533300112118,
+  "exit": 0,
+  "stdout": "{\"canonical-differences\": 84, \"numeric-spelling-only\": 84}\n",
+  "stderr": ""
+}

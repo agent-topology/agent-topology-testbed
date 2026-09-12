@@ -1,0 +1,131 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-m",
+      "venv",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 1.4189724159987236,
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "--isolated",
+      "install",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--only-binary=:all:",
+      "--report",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/observations/E1/generator-install.json",
+      "hypothesis",
+      "jsonschema==4.26.0"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 1.2161489169993729,
+    "exit": 0,
+    "stdout": "Collecting hypothesis\n  Downloading hypothesis-6.168.0-cp314-cp314-macosx_11_0_arm64.whl.metadata (5.7 kB)\nCollecting jsonschema==4.26.0\n  Using cached jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)\nCollecting attrs>=22.2.0 (from jsonschema==4.26.0)\n  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)\nCollecting jsonschema-specifications>=2023.03.6 (from jsonschema==4.26.0)\n  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)\nCollecting referencing>=0.28.4 (from jsonschema==4.26.0)\n  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)\nCollecting rpds-py>=0.25.0 (from jsonschema==4.26.0)\n  Using cached rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (4.1 kB)\nCollecting sortedcontainers<3.0.0,>=2.1.0 (from hypothesis)\n  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)\nUsing cached jsonschema-4.26.0-py3-none-any.whl (90 kB)\nDownloading hypothesis-6.168.0-cp314-cp314-macosx_11_0_arm64.whl (784 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 784.6/784.6 kB 11.9 MB/s  0:00:00\nDownloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)\nUsing cached attrs-26.1.0-py3-none-any.whl (67 kB)\nUsing cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nUsing cached referencing-0.37.0-py3-none-any.whl (26 kB)\nUsing cached rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl (339 kB)\nInstalling collected packages: sortedcontainers, rpds-py, hypothesis, attrs, referencing, jsonschema-specifications, jsonschema\n\nSuccessfully installed attrs-26.1.0 hypothesis-6.168.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.6.3 sortedcontainers-2.4.0\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/generator/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.1255267910019029,
+    "exit": 0,
+    "stdout": "attrs==26.1.0\nhypothesis==6.168.0\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\npip==26.2.1\nreferencing==0.37.0\nrpds-py==2026.6.3\nsortedcontainers==2.4.0\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-m",
+      "venv",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/py-b2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 1.2910350000020117,
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/py-b2/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "--isolated",
+      "install",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--only-binary=:all:",
+      "--report",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/observations/E1/py-b2-install.json",
+      "--require-hashes",
+      "-r",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.4477475419989787,
+    "exit": 0,
+    "stdout": "Collecting agent-topology-spec==0.1.0b2 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock (line 1))\n  Using cached agent_topology_spec-0.1.0b2-py3-none-any.whl (8.1 kB)\nCollecting attrs==26.1.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock (line 2))\n  Using cached attrs-26.1.0-py3-none-any.whl (67 kB)\nCollecting jsonschema==4.26.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock (line 3))\n  Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)\nCollecting jsonschema-specifications==2025.9.1 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock (line 4))\n  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nCollecting referencing==0.37.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock (line 5))\n  Using cached referencing-0.37.0-py3-none-any.whl (26 kB)\nCollecting rpds-py==2026.6.3 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/probes/published-spec/locks/py-b2/requirements.lock (line 6))\n  Using cached rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl (339 kB)\nInstalling collected packages: rpds-py, attrs, referencing, jsonschema-specifications, jsonschema, agent-topology-spec\n\nSuccessfully installed agent-topology-spec-0.1.0b2 attrs-26.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.6.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/py-b2/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr",
+    "seconds": 0.12890045799940708,
+    "exit": 0,
+    "stdout": "agent-topology-spec==0.1.0b2\nattrs==26.1.0\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\npip==26.2.1\nreferencing==0.37.0\nrpds-py==2026.6.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--registry=https://registry.npmjs.org"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/js-b2",
+    "seconds": 0.37681733399949735,
+    "exit": 0,
+    "stdout": "\nadded 7 packages in 289ms\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/differentially-test-published-python-and-typescr/.probe-runs/E1/envs/js-b2",
+    "seconds": 0.15163408399894251,
+    "exit": 0,
+    "stdout": "{\n  \"name\": \"js-b2\",\n  \"dependencies\": {\n    \"@agent-topology/spec\": {\n      \"version\": \"0.1.0-beta.2\",\n      \"resolved\": \"https://registry.npmjs.org/@agent-topology/spec/-/spec-0.1.0-beta.2.tgz\",\n      \"overridden\": false,\n      \"dependencies\": {\n        \"ajv-formats\": {\n          \"version\": \"3.0.1\",\n          \"resolved\": \"https://registry.npmjs.org/ajv-formats/-/ajv-formats-3.0.1.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"ajv\": {\n              \"version\": \"8.20.0\"\n            }\n          }\n        },\n        \"ajv\": {\n          \"version\": \"8.20.0\",\n          \"resolved\": \"https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"fast-deep-equal\": {\n              \"version\": \"3.1.3\",\n              \"resolved\": \"https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz\",\n              \"overridden\": false\n            },\n            \"fast-uri\": {\n              \"version\": \"3.1.7\",\n              \"resolved\": \"https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.7.tgz\",\n              \"overridden\": false\n            },\n            \"json-schema-traverse\": {\n              \"version\": \"1.0.0\",\n              \"resolved\": \"https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz\",\n              \"overridden\": false\n            },\n            \"require-from-string\": {\n              \"version\": \"2.0.2\",\n              \"resolved\": \"https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz\",\n              \"overridden\": false\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+    "stderr": ""
+  }
+]

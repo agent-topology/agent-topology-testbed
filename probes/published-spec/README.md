@@ -13,3 +13,8 @@ of saved records. This internal JSON shape is not a public protocol.
 
 Dependencies are pinned independently under `locks/`. No framework, producer,
 renderer suite, combined CI or upstream publication is involved.
+
+`generated/` adds E1: an independently locked Hypothesis generator, two persistent
+beta.2 batch adapters, validity-preserving shrinking, fresh V1 one-shot replays
+and a saved-evidence repeat audit. See [E1 reproduction and disposition](../../observations/E1/README.md).
+The original V1 adapters, locks and saved evidence remain unchanged.
