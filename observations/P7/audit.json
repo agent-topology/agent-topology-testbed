@@ -1,0 +1,30 @@
+{
+  "A1": {
+    "paired_cases": 4,
+    "static_comparison": "saved record and literal checks; no SDK reconstruction",
+    "unique_message_ids_per_run": 12
+  },
+  "P8": "native identities, states, edges, hashes and paired assertions passed",
+  "cohort": {
+    "pairs": 57,
+    "run_1_asserted_sections": 85,
+    "unresolved_source_provenance": {
+      "P3": {
+        "current": "44b87ea3107e9b2eaa76a37b836479fe2863d59243475569907b429a42352740",
+        "recorded": "3b27f1f95ae0a72f1394f9ab17ff0235ef349bd8231a21c76eec6e4527ed09af"
+      },
+      "P6": {
+        "current": "5e2e011a5d060dc59104628dbbf072cb37d4513b4e6454d230f92510a57d5e91",
+        "recorded": "c8d8ecb452d1a1471da068b845377af18fbe57ecee5761fab5d4b1d1fd7dd92f"
+      }
+    }
+  },
+  "coverage": {
+    "cohort_claims": 47,
+    "later_claims": 15,
+    "linked_matrix_cells": 56
+  },
+  "evidence_class": "saved-record audit; no framework execution",
+  "unchanged_beta2_artifacts": 21,
+  "unchanged_input_artifacts": 147
+}

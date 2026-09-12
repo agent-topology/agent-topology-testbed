@@ -204,3 +204,12 @@ own validation; the source review alone does not certify it. For this fixture's
 actual invocation multiplicity, the measured public task-run path works and must
 retain run identity and dependencies. No upstream producer, topology contract,
 publication, release gate, or Prefect 2 conclusion follows from this local result.
+
+## Indexed closure disposition
+
+The [P7 P8 claim inventory](../../findings/cross-framework-reconciliation.md#p8-disposition)
+records each measured claim as supported, contradicted or unresolved, with its
+non-finding reason, decision impact and smallest follow-up. It is reachable from
+the [findings index](../../findings/README.md). This completes the retrospective
+[closure checklist](../../docs/issue-planning.md#probe-closure-disposition)
+without changing the experiment, raw records or closed measurement issue.

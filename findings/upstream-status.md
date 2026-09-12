@@ -164,3 +164,11 @@ input commit instead of a temporary branch link. F1/F7, C1/S1 corrections and
 Q1/Q3/Q4 were checked for consistent capability/contract/execution boundaries.
 `git diff --check` passed. These are reference and saved-evidence checks, not
 new framework executions or reruns of upstream's reported consumer tests.
+
+## P7 integration addendum
+
+The [final reconciliation](cross-framework-reconciliation.md) now supplies the
+P8/A1 increment excluded from this review’s frozen cohort and reviews epic #1
+against actual evidence. Its live HEAD recheck still matches `eb0e2d8`; the
+source-versus-release dispositions above are unchanged. This addendum supersedes
+the pending-integration wording above without rewriting the D4 review.

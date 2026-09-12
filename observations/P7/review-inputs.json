@@ -1,0 +1,220 @@
+{
+  "reviewed_at": "2026-09-12T12:42:20.137341+00:00",
+  "local_input": "c528746b7826e1507a3c9732e54b4a48efe8cf89",
+  "upstream_head": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "evidence_class": "GitHub metadata and pinned document review; no framework execution",
+  "issues": [
+    {
+      "number": 100,
+      "title": "Distinguish observed graph roots from confirmed execution entry points",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/100",
+      "closedAt": "2026-09-12T02:44:50Z",
+      "body_sha256": "da9a2c06d3899f831e245a94e7ef7453037ca903ce89dcd285bcb6cb75c40472"
+    },
+    {
+      "number": 101,
+      "title": "Add provenance-preserving join connection helpers to both spec packages",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/101",
+      "closedAt": "2026-09-12T02:55:51Z",
+      "body_sha256": "d7e9043470f47a82839892ed982278790eb09b9233cd16eebd22ea6c31478c58"
+    },
+    {
+      "number": 103,
+      "title": "Validate F1\u2013F6 with producer-generated consumer fixtures",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/103",
+      "closedAt": "2026-09-12T11:21:44Z",
+      "body_sha256": "95f6a1a6ee9dfed31ec5e959cd21608f1c7f036c580e922e331420f1e79bdca5"
+    },
+    {
+      "number": 94,
+      "title": "Improve topology interpretation from consumer findings",
+      "state": "OPEN",
+      "url": "https://github.com/agent-topology/agent-topology/issues/94",
+      "closedAt": null,
+      "body_sha256": "01a52f44a12c9fe56a67c0b7d5148243fda657bd271a36b3257f306bf320fd56"
+    },
+    {
+      "number": 95,
+      "title": "Reconcile and preserve F1\u2013F6 reproduction evidence",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/95",
+      "closedAt": "2026-09-12T01:10:10Z",
+      "body_sha256": "a42a80c294fb1f70407a3398c75f91ed78fb62c60eecbd3a05cd8fdcd1b41df9"
+    },
+    {
+      "number": 96,
+      "title": "Define the experimental consumer-interpretation contract",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/96",
+      "closedAt": "2026-09-12T01:12:17Z",
+      "body_sha256": "3e14f6297d8294d85376e7a5d81373c5889aefd9a0b007aa93b0383d5799981a"
+    },
+    {
+      "number": 97,
+      "title": "Emit evidence-backed branch semantics in both producers",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/97",
+      "closedAt": "2026-09-12T01:32:46Z",
+      "body_sha256": "0b140ae5ca479a5a65a71dd398fc0b310009b80213c68c37243e82503b558aca"
+    },
+    {
+      "number": 98,
+      "title": "Expose opaque subgraphs without dangling graph references",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology/issues/98",
+      "closedAt": "2026-09-12T02:07:56Z",
+      "body_sha256": "153fd0fb273af355a5dcd6ab0bd99c057eed2539247c37304632c83b910c272f"
+    },
+    {
+      "number": 1,
+      "title": "Establish decision-oriented topology probes across framework models",
+      "state": "OPEN",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/1",
+      "closedAt": null,
+      "body_sha256": "e88718661311e23a3a30eec2c9c789c82b9d6349ff3df31e42e08c9e82c2b124"
+    },
+    {
+      "number": 12,
+      "title": "Define a decision-oriented framework probe matrix",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/12",
+      "closedAt": "2026-09-12T02:54:12Z",
+      "body_sha256": "f35aed0f4266ae1d3ddf78241565f6ed1719cec1c2a36f051b1f35d5a1e47f79"
+    },
+    {
+      "number": 13,
+      "title": "Probe CrewAI routing and AND/OR convergence for information loss",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/13",
+      "closedAt": "2026-09-12T11:05:14Z",
+      "body_sha256": "1b43b113cd021c730921523fa01bfda4f2f1bef5254341ec25809f3ce139f6dd"
+    },
+    {
+      "number": 14,
+      "title": "Probe ASL declarations as a control for branch and nested-graph semantics",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/14",
+      "closedAt": "2026-09-12T11:01:02Z",
+      "body_sha256": "b2e0cc343001684dc862938ea20d305fd21de3449da26080bf5cc1bbd11cbf5b"
+    },
+    {
+      "number": 15,
+      "title": "Probe Temporal public static structure boundaries without assuming impossibility",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/15",
+      "closedAt": "2026-09-12T11:17:02Z",
+      "body_sha256": "a69f6173d5535074185a7f0a4e8224ac38429aee88d071206754e29caaf8e108"
+    },
+    {
+      "number": 16,
+      "title": "Probe Prefect definition graphs versus runtime task invocation structure",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/16",
+      "closedAt": "2026-09-12T11:46:21Z",
+      "body_sha256": "578cb86361b4e9a28e8d7205a1eed062996549530e2387ca6552b02674aa6bdf"
+    },
+    {
+      "number": 17,
+      "title": "Compare AutoGen GroupChat and GraphFlow static topology boundaries",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/17",
+      "closedAt": "2026-09-12T11:57:13Z",
+      "body_sha256": "d774b69dba531d44a4d94649a1910b68a36e878de67dda5d76170598dc001252"
+    },
+    {
+      "number": 27,
+      "title": "Resolve the convergence finding and publish its disposition",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/27",
+      "closedAt": "2026-09-12T11:55:26Z",
+      "body_sha256": "450c08147e387c78923296d6206617b98d2ed6abf67bc04f1b216a9d49c6e73d"
+    },
+    {
+      "number": 28,
+      "title": "Rewrite the active F1 argument from completed probe evidence",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/28",
+      "closedAt": "2026-09-12T12:06:16Z",
+      "body_sha256": "623f32deb989db87010ab8ca4d03d24aa2d3d00ae28b90302dca1a62b089b57b"
+    },
+    {
+      "number": 29,
+      "title": "Triage completed observations into findings and explicit non-findings",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/29",
+      "closedAt": "2026-09-12T12:18:17Z",
+      "body_sha256": "1ed1aed57866e0a3258251e111f8e13ca7d10b11678b90b0b5ce406843c08b08"
+    },
+    {
+      "number": 3,
+      "title": "Distinguish Airflow branch selection from downstream execution",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/3",
+      "closedAt": "2026-09-12T01:27:25Z",
+      "body_sha256": "ec71cf666ad7cb959419a76b915c348d38044fd0270f691595dc9c1e17e20f01"
+    },
+    {
+      "number": 30,
+      "title": "Reconcile the findings index and upstream status with published dispositions",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/30",
+      "closedAt": "2026-09-12T12:28:30Z",
+      "body_sha256": "2bb0c7ecdd693899a9b541c4faf2898d9e83b679b561c769b224a85cc33d4eb7"
+    },
+    {
+      "number": 31,
+      "title": "Require incremental finding dispositions when closing probe work",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/31",
+      "closedAt": "2026-09-12T12:34:21Z",
+      "body_sha256": "33e08d19e4cbd362cba084dc938368601384cb6a34de2917974fc26473d94d4a"
+    },
+    {
+      "number": 4,
+      "title": "Probe Dagster conditional outputs without assuming exclusive execution",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/4",
+      "closedAt": "2026-09-12T01:58:09Z",
+      "body_sha256": "a1927a5bc8b7ce0258cf849329850f96d960a18d40ae73ee13a65eb75efd094d"
+    },
+    {
+      "number": 5,
+      "title": "Separate Airflow grouping, graph roots, and join conditions",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/5",
+      "closedAt": "2026-09-12T02:12:27Z",
+      "body_sha256": "d432a9a4f11797ca4d20ba59727d74ae58a4e114fa783830a7bf604b334369fa"
+    },
+    {
+      "number": 6,
+      "title": "Probe Dagster nested graph boundaries and convergence",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/6",
+      "closedAt": "2026-09-12T02:29:09Z",
+      "body_sha256": "2fc9216c4687d125f8bf819231758393afab11143e6ae17cc78951d5635991b5"
+    },
+    {
+      "number": 7,
+      "title": "Separate Airflow mapped-task definitions from runtime instances",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/7",
+      "closedAt": "2026-09-12T02:42:21Z",
+      "body_sha256": "fe088008bc8cf787152d1bc49f13fdc22b324dda8fe4bb7ddae9b387ddfa452f"
+    },
+    {
+      "number": 8,
+      "title": "Separate Dagster dynamic definitions from mapped execution instances",
+      "state": "CLOSED",
+      "url": "https://github.com/agent-topology/agent-topology-testbed/issues/8",
+      "closedAt": "2026-09-12T02:39:38Z",
+      "body_sha256": "e4e0a0e206e937663de8b131f5f84f1947dd05f0b8452a1cf955560a1b72d954"
+    }
+  ],
+  "upstream_documents": {
+    "docs/decisions/0008-experimental-consumer-interpretation.md": "f8cf99f88c1b926e9a1fd2ad403c1a8fef1493d44401998c8a68d2a686592f2c",
+    "conformance/consumer/README.md": "a958b584fef669a0414052c5e0acf8ec835f8d6e56490a7c714e19e541b687a8"
+  }
+}

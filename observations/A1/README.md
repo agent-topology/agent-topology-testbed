@@ -196,3 +196,12 @@ a static dependency producer requires additional explicit declarations or a
 separately validated restricted source-analysis approach. Do not merge these
 candidate assessments into one AutoGen answer. No producer, upstream publication,
 contract change, release gate, or broad negative claim is authorized by A1.
+
+## Indexed closure disposition
+
+The [P7 A1 claim inventory](../../findings/cross-framework-reconciliation.md#a1-disposition)
+records each measured claim as supported, contradicted or unresolved, with its
+non-finding reason, decision impact and smallest follow-up. It is reachable from
+the [findings index](../../findings/README.md). This completes the retrospective
+[closure checklist](../../docs/issue-planning.md#probe-closure-disposition)
+without changing the experiment, raw records or closed measurement issue.
