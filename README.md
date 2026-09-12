@@ -154,5 +154,11 @@ historical baseline at commit
 | `@agent-topology/spec` | 0.1.0-beta.2 |
 | `apache-airflow` | 2.10.5 |
 
+The beta.3 registry set (`agent-topology-spec`/`agent-topology-langgraph`
+`0.1.0b3`; `@agent-topology/spec`/`@agent-topology/langgraph`
+`0.1.0-beta.3`) is separately recorded in the [2026-09-12 status snapshot](findings/evidence/upstream-status-2026-09-12-beta.3.json).
+It is registry-published, not a testbed-verified release or a replacement for
+the historical baseline.
+
 New P0 observations record Python 3.11.16, framework versions, and lock/source
 hashes independently; they do not revalidate F1/F3 or the gallery.
