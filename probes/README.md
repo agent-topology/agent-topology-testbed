@@ -111,6 +111,36 @@ exactly as the P0 Airflow run does. `--mode execution` also produces the
 case, not P1's matrix, because it reuses P1's trigger-rule evidence rather than
 retesting it — see P3's README for why.
 
+## Airflow mapped-task run (P5)
+
+Same `.venvs/airflow` environment as above; no separate install. Read
+[the mapped-task probe](airflow/mapped.py) and [P5's question/expected facts](../observations/P5/README.md)
+before running.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for case in 0 1 2; do
+  for n in 1 2; do
+    .venvs/airflow/bin/python probes/airflow/mapped.py --case "$case" --mode static \
+      --output ".probe-runs/mapped-$case-static-$n.json" > ".probe-runs/mapped-$case-static-$n.log" 2>&1
+    .venvs/airflow/bin/python probes/airflow/mapped.py --case "$case" --mode execution \
+      --output ".probe-runs/mapped-$case-$n.json" > ".probe-runs/mapped-$case-$n.log" 2>&1
+  done
+  cmp ".probe-runs/mapped-$case-static-1.json" ".probe-runs/mapped-$case-static-2.json"
+  cmp ".probe-runs/mapped-$case-1.json" ".probe-runs/mapped-$case-2.json"
+done
+```
+
+Builds DAG `p5_mapped`: one TaskFlow source hardcoded per case to return a
+list of length 0, 1, or 2, one TaskFlow task mapped over that list, and two
+downstream aggregations reusing P1's `all_success`/`none_failed_min_one_success`
+rules, then isolates state exactly as the P0 Airflow run does. `--mode
+execution` also produces the `static` section; the standalone `static` mode
+skips `airflow db migrate` and `dag.test()` entirely, so it carries no
+execution evidence. The `static` section is identical across all three cases:
+the DAG definition names one mapped task, not any particular expansion count.
+
 ## Dagster setup
 
 ```sh

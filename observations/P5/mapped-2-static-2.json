@@ -1,0 +1,39 @@
+{
+  "case_id": "P5-airflow-mapped-2",
+  "evidence_class": "static",
+  "framework": "apache-airflow",
+  "lock_sha256": "0c863388ef77d1519e2e58f751b4dac42d16405c3062fed215e8a9199e26713d",
+  "python": "3.11.16",
+  "source_sha256": "4621d5ad1336839c1f4811468583d31a23230c81a8f500e82ac99aa929fa9d3c",
+  "static": {
+    "aggregate_trigger_rules": {
+      "aggregate_all_success": "all_success",
+      "aggregate_none_failed_min_one_success": "none_failed_min_one_success"
+    },
+    "dag_id": "p5_mapped",
+    "dependencies": [
+      [
+        "mapped",
+        "aggregate_all_success"
+      ],
+      [
+        "mapped",
+        "aggregate_none_failed_min_one_success"
+      ],
+      [
+        "source",
+        "mapped"
+      ]
+    ],
+    "mapped_task_is_mapped_operator": true,
+    "source_task_is_mapped_operator": false,
+    "task_ids": [
+      "aggregate_all_success",
+      "aggregate_none_failed_min_one_success",
+      "mapped",
+      "source"
+    ]
+  },
+  "temporary_state_removed": true,
+  "version": "2.10.5"
+}
