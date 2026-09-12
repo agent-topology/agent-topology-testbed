@@ -1,0 +1,286 @@
+{
+  "case_id": "P8",
+  "execution": {
+    "linear": {
+      "body_order": [
+        "a",
+        "b"
+      ],
+      "dependencies": [
+        [
+          0,
+          1,
+          "value"
+        ]
+      ],
+      "flow_state": "COMPLETED",
+      "result": [
+        "ab"
+      ],
+      "state_order": [
+        [
+          0,
+          "PENDING"
+        ],
+        [
+          0,
+          "RUNNING"
+        ],
+        [
+          0,
+          "COMPLETED"
+        ],
+        [
+          1,
+          "PENDING"
+        ],
+        [
+          1,
+          "RUNNING"
+        ],
+        [
+          1,
+          "COMPLETED"
+        ]
+      ],
+      "task_names": [
+        "p8.a",
+        "p8.b"
+      ],
+      "task_runs": [
+        {
+          "dynamic_key_kind": "generated UUID4",
+          "run_count": 1,
+          "states": [
+            "PENDING",
+            "RUNNING",
+            "COMPLETED"
+          ],
+          "task_key": "task_a-7006f6f3",
+          "task_version": "p8-v1"
+        },
+        {
+          "dynamic_key_kind": "generated UUID4",
+          "run_count": 1,
+          "states": [
+            "PENDING",
+            "RUNNING",
+            "COMPLETED"
+          ],
+          "task_key": "task_b-b0826929",
+          "task_version": "p8-v1"
+        }
+      ]
+    },
+    "loop-0": {
+      "body_order": [],
+      "dependencies": [],
+      "flow_state": "COMPLETED",
+      "result": [],
+      "state_order": [],
+      "task_names": [],
+      "task_runs": []
+    },
+    "loop-2": {
+      "body_order": [
+        "a",
+        "b",
+        "a",
+        "b"
+      ],
+      "dependencies": [
+        [
+          0,
+          1,
+          "value"
+        ],
+        [
+          2,
+          3,
+          "value"
+        ]
+      ],
+      "flow_state": "COMPLETED",
+      "result": [
+        "ab",
+        "ab"
+      ],
+      "state_order": [
+        [
+          0,
+          "PENDING"
+        ],
+        [
+          0,
+          "RUNNING"
+        ],
+        [
+          0,
+          "COMPLETED"
+        ],
+        [
+          1,
+          "PENDING"
+        ],
+        [
+          1,
+          "RUNNING"
+        ],
+        [
+          1,
+          "COMPLETED"
+        ],
+        [
+          2,
+          "PENDING"
+        ],
+        [
+          2,
+          "RUNNING"
+        ],
+        [
+          2,
+          "COMPLETED"
+        ],
+        [
+          3,
+          "PENDING"
+        ],
+        [
+          3,
+          "RUNNING"
+        ],
+        [
+          3,
+          "COMPLETED"
+        ]
+      ],
+      "task_names": [
+        "p8.a",
+        "p8.b",
+        "p8.a",
+        "p8.b"
+      ],
+      "task_runs": [
+        {
+          "dynamic_key_kind": "generated UUID4",
+          "run_count": 1,
+          "states": [
+            "PENDING",
+            "RUNNING",
+            "COMPLETED"
+          ],
+          "task_key": "task_a-7006f6f3",
+          "task_version": "p8-v1"
+        },
+        {
+          "dynamic_key_kind": "generated UUID4",
+          "run_count": 1,
+          "states": [
+            "PENDING",
+            "RUNNING",
+            "COMPLETED"
+          ],
+          "task_key": "task_b-b0826929",
+          "task_version": "p8-v1"
+        },
+        {
+          "dynamic_key_kind": "generated UUID4",
+          "run_count": 1,
+          "states": [
+            "PENDING",
+            "RUNNING",
+            "COMPLETED"
+          ],
+          "task_key": "task_a-7006f6f3",
+          "task_version": "p8-v1"
+        },
+        {
+          "dynamic_key_kind": "generated UUID4",
+          "run_count": 1,
+          "states": [
+            "PENDING",
+            "RUNNING",
+            "COMPLETED"
+          ],
+          "task_key": "task_b-b0826929",
+          "task_version": "p8-v1"
+        }
+      ]
+    }
+  },
+  "prefect": "3.6.22",
+  "python": "3.11.16",
+  "sha256": {
+    "expected.json": "73c3e9ec2d4def3775e4ba84d427886bf2a958e5fab0094bf274d9dec21f6e43",
+    "fixtures.py": "3fdc4df9d9ed9191b07f1df82d17f704ecacaaaededd1a25e7b1c5c9830650d4",
+    "probe.py": "625efb74a925af062f8c897b41cfb54f3e826903d26abfefaf72f93838e22578",
+    "requirements.lock": "06d47a05a4c94eef04dae395a8a2f51953e77b884e9dcb08b6c6e2012d449d90",
+    "requirements.txt": "daebb50a8122d881d67f529ecfe8755dcd062c044e95700a687e98bccf22f724",
+    "test_probe.py": "c1430fb6de95e19895800aae5dce67c6c4caf1d733f6de0532882c31b1514471",
+    "verify.py": "84d0e15461aa14b60104bd045712677b9aeba504699c129871e505ba76d76246"
+  },
+  "static": {
+    "bodies_entered": [],
+    "flow_names": [
+      "p8.linear",
+      "p8.loop"
+    ],
+    "flows": [
+      {
+        "name": "p8.linear",
+        "parameters": {
+          "definitions": {},
+          "properties": {},
+          "required": [],
+          "title": "Parameters",
+          "type": "object"
+        },
+        "python_entrypoint": "fixtures:linear",
+        "signature": "()",
+        "version": "p8-v1"
+      },
+      {
+        "name": "p8.loop",
+        "parameters": {
+          "definitions": {},
+          "properties": {
+            "count": {
+              "position": 0,
+              "title": "count",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "count"
+          ],
+          "title": "Parameters",
+          "type": "object"
+        },
+        "python_entrypoint": "fixtures:loop",
+        "signature": "(count: int)",
+        "version": "p8-v1"
+      }
+    ],
+    "task_names": [
+      "p8.a",
+      "p8.b"
+    ],
+    "tasks": [
+      {
+        "name": "p8.a",
+        "python_entrypoint": "fixtures:task_a",
+        "signature": "()",
+        "task_key": "task_a-7006f6f3",
+        "version": "p8-v1"
+      },
+      {
+        "name": "p8.b",
+        "python_entrypoint": "fixtures:task_b",
+        "signature": "(value)",
+        "task_key": "task_b-b0826929",
+        "version": "p8-v1"
+      }
+    ]
+  }
+}

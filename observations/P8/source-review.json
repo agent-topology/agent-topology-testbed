@@ -1,0 +1,65 @@
+{
+  "tag": "3.6.22",
+  "retrieved": "2026-09-12",
+  "files": [
+    {
+      "path": "src/prefect/flows.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/flows.py",
+      "sha256": "c618793e6b2972111f3bd6f277a94858bbb6b1dd358db0928558014df4ca0a1b",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/tasks.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/tasks.py",
+      "sha256": "e89c46d47f2295106720a37c1c31f1a20afdcff67494aaefe314a4ca3637c8b7",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/utilities/visualization.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/utilities/visualization.py",
+      "sha256": "e6bcb0700fead83d0a1dbe59a199eb67f03e71768015c43dfb07196829fdf5f3",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/testing/utilities.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/testing/utilities.py",
+      "sha256": "021e89544af0ee30d4b411352ee40fc2a7018ded966cd6f4e9bffd8536124b2c",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/flow_runs.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/flow_runs.py",
+      "sha256": "cbce088ddc3a11b245f187d5b216224414a4ce0e33a6b1d3a8b1bbf5a687371c",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/server/api/flow_runs.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/server/api/flow_runs.py",
+      "sha256": "be4af1f00b2be4a9a9907b97258629ea1163a8ebca92f5333dda3d1a8472c271",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "uv.lock",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/uv.lock",
+      "sha256": "f89cdf2f318e39fdfe1af41e3b035756cac9dd3577ddbf47a97c642de41b63e5"
+    },
+    {
+      "path": "src/prefect/utilities/_engine.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/utilities/_engine.py",
+      "sha256": "f465b85f597201b98fc02b975c8b9b549ed9d03313dddca490452da7db66e612",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/task_engine.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/task_engine.py",
+      "sha256": "5c328691e5ee9abf6adbaebb78f2ad64ce44242dc980012aa1d538b6118235d1",
+      "installed_matches_tag": true
+    },
+    {
+      "path": "src/prefect/client/orchestration/__init__.py",
+      "url": "https://raw.githubusercontent.com/PrefectHQ/prefect/3.6.22/src/prefect/client/orchestration/__init__.py",
+      "sha256": "831e91967078c569bb5fe37412a8c4cee716f476f6798b79a4b451d3b5a7de56",
+      "installed_matches_tag": true
+    }
+  ]
+}
