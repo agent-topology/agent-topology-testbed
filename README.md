@@ -3,7 +3,8 @@
 Evidence for decisions about the [`agent-topology`](https://github.com/agent-topology/agent-topology)
 format, gathered by consuming it.
 
-Every claim here is produced by something that runs. The repository exists so that
+Claims here must be tied to their evidence class and reproduction. The repository
+exists so that
 a question about the format — *can a consumer draw this correctly? can a second
 framework emit this field?* — can be answered with a reproduction rather than an
 argument.
@@ -62,6 +63,7 @@ that a heavy dependency in one probe stays in that probe.
 
 ```
 probes/airflow/    apache-airflow 2.10.5
+probes/dagster/    dagster 1.13.22
 ```
 
 ### `gallery/`
@@ -78,20 +80,25 @@ FIXTURES=../../agent-topology/conformance/fixtures OUT=../gallery npm run build
 npm run experiment
 ```
 
-```
-cd probes/airflow && pip install -r requirements.txt && python airflow_probe.py
-```
+For the isolated two-node baselines, follow [probe reproduction](probes/README.md).
+New observations live in [P0](observations/P0/README.md), following the
+[evidence conventions](docs/evidence.md). The original `airflow_probe.py` and
+`OUTPUT.txt` remain historical beta.2 evidence, not these smoke cases.
 
 Probes are run by hand. They are not in CI, because pinning several orchestration
 frameworks in one job buys less than it costs.
 
 ## Versions
 
-Findings are recorded against a specific release and rot without one. Everything
-currently here was observed against:
+Findings are recorded against a specific release and rot without one. The
+historical baseline at commit
+`571e881e6d509b6e26ff8bf14b98e207d12e7ce9` was recorded against:
 
 | Package | Version |
 | --- | --- |
 | `agent-topology-spec` | 0.1.0b2 |
 | `@agent-topology/spec` | 0.1.0-beta.2 |
 | `apache-airflow` | 2.10.5 |
+
+New P0 observations record Python 3.11.16, framework versions, and lock/source
+hashes independently; they do not revalidate F1/F3 or the gallery.

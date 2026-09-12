@@ -1,0 +1,38 @@
+{
+  "case_id": "P0-airflow-linear",
+  "evidence_class": "execution",
+  "execution": {
+    "dag_state": "success",
+    "task_instances": [
+      {
+        "map_index": -1,
+        "state": "success",
+        "task_id": "first"
+      },
+      {
+        "map_index": -1,
+        "state": "success",
+        "task_id": "second"
+      }
+    ]
+  },
+  "framework": "apache-airflow",
+  "lock_sha256": "0c863388ef77d1519e2e58f751b4dac42d16405c3062fed215e8a9199e26713d",
+  "python": "3.11.16",
+  "source_sha256": "b484cf32ebe137851f38814253ed20556c50c63ace5dd22679ceb61858de30df",
+  "static": {
+    "dag_id": "p0_linear",
+    "dependencies": [
+      [
+        "first",
+        "second"
+      ]
+    ],
+    "task_ids": [
+      "first",
+      "second"
+    ]
+  },
+  "temporary_state_removed": true,
+  "version": "2.10.5"
+}
