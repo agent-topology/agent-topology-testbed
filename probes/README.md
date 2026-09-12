@@ -108,6 +108,34 @@ Each process clears inherited Dagster settings and uses a new temporary home and
 working directory. Execution uses `DagsterInstance.ephemeral(tempdir=home)` and
 `execute_in_process(raise_on_error=True)`, with in-memory output storage.
 
+## Dagster conditional-outputs run (P2)
+
+Same `.venvs/dagster` environment as above; no separate install. Read
+[the conditional-outputs probe](dagster/conditional.py) and
+[P2's question/expected states](../observations/P2/README.md) before running.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for case in none single multiple; do
+  for n in 1 2; do
+    .venvs/dagster/bin/python probes/dagster/conditional.py --case "$case" --mode static \
+      --output ".probe-runs/conditional-$case-static-$n.json" > ".probe-runs/conditional-$case-static-$n.log" 2>&1
+    .venvs/dagster/bin/python probes/dagster/conditional.py --case "$case" --mode execution \
+      --output ".probe-runs/conditional-$case-$n.json" > ".probe-runs/conditional-$case-$n.log" 2>&1
+  done
+  cmp ".probe-runs/conditional-$case-static-1.json" ".probe-runs/conditional-$case-static-2.json"
+  cmp ".probe-runs/conditional-$case-1.json" ".probe-runs/conditional-$case-2.json"
+done
+```
+
+Each case runs job `p2_conditional` with `conditional_source`'s op config
+hardcoded to that case's emitted-output list, then isolates state exactly as
+the P0 Dagster run does (`DagsterInstance.ephemeral(tempdir=home)`, fresh
+`DAGSTER_HOME`). `--mode execution` also produces the `static` section; the
+standalone `static` mode never calls `execute_in_process()`, so it carries no
+execution evidence.
+
 ## Failure interpretation
 
 All commands must exit zero before records count as evidence. Assertions raise

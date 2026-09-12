@@ -81,9 +81,9 @@ npm run experiment
 ```
 
 For the isolated two-node baselines, follow [probe reproduction](probes/README.md).
-New observations live in [P0](observations/P0/README.md) and
-[P1](observations/P1/README.md), following the
-[evidence conventions](docs/evidence.md). The original `airflow_probe.py` and
+New observations live in [P0](observations/P0/README.md),
+[P1](observations/P1/README.md), and [P2](observations/P2/README.md), following
+the [evidence conventions](docs/evidence.md). The original `airflow_probe.py` and
 `OUTPUT.txt` remain historical beta.2 evidence, not these smoke/branch cases;
 `airflow_probe.py`'s unsupported exclusive/concurrent conclusion was itself
 corrected by P1, linked from [F1](findings/F1-fan-out-semantics/README.md#correction-p1).
