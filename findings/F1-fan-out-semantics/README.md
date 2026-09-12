@@ -4,8 +4,9 @@
 consumer trial is historical. Current source provides experimental declaration
 facts, while router selection remains unknown. This rewrite for
 [testbed #28](https://github.com/agent-topology/agent-topology-testbed/issues/28) uses completed observations and upstream commit
-`eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe` (main checked 2026-09-12).
-See the [upstream integrated disposition](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/conformance/consumer/README.md#finding-disposition).
+`848b179aee32789a6f8b0ad4552a3a1262a05d55` (beta.3 source checked 2026-09-12;
+registry re-observation remains pending).
+See the [upstream integrated disposition](https://github.com/agent-topology/agent-topology/blob/848b179aee32789a6f8b0ad4552a3a1262a05d55/conformance/consumer/README.md#finding-disposition).
 [ISSUE.md](ISSUE.md) is an unposted evidence draft for existing upstream work.
 [Exact historical text and beta.2 evidence](HISTORY.md) remain available.
 

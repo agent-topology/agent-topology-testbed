@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-09-12T20:09:37Z",
+  "repository": "agent-topology/agent-topology",
+  "tag": {"name": "v0.1.0-beta.3", "target_commit": "848b179aee32789a6f8b0ad4552a3a1262a05d55"},
+  "release": {"github_release_present": false, "registry_published": true, "registry_verified_release": false},
+  "npm": {
+    "provenance": {"repository": "agent-topology/agent-topology", "workflow": ".github/workflows/release-npm.yml", "ref": "refs/heads/rc/0.1.0-beta.3", "commit": "848b179aee32789a6f8b0ad4552a3a1262a05d55"},
+    "dist_tags": {"latest": "0.1.0-beta.1", "beta": "0.1.0-beta.3"},
+    "artifacts": [
+      {"filename": "spec-0.1.0-beta.3.tgz", "package": "@agent-topology/spec", "sha256": "4c5fab1be1a6fa3498a500a57bd438a7a70c53c7d7e5b5730d0665b0e1d06560", "integrity": "sha512-URGMhakCLdA4wEbOWNjuZ0khJC8hiLLXZVtenSa0MmKKmY8W/LJYsrBx8tRykz6dzRSw/NjmbO9spjYB0JiZRQ=="},
+      {"filename": "langgraph-0.1.0-beta.3.tgz", "package": "@agent-topology/langgraph", "sha256": "acd426402fa3a02f868f87ecc50a1b03468dac745a4ad504d3da30cf9d857452", "integrity": "sha512-f2XYPBkSnnH8wsJd2Sf6pB61Kf2zH4FfccCC0VuTm19VuSMQqgosgt+fgmn/SliGriGG9RZhGd4O1dFNxgbfiQ=="}
+    ]
+  },
+  "pypi": {
+    "attestation_publisher": {"kind": "GitHub", "repository": "agent-topology/agent-topology", "workflow": "release-python.yml"},
+    "artifacts": [
+      {"filename": "agent_topology_spec-0.1.0b3-py3-none-any.whl", "sha256": "45732c5080126484af8ba4bea7a1767f72fca27721825c0f678321fa7093e276"},
+      {"filename": "agent_topology_spec-0.1.0b3.tar.gz", "sha256": "b6da5f5640eae25477771845ea171fef80195856163e69a5f9d4dc047862a71d"},
+      {"filename": "agent_topology_langgraph-0.1.0b3-py3-none-any.whl", "sha256": "c81658d8db2293c1a87255e7437d789592d40131bc5a6db2fc5b7412795312c6"},
+      {"filename": "agent_topology_langgraph-0.1.0b3.tar.gz", "sha256": "d434c07d48ab0b8e00563b623f305e1cf26dc09e3bdf4bb1e805dd5d804d426e"}
+    ]
+  },
+  "issue_106": {"state": "closed", "closed_at": "2026-09-12T19:36:19Z", "unchecked_items": ["publication-run receipts and artifact/source digest review", "clean public-registry installations", "tag and GitHub prerelease with verification links", "published installation/migration documentation"]},
+  "candidate_wording_present": {"docs/releases/v0.1.0-beta.3.md": "Prepared in source; not published.", "CHANGELOG.md": "0.1.0-beta.3 candidate"},
+  "note": "The two npm tarballs plus four PyPI distributions are the six registry archive filenames exposed by live metadata. npm attestations and PyPI provenance records are retained as provenance responses, not invented as two additional package archives."
+}

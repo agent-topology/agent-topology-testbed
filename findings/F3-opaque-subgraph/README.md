@@ -1,6 +1,6 @@
 # F3 — An opaque subgraph is indistinguishable from an ordinary node
 
-> **Current disposition (2026-09-12): improved in upstream source `eb0e2d8`.**
+> **Current disposition (2026-09-12): improved in beta.3 source `848b179`; registry re-observation pending.**
 > [Dedicated #98 / merged #111 and consumer evidence](../upstream-status.md#f3)
 > provide experimental `opaque-child` facts without dangling `subgraphId`.
 > The historical core-marker proposal below is superseded by that experiment.

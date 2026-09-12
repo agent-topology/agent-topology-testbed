@@ -172,3 +172,66 @@ P8/A1 increment excluded from this review’s frozen cohort and reviews epic #1
 against actual evidence. Its live HEAD recheck still matches `eb0e2d8`; the
 source-versus-release dispositions above are unchanged. This addendum supersedes
 the pending-integration wording above without rewriting the D4 review.
+
+## Beta.3 review boundary (2026-09-12)
+
+This is a new, dated review; the `eb0e2d8` review above remains the prior review
+boundary and its claims are not rewritten. At 20:09 UTC, tag
+[`v0.1.0-beta.3`](https://github.com/agent-topology/agent-topology/tree/v0.1.0-beta.3)
+resolved to `848b179aee32789a6f8b0ad4552a3a1262a05d55`. The dated
+[live-metadata snapshot](evidence/upstream-status-2026-09-12-beta.3.json) retains
+the tag response, npm SLSA source ref/commit, PyPI GitHub publisher, dist-tags,
+artifact digests/integrities, release-list result, and #106 checklist state.
+
+The source range contains 19 commits and 46 files. It adds numeric canonical
+form/domain decisions, document-local graph IDs, beta.3 candidate notes and
+package changes. `docs/0.1-contract.md`, `docs/guides/consuming-documents.md`,
+and `spec/README.md` changed; the schema, experimental interpretation schema,
+ADR 0002, ADR 0008, ADR 0008 criteria, and concepts guide did not. The release
+notes and CHANGELOG still call beta.3 a candidate/unpublished even though the
+four registry versions are available. There is no beta.3 GitHub Release.
+
+Thus **closed issue**, **merged source**, **registry-published**, and
+**registry-verified release** remain separate: #106 is closed, the tag names
+the source commit, and registries expose the versions, but #106 still has no
+checked receipt/digest-review, clean-install, final-release-record, or published
+documentation checkbox. This review makes no verification claim.
+
+### Finding relationships and pending re-observation
+
+F7 now relates to [#119](https://github.com/agent-topology/agent-topology/issues/119),
+closed source documentation of the first-trigger/once-only boundary. F8 relates
+to [#117](https://github.com/agent-topology/agent-topology/issues/117),
+[#118](https://github.com/agent-topology/agent-topology/issues/118),
+[#124](https://github.com/agent-topology/agent-topology/issues/124), and
+[#125](https://github.com/agent-topology/agent-topology/issues/125), all closed
+source work. None is a registry-artifact result: V2 (#53), E2 (#54), and X1
+(#55) are pending re-observation, not resolved dispositions.
+
+### Impact trace
+
+Every `eb0e2d8` reference found after this review is classified below. A saved
+observation/source ledger is a historical record even where its cited upstream
+file later changed; it is not silently repinned.
+
+| Testbed references | Classification | Disposition |
+| --- | --- | --- |
+| `findings/upstream-status.md`, `findings/evidence/upstream-status-2026-09-12.json` | historical record | keep as the prior boundary |
+| `observations/V1/{README.md,source-references.json}`, `observations/D1/{README.md,source-references.json}`, `observations/Q1/{README.md,source-references.json,inputs.json,run-1/inputs-before-install.json,run-1/provenance.json,run-2/inputs-before-install.json,harness-failure/inputs-before-install.json}`, `observations/E1/{README.md,source-references.json}`, `observations/K1/README.md` | historical record | keep beta.1/beta.2 inputs and receipts |
+| `observations/consumer-contract-audit/{README.md,manifest.json,sources.json,review/citation-correction.json,review/upstream-labels.json}` | historical record; cited source changed | keep frozen audit; defer **Audit/R3 re-judgment** candidate because contract/consumer-guide citations changed |
+| `observations/P7/{README.md,review-inputs.json}` | historical review input | keep; P7 does not become a beta.3 artifact observation |
+| `findings/F7-or-firing-policy/{verify.py,evidence/audit.json}` | historical audit record | keep reproducible 2026-09-12 audit; do not overwrite its source hashes |
+| `findings/F1-fan-out-semantics/{README.md,ISSUE.md}`, `findings/F3-opaque-subgraph/README.md`, `findings/F7-or-firing-policy/{README.md,ISSUE.md}`, `findings/F8-extension-number-canonicalization/README.md`, `findings/completed-cohort-dispositions.md`, `findings/consumer-reconciliation.md`, `findings/cross-framework-reconciliation.md`, `findings/README.md` | current pointer or mixed current/historical prose | current beta.3 disposition is this review; V2/E2/X1 or the deferred Audit/R3 re-judgment supply the needed re-observation, while historical citations remain pinned |
+
+The consumer-contract audit cites these upstream paths: `docs/0.1-contract.md`,
+`docs/decisions/0002-record-what-could-not-be-observed.md`,
+`docs/decisions/0008-experimental-consumer-interpretation.md`,
+`docs/decisions/0008-implementation-criteria.md`, `docs/guides/concepts.md`,
+`docs/guides/consuming-documents.md`, `spec/README.md`,
+`spec/agent-topology.schema.json`, and
+`spec/experimental/interpretation-v1.schema.json`. Only the contract, consumer
+guide and spec README changed in the range, so the audit's frozen citations stay
+valid history but need the named deferred re-judgment for a current verdict.
+Cordboard R3 cites no `eb0e2d8` source path; its captured beta.2 package metadata
+contains moving `main` documentation URLs. Those raw installation records remain
+historical and are not source evidence for beta.3.
