@@ -172,3 +172,9 @@ demonstrates or measures wall-clock concurrency between `consumer_fanout_a` and
 `consumer_fanout_b`, only that both reach `state: success` in the same run. No
 `agent-topology` document is produced, no schema or wire-format extension is
 proposed, and no upstream decision is made.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p2)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.

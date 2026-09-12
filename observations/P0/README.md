@@ -83,3 +83,9 @@ An initial Dagster development run failed because a dependency key was a
 NodeInvocation rather than a string; it exited nonzero. The extractor now reads
 its alias/name and the final runs above passed. That failed attempt is not counted
 as successful evidence.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p0)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.

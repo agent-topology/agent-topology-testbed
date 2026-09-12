@@ -202,3 +202,9 @@ no schema or wire-format extension is proposed, and no upstream decision is
 made. In particular, this probe does not infer a generic "join contract" for
 mapped-task aggregation from a matrix where the two trigger rules happened
 to agree at every cardinality tested — see the previous section.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p5)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.

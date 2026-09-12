@@ -3,6 +3,10 @@
 A finding is a claim about the `agent-topology` format with a reproduction
 attached. This file is the index.
 
+The [completed-cohort disposition ledger](completed-cohort-dispositions.md) inventories
+P0–P6, C1, S1 and T1 claim by claim, including explicit non-findings and minimal
+follow-up candidates. It links the completed F1/#28 and F7/#27 dispositions.
+
 ## Index
 
 | ID | Claim | Status | Upstream |

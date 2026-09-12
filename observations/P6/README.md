@@ -213,3 +213,14 @@ concurrency between `mapped[k0]` and `mapped[k1]`, only that both reach
 [P2's identical caution](../P2/README.md#the-fan-out-control-did-not-vary-with-the-case)).
 No `agent-topology` document is produced, no schema or wire-format extension
 is proposed, and no upstream decision is made.
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#p6)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.
+
+**Provenance qualification (2026-09-12, #29):** The saved `source_sha256`
+differs from the checked-in probe source, although the saved measured sections
+match its literal assertions. See the ledger’s [provenance limits](../../findings/completed-cohort-dispositions.md#provenance-limits)
+for exact digests and the minimal follow-up. This is not a fresh reproduction.

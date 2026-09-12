@@ -270,3 +270,15 @@ run time.
   retrieved 2026-09-11; no dated revision tag published.
 - [AWS Step Functions: Parallel state](https://docs.aws.amazon.com/step-functions/latest/dg/state-parallel.html)
 - [AWS Step Functions: inline Map state](https://docs.aws.amazon.com/step-functions/latest/dg/state-map-inline.html)
+
+## Claim disposition
+
+The [completed-cohort ledger](../../findings/completed-cohort-dispositions.md#s1)
+classifies this observation’s material claims, their finding links or reasons for
+non-promotion, and any specific minimal follow-up. Raw evidence remains unchanged.
+
+**Correction (2026-09-12, #29):** The ledger explicitly narrows the historical
+comparison above: P4 does not establish documented-public-only enumeration,
+P3 grouping does not prove compiled-child identity, and available ASL declarations
+do not themselves reproduce target-format loss. F1/#28 and F7/#27 now own the
+fan-out and convergence arguments; see the [S1 dispositions](../../findings/completed-cohort-dispositions.md#s1).
