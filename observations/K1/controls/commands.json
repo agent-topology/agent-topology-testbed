@@ -1,0 +1,17 @@
+[
+  {
+    "command": [
+      "python3",
+      "-O",
+      "probes/published-consumer/compare.py",
+      "observations/K1/run",
+      "--expected",
+      "observations/K1/controls/corrupted-expected.json",
+      "--report",
+      ".probe-runs/K1/negative.json"
+    ],
+    "purpose": "negative control: corrupted baseline structureHash oracle",
+    "exit": 1,
+    "recorded_at": "2026-09-12T13:43:55.507620+00:00"
+  }
+]

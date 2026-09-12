@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "version": "0.1.0b1",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run1-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run1-envs/py-b1/bin/python"
+  },
+  "input_sha256": "2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3",
+  "validation": {
+    "accepted": false,
+    "errors": [
+      "$: 'X-k1-probe' does not match any of the regexes: '^x-[a-z0-9][a-z0-9._-]*$'"
+    ]
+  },
+  "status": "rejected"
+}

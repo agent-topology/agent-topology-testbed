@@ -1,0 +1,22 @@
+{
+  "finished_at": "2026-09-12T13:42:03.408533+00:00",
+  "evidence_class": "callable; retrospective installed-package evaluation, no framework execution",
+  "sources_sha256": {
+    "run.py": "969a00a29fb24e71fecde986eef53e528f9d250aebb44ba77ff0381a176e9ae5",
+    "mutate.py": "6b3a10b4f9fe6a132bc903fd6158ac008658c7dca655dda4de04e46b1d806fc2",
+    "hash_adapter.py": "609b11d209794b87cd91d85da1704f383b99c550593cc7f6b13490b5459333bb",
+    "hash_adapter.mjs": "598e70858caadf4fd8259b4e72a2c7dbcad6ac4991db111b923e254ecdc213d0",
+    "compare.py": "92354d3337bb33efc5649fecc559657a9ed7fb92b94812b8eae026b13a2cee95",
+    "adapter.py": "602da5d15fa2e294c2062d6762a350fce82148e477facfcdc8f363ef430bffd1",
+    "adapter.mjs": "b6ac135cb52874a6563acb2bf68a18ced30a2795809a174899cdd5f227a899fd"
+  },
+  "locks_sha256": {
+    "locks/js-b1/package-lock.json": "417760279ee13c66046257525452063910c386f03286ebae0c83244f56abe3c9",
+    "locks/js-b1/package.json": "0cdd086fb42ee9600f758b48490b098356dca6b6d8e963f04ea619d011d4e3eb",
+    "locks/js-b2/package-lock.json": "bfc8e323d70473dec8574a8cebbcca99ebff0ec4dc35ea18974a335b37d386ce",
+    "locks/js-b2/package.json": "461f2e817f27b1bf6bd74fe61eb22f4febc98b5cf46178961cbc5d1fcae40293",
+    "locks/py-b1/requirements.lock": "47deb3f5efe26b34f02be9c1066ae0d678aae641eb430c3bb586cfc9311987dc",
+    "locks/py-b2/requirements.lock": "1a869caf8516017e43324476f4a2f6bf81e63ec2d8f5e0250b2223c7e05a577c"
+  },
+  "commands_seconds": 9.550741247992846
+}

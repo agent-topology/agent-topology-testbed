@@ -115,6 +115,14 @@ with equal structure-hash tuples throughout the bounded population.
 published beta.1/beta.2 Python and npm spec hashes on nine fixed documents,
 including artifact identities, raw results and a bounded non-finding disposition.
 
+[K1](observations/K1/README.md) reuses V1's isolated installations and minimal
+document to test six controlled single-field mutations (an unsupported
+`topologyVersion`, an unsupported declared hash-algorithm version, permitted and
+disallowed `x-*` extension placements, and a malformed extension key) plus one
+direct out-of-range `algorithm_version` call, against a source-linked obligation
+table; all four installations matched every recorded expectation across two
+independent runs, a bounded non-finding disposition.
+
 Findings are recorded against a specific release and rot without one. The
 historical baseline at commit
 `571e881e6d509b6e26ff8bf14b98e207d12e7ce9` was recorded against:

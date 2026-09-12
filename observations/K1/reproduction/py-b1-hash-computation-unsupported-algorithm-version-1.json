@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "version": "0.1.0b1",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python"
+  },
+  "input_sha256": "cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056",
+  "requested_algorithm_version": "2",
+  "status": "error",
+  "error": {
+    "type": "ValueError",
+    "message": "unsupported structure hash algorithm version '2'; supported versions: 1"
+  }
+}
