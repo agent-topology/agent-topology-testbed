@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@agent-topology/spec": "0.1.0-beta.2"
+  }
+}

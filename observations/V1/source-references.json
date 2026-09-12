@@ -1,0 +1,68 @@
+[
+  {
+    "path": "docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md",
+    "commit": "0e127d84d77904dd0a909fab0ea58862282ceae8",
+    "url": "https://github.com/agent-topology/agent-topology/blob/0e127d84d77904dd0a909fab0ea58862282ceae8/docs/decisions/0003-canonical-ordering-and-versioned-structure-hash.md",
+    "sha256": "bdfb3cf1b045e0258cab6851494d50c6aead67b8bf8401fd16c39631e2194aca"
+  },
+  {
+    "path": "packages/python/spec/src/agent_topology/spec/__init__.py",
+    "commit": "0e127d84d77904dd0a909fab0ea58862282ceae8",
+    "url": "https://github.com/agent-topology/agent-topology/blob/0e127d84d77904dd0a909fab0ea58862282ceae8/packages/python/spec/src/agent_topology/spec/__init__.py",
+    "sha256": "88810eb632a18b84dba6d94a740c204830a0e03fdad9d6ea22d341eea89c10fd"
+  },
+  {
+    "path": "packages/python/spec/src/agent_topology/spec/_canonical.py",
+    "commit": "0e127d84d77904dd0a909fab0ea58862282ceae8",
+    "url": "https://github.com/agent-topology/agent-topology/blob/0e127d84d77904dd0a909fab0ea58862282ceae8/packages/python/spec/src/agent_topology/spec/_canonical.py",
+    "sha256": "5a2d2c41351f5b23b70e49fd5b68d5847cb6caabea4d9eb3d084eccf3d8c7407"
+  },
+  {
+    "path": "packages/typescript/spec/src/index.ts",
+    "commit": "0e127d84d77904dd0a909fab0ea58862282ceae8",
+    "url": "https://github.com/agent-topology/agent-topology/blob/0e127d84d77904dd0a909fab0ea58862282ceae8/packages/typescript/spec/src/index.ts",
+    "sha256": "9839a204be937c80262dd8a72fe5d7e6fd78f5db351780e5910a8cb9fb8e910c"
+  },
+  {
+    "path": "spec/agent-topology.schema.json",
+    "commit": "0e127d84d77904dd0a909fab0ea58862282ceae8",
+    "url": "https://github.com/agent-topology/agent-topology/blob/0e127d84d77904dd0a909fab0ea58862282ceae8/spec/agent-topology.schema.json",
+    "sha256": "6e98d8b829e9cd3558499abfc2943335d4d0564d21ae1706a0797df4159bf006"
+  },
+  {
+    "path": "conformance/consumer/README.md",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/conformance/consumer/README.md",
+    "sha256": "a958b584fef669a0414052c5e0acf8ec835f8d6e56490a7c714e19e541b687a8"
+  },
+  {
+    "path": "docs/releases/evidence/beta.2/python-spec-qualification.json",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/releases/evidence/beta.2/python-spec-qualification.json",
+    "sha256": "e9890dd21c665da5a4dfd39bf5cba313114b5feadabb1aba12fe9db8a2991521"
+  },
+  {
+    "path": "packages/python/spec/tests/test_canonical.py",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/spec/tests/test_canonical.py",
+    "sha256": "43113725ca4f48567a58c6f75cba4e6cda1de22930eaab723013a5682cb8d465"
+  },
+  {
+    "path": "packages/typescript/spec/tests/contract.test.mjs",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/spec/tests/contract.test.mjs",
+    "sha256": "0d81c5d8fffcb881810c7c8bc424e3636f7adc1f765c1ed3a36dad90f1700fab"
+  },
+  {
+    "path": "scripts/smoke_spec_install.py",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/scripts/smoke_spec_install.py",
+    "sha256": "314c22e74b1d42e55c14628ee647d8dcd00dd0c48e5c70c22cdb29b3df4019e8"
+  },
+  {
+    "path": "scripts/smoke_typescript_installation.mjs",
+    "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+    "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/scripts/smoke_typescript_installation.mjs",
+    "sha256": "b90b3720f0c879220e709f5f5892a697e23ad6dbca93199151cf1015be49da6b"
+  }
+]
