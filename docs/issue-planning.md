@@ -41,3 +41,17 @@ Dependencies: P0 → P1 → P3 → P5; P0 → P2 → P4 → P6. P7 accumulates
 evidence immediately and completes after P1–P6. Do not add a release milestone,
 combined heavy-framework CI, upstream publication, or local workflow automation
 as a side effect of this investigation. Upstream owns contract decisions.
+
+## Expanded investigation priority (M1, C1, S1, and boundary probes)
+
+The [common question matrix](../probes/README.md#common-question-matrix-m1)
+(#12) backfills existing evidence and defines the seven question IDs every
+new probe answers. Priority after #12 lands: CrewAI (#13) → ASL (#14), then
+the remaining reconciliation work (P7/#9, which accumulates from P1–P6 and
+completes last) and the three boundary probes (#15 Temporal, #16 Prefect,
+#17 AutoGen).
+
+Priority is not a blocked-by relationship: the P0→P1→P3→P5 and P0→P2→P4→P6
+chains above are unchanged, #14 does not depend on #13, and #15/#16/#17 do not
+depend on one another. Completed #2/#3 evidence stays as recorded; the
+expanded scope does not reopen it. Keep at most two issues in progress.
