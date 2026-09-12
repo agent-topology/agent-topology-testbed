@@ -1,0 +1,892 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-m",
+      "venv",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:42:59.660032+00:00",
+    "seconds": 1.3732907500016154,
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "--isolated",
+      "install",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--only-binary=:all:",
+      "--report",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-records/py-b1-install.json",
+      "--require-hashes",
+      "-r",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:43:01.033897+00:00",
+    "seconds": 0.41475433300001896,
+    "exit": 0,
+    "stdout": "Collecting agent-topology-spec==0.1.0b1 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock (line 1))\n  Using cached agent_topology_spec-0.1.0b1-py3-none-any.whl (6.5 kB)\nCollecting attrs==26.1.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock (line 2))\n  Using cached attrs-26.1.0-py3-none-any.whl (67 kB)\nCollecting jsonschema==4.26.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock (line 3))\n  Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)\nCollecting jsonschema-specifications==2025.9.1 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock (line 4))\n  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nCollecting referencing==0.37.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock (line 5))\n  Using cached referencing-0.37.0-py3-none-any.whl (26 kB)\nCollecting rpds-py==2026.6.3 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b1/requirements.lock (line 6))\n  Using cached rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl (339 kB)\nInstalling collected packages: rpds-py, attrs, referencing, jsonschema-specifications, jsonschema, agent-topology-spec\n\nSuccessfully installed agent-topology-spec-0.1.0b1 attrs-26.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.6.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:43:01.449213+00:00",
+    "seconds": 0.11942729199654423,
+    "exit": 0,
+    "stdout": "agent-topology-spec==0.1.0b1\nattrs==26.1.0\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\npip==26.2.1\nreferencing==0.37.0\nrpds-py==2026.6.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.070794+00:00",
+    "seconds": 0.3324355000004289,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.403857+00:00",
+    "seconds": 0.06446041700110072,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.468877+00:00",
+    "seconds": 0.06155412500083912,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\", \"validation\": {\"accepted\": false, \"errors\": [\"$.topologyVersion: '0.1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.530903+00:00",
+    "seconds": 0.06564916700153844,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\", \"validation\": {\"accepted\": false, \"errors\": [\"$.topologyVersion: '0.1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.597127+00:00",
+    "seconds": 0.06204166600218741,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\", \"validation\": {\"accepted\": false, \"errors\": [\"$.structureHash.algorithmVersion: '1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.659783+00:00",
+    "seconds": 0.06264512499910779,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\", \"validation\": {\"accepted\": false, \"errors\": [\"$.structureHash.algorithmVersion: '1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.723171+00:00",
+    "seconds": 0.06063574999643606,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.784463+00:00",
+    "seconds": 0.06439275000229827,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.849522+00:00",
+    "seconds": 0.06155666699851281,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\", \"validation\": {\"accepted\": false, \"errors\": [\"$.completeness.gaps[0].element: Additional properties are not allowed ('x-k1-probe' was unexpected)\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.911621+00:00",
+    "seconds": 0.06293016699783038,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\", \"validation\": {\"accepted\": false, \"errors\": [\"$.completeness.gaps[0].element: Additional properties are not allowed ('x-k1-probe' was unexpected)\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:02.975128+00:00",
+    "seconds": 0.06220916600068449,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\", \"validation\": {\"accepted\": false, \"errors\": [\"$: 'X-k1-probe' does not match any of the regexes: '^x-[a-z0-9][a-z0-9._-]*$'\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:03.037883+00:00",
+    "seconds": 0.06441383400306222,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\", \"validation\": {\"accepted\": false, \"errors\": [\"$: 'X-k1-probe' does not match any of the regexes: '^x-[a-z0-9][a-z0-9._-]*$'\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/hash_adapter.py",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:03.102931+00:00",
+    "seconds": 0.06326216699744691,
+    "exit": 3,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"requested_algorithm_version\": \"2\", \"status\": \"error\", \"error\": {\"type\": \"ValueError\", \"message\": \"unsupported structure hash algorithm version '2'; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/hash_adapter.py",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1",
+    "started_at": "2026-09-12T13:43:03.166847+00:00",
+    "seconds": 0.062149541001417674,
+    "exit": 3,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b1\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"requested_algorithm_version\": \"2\", \"status\": \"error\", \"error\": {\"type\": \"ValueError\", \"message\": \"unsupported structure hash algorithm version '2'; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-m",
+      "venv",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:43:03.229538+00:00",
+    "seconds": 1.250055209002312,
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "--isolated",
+      "install",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--only-binary=:all:",
+      "--report",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-records/py-b2-install.json",
+      "--require-hashes",
+      "-r",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:43:04.479950+00:00",
+    "seconds": 0.40511179199893377,
+    "exit": 0,
+    "stdout": "Collecting agent-topology-spec==0.1.0b2 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock (line 1))\n  Using cached agent_topology_spec-0.1.0b2-py3-none-any.whl (8.1 kB)\nCollecting attrs==26.1.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock (line 2))\n  Using cached attrs-26.1.0-py3-none-any.whl (67 kB)\nCollecting jsonschema==4.26.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock (line 3))\n  Using cached jsonschema-4.26.0-py3-none-any.whl (90 kB)\nCollecting jsonschema-specifications==2025.9.1 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock (line 4))\n  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nCollecting referencing==0.37.0 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock (line 5))\n  Using cached referencing-0.37.0-py3-none-any.whl (26 kB)\nCollecting rpds-py==2026.6.3 (from -r /Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-spec/locks/py-b2/requirements.lock (line 6))\n  Using cached rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl (339 kB)\nInstalling collected packages: rpds-py, attrs, referencing, jsonschema-specifications, jsonschema, agent-topology-spec\n\nSuccessfully installed agent-topology-spec-0.1.0b2 attrs-26.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.6.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:43:04.885685+00:00",
+    "seconds": 0.11942229100168333,
+    "exit": 0,
+    "stdout": "agent-topology-spec==0.1.0b2\nattrs==26.1.0\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\npip==26.2.1\nreferencing==0.37.0\nrpds-py==2026.6.3\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:05.508297+00:00",
+    "seconds": 0.23897041699819965,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:05.747983+00:00",
+    "seconds": 0.06924900000012713,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:05.817896+00:00",
+    "seconds": 0.06332791599925258,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\", \"validation\": {\"accepted\": false, \"errors\": [\"$.topologyVersion: '0.1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:05.881811+00:00",
+    "seconds": 0.06346262499937438,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\", \"validation\": {\"accepted\": false, \"errors\": [\"$.topologyVersion: '0.1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:05.945868+00:00",
+    "seconds": 0.0709838340007991,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\", \"validation\": {\"accepted\": false, \"errors\": [\"$.structureHash.algorithmVersion: '1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.017538+00:00",
+    "seconds": 0.06554975000108243,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\", \"validation\": {\"accepted\": false, \"errors\": [\"$.structureHash.algorithmVersion: '1' was expected\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.083685+00:00",
+    "seconds": 0.06448170799922082,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.148888+00:00",
+    "seconds": 0.0646390000001702,
+    "exit": 0,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\", \"validation\": {\"accepted\": true, \"errors\": []}, \"canonical\": \"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\", \"structureHash\": {\"algorithm\": \"sha256\", \"algorithmVersion\": \"1\", \"value\": \"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"}, \"status\": \"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.214176+00:00",
+    "seconds": 0.06245158399906359,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\", \"validation\": {\"accepted\": false, \"errors\": [\"$.completeness.gaps[0].element: Additional properties are not allowed ('x-k1-probe' was unexpected)\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.277203+00:00",
+    "seconds": 0.06386145800206577,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\", \"validation\": {\"accepted\": false, \"errors\": [\"$.completeness.gaps[0].element: Additional properties are not allowed ('x-k1-probe' was unexpected)\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.341764+00:00",
+    "seconds": 0.06223566599874175,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\", \"validation\": {\"accepted\": false, \"errors\": [\"$: 'X-k1-probe' does not match any of the regexes: '^x-[a-z0-9][a-z0-9._-]*$'\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.404628+00:00",
+    "seconds": 0.06337800000255811,
+    "exit": 2,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\", \"validation\": {\"accepted\": false, \"errors\": [\"$: 'X-k1-probe' does not match any of the regexes: '^x-[a-z0-9][a-z0-9._-]*$'\"]}, \"status\": \"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/hash_adapter.py",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.468652+00:00",
+    "seconds": 0.06302366599993547,
+    "exit": 3,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"requested_algorithm_version\": \"2\", \"status\": \"error\", \"error\": {\"type\": \"ValueError\", \"message\": \"unsupported structure hash algorithm version '2'; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/hash_adapter.py",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2",
+    "started_at": "2026-09-12T13:43:06.532292+00:00",
+    "seconds": 0.06293004100007238,
+    "exit": 3,
+    "stdout": "{\"identity\": {\"version\": \"0.1.0b2\", \"runtime\": \"3.14.7\", \"imported_path\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py\", \"executable\": \"/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python\"}, \"input_sha256\": \"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\", \"requested_algorithm_version\": \"2\", \"status\": \"error\", \"error\": {\"type\": \"ValueError\", \"message\": \"unsupported structure hash algorithm version '2'; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--registry=https://registry.npmjs.org"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:06.596606+00:00",
+    "seconds": 0.33814512499884586,
+    "exit": 0,
+    "stdout": "\nadded 7 packages in 262ms\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:06.935162+00:00",
+    "seconds": 0.13833183300084784,
+    "exit": 0,
+    "stdout": "{\n  \"name\": \"js-b1\",\n  \"dependencies\": {\n    \"@agent-topology/spec\": {\n      \"version\": \"0.1.0-beta.1\",\n      \"resolved\": \"https://registry.npmjs.org/@agent-topology/spec/-/spec-0.1.0-beta.1.tgz\",\n      \"overridden\": false,\n      \"dependencies\": {\n        \"ajv-formats\": {\n          \"version\": \"3.0.1\",\n          \"resolved\": \"https://registry.npmjs.org/ajv-formats/-/ajv-formats-3.0.1.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"ajv\": {\n              \"version\": \"8.20.0\"\n            }\n          }\n        },\n        \"ajv\": {\n          \"version\": \"8.20.0\",\n          \"resolved\": \"https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"fast-deep-equal\": {\n              \"version\": \"3.1.3\",\n              \"resolved\": \"https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz\",\n              \"overridden\": false\n            },\n            \"fast-uri\": {\n              \"version\": \"3.1.7\",\n              \"resolved\": \"https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.7.tgz\",\n              \"overridden\": false\n            },\n            \"json-schema-traverse\": {\n              \"version\": \"1.0.0\",\n              \"resolved\": \"https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz\",\n              \"overridden\": false\n            },\n            \"require-from-string\": {\n              \"version\": \"2.0.2\",\n              \"resolved\": \"https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz\",\n              \"overridden\": false\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:07.913673+00:00",
+    "seconds": 0.09278479199929279,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.007400+00:00",
+    "seconds": 0.08328075000099489,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.091468+00:00",
+    "seconds": 0.07908949999909964,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/topologyVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.171213+00:00",
+    "seconds": 0.08101091699791141,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/topologyVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.252950+00:00",
+    "seconds": 0.08461629099838319,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/structureHash/algorithmVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.338210+00:00",
+    "seconds": 0.08245616599742789,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/structureHash/algorithmVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.421386+00:00",
+    "seconds": 0.08355279199895449,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.506020+00:00",
+    "seconds": 0.07734433299992816,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.584111+00:00",
+    "seconds": 0.07978633300081128,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/completeness/gaps/0/element\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.664967+00:00",
+    "seconds": 0.08122920799723943,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/completeness/gaps/0/element\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.747398+00:00",
+    "seconds": 0.10195966700121062,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:08.850516+00:00",
+    "seconds": 0.15628883299723384,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/hash_adapter.mjs",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:09.008184+00:00",
+    "seconds": 0.11536662499929662,
+    "exit": 3,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"requested_algorithm_version\":\"2\",\"status\":\"error\",\"error\":{\"type\":\"RangeError\",\"message\":\"unsupported structure hash algorithm version \\\"2\\\"; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/hash_adapter.mjs",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1",
+    "started_at": "2026-09-12T13:43:09.124216+00:00",
+    "seconds": 0.08346391699888045,
+    "exit": 3,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.1\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b1/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"requested_algorithm_version\":\"2\",\"status\":\"error\",\"error\":{\"type\":\"RangeError\",\"message\":\"unsupported structure hash algorithm version \\\"2\\\"; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--registry=https://registry.npmjs.org"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:09.209290+00:00",
+    "seconds": 0.2866647920018295,
+    "exit": 0,
+    "stdout": "\nadded 7 packages in 224ms\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:09.496718+00:00",
+    "seconds": 0.1880827089989907,
+    "exit": 0,
+    "stdout": "{\n  \"name\": \"js-b2\",\n  \"dependencies\": {\n    \"@agent-topology/spec\": {\n      \"version\": \"0.1.0-beta.2\",\n      \"resolved\": \"https://registry.npmjs.org/@agent-topology/spec/-/spec-0.1.0-beta.2.tgz\",\n      \"overridden\": false,\n      \"dependencies\": {\n        \"ajv-formats\": {\n          \"version\": \"3.0.1\",\n          \"resolved\": \"https://registry.npmjs.org/ajv-formats/-/ajv-formats-3.0.1.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"ajv\": {\n              \"version\": \"8.20.0\"\n            }\n          }\n        },\n        \"ajv\": {\n          \"version\": \"8.20.0\",\n          \"resolved\": \"https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"fast-deep-equal\": {\n              \"version\": \"3.1.3\",\n              \"resolved\": \"https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz\",\n              \"overridden\": false\n            },\n            \"fast-uri\": {\n              \"version\": \"3.1.7\",\n              \"resolved\": \"https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.7.tgz\",\n              \"overridden\": false\n            },\n            \"json-schema-traverse\": {\n              \"version\": \"1.0.0\",\n              \"resolved\": \"https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz\",\n              \"overridden\": false\n            },\n            \"require-from-string\": {\n              \"version\": \"2.0.2\",\n              \"resolved\": \"https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz\",\n              \"overridden\": false\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:10.438495+00:00",
+    "seconds": 0.08534595899982378,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:10.524567+00:00",
+    "seconds": 0.09432174999892595,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:10.619667+00:00",
+    "seconds": 0.09451937500125496,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/topologyVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:10.714888+00:00",
+    "seconds": 0.15122766599961324,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/topologyVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:10.867300+00:00",
+    "seconds": 0.15544629199939664,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/structureHash/algorithmVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.024010+00:00",
+    "seconds": 0.1006887090006785,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/structureHash/algorithmVersion\",\"message\":\"must be equal to constant\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.125592+00:00",
+    "seconds": 0.09385820899842656,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.220218+00:00",
+    "seconds": 0.08099720800237264,
+    "exit": 0,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b\",\"validation\":{\"accepted\":true},\"canonical\":\"{\\\"completeness\\\":{\\\"gaps\\\":[],\\\"status\\\":\\\"complete\\\"},\\\"graphs\\\":[{\\\"id\\\":\\\"g\\\",\\\"structure\\\":{\\\"edges\\\":[],\\\"entryNodeIds\\\":[],\\\"exitNodeIds\\\":[],\\\"joins\\\":[],\\\"nodes\\\":[]}}],\\\"producerLimitations\\\":[],\\\"provenance\\\":{\\\"framework\\\":{\\\"name\\\":\\\"none\\\",\\\"version\\\":\\\"1\\\"},\\\"generatedAt\\\":\\\"2000-01-01T00:00:00Z\\\",\\\"producer\\\":{\\\"name\\\":\\\"v1\\\",\\\"version\\\":\\\"1\\\"}},\\\"structureHash\\\":{\\\"algorithm\\\":\\\"sha256\\\",\\\"algorithmVersion\\\":\\\"1\\\",\\\"value\\\":\\\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\\\"},\\\"topologyVersion\\\":\\\"0.1\\\",\\\"x-k1-probe\\\":\\\"case-4-string-value\\\"}\",\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"status\":\"accepted\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.301962+00:00",
+    "seconds": 0.08350145900112693,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/completeness/gaps/0/element\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.386228+00:00",
+    "seconds": 0.08355399999709334,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$/completeness/gaps/0/element\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.470639+00:00",
+    "seconds": 0.08197999999902095,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.553390+00:00",
+    "seconds": 0.08371962499950314,
+    "exit": 2,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3\",\"validation\":{\"accepted\":false,\"errors\":[{\"path\":\"$\",\"message\":\"must NOT have additional properties\"}]},\"status\":\"rejected\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/hash_adapter.mjs",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.637972+00:00",
+    "seconds": 0.07916166599898133,
+    "exit": 3,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"requested_algorithm_version\":\"2\",\"status\":\"error\",\"error\":{\"type\":\"RangeError\",\"message\":\"unsupported structure hash algorithm version \\\"2\\\"; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/hash_adapter.mjs",
+      "2"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2",
+    "started_at": "2026-09-12T13:43:11.717898+00:00",
+    "seconds": 0.0909667090018047,
+    "exit": 3,
+    "stdout": "{\"identity\":{\"version\":\"0.1.0-beta.2\",\"runtime\":\"v22.16.0\",\"imported_path\":\"file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js\",\"executable\":\"/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node\"},\"input_sha256\":\"cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056\",\"requested_algorithm_version\":\"2\",\"status\":\"error\",\"error\":{\"type\":\"RangeError\",\"message\":\"unsupported structure hash algorithm version \\\"2\\\"; supported versions: 1\"}}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-O",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/probes/published-consumer/compare.py",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-records"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs",
+    "started_at": "2026-09-12T13:43:11.811244+00:00",
+    "seconds": 0.06998462499905145,
+    "exit": 0,
+    "stdout": "{\"rows\": 28, \"mismatches\": 0}\n",
+    "stderr": ""
+  }
+]

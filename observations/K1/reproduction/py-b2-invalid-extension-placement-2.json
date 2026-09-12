@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "version": "0.1.0b2",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python"
+  },
+  "input_sha256": "0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4",
+  "validation": {
+    "accepted": false,
+    "errors": [
+      "$.completeness.gaps[0].element: Additional properties are not allowed ('x-k1-probe' was unexpected)"
+    ]
+  },
+  "status": "rejected"
+}

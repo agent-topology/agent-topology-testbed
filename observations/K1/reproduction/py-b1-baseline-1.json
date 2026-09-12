@@ -1,0 +1,20 @@
+{
+  "identity": {
+    "version": "0.1.0b1",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b1/bin/python"
+  },
+  "input_sha256": "cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056",
+  "validation": {
+    "accepted": true,
+    "errors": []
+  },
+  "canonical": "{\"completeness\":{\"gaps\":[],\"status\":\"complete\"},\"graphs\":[{\"id\":\"g\",\"structure\":{\"edges\":[],\"entryNodeIds\":[],\"exitNodeIds\":[],\"joins\":[],\"nodes\":[]}}],\"producerLimitations\":[],\"provenance\":{\"framework\":{\"name\":\"none\",\"version\":\"1\"},\"generatedAt\":\"2000-01-01T00:00:00Z\",\"producer\":{\"name\":\"v1\",\"version\":\"1\"}},\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421\"},\"topologyVersion\":\"0.1\"}",
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+  },
+  "status": "accepted"
+}

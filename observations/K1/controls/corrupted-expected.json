@@ -1,0 +1,77 @@
+{
+  "source_document": "observations/V1/inputs/minimal.json",
+  "cases": {
+    "baseline": {
+      "sha256": "cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056",
+      "expected": {
+        "call": "adapter",
+        "validation": "accepted",
+        "structureHash": {
+          "algorithm": "sha256",
+          "algorithmVersion": "1",
+          "value": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "reason": "unmutated document V1 already recorded as accepted in all four installations"
+      }
+    },
+    "unsupported-topology-version": {
+      "sha256": "83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2",
+      "expected": {
+        "call": "adapter",
+        "validation": "rejected",
+        "reason": "schema requires topologyVersion const 0.1; identical in the beta.1 and beta.2 pinned schema snapshots"
+      }
+    },
+    "unsupported-hash-algorithm-version-declared": {
+      "sha256": "74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea",
+      "expected": {
+        "call": "adapter",
+        "validation": "rejected",
+        "reason": "schema requires structureHash.algorithmVersion const 1; identical in both pinned schema snapshots"
+      }
+    },
+    "unknown-permitted-extension": {
+      "sha256": "1862bfe59fa87f1b52c132bc5ec98b5853ecc06d0ee685796597bf0e34f4bf0b",
+      "expected": {
+        "call": "adapter",
+        "validation": "accepted",
+        "structureHash": {
+          "algorithm": "sha256",
+          "algorithmVersion": "1",
+          "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+        },
+        "reason": "x-k1-probe matches the schema's x-[a-z0-9][a-z0-9._-]* pattern at the document root, which allows unknown keys; hash version 1's projection reads only graphs, so it is unaffected by any root-level key"
+      }
+    },
+    "invalid-extension-placement": {
+      "sha256": "0eb7a62032af74b8a1e7c9d792fa7d91dcb55a82491f9b740d4afab0fa06fbe4",
+      "expected": {
+        "call": "adapter",
+        "validation": "rejected",
+        "reason": "completeness.gaps[].element (the elementReference def) has additionalProperties:false with no x-* patternProperties allowance, unlike every other object in the schema; the same key name accepted in unknown-permitted-extension is rejected here purely because of where it sits"
+      }
+    },
+    "malformed-extension-key": {
+      "sha256": "2632d4557732e845266f08971a3c340e3474c3c699397feddf2aa08dcbeb3ca3",
+      "expected": {
+        "call": "adapter",
+        "validation": "rejected",
+        "reason": "X-k1-probe does not match the schema's x-[a-z0-9][a-z0-9._-]* pattern (capital X); additionalProperties:false rejects it at the document root even though extension keys are otherwise allowed there"
+      }
+    },
+    "hash-computation-unsupported-algorithm-version": {
+      "sha256": null,
+      "expected": {
+        "call": "hash_adapter",
+        "input": "baseline",
+        "requested_algorithm_version": "2",
+        "outcome": "error",
+        "error_type": {
+          "python": "ValueError",
+          "typescript": "RangeError"
+        },
+        "reason": "compute_structure_hash/computeStructureHash's algorithm_version parameter is checked against the single supported version (1) and raises without touching validate_document; this is the hash-computation boundary, not the structural-validation boundary exercised by the two synthetic-version document cases above"
+      }
+    }
+  }
+}

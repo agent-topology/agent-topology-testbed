@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "version": "0.1.0-beta.2",
+    "runtime": "v22.16.0",
+    "imported_path": "file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js",
+    "executable": "/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node"
+  },
+  "input_sha256": "cfde24a9fa5511902b496700474ca126e523db553322268a6d17c2c7f10af056",
+  "requested_algorithm_version": "2",
+  "status": "error",
+  "error": {
+    "type": "RangeError",
+    "message": "unsupported structure hash algorithm version \"2\"; supported versions: 1"
+  }
+}

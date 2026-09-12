@@ -1,0 +1,19 @@
+{
+  "identity": {
+    "version": "0.1.0-beta.2",
+    "runtime": "v22.16.0",
+    "imported_path": "file:///Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js",
+    "executable": "/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node"
+  },
+  "input_sha256": "74430f6e54f3f39aec6c2b2dfaf3dc476e2d1de11c80b190884460f686fa2cea",
+  "validation": {
+    "accepted": false,
+    "errors": [
+      {
+        "path": "$/structureHash/algorithmVersion",
+        "message": "must be equal to constant"
+      }
+    ]
+  },
+  "status": "rejected"
+}

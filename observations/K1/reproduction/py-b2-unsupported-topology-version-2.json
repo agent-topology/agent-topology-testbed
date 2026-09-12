@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "version": "0.1.0b2",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/verify-published-consumer-compatibility-boundari/.probe-runs/K1/run2-envs/py-b2/bin/python"
+  },
+  "input_sha256": "83c5301f1be87c60b12e6a06bedd3bf119592ca0fc2da269c465c3f75ca420b2",
+  "validation": {
+    "accepted": false,
+    "errors": [
+      "$.topologyVersion: '0.1' was expected"
+    ]
+  },
+  "status": "rejected"
+}

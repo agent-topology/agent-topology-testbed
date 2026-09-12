@@ -45,6 +45,19 @@ structure/hash under the tested irrelevant changes, while node/edge changes and
 join-to-independent-edge controls remain distinct. This adds registry-artifact
 evidence without changing F1–F8, qualifying a release or publishing upstream.
 
+[K1](../observations/K1/README.md) records a bounded **published consumer
+compatibility-boundary non-finding**: six controlled single-field mutations of
+V1's minimal document, plus one direct out-of-range `algorithm_version` call,
+against a source-linked obligation table, all matched their independently
+recorded expected outcome in all four beta.1/beta.2 installations across two
+independent runs (28/28 rows, twice). It distinguishes structural validation
+(schema `const` rejections), hash computation (a direct, validation-bypassing
+`compute_structure_hash`/`computeStructureHash` call) and extension legality
+(permitted location plus valid pattern vs. disallowed location vs. malformed
+pattern), and records that opt-in extension interpretation has no published
+spec-package API at all. This adds no new finding ID and does not retest F8's
+numeric-extension gap or V1's own hash-stability claim.
+
 The [47-claim ledger](completed-cohort-dispositions.md) routes all ten completed
 P0–P6/C1/S1/T1 groups to findings, corrections, rejected hypotheses, bounded
 limitations or precise follow-up candidates. F7 is the only distinct new finding

@@ -1,0 +1,362 @@
+{
+  "matrix": [
+    {
+      "case": "baseline",
+      "installation": "py-b1",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "baseline",
+      "installation": "py-b2",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "baseline",
+      "installation": "js-b1",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "baseline",
+      "installation": "js-b2",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "unsupported-topology-version",
+      "installation": "py-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-topology-version",
+      "installation": "py-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-topology-version",
+      "installation": "js-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-topology-version",
+      "installation": "js-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-hash-algorithm-version-declared",
+      "installation": "py-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-hash-algorithm-version-declared",
+      "installation": "py-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-hash-algorithm-version-declared",
+      "installation": "js-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unsupported-hash-algorithm-version-declared",
+      "installation": "js-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "unknown-permitted-extension",
+      "installation": "py-b1",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": true
+    },
+    {
+      "case": "unknown-permitted-extension",
+      "installation": "py-b2",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": true
+    },
+    {
+      "case": "unknown-permitted-extension",
+      "installation": "js-b1",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": true
+    },
+    {
+      "case": "unknown-permitted-extension",
+      "installation": "js-b2",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": true
+    },
+    {
+      "case": "invalid-extension-placement",
+      "installation": "py-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "invalid-extension-placement",
+      "installation": "py-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "invalid-extension-placement",
+      "installation": "js-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "invalid-extension-placement",
+      "installation": "js-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "malformed-extension-key",
+      "installation": "py-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "malformed-extension-key",
+      "installation": "py-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "malformed-extension-key",
+      "installation": "js-b1",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "malformed-extension-key",
+      "installation": "js-b2",
+      "expected_validation": "rejected",
+      "observed_status": "rejected",
+      "match": true
+    },
+    {
+      "case": "hash-computation-unsupported-algorithm-version",
+      "installation": "py-b1",
+      "expected_outcome": "error",
+      "observed_status": "error",
+      "expected_error_type": "ValueError",
+      "observed_error_type": "ValueError",
+      "match": true
+    },
+    {
+      "case": "hash-computation-unsupported-algorithm-version",
+      "installation": "py-b2",
+      "expected_outcome": "error",
+      "observed_status": "error",
+      "expected_error_type": "ValueError",
+      "observed_error_type": "ValueError",
+      "match": true
+    },
+    {
+      "case": "hash-computation-unsupported-algorithm-version",
+      "installation": "js-b1",
+      "expected_outcome": "error",
+      "observed_status": "error",
+      "expected_error_type": "RangeError",
+      "observed_error_type": "RangeError",
+      "match": true
+    },
+    {
+      "case": "hash-computation-unsupported-algorithm-version",
+      "installation": "js-b2",
+      "expected_outcome": "error",
+      "observed_status": "error",
+      "expected_error_type": "RangeError",
+      "observed_error_type": "RangeError",
+      "match": true
+    }
+  ],
+  "mismatches": [
+    {
+      "case": "baseline",
+      "installation": "py-b1",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "baseline",
+      "installation": "py-b2",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "baseline",
+      "installation": "js-b1",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    },
+    {
+      "case": "baseline",
+      "installation": "js-b2",
+      "expected_validation": "accepted",
+      "observed_status": "accepted",
+      "expected_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "observed_hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "16e9f78b7c4e73b5e611f87863fbc8ba9478d7c79582d5031ffce67407cb8421"
+      },
+      "match": false
+    }
+  ],
+  "summary": {
+    "rows": 28,
+    "mismatches": 4
+  }
+}
