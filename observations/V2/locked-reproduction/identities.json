@@ -1,0 +1,26 @@
+{
+  "py-b2": {
+    "version": "0.1.0b2",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/py-b2/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/py-b2/bin/python"
+  },
+  "py-b3": {
+    "version": "0.1.0b3",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/py-b3/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/py-b3/bin/python"
+  },
+  "js-b2": {
+    "version": "0.1.0-beta.2",
+    "runtime": "v22.16.0",
+    "imported_path": "file:///Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/js-b2/node_modules/@agent-topology/spec/dist/index.js",
+    "executable": "/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node"
+  },
+  "js-b3": {
+    "version": "0.1.0-beta.3",
+    "runtime": "v22.16.0",
+    "imported_path": "file:///Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/js-b3/node_modules/@agent-topology/spec/dist/index.js",
+    "executable": "/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node"
+  }
+}

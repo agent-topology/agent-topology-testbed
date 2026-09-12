@@ -136,6 +136,12 @@ with equal structure-hash tuples throughout the bounded population.
 published beta.1/beta.2 Python and npm spec hashes on nine fixed documents,
 including artifact identities, raw results and a bounded non-finding disposition.
 
+[V2](observations/V2/README.md) reuses those nine immutable documents across
+isolated published beta.2/beta.3 Python and npm spec installations. All 27
+requested transition/cross-language comparisons retain acceptance, full canonical
+bytes and structure-hash tuples; because the corpus has no numeric extension, this
+is a bounded non-finding and leaves F8's beta.3 numeric replay to E2.
+
 [K1](observations/K1/README.md) reuses V1's isolated installations and minimal
 document to test six controlled single-field mutations (an unsupported
 `topologyVersion`, an unsupported declared hash-algorithm version, permitted and

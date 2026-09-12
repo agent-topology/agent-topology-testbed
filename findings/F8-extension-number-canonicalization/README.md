@@ -6,6 +6,14 @@ accept identical valid JSON but return different full canonical UTF-8 bytes
 for numeric extension payloads. This is a full-document serialization finding,
 not a structure-hash defect or a schema-shape proposal.
 
+**Beta.3 boundary (V2, 2026-09-12).** [V2](../../observations/V2/README.md)
+found equal canonical bytes and hash tuples across beta.2→beta.3 for V1's nine
+fixed documents, but the pre-run inspection confirmed that none contains a
+numeric extension. V2 is therefore a bounded non-finding for that corpus, not a
+beta.3 replay or resolution of F8. E2
+[#54](https://github.com/agent-topology/agent-topology-testbed/issues/54) remains
+the planned numeric-population re-observation.
+
 [E1](../../observations/E1/README.md) supplies retrospective callable evidence:
 three seeds × 100 base examples, each with a structural permutation, repeated
 in isolated registry-installed environments. There are 42 failing bases (84

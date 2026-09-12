@@ -1,0 +1,19 @@
+{
+  "identity": {
+    "version": "0.1.0-beta.3",
+    "runtime": "v22.16.0",
+    "imported_path": "file:///Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/reproduction-envs/js-b3/node_modules/@agent-topology/spec/dist/index.js",
+    "executable": "/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node"
+  },
+  "input_sha256": "b0822fb3a22b48fcc06038c18dcd8526f943fd7ffd36319eb4cafcc4b921ace7",
+  "validation": {
+    "accepted": true
+  },
+  "canonical": "{\"completeness\":{\"gaps\":[{\"code\":\"unknown-routing-targets\",\"element\":{\"graphId\":\"main\",\"id\":\"router\",\"kind\":\"node\"},\"message\":\"Not every destination of this router could be determined.\"}],\"status\":\"incomplete\"},\"graphs\":[{\"id\":\"main\",\"structure\":{\"edges\":[{\"id\":\"edge:__start__:router:direct:1\",\"kind\":\"direct\",\"source\":\"__start__\",\"target\":\"router\"},{\"id\":\"edge:target:__end__:direct:1\",\"kind\":\"direct\",\"source\":\"target\",\"target\":\"__end__\"}],\"entryNodeIds\":[\"__start__\",\"target\"],\"exitNodeIds\":[\"__end__\"],\"joins\":[],\"nodes\":[{\"id\":\"__end__\"},{\"id\":\"__start__\"},{\"id\":\"router\"},{\"id\":\"target\"}]}}],\"producerLimitations\":[],\"provenance\":{\"framework\":{\"name\":\"conformance-fixture\",\"version\":\"1\"},\"generatedAt\":\"2000-01-01T00:00:00Z\",\"producer\":{\"name\":\"agent-topology-conformance\",\"version\":\"1\"},\"source\":{\"kind\":\"conformance-fixture\",\"locator\":\"unknown-routing-targets\"}},\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"00da965b2172598b239ab27d7a48c105b3a9d815ac139e7f629fa00e23f057b8\"},\"topologyVersion\":\"0.1\"}",
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "00da965b2172598b239ab27d7a48c105b3a9d815ac139e7f629fa00e23f057b8"
+  },
+  "status": "accepted"
+}
