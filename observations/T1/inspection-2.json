@@ -1,0 +1,80 @@
+{
+  "assertions": "exact equality with independently written expected.json; explicit exception under -O",
+  "case_id": "T1-temporal-definitions",
+  "evidence_class": "static",
+  "framework": "temporalio",
+  "limitations": [
+    "Python names/signatures are not extracted Temporal type names or invocation node IDs.",
+    "The run method and definition lists are fixture inputs, not an SDK discovery result.",
+    "No private definition accessor, graph inference, callable evaluation, or Temporal execution.",
+    "No topology-export capability found in the documented surface reviewed in T1 README; not a universal absence proof."
+  ],
+  "lock_sha256": "f339dd7f78bff13bb08d5d79981a086c5b6b627ffd0ca84856b055d4d66b2036",
+  "minimal_input": {
+    "activity_definitions": 2,
+    "execution_inputs_supplied": [],
+    "worker_constructed": false,
+    "workflow_definitions": 2
+  },
+  "observed": {
+    "activities": [
+      {
+        "async": true,
+        "python_name": "activity_a",
+        "signature": "(value: str) -> str"
+      },
+      {
+        "async": true,
+        "python_name": "activity_b",
+        "signature": "(value: str) -> str"
+      }
+    ],
+    "bodies_entered": [],
+    "context": {
+      "in_activity": false,
+      "in_workflow": false
+    },
+    "registration_parameter_names": [
+      "activities",
+      "workflows"
+    ],
+    "runtime_identity_field_names": {
+      "activity": [
+        "activity_id",
+        "activity_type",
+        "workflow_id",
+        "workflow_run_id",
+        "workflow_type"
+      ],
+      "workflow": [
+        "run_id",
+        "workflow_id",
+        "workflow_type"
+      ]
+    },
+    "workflows": [
+      {
+        "async": true,
+        "python_name": "ChoiceWorkflow",
+        "run_signature": "(self, value: str) -> str"
+      },
+      {
+        "async": true,
+        "python_name": "LinearWorkflow",
+        "run_signature": "(self, value: str) -> str"
+      }
+    ]
+  },
+  "python": "3.11.16",
+  "question": "What can public definition inspection distinguish between linear and input-dependent workflow code?",
+  "sdk_source_sha256": {
+    "activity.py": "dd353cd5e40bba930cdef50a3315e462de0dcc3a748e176ee4d10f1551eef382",
+    "workflow.py": "ce496a8e12d6331fda29e82fc16b905179a9490a2107364006adb4ec371e9330"
+  },
+  "source_sha256": {
+    "expected.json": "2bc3ec704556cef3a65b7f1202cae483a47e4f5ffdb02da97fa6f807e6678597",
+    "fixtures.py": "ac2c6002416e3c21fb4d50dd0bee260784ae98c2a87ca945773a727d9fd87c97",
+    "inspect_definitions.py": "b6186dd4c13fbbfd070c880cb6d85d8c6a4178ec04b507aa4cb98645d9828e5e"
+  },
+  "version": "1.18.0"
+}

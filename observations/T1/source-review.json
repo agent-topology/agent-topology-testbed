@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-09-12",
+  "sdk_commit": "3fe7e422b008bcb8cd94e985f18ebec2de70e8e6",
+  "sdk_version": "1.18.0",
+  "source_sha256": {
+    "README.md": "bef7f31ee7767dee2a95d9eaedee63bf9c2295c4dac08d06136fb9a9d8020ea0",
+    "temporalio/activity.py": "dd353cd5e40bba930cdef50a3315e462de0dcc3a748e176ee4d10f1551eef382",
+    "temporalio/client.py": "35e75455050de44e70bf71974bb11da517ba7541d7317d879aed2351d638582a",
+    "temporalio/contrib/openai_agents/_temporal_trace_provider.py": "9bbe9645fabd36e3eab89321c8cf1a681b4d126a7ae3e8342858cd227d9eb4bb",
+    "temporalio/runtime.py": "346bfcc680ca5e11f50234168963904c72b431d400c90266f10eb1aaad5dbe9a",
+    "temporalio/service.py": "57a5662fcbaba10ad949abc4fdb2eaf38d10967b92daa9b5ff3a8a5c23400c5a",
+    "temporalio/worker/_worker.py": "3b6c4e55f1338a723a3e32148b87d3124c60062af12d79cebe702a1483f1de2d",
+    "temporalio/workflow.py": "ce496a8e12d6331fda29e82fc16b905179a9490a2107364006adb4ec371e9330"
+  }
+}

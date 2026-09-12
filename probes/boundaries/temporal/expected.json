@@ -1,0 +1,17 @@
+{
+  "activities": [
+    {"python_name": "activity_a", "signature": "(value: str) -> str", "async": true},
+    {"python_name": "activity_b", "signature": "(value: str) -> str", "async": true}
+  ],
+  "workflows": [
+    {"python_name": "ChoiceWorkflow", "run_signature": "(self, value: str) -> str", "async": true},
+    {"python_name": "LinearWorkflow", "run_signature": "(self, value: str) -> str", "async": true}
+  ],
+  "bodies_entered": [],
+  "registration_parameter_names": ["activities", "workflows"],
+  "context": {"in_activity": false, "in_workflow": false},
+  "runtime_identity_field_names": {
+    "activity": ["activity_id", "activity_type", "workflow_id", "workflow_run_id", "workflow_type"],
+    "workflow": ["run_id", "workflow_id", "workflow_type"]
+  }
+}
