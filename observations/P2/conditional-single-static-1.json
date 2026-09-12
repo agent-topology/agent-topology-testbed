@@ -1,0 +1,68 @@
+{
+  "case_id": "P2-dagster-conditional-single",
+  "evidence_class": "static",
+  "framework": "dagster",
+  "lock_sha256": "838c90c91336b78e6f86acce7d3563200b1edd41ec3aaab7ff5d43b13aa564b5",
+  "python": "3.11.16",
+  "source_sha256": "cf30be243544988cc3148be11fbbbbc61473a173f2a06c2a9e90406bce0ea490",
+  "static": {
+    "dependencies": [
+      [
+        "conditional_source",
+        "branch_a",
+        "consumer_branch_a",
+        "value"
+      ],
+      [
+        "conditional_source",
+        "branch_b",
+        "consumer_branch_b",
+        "value"
+      ],
+      [
+        "fanout_source",
+        "result",
+        "consumer_fanout_a",
+        "value"
+      ],
+      [
+        "fanout_source",
+        "result",
+        "consumer_fanout_b",
+        "value"
+      ]
+    ],
+    "job_name": "p2_conditional",
+    "op_names": [
+      "conditional_source",
+      "consumer_branch_a",
+      "consumer_branch_b",
+      "consumer_fanout_a",
+      "consumer_fanout_b",
+      "fanout_source"
+    ],
+    "output_is_required": {
+      "conditional_source": {
+        "branch_a": false,
+        "branch_b": false
+      },
+      "consumer_branch_a": {
+        "result": true
+      },
+      "consumer_branch_b": {
+        "result": true
+      },
+      "consumer_fanout_a": {
+        "result": true
+      },
+      "consumer_fanout_b": {
+        "result": true
+      },
+      "fanout_source": {
+        "result": true
+      }
+    }
+  },
+  "temporary_state_removed": true,
+  "version": "1.13.22"
+}
