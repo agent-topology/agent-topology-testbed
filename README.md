@@ -90,7 +90,8 @@ matrix-backfill/boundary observations such as [C1](observations/C1/README.md)
 and [S1](observations/S1/README.md), plus the Temporal boundary inspection
 [T1](observations/T1/README.md) and Prefect definition/runtime comparison
 [P8](observations/P8/README.md), and the AutoGen programming-model comparison
-[A1](observations/A1/README.md), following the
+[A1](observations/A1/README.md), with the
+[final P7 comparison and epic review](findings/cross-framework-reconciliation.md), following the
 [evidence conventions](docs/evidence.md). The original `airflow_probe.py` and
 `OUTPUT.txt` remain historical beta.2 evidence, not these smoke/branch cases;
 `airflow_probe.py`'s unsupported exclusive/concurrent conclusion was itself

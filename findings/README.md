@@ -47,9 +47,14 @@ records source capability, not automatic target-format representability.
 
 [Remaining gaps](upstream-status.md#remaining-evidence-and-follow-ups) include
 F1 selection, F2 causality, F3 public extraction/child scope, F7 OR reset policy,
-P3/P6 source-hash mismatches, and untested questions. P8/A1 dispositions and final
-P7 integration are later increments. Neither testbed epic #1, upstream epic #94,
-nor beta.3 is qualified by this refresh.
+P3/P6 source-hash mismatches, and untested questions.
+The [final P7 reconciliation](cross-framework-reconciliation.md) now integrates
+15 P8/A1 claims, all 56 matrix cells and an explicit epic outcome review. Its
+[P8](cross-framework-reconciliation.md#p8-disposition) and
+[A1](cross-framework-reconciliation.md#a1-disposition) sections retain unresolved
+joins, nesting and HITL alongside the supported model-specific boundaries.
+No new finding ID or upstream publication follows; epic closure remains separate
+from this local, reviewable synthesis.
 
 ## Status conventions
 

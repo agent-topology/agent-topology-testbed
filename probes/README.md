@@ -9,8 +9,9 @@ and [epic #1](https://github.com/agent-topology/agent-topology-testbed/issues/1)
 The [completed-cohort ledger](../findings/completed-cohort-dispositions.md) routes
 P0–P6/C1/S1/T1 claims to their dispositions; the [findings index](../findings/README.md)
 separates historical versions from current upstream status.
-It backfills existing P0–P6 evidence; it invents no new results and runs no new
-experiments.
+The [final P7 reconciliation](../findings/cross-framework-reconciliation.md)
+adds the P8/A1 dispositions and epic outcome review. Matrix labels describe
+source capability, not claim verdicts or producer-to-consumer acceptance.
 
 ## Seven question IDs
 
@@ -58,14 +59,14 @@ model. No cell infers a negative from missing evidence.
 
 | Framework | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Airflow | support | support | partial | partial | partial | untested | partial |
-| Dagster | partial | partial | partial | partial | partial | untested | partial |
-| CrewAI Flows | support | support | partial | support | untested | untested | untested |
-| ASL | support | support | partial | partial | support | partial | partial |
-| Temporal (Python) | partial | partial | untested | untested | untested | partial | partial |
-| Prefect 3 | partial | partial | partial | untested | untested | partial | partial |
-| AutoGen SelectorGroupChat | partial | partial | partial | untested | untested | partial | partial |
-| AutoGen GraphFlow | support | support | partial | partial | untested | partial | partial |
+| Airflow | [support](#q1--structure-available-without-execution) | [support](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [partial](#q4--andor-convergence-semantics) | [partial](#q5--opaque-nested-graph-visibility-and-boundaries) | [untested](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
+| Dagster | [partial](#q1--structure-available-without-execution) | [partial](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [partial](#q4--andor-convergence-semantics) | [partial](#q5--opaque-nested-graph-visibility-and-boundaries) | [untested](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
+| CrewAI Flows | [support](#q1--structure-available-without-execution) | [support](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [support](#q4--andor-convergence-semantics) | [untested](#q5--opaque-nested-graph-visibility-and-boundaries) | [untested](#q6--interrupthitl-concepts-and-structural-visibility) | [untested](#q7--stable-definition-identifiers-across-runs) |
+| ASL | [support](#q1--structure-available-without-execution) | [support](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [partial](#q4--andor-convergence-semantics) | [support](#q5--opaque-nested-graph-visibility-and-boundaries) | [partial](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
+| Temporal (Python) | [partial](#q1--structure-available-without-execution) | [partial](#q2--explicit-nodes-and-edges) | [untested](#q3--fan-out-selection-and-execution-semantics) | [untested](#q4--andor-convergence-semantics) | [untested](#q5--opaque-nested-graph-visibility-and-boundaries) | [partial](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
+| Prefect 3 | [partial](#q1--structure-available-without-execution) | [partial](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [untested](#q4--andor-convergence-semantics) | [untested](#q5--opaque-nested-graph-visibility-and-boundaries) | [partial](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
+| AutoGen SelectorGroupChat | [partial](#q1--structure-available-without-execution) | [partial](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [untested](#q4--andor-convergence-semantics) | [untested](#q5--opaque-nested-graph-visibility-and-boundaries) | [partial](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
+| AutoGen GraphFlow | [support](#q1--structure-available-without-execution) | [support](#q2--explicit-nodes-and-edges) | [partial](#q3--fan-out-selection-and-execution-semantics) | [partial](#q4--andor-convergence-semantics) | [untested](#q5--opaque-nested-graph-visibility-and-boundaries) | [partial](#q6--interrupthitl-concepts-and-structural-visibility) | [partial](#q7--stable-definition-identifiers-across-runs) |
 
 ### Q1 — structure available without execution
 
@@ -265,6 +266,10 @@ model. No cell infers a negative from missing evidence.
 
 ### Q5 — opaque nested-graph visibility and boundaries
 
+- **CrewAI Flows — untested.** C1 contains no nested-flow boundary/port fixture;
+  [C1 limitations](../observations/C1/README.md#normalization-and-limitations)
+  do not establish child identity or F3 equivalence.
+
 - **Airflow — partial.** A `TaskGroup`'s membership, qualified task IDs, and
   its own boundary (`upstream_task_ids`/`downstream_task_ids`) are all
   discoverable through public attributes with no execution:
@@ -333,16 +338,22 @@ frameworks, not a claim that any of them lacks the concept.
 
 ### Q7 — stable definition identifiers across runs
 
+- **CrewAI Flows — untested as a dedicated stability question.** C1 retains
+  method/listener identities in paired records, but does not test a separate
+  definition-versus-generated-instance identity model. See
+  [C1 limits](../observations/C1/README.md#normalization-and-limitations); equal
+  records alone cannot establish universal identity stability.
+
 - **Airflow — partial.** The mapped task's definition-level task ID
   (`"mapped"`) is identical across all three expansion cardinalities; `map_index`
   is the separate runtime-instance identifier, and the DAG run's own generated
   run ID is excluded from comparison entirely (see
   [evidence conventions](../docs/evidence.md)). See
   [P5](../observations/P5/README.md#definition-identity-versus-runtime-instance-identity).
-- **Dagster — partial.** Dynamic mapping keys (`"k0"`, `"k1"`) are stable,
+- **Dagster — partial.** Dynamic mapping keys (`"k0"`, `"k1"`) repeat in these saved pairs as
   explicit identifiers distinct from position or count
   ([P6](../observations/P6/README.md#mapped-step-identity-is-keyed-by-mapping-key-not-position-or-count));
-  invocation paths (`"left"`, `"right"`) are stable identifiers distinct from
+  invocation paths (`"left"`, `"right"`) repeat as scoped identifiers distinct from
   the shared child `GraphDefinition` name they both instantiate
   ([P4](../observations/P4/README.md)). Both are separate from the run's own
   generated run ID, excluded from comparison.
