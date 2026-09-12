@@ -1,0 +1,8 @@
+{
+  "upstream_revision": "848b179aee32789a6f8b0ad4552a3a1262a05d55",
+  "files": [
+    {"path": "docs/0.1-contract.md", "git_blob_sha1": "eab012f7ee1b37a130e96ab012d9f5a2caf311dc"},
+    {"path": "docs/decisions/0009-numeric-canonical-form.md", "git_blob_sha1": "03dc3eb0cce0ae22bbee73bcb184b3a372144edb"},
+    {"path": "docs/decisions/0010-numeric-domain-parsed-value-narrowing.md", "git_blob_sha1": "7c3e9a8c3f6f2d6b97cb61ce0a289a3e1012e45a"}
+  ]
+}

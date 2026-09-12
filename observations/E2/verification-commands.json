@@ -1,0 +1,45 @@
+{
+  "commands": [
+    {
+      "command": "rtk proxy python3 probes/published-spec/replay_e2.py --envs .probe-runs/E2/run-a-envs --out observations/E2/run-a",
+      "exit": 0,
+      "result": "PASS E2: 600 saved inputs plus 16 minima and 2 boundaries"
+    },
+    {
+      "command": "rtk proxy python3 probes/published-spec/replay_e2.py --envs .probe-runs/E2/run-b-envs --out observations/E2/run-b",
+      "exit": 0,
+      "result": "PASS E2: 600 saved inputs plus 16 minima and 2 boundaries"
+    },
+    {
+      "command": "rtk proxy python3 -O probes/published-spec/verify_e2.py observations/E2/run-a observations/E2/run-b --report observations/E2/repeat-verification.json",
+      "exit": 0,
+      "result": "600 population cases, 16 minimized candidates and 2 boundaries passed semantic repeat comparison"
+    },
+    {
+      "command": "rtk python3 -O -m unittest discover -s probes/published-spec -p 'test_compare*.py' -v",
+      "exit": 0,
+      "result": "17 tests passed; includes an altered saved beta.3 adapter canonical string whose nested comparator exit was asserted to be 1"
+    },
+    {
+      "command": "rtk proxy .probe-runs/E2/control-env/bin/python -O -m unittest discover -s probes/published-spec/generated -v",
+      "exit": 0,
+      "result": "10 deterministic E1 controls passed from its immutable requirements lock; no population generator was called"
+    },
+    {
+      "command": "rtk git diff --check",
+      "exit": 0,
+      "result": "no whitespace errors"
+    }
+  ],
+  "source_sha256": {
+    "probes/published-spec/replay_e2.py": "6576d2b4686c7bf3270217b9c5fc596ce323bcce4b0f7e3b680ad09c62bbdb8e",
+    "probes/published-spec/compare_e2.py": "6fb08c69e1162e3fc9349ac97393a35565a51c7d542bffec7a6294700f7d1f20",
+    "probes/published-spec/verify_e2.py": "1defb38ceee86b9e54c28ac0ad3db31b48afdb475b5578dc3f1e16f6dc4eabd5",
+    "probes/published-spec/test_compare_e2.py": "d268318204fcb5c38314a862854a6a75bddff5efbd28d122db4df867a4ec1707"
+  },
+  "failed_precondition_check": {
+    "command": "rtk python3 -O -m unittest discover -s probes/published-spec/generated -v",
+    "exit": 1,
+    "reason": "host Python lacked the locked Hypothesis dependency; the same controls were then run successfully in a lock-only environment without invoking the population generator"
+  }
+}

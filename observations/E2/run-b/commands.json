@@ -1,0 +1,1060 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/run_v2.py",
+      "--envs",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs",
+      "--out",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/observations/E2/run-b/setup"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex",
+    "started_at": "2026-09-12T20:39:43.162056+00:00",
+    "seconds": 11.836621583002852,
+    "exit": 0,
+    "stdout_sha256": "509543ba513f5bc4df84ab8b6b4be5441f2e608022fd9cba37fc536cd9144b1f",
+    "stderr": "",
+    "stdout": "PASS V2: four isolated installs, 72 fresh-process calls; /Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/observations/E2/run-b/setup\n"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/generated/batch.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:54.998962+00:00",
+    "seconds": 0.4274684999982128,
+    "exit": 0,
+    "stdout_sha256": "c6c3abf0b091f9b32a5f166698a14e595aac92be100d69163c5b1b3026bb064d",
+    "stderr": "",
+    "stdout_path": "population/py-b2.jsonl.gz"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.432272+00:00",
+    "seconds": 0.06249195899727056,
+    "exit": 0,
+    "stdout_sha256": "e31ee840c00f2a9907b2467e5d1e5896661a4ed3b696ef6a577cd72f21198473",
+    "stderr": "",
+    "stdout_path": "minimized/086298c22c3abaa302f6ddb632b2f431d78ddd855314dd1060b16424c106f4d7/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.495457+00:00",
+    "seconds": 0.06257775000267429,
+    "exit": 0,
+    "stdout_sha256": "77f3ea63a1f5cf7d19e3c0b2dcc1011ecdfa14c416f79a8274be22a04ef31291",
+    "stderr": "",
+    "stdout_path": "minimized/10198b7eb9ca120ff48c752f83d33eebd6b95704a38f4982ce15ec1b36c687a1/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.558589+00:00",
+    "seconds": 0.05967229100497207,
+    "exit": 0,
+    "stdout_sha256": "79679637c0d7ea7b931018e59ec671ce6670c57867d36195eec0199d8c3c3c8f",
+    "stderr": "",
+    "stdout_path": "minimized/1fb3d6a651028a22246594d95c28da989ba7c4794c7a39bdc444a4659d26dc4e/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.618839+00:00",
+    "seconds": 0.06051675000344403,
+    "exit": 0,
+    "stdout_sha256": "5d296170369ddcaf42ec13a1bed1efe966f84a1164ee1bd04ab70b9aecc3bf6f",
+    "stderr": "",
+    "stdout_path": "minimized/2292ec196cb9eb383900ff6c347a806dc7525dacbe3697095764a77b919b2528/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.679881+00:00",
+    "seconds": 0.05928808299358934,
+    "exit": 0,
+    "stdout_sha256": "fa7cba85940cd365977bca65d245d8571d8848f5fa7d9b8df0fde4e5d080c15c",
+    "stderr": "",
+    "stdout_path": "minimized/28c6434a369f2c73d1bab2bc7c3c3170a5cbc673701e349ed1a991d3b6ecc195/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.739730+00:00",
+    "seconds": 0.05987641699903179,
+    "exit": 0,
+    "stdout_sha256": "371f23b101ce7d1c8ea327595c63db16288e87b5f17bc9ae720a0c4ae44f43fe",
+    "stderr": "",
+    "stdout_path": "minimized/2dcfd24a23114f601c1e960aaa9eb4ee7515191b3f18a0332f0514f497fcd92a/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.800132+00:00",
+    "seconds": 0.05926624999847263,
+    "exit": 0,
+    "stdout_sha256": "4f54f3843b2acb89d010bcad09b4e01d9697522e1b86edab763cc35b4bae10eb",
+    "stderr": "",
+    "stdout_path": "minimized/46492af71cb8108c40ba9beb4c38eaf843bbcd940d3f9e100af784c03f16dc16/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.859963+00:00",
+    "seconds": 0.059593625002889894,
+    "exit": 0,
+    "stdout_sha256": "a9e85a330e179150ccf1aefff37b9af19c6caccdca858045f5e1524ec8449c1f",
+    "stderr": "",
+    "stdout_path": "minimized/6d35caaac88783afabd2ac7d424311b41ef536b8edc4d01560e542292925de29/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.920175+00:00",
+    "seconds": 0.0594115830026567,
+    "exit": 0,
+    "stdout_sha256": "8a1ad912d63053bb25e81ade51e9d9fab67db4eba569a04de144ac550b965a68",
+    "stderr": "",
+    "stdout_path": "minimized/721ce2e7010faedbc47851c8b6b0fb6d0269b58a1af918f54f81e73e15d31e4d/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:55.980181+00:00",
+    "seconds": 0.06016566699690884,
+    "exit": 0,
+    "stdout_sha256": "8a64178dacfe3bc37a8e42ff8a1eef5a567cfe87cdda0b01b913bc5b87b21ee3",
+    "stderr": "",
+    "stdout_path": "minimized/9561a0ba6f67710b7a48d3c7bb379444f20989b0ee40eb0bf0be628733474481/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.040916+00:00",
+    "seconds": 0.06056962499860674,
+    "exit": 0,
+    "stdout_sha256": "bdfde214e1f883244aea4acf892d89fa08def397329a1fcb5549a12af040012f",
+    "stderr": "",
+    "stdout_path": "minimized/a0b64ee0e0f6f26540907f599e11956f1c42b837c1e06b4ea867b44e531efe3c/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.102047+00:00",
+    "seconds": 0.06089241600420792,
+    "exit": 0,
+    "stdout_sha256": "14d4a9fa82aa9fc6118e0838e09294c30478f78c19554ff908fc44fd5788af08",
+    "stderr": "",
+    "stdout_path": "minimized/aaaea078f7f46e707146c6d06ed47bf4b630d7d137d5c8e800b80a2375d4322a/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.163505+00:00",
+    "seconds": 0.061629291994904634,
+    "exit": 0,
+    "stdout_sha256": "12c2291bedf7421390dc4e633ed2346893a8ce5511a5f781069f2026996998b6",
+    "stderr": "",
+    "stdout_path": "minimized/e0ed707d79a0fe208a9d14fa335436101f57e6fd76a2b48923755d955fcf9d7a/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.225958+00:00",
+    "seconds": 0.0631673750031041,
+    "exit": 0,
+    "stdout_sha256": "11a0c9aa032c15cbbed792f713ae23f8e19167ed08e72d194c8a3313b150a0d3",
+    "stderr": "",
+    "stdout_path": "minimized/e0f3cdf662d80f0f2f5359ce233e923ae655ac68f5b637ed57060c33da94ae4d/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.289789+00:00",
+    "seconds": 0.059684500003641006,
+    "exit": 0,
+    "stdout_sha256": "9279cc8554580ec973d0bf6f45bd57aa966f74ba7f45f9af9eb7a154a2c7874b",
+    "stderr": "",
+    "stdout_path": "minimized/e91e8c0e2827a362b3bf3bcf228148240108b71bb90eede01daeb2de0b1b6384/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.350193+00:00",
+    "seconds": 0.05923900000198046,
+    "exit": 0,
+    "stdout_sha256": "5363e1a30146d660b5e7725e579889313d995e3aea4529b6df6c2f7779e20949",
+    "stderr": "",
+    "stdout_path": "minimized/ee86a4edb23649b446b91e1cbb54141c54381d423310ea9f7d9e968b895fd1ae/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.410092+00:00",
+    "seconds": 0.06040312499681022,
+    "exit": 0,
+    "stdout_sha256": "e6a6e5fa1081904a3c2d0d353e34d098b068c3939e77901917a55d778541edec",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-negative/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b2",
+    "started_at": "2026-09-12T20:39:56.471207+00:00",
+    "seconds": 0.06060366699966835,
+    "exit": 0,
+    "stdout_sha256": "e0193ddc97ef7109f2bc1a4ddd1a61825f8bc2486f1556c123b4f6950d185d5e",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-positive/py-b2.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/generated/batch.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:56.532443+00:00",
+    "seconds": 0.4832084580048104,
+    "exit": 0,
+    "stdout_sha256": "9e168e8f9b40bfe5611d03bd9201574137d408e6cf539293ddecc2235b120f91",
+    "stderr": "",
+    "stdout_path": "population/py-b3.jsonl.gz"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.021871+00:00",
+    "seconds": 0.06278366699552862,
+    "exit": 0,
+    "stdout_sha256": "5d0f49cd962e25c78bafc88986ef6b345ade725f027c4c41602ea98334e85ec8",
+    "stderr": "",
+    "stdout_path": "minimized/086298c22c3abaa302f6ddb632b2f431d78ddd855314dd1060b16424c106f4d7/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.085171+00:00",
+    "seconds": 0.06196466700203018,
+    "exit": 0,
+    "stdout_sha256": "48dd028fe3338b53b35a0b54597aaecfa2e7fbe9d23cecfcf08cca7eb9241509",
+    "stderr": "",
+    "stdout_path": "minimized/10198b7eb9ca120ff48c752f83d33eebd6b95704a38f4982ce15ec1b36c687a1/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.147763+00:00",
+    "seconds": 0.06026887500047451,
+    "exit": 0,
+    "stdout_sha256": "8199e48eebe89dcb5f6b9b8b1aef0091777b5faeb278b746e27c743028d582c3",
+    "stderr": "",
+    "stdout_path": "minimized/1fb3d6a651028a22246594d95c28da989ba7c4794c7a39bdc444a4659d26dc4e/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.208671+00:00",
+    "seconds": 0.06147979199886322,
+    "exit": 0,
+    "stdout_sha256": "8c3a61a24b09828801c249836740fc8dc4715907f749cd7bf77e3498a35c0be9",
+    "stderr": "",
+    "stdout_path": "minimized/2292ec196cb9eb383900ff6c347a806dc7525dacbe3697095764a77b919b2528/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.270724+00:00",
+    "seconds": 0.06159529100114014,
+    "exit": 0,
+    "stdout_sha256": "577d0862f7be381ad55766f00afdde25492802807769e487c5492a51f74d643e",
+    "stderr": "",
+    "stdout_path": "minimized/28c6434a369f2c73d1bab2bc7c3c3170a5cbc673701e349ed1a991d3b6ecc195/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.332846+00:00",
+    "seconds": 0.061551291997602675,
+    "exit": 0,
+    "stdout_sha256": "c63a2972fc0456f97014ab46c28bdc4182b7a3f0edde7f9af1278c76a5c0d0b7",
+    "stderr": "",
+    "stdout_path": "minimized/2dcfd24a23114f601c1e960aaa9eb4ee7515191b3f18a0332f0514f497fcd92a/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.394979+00:00",
+    "seconds": 0.061588374999701045,
+    "exit": 0,
+    "stdout_sha256": "dc1a658fdcb744a24dd8d6b62fe8d1872bd48d010a6767502714a22ec405e945",
+    "stderr": "",
+    "stdout_path": "minimized/46492af71cb8108c40ba9beb4c38eaf843bbcd940d3f9e100af784c03f16dc16/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.457208+00:00",
+    "seconds": 0.06324912499985658,
+    "exit": 0,
+    "stdout_sha256": "cd3e85baf6c32b7cc270917e7307510aac02596a26941f50f0291c386b85c156",
+    "stderr": "",
+    "stdout_path": "minimized/6d35caaac88783afabd2ac7d424311b41ef536b8edc4d01560e542292925de29/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.521021+00:00",
+    "seconds": 0.06076958400080912,
+    "exit": 0,
+    "stdout_sha256": "d6a0e44966067ece6a17b17b1ba11efbc59520a6e68966a9f8db8f94f28cad34",
+    "stderr": "",
+    "stdout_path": "minimized/721ce2e7010faedbc47851c8b6b0fb6d0269b58a1af918f54f81e73e15d31e4d/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.582325+00:00",
+    "seconds": 0.0730835840004147,
+    "exit": 0,
+    "stdout_sha256": "40328be323a107deb16eec4cda0f76f397af6231ca1763ac9e29673c5b25dcea",
+    "stderr": "",
+    "stdout_path": "minimized/9561a0ba6f67710b7a48d3c7bb379444f20989b0ee40eb0bf0be628733474481/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.660576+00:00",
+    "seconds": 0.06283916699612746,
+    "exit": 0,
+    "stdout_sha256": "17b0f79743401d9cfaa127bad260b542527ec8242c6e3dd737f95a56fb8aa4da",
+    "stderr": "",
+    "stdout_path": "minimized/a0b64ee0e0f6f26540907f599e11956f1c42b837c1e06b4ea867b44e531efe3c/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.724015+00:00",
+    "seconds": 0.06096158399304841,
+    "exit": 0,
+    "stdout_sha256": "b3ea34513ff3a2bbaf0dfbe37cb333e7c8eb36b74bfcf6e1fede23ed6c1ea7a9",
+    "stderr": "",
+    "stdout_path": "minimized/aaaea078f7f46e707146c6d06ed47bf4b630d7d137d5c8e800b80a2375d4322a/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.785576+00:00",
+    "seconds": 0.061379416998534,
+    "exit": 0,
+    "stdout_sha256": "a3d5ec7ffb2a0abc22a38bb22b9f407f6f7c9f984791938abd7f148f0905d8fd",
+    "stderr": "",
+    "stdout_path": "minimized/e0ed707d79a0fe208a9d14fa335436101f57e6fd76a2b48923755d955fcf9d7a/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.847543+00:00",
+    "seconds": 0.06124220899801003,
+    "exit": 0,
+    "stdout_sha256": "9bd380f0a67cafa22ec234c36247aecef8fbbdafa91c993c9f32be6fe8a424a3",
+    "stderr": "",
+    "stdout_path": "minimized/e0f3cdf662d80f0f2f5359ce233e923ae655ac68f5b637ed57060c33da94ae4d/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.909386+00:00",
+    "seconds": 0.06221766700036824,
+    "exit": 0,
+    "stdout_sha256": "ec65ab47c43da9b2d60341413a6c10a9a6e6dbaea7e5a9edcb5b4de70c8075a8",
+    "stderr": "",
+    "stdout_path": "minimized/e91e8c0e2827a362b3bf3bcf228148240108b71bb90eede01daeb2de0b1b6384/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:57.972212+00:00",
+    "seconds": 0.06024312500085216,
+    "exit": 0,
+    "stdout_sha256": "d6f45cfce017551692ce158a218815263af37e21d59ce241954fda4dd9e09861",
+    "stderr": "",
+    "stdout_path": "minimized/ee86a4edb23649b446b91e1cbb54141c54381d423310ea9f7d9e968b895fd1ae/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:58.033065+00:00",
+    "seconds": 0.06163258299784502,
+    "exit": 0,
+    "stdout_sha256": "948b9f5f607862629f6aa5e116967f77844a5bb14d6e1fabd9ed036c6b99be25",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-negative/py-b3.json"
+  },
+  {
+    "command": [
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3/bin/python",
+      "-I",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/adapter.py"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/py-b3",
+    "started_at": "2026-09-12T20:39:58.095296+00:00",
+    "seconds": 0.060218582999368664,
+    "exit": 0,
+    "stdout_sha256": "d5a79140b1436d463d44caa0c3a191b5c14bd780ac6a8030496ff23173486092",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-positive/py-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/batch.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.156295+00:00",
+    "seconds": 0.20442149999871617,
+    "exit": 0,
+    "stdout_sha256": "42b0345caeb60f5b5ff5d06483b636e486663f08e1e2f0a98c33d5f11268af06",
+    "stderr": "",
+    "stdout_path": "population/js-b2.jsonl.gz"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.366934+00:00",
+    "seconds": 0.07449041599466,
+    "exit": 0,
+    "stdout_sha256": "da3e8cdc3c33505ff29ba49e763198585c3a8b65b706fe3a511cce61cc52f7bb",
+    "stderr": "",
+    "stdout_path": "minimized/086298c22c3abaa302f6ddb632b2f431d78ddd855314dd1060b16424c106f4d7/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.442069+00:00",
+    "seconds": 0.07413174999965122,
+    "exit": 0,
+    "stdout_sha256": "e10088ffc591d4ad0995ca6b956ecebbc6288f96079abb2f4e4f4f938864e1e0",
+    "stderr": "",
+    "stdout_path": "minimized/10198b7eb9ca120ff48c752f83d33eebd6b95704a38f4982ce15ec1b36c687a1/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.516848+00:00",
+    "seconds": 0.0741163749989937,
+    "exit": 0,
+    "stdout_sha256": "3c9823c3fb96954252d826266a68e933e5f9b4013b93435c0754e0ae06cdf887",
+    "stderr": "",
+    "stdout_path": "minimized/1fb3d6a651028a22246594d95c28da989ba7c4794c7a39bdc444a4659d26dc4e/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.591617+00:00",
+    "seconds": 0.07354462500370573,
+    "exit": 0,
+    "stdout_sha256": "33df53e33b1fe782fadf59222456346926359af71753ac6fd5f0fe5802b69ddd",
+    "stderr": "",
+    "stdout_path": "minimized/2292ec196cb9eb383900ff6c347a806dc7525dacbe3697095764a77b919b2528/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.665839+00:00",
+    "seconds": 0.07454391699866392,
+    "exit": 0,
+    "stdout_sha256": "0ca6dfdc5f8bbfd61d5e48df56e90bcb9ea41739e7ef2e4455dab773639f427a",
+    "stderr": "",
+    "stdout_path": "minimized/28c6434a369f2c73d1bab2bc7c3c3170a5cbc673701e349ed1a991d3b6ecc195/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.741075+00:00",
+    "seconds": 0.07411845799651928,
+    "exit": 0,
+    "stdout_sha256": "75b671b79b92d5e23f40a68a813aba69764a26b586d45b325c598cc88ea65575",
+    "stderr": "",
+    "stdout_path": "minimized/2dcfd24a23114f601c1e960aaa9eb4ee7515191b3f18a0332f0514f497fcd92a/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.815873+00:00",
+    "seconds": 0.07462824999674922,
+    "exit": 0,
+    "stdout_sha256": "d0738612829e929e53c6c2d7292fe5b89f41434aebbe79ceaa0190a0f5cec11f",
+    "stderr": "",
+    "stdout_path": "minimized/46492af71cb8108c40ba9beb4c38eaf843bbcd940d3f9e100af784c03f16dc16/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.891215+00:00",
+    "seconds": 0.07375229200260947,
+    "exit": 0,
+    "stdout_sha256": "b165057251d855a16b86c847319a875160d5c3211b7f4014d764a281fe2cc794",
+    "stderr": "",
+    "stdout_path": "minimized/6d35caaac88783afabd2ac7d424311b41ef536b8edc4d01560e542292925de29/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:58.965610+00:00",
+    "seconds": 0.07364208299986785,
+    "exit": 0,
+    "stdout_sha256": "89ef355013717553975c67ac2b330ee8d264f082acb9b3a0b61403ac3f8af37f",
+    "stderr": "",
+    "stdout_path": "minimized/721ce2e7010faedbc47851c8b6b0fb6d0269b58a1af918f54f81e73e15d31e4d/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.039983+00:00",
+    "seconds": 0.07308333399851108,
+    "exit": 0,
+    "stdout_sha256": "669b8ca75da77aee1181539c5cecdb98ba285f955be9873d99bc7382a727d030",
+    "stderr": "",
+    "stdout_path": "minimized/9561a0ba6f67710b7a48d3c7bb379444f20989b0ee40eb0bf0be628733474481/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.113771+00:00",
+    "seconds": 0.07531620899681002,
+    "exit": 0,
+    "stdout_sha256": "2872ca69395057d4cc1f86c726465b487470ebede650721e6223879e751cc93f",
+    "stderr": "",
+    "stdout_path": "minimized/a0b64ee0e0f6f26540907f599e11956f1c42b837c1e06b4ea867b44e531efe3c/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.189760+00:00",
+    "seconds": 0.07416637500136858,
+    "exit": 0,
+    "stdout_sha256": "929fea7b0e7ed57f992c990f6220f119ce0ba91495aee48f755012744646586e",
+    "stderr": "",
+    "stdout_path": "minimized/aaaea078f7f46e707146c6d06ed47bf4b630d7d137d5c8e800b80a2375d4322a/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.264569+00:00",
+    "seconds": 0.07373499999812339,
+    "exit": 0,
+    "stdout_sha256": "586a94ca41380c34e0c1918435ef4e3ccd937a80e312fc93b783eba6c5191643",
+    "stderr": "",
+    "stdout_path": "minimized/e0ed707d79a0fe208a9d14fa335436101f57e6fd76a2b48923755d955fcf9d7a/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.338968+00:00",
+    "seconds": 0.07391112500044983,
+    "exit": 0,
+    "stdout_sha256": "a246b0c944c6d54922c1bc87c7f165ac6939622a363a6cbcc42d66b3b9d0a747",
+    "stderr": "",
+    "stdout_path": "minimized/e0f3cdf662d80f0f2f5359ce233e923ae655ac68f5b637ed57060c33da94ae4d/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.413557+00:00",
+    "seconds": 0.0740994169973419,
+    "exit": 0,
+    "stdout_sha256": "e78a75ecccdca96fa13b2a0dfcc93c73a9815e5dcef29c8a9391cd508ce5d19f",
+    "stderr": "",
+    "stdout_path": "minimized/e91e8c0e2827a362b3bf3bcf228148240108b71bb90eede01daeb2de0b1b6384/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.488327+00:00",
+    "seconds": 0.07456904200080317,
+    "exit": 0,
+    "stdout_sha256": "320fa82b5e2772903c72f7b06353f1c1966e4298e1a53df98f7f53602dbd3aab",
+    "stderr": "",
+    "stdout_path": "minimized/ee86a4edb23649b446b91e1cbb54141c54381d423310ea9f7d9e968b895fd1ae/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.563581+00:00",
+    "seconds": 0.07480729100643657,
+    "exit": 0,
+    "stdout_sha256": "bea093a2d46d9dd59a5a79d68dd286130aa0ee13dc2d3ac9f123227a00313de8",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-negative/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b2",
+    "started_at": "2026-09-12T20:39:59.639049+00:00",
+    "seconds": 0.07417679100035457,
+    "exit": 0,
+    "stdout_sha256": "97210d28e484c33b827ad9f403cae23ba66d95bdeac2cd4609abfa79c9358bad",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-positive/js-b2.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/batch.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:39:59.714074+00:00",
+    "seconds": 0.20496145899960538,
+    "exit": 0,
+    "stdout_sha256": "563bcbd877eb614521db7b2441277a1f19e42890f995fdc2ce5447b6c638aa1a",
+    "stderr": "",
+    "stdout_path": "population/js-b3.jsonl.gz"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:39:59.925427+00:00",
+    "seconds": 0.07496733399602817,
+    "exit": 0,
+    "stdout_sha256": "d75623101b0145a19ce7f050d926eb56ced699f47548882a826ccfd572cbb04d",
+    "stderr": "",
+    "stdout_path": "minimized/086298c22c3abaa302f6ddb632b2f431d78ddd855314dd1060b16424c106f4d7/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.001739+00:00",
+    "seconds": 0.07418541700462811,
+    "exit": 0,
+    "stdout_sha256": "71ed5b0b5e90cc9d937727a654c34f5c20857f29d2654f25c6473e5fe390d830",
+    "stderr": "",
+    "stdout_path": "minimized/10198b7eb9ca120ff48c752f83d33eebd6b95704a38f4982ce15ec1b36c687a1/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.076634+00:00",
+    "seconds": 0.07383612499688752,
+    "exit": 0,
+    "stdout_sha256": "3cc653a0cc4a5a292dc65720b5055ce74aab80ba10a5f985e1d1119e57feeb9b",
+    "stderr": "",
+    "stdout_path": "minimized/1fb3d6a651028a22246594d95c28da989ba7c4794c7a39bdc444a4659d26dc4e/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.151185+00:00",
+    "seconds": 0.0744957919960143,
+    "exit": 0,
+    "stdout_sha256": "9751a404072e6d8f78c634b03ff6adc3ac4a49fb6fa746815209efa2c3edf314",
+    "stderr": "",
+    "stdout_path": "minimized/2292ec196cb9eb383900ff6c347a806dc7525dacbe3697095764a77b919b2528/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.226405+00:00",
+    "seconds": 0.07279991699761013,
+    "exit": 0,
+    "stdout_sha256": "a93f691dd251f5494f2584dffd1668eb8c6fa2d23b58ed9e388689b144f64766",
+    "stderr": "",
+    "stdout_path": "minimized/28c6434a369f2c73d1bab2bc7c3c3170a5cbc673701e349ed1a991d3b6ecc195/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.299899+00:00",
+    "seconds": 0.07386445800511865,
+    "exit": 0,
+    "stdout_sha256": "e3c6ea2ab9127ed9cd3b7b04bf01d7353896e1719dacd5ce801b5986187ebe6d",
+    "stderr": "",
+    "stdout_path": "minimized/2dcfd24a23114f601c1e960aaa9eb4ee7515191b3f18a0332f0514f497fcd92a/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.374451+00:00",
+    "seconds": 0.07421016599982977,
+    "exit": 0,
+    "stdout_sha256": "71826827249800162159d0252811d452b31df767b04fc7e2885d240556764e83",
+    "stderr": "",
+    "stdout_path": "minimized/46492af71cb8108c40ba9beb4c38eaf843bbcd940d3f9e100af784c03f16dc16/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.449410+00:00",
+    "seconds": 0.0744838750033523,
+    "exit": 0,
+    "stdout_sha256": "22e6f7f43922de667356b93b3dffb14daf43b90a1062cbc3affae47ccf64148e",
+    "stderr": "",
+    "stdout_path": "minimized/6d35caaac88783afabd2ac7d424311b41ef536b8edc4d01560e542292925de29/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.524597+00:00",
+    "seconds": 0.0744986659992719,
+    "exit": 0,
+    "stdout_sha256": "65709f8c0c42877e8256a9199339d9061a9656b48d782220b82c2eead38b09a6",
+    "stderr": "",
+    "stdout_path": "minimized/721ce2e7010faedbc47851c8b6b0fb6d0269b58a1af918f54f81e73e15d31e4d/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.599772+00:00",
+    "seconds": 0.07421687500027474,
+    "exit": 0,
+    "stdout_sha256": "f0b9300094622562ee408a72be43f7401b410a28460251aa652549a67dbfc59f",
+    "stderr": "",
+    "stdout_path": "minimized/9561a0ba6f67710b7a48d3c7bb379444f20989b0ee40eb0bf0be628733474481/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.674675+00:00",
+    "seconds": 0.07389641700137872,
+    "exit": 0,
+    "stdout_sha256": "29d81127e9b3d3c6bdd6e49df9818a3c71ef512481f665e434e64c29a37a2778",
+    "stderr": "",
+    "stdout_path": "minimized/a0b64ee0e0f6f26540907f599e11956f1c42b837c1e06b4ea867b44e531efe3c/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.749253+00:00",
+    "seconds": 0.07429733299795771,
+    "exit": 0,
+    "stdout_sha256": "6dac5a5b7650f347bcd249d05fd307a77a2873bdd4eb2596ed1b98a05eb3ca2e",
+    "stderr": "",
+    "stdout_path": "minimized/aaaea078f7f46e707146c6d06ed47bf4b630d7d137d5c8e800b80a2375d4322a/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.824249+00:00",
+    "seconds": 0.07450404200062621,
+    "exit": 0,
+    "stdout_sha256": "5371bd86dd113a0992ffb39f39b97f2da7b84a20ef938c34fb485670633a9686",
+    "stderr": "",
+    "stdout_path": "minimized/e0ed707d79a0fe208a9d14fa335436101f57e6fd76a2b48923755d955fcf9d7a/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.899485+00:00",
+    "seconds": 0.08093070799804991,
+    "exit": 0,
+    "stdout_sha256": "b53e7258dd1a38ab30c4b75cb7cc0773bc93da55aab6532f7b302815e1124c73",
+    "stderr": "",
+    "stdout_path": "minimized/e0f3cdf662d80f0f2f5359ce233e923ae655ac68f5b637ed57060c33da94ae4d/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:00.981196+00:00",
+    "seconds": 0.07640854200144531,
+    "exit": 0,
+    "stdout_sha256": "77cda05a1313005efbe09d3560951089551328237c459e6e80f91f1c1e1f7cab",
+    "stderr": "",
+    "stdout_path": "minimized/e91e8c0e2827a362b3bf3bcf228148240108b71bb90eede01daeb2de0b1b6384/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:01.058330+00:00",
+    "seconds": 0.07464833300036844,
+    "exit": 0,
+    "stdout_sha256": "41bc12198bfcb1346c59aa79094956848adc0744a599bbee4cfcaf65bb72c189",
+    "stderr": "",
+    "stdout_path": "minimized/ee86a4edb23649b446b91e1cbb54141c54381d423310ea9f7d9e968b895fd1ae/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:01.133683+00:00",
+    "seconds": 0.07467004199861549,
+    "exit": 0,
+    "stdout_sha256": "f4f1e08d0f61f6d7f2ae3ab8df11c688cf01f80be6bf19b370fb3e50c4a0e5cd",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-negative/js-b3.json"
+  },
+  {
+    "command": [
+      "node",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3/adapter.mjs"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/.probe-runs/E2/run-b-envs/js-b3",
+    "started_at": "2026-09-12T20:40:01.209455+00:00",
+    "seconds": 0.07448229200235801,
+    "exit": 0,
+    "stdout_sha256": "4ef1c7487e2f5a5824bc0b54c2fcf793f7cdf94ae49a2f3e625aadb13d347477",
+    "stderr": "",
+    "stdout_path": "boundary/unsafe-positive/js-b3.json"
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-O",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/probes/published-spec/compare_e2.py",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex/observations/E2/run-b"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/replay-f8s-e1-population-and-minimized-counterex",
+    "started_at": "2026-09-12T20:40:01.285549+00:00",
+    "seconds": 0.08878195899887942,
+    "exit": 0,
+    "stdout_sha256": "742b83ba0c51f2390b79fa4fef46e8539e916a030fdf32a9351462c0312dd42a",
+    "stderr": "",
+    "stdout": "{\"beta2_cross_language_canonical_different\": 84, \"beta2_cross_language_canonical_equal\": 516, \"beta3_boundary_canonical_differences\": 0, \"beta3_cross_language_canonical_equal\": 600, \"beta3_minimized_canonical_differences\": 0, \"boundary_cases\": 2, \"minimized_candidates\": 16, \"npm_b2_to_b3_canonical_equal\": 600, \"population_cases\": 600, \"python_b2_to_b3_canonical_different\": 84, \"python_b2_to_b3_canonical_equal\": 516, \"structure_hash_transitions_or_disagreements\": 0, \"validation_rejections\": 0}\n"
+  }
+]

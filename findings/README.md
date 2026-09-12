@@ -21,7 +21,8 @@ package identity). Historical claims and artifacts remain at
 The [upstream status review](upstream-status.md) records the 2026-09-12 checks,
 exact commits, dedicated issues, merged PRs, release boundary and remaining gaps.
 The prior `eb0e2d8` source dispositions are historical review records; beta.3
-source is pinned at `848b179`, while V2/E2/X1 remain pending registry re-observation.
+source is pinned at `848b179`, V2 and E2 now supply registry re-observation, and
+X1 remains pending.
 
 | ID | Bounded claim and evidence | Observed against | Local disposition / current upstream disposition | Dedicated upstream relationship |
 | --- | --- | --- | --- | --- |
@@ -32,7 +33,7 @@ source is pinned at `848b179`, while V2/E2/X1 remain pending registry re-observa
 | [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Core-only sentinel hiding requires framework knowledge; [historical gallery](../gallery/) | beta.2 | Reproduced / improved experimental roles; vendor neutrality remains unproven | [#99](https://github.com/agent-topology/agent-topology/issues/99) closed, [PR #112](https://github.com/agent-topology/agent-topology/pull/112) merged |
 | [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | CommonJS require failure lacks an ESM recovery hint; [package reproduction](upstream-status.md#f6) | beta.2; upstream recheck Node 22.16.0 | Failure reproduced; absent-docs/zero-dependencies claims withdrawn / guidance fixed, synchronous require unsupported | [#102](https://github.com/agent-topology/agent-topology/issues/102) closed, [PR #115](https://github.com/agent-topology/agent-topology/pull/115) merged |
 | [F7](F7-or-firing-policy/README.md) | Ordinary edges do not specify C1's first-trigger/once-only OR policy; [counterexample](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample) | CrewAI 1.15.21; beta.2, `3715dd3`, `eb0e2d8` contracts | Supported, bounded; beta.3 artifact wording remains [X1 #55](https://github.com/agent-topology/agent-topology-testbed/issues/55) pending; stronger lossless OR mapping remains unresolved | [#119](https://github.com/agent-topology/agent-topology/issues/119) closed source documentation; not registry-verified |
-| [F8](F8-extension-number-canonicalization/README.md) | Numeric extensions produce different full canonical bytes; [E1](../observations/E1/README.md) retains generated inputs and minimized replays | Published Python 0.1.0b2 / npm 0.1.0-beta.2 | Supported historical gap; [V2](../observations/V2/README.md) found no beta.2→beta.3 drift in nine numeric-extension-free documents, while F8's beta.3 numeric outcome remains pending [E2 #54](https://github.com/agent-topology/agent-topology-testbed/issues/54) | [#117](https://github.com/agent-topology/agent-topology/issues/117), [#118](https://github.com/agent-topology/agent-topology/issues/118), [#124](https://github.com/agent-topology/agent-topology/issues/124), [#125](https://github.com/agent-topology/agent-topology/issues/125) closed source work |
+| [F8](F8-extension-number-canonicalization/README.md) | Numeric extensions produce different full canonical bytes; [E1](../observations/E1/README.md) retains generated inputs and minimized replays | Published Python 0.1.0b2 / npm 0.1.0-beta.2 | Supported historical beta.2 gap; [E2](../observations/E2/README.md) resolves it within E1's saved population and 16 minima on published beta.3, with unchanged hash tuples; unsafe integers remain a separately labeled narrowing transition | [#117](https://github.com/agent-topology/agent-topology/issues/117), [#118](https://github.com/agent-topology/agent-topology/issues/118), [#124](https://github.com/agent-topology/agent-topology/issues/124), [#125](https://github.com/agent-topology/agent-topology/issues/125) closed source work |
 
 [#94](https://github.com/agent-topology/agent-topology/issues/94) is the open
 interpretation **epic**, not a dedicated filing for each finding.
@@ -44,14 +45,21 @@ integrated consumer evidence. These cross-cutting relationships do not settle F7
 
 ## Dispositions and unresolved evidence
 
+[E2](../observations/E2/README.md) records F8's **published beta.3 bounded
+resolution**: E1's exact saved 600-line population and all 16 minimized
+counterexamples produce equal Python/npm beta.3 canonical bytes across two fresh
+lock-only captures, with all validation accepted and complete hash tuples
+unchanged. The two `>2^53` integer rows are separately classified as a beta.2
+parity-rejection→beta.3 narrowing compatibility transition, not an F8 defect.
+
 [V2](../observations/V2/README.md) records a bounded **published beta.2/beta.3
 spec-transition non-finding**: V1's nine unchanged, numeric-extension-free
 documents validate across four isolated registry installations, and all 27
 Python-transition, npm-transition and beta.3 cross-language comparisons retain
 identical full canonical bytes and complete structure-hash tuples across two
 fresh-process captures. This narrows the stable transition evidence to the fixed
-corpus; it does not re-observe F8's numeric-extension case, which remains E2
-[#54](https://github.com/agent-topology/agent-topology-testbed/issues/54)'s scope.
+corpus; it does not itself re-observe F8's numeric-extension case, which the E2
+disposition above now covers separately.
 
 [Q1](../observations/Q1/README.md) records a bounded **doc-to-registry quickstart
 non-finding**: unchanged Python CLI/API/strict and JavaScript ESM/CommonJS sequences

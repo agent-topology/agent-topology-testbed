@@ -24,3 +24,9 @@ without changing that historical runner. They reuse the beta.2 locks unchanged,
 add independent `py-b3` / `js-b3` locks, and compare validation, full canonical
 bytes and complete structure-hash tuples separately. See
 [V2 evidence and reproduction](../../observations/V2/README.md).
+
+`replay_e2.py`, `compare_e2.py` and `verify_e2.py` add E2 without rerunning the
+E1 generator. They verify and stream E1's exact saved population through V2's
+four lock-only installations, replay every minimum individually, keep unsafe
+integer compatibility boundaries separate, and compare two fresh captures. See
+[E2 evidence and reproduction](../../observations/E2/README.md).
