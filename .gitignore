@@ -2,3 +2,4 @@ node_modules/
 .airflow/
 __pycache__/
 *.pyc
+.DS_store
