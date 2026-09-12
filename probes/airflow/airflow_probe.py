@@ -25,16 +25,16 @@ def load_dag(path: str, name: str = "dag"):
     return getattr(module, name)
 
 
-def fan_out_mode(task) -> str | None:
-    """Airflow distinguishes exclusive from concurrent fan-out natively.
+def has_branch_operator(task) -> bool:
+    """Whether `task` is a `BranchPythonOperator`.
 
-    A branch operator selects among its downstream tasks. Every other operator
-    runs all of them. That is exactly the distinction `agent-topology` 0.1
-    cannot currently express.
+    Operator class is a static, structural fact. It is not, by itself, a
+    claim about how many of the task's downstream tasks the scheduler will
+    run: see the P1 correction linked from findings/F1-fan-out-semantics for
+    a counterexample where a `BranchPythonOperator` callback selects more
+    than one downstream task.
     """
-    if len(task.downstream_task_ids) < 2:
-        return None
-    return "exclusive" if isinstance(task, BranchPythonOperator) else "concurrent"
+    return isinstance(task, BranchPythonOperator)
 
 
 def main() -> None:
@@ -48,11 +48,11 @@ def main() -> None:
         if hasattr(child, "children")
     ))
     print()
-    print(f"{'task':14} {'downstream':28} fan-out mode")
+    print(f"{'task':14} {'downstream':28} branch operator")
     for task_id in sorted(dag.task_dict):
         task = dag.task_dict[task_id]
         downstream = ",".join(sorted(task.downstream_task_ids))
-        print(f"{task_id:14} {downstream[:27]:28} {fan_out_mode(task) or '-'}")
+        print(f"{task_id:14} {downstream[:27]:28} {has_branch_operator(task)}")
 
 
 if __name__ == "__main__":
