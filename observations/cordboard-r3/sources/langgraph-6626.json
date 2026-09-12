@@ -1,0 +1,9 @@
+{
+  "closed_at": "2026-01-12T17:57:21Z",
+  "html_url": "https://github.com/langchain-ai/langgraph/issues/6626",
+  "state": "closed",
+  "title": "`interrupt()` calls in parallel tools generate identical IDs, making multi-interrupt resume impossible",
+  "updated_at": "2026-07-04T05:55:53Z",
+  "checked_at": "2026-09-12T15:30:29.001655+00:00",
+  "scope_note": "Issue reproduction concerns dynamic interrupts inside tools in one ToolNode; no runtime reproduction or fixed-version verification in this observation."
+}

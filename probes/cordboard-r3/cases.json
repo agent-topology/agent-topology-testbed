@@ -1,0 +1,26 @@
+{
+  "direct-interrupt": {
+    "routing": "direct",
+    "interrupt_before": ["a", "b"],
+    "expected_match": true,
+    "expected_callable_result": null
+  },
+  "conditional-single": {
+    "routing": "single",
+    "interrupt_before": ["a", "b"],
+    "expected_match": false,
+    "expected_callable_result": "a"
+  },
+  "conditional-list": {
+    "routing": "list",
+    "interrupt_before": ["a", "b"],
+    "expected_match": false,
+    "expected_callable_result": ["a", "b"]
+  },
+  "direct-no-interrupt": {
+    "routing": "direct",
+    "interrupt_before": [],
+    "expected_match": false,
+    "expected_callable_result": null
+  }
+}

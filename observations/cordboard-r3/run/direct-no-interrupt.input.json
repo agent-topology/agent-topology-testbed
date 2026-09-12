@@ -1,0 +1,6 @@
+{
+  "routing": "direct",
+  "interrupt_before": [],
+  "expected_match": false,
+  "expected_callable_result": null
+}

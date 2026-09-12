@@ -97,7 +97,13 @@ Historical beta.2 artifacts, findings, gallery and probe evidence remain unchang
 
 Stages 0 and 1 are complete for this pinned population: there are no unreviewed
 cells, and unsupported factual expectations remain blank. Stage 2 can now design
-the comparative device and two consumer adapters using these records. Its runner
+consumer adapters using these records. The subsequent
+[consumer reconciliation](../../findings/consumer-reconciliation.md) changes the
+immediate order: start from Cordboard's real catalog, drift and correlation
+decisions, with the [bounded R3 ADR-model experiment](../cordboard-r3/README.md)
+first. Two generic structural consumers are no longer the immediate milestone.
+The CQ records remain reusable prerequisites; their inputs, citations and frozen
+judgments are unchanged. A later comparative runner
 must preserve separate profile, support/error and uncertainty states; compare both
 against the source-backed judgments and against each other; and investigate
 disagreement by asking what the contract determines first.

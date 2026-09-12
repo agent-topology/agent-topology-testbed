@@ -26,6 +26,28 @@ unresolved static distinction, not a measurement of their scheduling.
 
 ## Measured distinctions
 
+### Consumer impact: Cordboard's proposed R3 rule
+
+[The R3 observation](../../observations/cordboard-r3/README.md) adds eight fresh
+Python beta.2 producer records with static interrupts on both declared targets.
+Single- and list-returning conditional routers yield identical graphs and hashes;
+separate direct callback evaluations return `"a"` and `["a", "b"]`. A literal
+model of Cordboard ADR-0007 Action 4 rejects the direct-interrupt control and
+matches neither conditional case. The no-interrupt direct control also does not
+match. Explicit override retains the positive match while changing its decision.
+
+This makes F1 relevant to a concrete registration policy: the structural predicate
+does not establish the execution fact needed by its rationale. Cordboard's catalog
+rule is planned at the inspected pin, not an implementation exercised here.
+No framework execution, concurrency, checkpoint collision or resume failure was
+measured; **not-rejected is not safe**. The ADR's cited #6626 concerns dynamic
+tool interrupts, a different scope from these static node interrupts, and was
+closed when checked. Neither permanent data loss nor a required core branch
+field follows. The [reconciliation](../consumer-reconciliation.md) retains AT-3's
+consumer need without reviving superseded remedies or duplicating F1.
+
+### Framework observations
+
 | Evidence | Declaration | Selection or emission | Actual execution and boundary |
 | --- | --- | --- | --- |
 | [P1, Airflow 2.10.5](../../observations/P1/README.md#observed-results) | Same router downstream set `a,b` and join trigger rules in all cases | Direct callback evaluation returns `a`, `[a,b]`, or `None` | `dag.test()` shows one, both, or neither target succeeds; the two joins differ on the single-target case. No concurrency measurement. |

@@ -1,0 +1,15 @@
+{
+  "local_links_checked": 130,
+  "cordboard_source_snapshots_checked": 6,
+  "source_receipts_match": true,
+  "cordboard_pin_unchanged_and_worktree_clean": true,
+  "modified_existing_files": [
+    "README.md",
+    "findings/F1-fan-out-semantics/ISSUE.md",
+    "findings/F1-fan-out-semantics/README.md",
+    "findings/README.md",
+    "observations/consumer-contract-audit/README.md"
+  ],
+  "historical_evidence_and_frozen_audit_payloads_unchanged_from_head": true,
+  "git_diff_check": "passed"
+}

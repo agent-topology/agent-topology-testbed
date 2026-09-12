@@ -1,0 +1,36 @@
+{
+  "repository": "/Users/minhokang/Work/local-workbench/cordboard",
+  "commit": "67a46b43317ffc8474d46dc9b893d88d598f8d86",
+  "files": [
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "0457d6b45d6daa575d32cd357cd47cd5730f9eac952bd0b6623eaa8660d487a0",
+      "lines": 265
+    },
+    {
+      "path": "docs/decisions/0007-catalog-rejection.md",
+      "sha256": "49f421b21e81d46e770b00d33bc24254b967cc3489cb7eea140b9ad3900b31fa",
+      "lines": 264
+    },
+    {
+      "path": "docs/decisions/cordboard-upstream-requirements.md",
+      "sha256": "138f85ca872b44d46f914397d2295b948c4adad276d38fa09b8c658b10406f37",
+      "lines": 227
+    },
+    {
+      "path": "docs/decisions/0001-isolation-level.md",
+      "sha256": "8ea98ff6cee3a479554c7794d9f990a0aefb26675a5e2ada958a87b1df9661a1",
+      "lines": 211
+    },
+    {
+      "path": "docs/decisions/0011-manifest-derivation.md",
+      "sha256": "75441bb9155d7ac6cdea071cb1f2eaa3e73428f8ed0f02b17c5b01464cd6f6ea",
+      "lines": 300
+    },
+    {
+      "path": "docs/decisions/0012-topology-spec-split.md",
+      "sha256": "3aaa8d2d28d2af41f30e2b3d655985528a918c7609dd2fa5115269f3ab00fd4d",
+      "lines": 230
+    }
+  ]
+}

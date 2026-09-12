@@ -1,0 +1,75 @@
+{
+  "sources": {
+    "README.md": "f04cf59a64444f8c17e248db82bded8aa9193662c920be7c6cc9f56220f9a4e1",
+    "cases.json": "6efee88d5d9272cf4a663d064444d25c0764223d963a7a923ef54f5117eea49e",
+    "model.py": "07671512cbddcacff5d555e31ef6af56d115b04b593e42864b4fa26a5dcefb63",
+    "run.py": "d25dd747bd6ce3ad1f125122dd9453e549a800f3b120cfb1d3f4ecc49ab415ad",
+    "setup.py": "473cd6e75df230b3257dec8abce1cb1c524533d99901867f80a89534b6fa895b",
+    "test_probe.py": "af4a7ed9964ce0b71e10195e67f1c8db76f30e1b4065dba1053067cafeba63fd",
+    "verify.py": "5f08c3fa62e05dbb5d71c53b320c41ba61b6c9a2f971d145fb55b7b6b719f752",
+    "verify_controls.py": "108ad6aae4097911ffba6983b0b8e554f06346c3ae594b19a50ae7d696c5feb1",
+    "worker.py": "67aafb3fadb06a10bf0a1b3b09091185510de9c362c8479e954e710530bfa5df"
+  },
+  "checks": [
+    {
+      "name": "unit-tests",
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/probes/cordboard-r3",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "marker": "Ran 9 tests",
+      "passed": true
+    },
+    {
+      "name": "hashes",
+      "argv": [
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/.probe-runs/cordboard-r3/venv/bin/python",
+        "-I",
+        "-c",
+        "import json,sys; from pathlib import Path; from agent_topology.spec import compute_structure_hash; files=sorted(Path(sys.argv[1]).glob(\"*.stdout.json\")); assert len(files)==8; docs=[json.loads(p.read_text())[\"document\"] for p in files]; assert all(compute_structure_hash(d)==d[\"structureHash\"] for d in docs); print(\"8 hashes recomputed and equal\")",
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/observations/cordboard-r3/run"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "marker": "8 hashes",
+      "passed": true
+    },
+    {
+      "name": "invalid-recipe",
+      "argv": [
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/.probe-runs/cordboard-r3/venv/bin/python",
+        "-I",
+        "-c",
+        "import runpy,sys; w=runpy.run_path(sys.argv[1]); w[\"extract\"]({\"routing\":\"invalid\",\"interrupt_before\":[]})",
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/probes/cordboard-r3/worker.py"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "marker": "unknown routing recipe",
+      "passed": true
+    },
+    {
+      "name": "invalid-producer-document",
+      "argv": [
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/.probe-runs/cordboard-r3/venv/bin/python",
+        "-I",
+        "-c",
+        "import runpy,sys; w=runpy.run_path(sys.argv[1]); w[\"producer\"].describe=lambda *a,**k: {}; w[\"extract\"]({\"routing\":\"direct\",\"interrupt_before\":[]})",
+        "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/probes/cordboard-r3/worker.py"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "marker": "invalid producer document",
+      "passed": true
+    }
+  ]
+}

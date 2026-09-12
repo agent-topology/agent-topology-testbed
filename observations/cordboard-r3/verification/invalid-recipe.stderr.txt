@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import runpy,sys; w=runpy.run_path(sys.argv[1]); w["extract"]({"routing":"invalid","interrupt_before":[]})
+                                                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/probes/cordboard-r3/worker.py", line 46, in extract
+    raise ValueError("unknown routing recipe")
+ValueError: unknown routing recipe

@@ -29,6 +29,23 @@ not runtime scheduling behavior.
 
 ## Completed branch evidence
 
+The [Cordboard R3 observation](../../observations/cordboard-r3/README.md) supplies
+a concrete consumer consequence. In eight fresh-process Python beta.2 extractions,
+conditional routers with the same declared destinations and static interrupts
+yield identical graphs and structure hashes, while separately evaluated callbacks
+return one vs two destinations. A literal model of the proposed ADR-0007 Action-4
+predicate rejects the direct-interrupt control but matches neither conditional
+case. A direct control without interrupts also does not match; explicit override
+preserves match evidence while changing the positive control's decision.
+
+This is evidence that a registration-policy predicate lacks the selection fact
+its rationale needs, not execution of Cordboard's planned catalog or a measured
+unsafe run. The ADR's cited [LangGraph #6626](https://github.com/langchain-ai/langgraph/issues/6626)
+concerns dynamic tool interrupts and was closed at the recorded check; the new
+cases use static interrupts on separate nodes. No concurrency/resume test or
+permanent-loss claim follows. Existing declaration/unknown interpretation remains
+the appropriate boundary; the observation does not request a new core field.
+
 | Pinned model | Static fact | Selection/emission and execution evidence |
 | --- | --- | --- |
 | [P1: Airflow 2.10.5](../../observations/P1/README.md#observed-results) | Same `BranchPythonOperator` and declared `a,b` destinations | Direct callback returns one target, two targets or none. `dag.test()` records one, both or neither succeeding. Operator class does not prove exclusivity. With only `a` successful, the same incoming edges give a skipped `all_success` join but a successful `none_failed_min_one_success` join. |

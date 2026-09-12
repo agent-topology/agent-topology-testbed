@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import runpy,sys; w=runpy.run_path(sys.argv[1]); w["producer"].describe=lambda *a,**k: {}; w["extract"]({"routing":"direct","interrupt_before":[]})
+                                                                                               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minhokang/Work/ops/utilities/agent-topology-testbed/probes/cordboard-r3/worker.py", line 53, in extract
+    raise ValueError(f"invalid producer document: {errors}")
+ValueError: invalid producer document: ["$: 'completeness' is a required property", "$: 'graphs' is a required property", "$: 'producerLimitations' is a required property", "$: 'provenance' is a required property", "$: 'structureHash' is a required property", "$: 'topologyVersion' is a required property"]

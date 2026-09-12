@@ -1,0 +1,19 @@
+{
+  "records_checked": 8,
+  "repeated_pairs_equal": 4,
+  "repeat_exclusion": "/document/provenance/generatedAt",
+  "conditional_graphs_equal": true,
+  "conditional_hashes_equal": true,
+  "conditional_hash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "8ff15427b74b9cd5eb75f58891ae72a1e5d085dad93a30f7151f9fadb51fe65b"
+  },
+  "decisions": {
+    "direct-interrupt": "reject",
+    "conditional-single": "not-rejected",
+    "conditional-list": "not-rejected",
+    "direct-no-interrupt": "not-rejected"
+  },
+  "disposition": "supports F1; no execution, safety or resume conclusion"
+}

@@ -1,0 +1,9 @@
+{
+  "routing": "single",
+  "interrupt_before": [
+    "a",
+    "b"
+  ],
+  "expected_match": false,
+  "expected_callable_result": "a"
+}

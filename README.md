@@ -3,11 +3,18 @@
 Evidence for decisions about the [`agent-topology`](https://github.com/agent-topology/agent-topology)
 format, gathered by consuming it.
 
+[Consumer reconciliation](findings/consumer-reconciliation.md) connects
+Cordboard's catalog, drift and correlation decisions to existing F1–F8 evidence.
+The [R3 experiment](observations/cordboard-r3/README.md) records a literal ADR
+model over four minimal producer inputs: conditional single/list selection stays
+indistinguishable to the rule. This is consumer-policy evidence, not a runtime
+safety test or a new finding ID.
+
 [The consumer contract audit](observations/consumer-contract-audit/README.md)
 defines five structural question groups and source-backed judgments for 31
 documents under core-only and experimental opt-in profiles. Its 310 reviewed
 groups preserve underdetermined answers without expected values; this is document
-evidence for a future comparison device, not a consumer execution or release gate.
+evidence reusable by the consumer work above, not a consumer execution or release gate.
 
 [Q1](observations/Q1/README.md) records two fresh registry installations of each
 documented quickstart: all five executable entry points pass, with unchanged
@@ -71,9 +78,13 @@ core field is trialled before anyone is asked to emit it.
 One directory per framework, each answering a single question: *can this framework
 see the thing the format wants to describe?*
 
-Probes have **no dependency on the `agent-topology` packages** and are not
+Framework-native probes have **no dependency on the `agent-topology` packages** and are not
 producers. They pin their own framework version and keep their own requirements, so
 that a heavy dependency in one probe stays in that probe.
+
+The same directory also holds isolated published-package experiments such as
+`published-producer/` and `cordboard-r3/`; those intentionally install topology
+packages and retain a separate evidence class from framework-native probes.
 
 ```
 probes/airflow/    apache-airflow 2.10.5
