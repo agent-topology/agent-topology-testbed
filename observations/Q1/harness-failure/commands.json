@@ -1,0 +1,57 @@
+[
+  {
+    "label": "python-runtime",
+    "command": [
+      "python",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agt-q1-first/python",
+    "exit": 0,
+    "stdout": "Python 3.14.7\n",
+    "stderr": "",
+    "seconds": 0.008514250002917834,
+    "completedAt": "2026-09-12T13:58:24.456450+00:00"
+  },
+  {
+    "label": "node-runtime",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agt-q1-first/typescript",
+    "exit": 0,
+    "stdout": "v22.16.0\n",
+    "stderr": "",
+    "seconds": 0.015914832998532802,
+    "completedAt": "2026-09-12T13:58:24.472885+00:00"
+  },
+  {
+    "label": "npm-runtime",
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agt-q1-first/typescript",
+    "exit": 0,
+    "stdout": "11.4.1\n",
+    "stderr": "",
+    "seconds": 0.08567425000364892,
+    "completedAt": "2026-09-12T13:58:24.558764+00:00"
+  },
+  {
+    "label": "python-install",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-ex",
+      "python -m venv .venv\nsource .venv/bin/activate\npython -m pip install \"agent-topology-langgraph==0.1.0b2\"\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-first/python",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "/bin/bash: python -m venv .venv\nsource .venv/bin/activate\npython -m pip install \"agent-topology-langgraph==0.1.0b2\"\n: No such file or directory\n",
+    "seconds": 0.004049459006637335,
+    "completedAt": "2026-09-12T13:58:24.563263+00:00"
+  }
+]

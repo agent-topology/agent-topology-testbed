@@ -1,0 +1,145 @@
+{
+  "documentationCommit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "blocks": [
+    {
+      "id": "python-1",
+      "language": "bash",
+      "classification": "installation",
+      "line": 15,
+      "path": "blocks/python-1.bash",
+      "sha256": "45b72a1da44bc406af7c95783d1460a367cd540b5158ca4009abe806b7832d35"
+    },
+    {
+      "id": "python-2",
+      "language": "python",
+      "classification": "executable-file:graph.py",
+      "line": 29,
+      "path": "blocks/python-2.python",
+      "sha256": "d646d01fe5700335d4fa5201af6d1d69033be0c79db4920ff3fafc6e6165b40a"
+    },
+    {
+      "id": "python-3",
+      "language": "bash",
+      "classification": "execution:export-inspect",
+      "line": 60,
+      "path": "blocks/python-3.bash",
+      "sha256": "8eacae5c8c57e0360cf4b7483867236615e8691f072efa99b685c629f08d26c2"
+    },
+    {
+      "id": "python-4",
+      "language": "bash",
+      "classification": "execution:strict",
+      "line": 79,
+      "path": "blocks/python-4.bash",
+      "sha256": "c1f46d6efa6694d50b3b8f3f4de3213c463a7406d0427a314208587d4fcb58c2"
+    },
+    {
+      "id": "typescript-1",
+      "language": "bash",
+      "classification": "installation",
+      "line": 17,
+      "path": "blocks/typescript-1.bash",
+      "sha256": "bb7baa8c513688c758ca1fd019574829247204e3119dfde806b8c1c2ba34ddfd"
+    },
+    {
+      "id": "typescript-2",
+      "language": "javascript",
+      "classification": "executable-file:graph.mjs",
+      "line": 37,
+      "path": "blocks/typescript-2.javascript",
+      "sha256": "8360c4043335bb4bfc8629f9c124d502a7beca261f580fdee721c981cd643dba"
+    },
+    {
+      "id": "typescript-3",
+      "language": "bash",
+      "classification": "execution:esm",
+      "line": 53,
+      "path": "blocks/typescript-3.bash",
+      "sha256": "1783bed84cbcdf22c07e3e5823a0afb2b2bc29be7dd31fd90fc53ac54bd4d12b"
+    },
+    {
+      "id": "typescript-4",
+      "language": "javascript",
+      "classification": "executable-file:graph.cjs",
+      "line": 70,
+      "path": "blocks/typescript-4.javascript",
+      "sha256": "56b0f9522bf3a5179f0d5a93e4da80199afc197a74f4e45967527e9743dc9c06"
+    },
+    {
+      "id": "typescript-5",
+      "language": "bash",
+      "classification": "execution:commonjs",
+      "line": 93,
+      "path": "blocks/typescript-5.bash",
+      "sha256": "badcb18411453b888d9941950c1bf0eeef6814a8a0bb90adbf3d6254c20b2a69"
+    },
+    {
+      "id": "typescript-6",
+      "language": "typescript",
+      "classification": "illustrative:type-interface",
+      "line": 108,
+      "path": "blocks/typescript-6.typescript",
+      "sha256": "250f747d24ae67995f1a93e4469eb112cdf0952664077189adbecea8f06b4a9e"
+    }
+  ],
+  "classificationBeforeExecution": true,
+  "illustrativeReason": "typescript-6 defines a consumer function without calling it; no compiler version, install command or concrete configuration is supplied. Retained verbatim; not counted as an executable quickstart or a compiler pass.",
+  "inlineExamples": [
+    {
+      "source": "python",
+      "code": "python graph.py > topology.json",
+      "classification": "executable alternative; run after export/inspect before strict"
+    },
+    {
+      "source": "python",
+      "code": "describe(graph, strict=True)",
+      "classification": "illustrative API guidance paired with IncompleteTopologyError prose, not an additional complete program"
+    },
+    {
+      "source": "python",
+      "code": ".venv\\Scripts\\Activate.ps1",
+      "classification": "Windows-only activation alternative; not executed on macOS"
+    },
+    {
+      "source": "typescript",
+      "code": "require() / import() / await",
+      "classification": "module-mode explanation, not additional standalone programs"
+    }
+  ],
+  "expected": {
+    "graphId": "main",
+    "nodes": [
+      "__end__",
+      "__start__",
+      "greet"
+    ],
+    "edges": [
+      [
+        "__start__",
+        "greet"
+      ],
+      [
+        "greet",
+        "__end__"
+      ]
+    ],
+    "joins": [],
+    "entryNodeIds": [
+      "__start__"
+    ],
+    "exitNodeIds": [
+      "__end__"
+    ],
+    "completeness": {
+      "status": "complete",
+      "gaps": []
+    },
+    "limitation": "dynamic-interrupts"
+  },
+  "adaptations": [
+    "Run verbatim bash blocks with bash -e -x; reactivate the same venv for later blocks because each captured shell is fresh.",
+    "Use an isolated HOME and allowlisted runtime PATH, explicit public registries and disabled user configuration. pip report is enabled through PIP_REPORT; dependency requests are unchanged.",
+    "Capture topology.json immediately after each command before its next documented overwrite. Separate audit programs observe installed paths and validate outputs; they do not edit or wrap the graph examples.",
+    "No TypeScript compiler, model invocation, or service is added. npm audit/funding/update requests are disabled; dependency lifecycle scripts are disabled as an acquisition guard."
+  ]
+}

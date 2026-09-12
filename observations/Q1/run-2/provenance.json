@@ -1,0 +1,19 @@
+{
+  "documentationCommit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "runtime": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "envs": "/private/tmp/agt-q1-run2",
+  "completedAt": "2026-09-12T14:00:44.961376+00:00",
+  "commandSeconds": 16.137252624997927,
+  "sources": {
+    "audit.mjs": "ef23625811515b84986a9ae48b6fe8236409479c0de79908e16e01c12fa81f3d",
+    "audit.py": "c66185a72c9a6df754e30f3c8f70c245ee4de27e15215e6f3287451ac4dcd146",
+    "run.py": "e484040303dcca2647d2ace003f3804446023e270c778586c7f26d1cd40bc696",
+    "verify.py": "951f7c9865fc23de6406e0e1f4d669a918c0addd167ec0981ea1261c25e897ab"
+  },
+  "inputsSha256": "4e5027f066c35babfe6c210e9ef82c6615bae8dc6af2f67237a1fb882501ec72",
+  "locks": {
+    "requirements.lock": "32501113d119a15a5ab3b252314df31334e22a7fa8b9749fd5ee2acedd95cba2",
+    "package-lock.json": "3066424857fae794332d7b134fc2745f5bc1310c6516f91f19d6c3d5532cb2dd"
+  }
+}

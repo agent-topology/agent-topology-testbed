@@ -1,0 +1,36 @@
+{
+  "runtime": "v22.16.0",
+  "mode": "ESM audit; examples .mjs and .cjs with dynamic import",
+  "imports": {
+    "@agent-topology/spec": "/private/tmp/agt-q1-run1/typescript/node_modules/@agent-topology/spec/dist/index.js",
+    "@agent-topology/langgraph": "/private/tmp/agt-q1-run1/typescript/node_modules/@agent-topology/langgraph/dist/index.js",
+    "@langchain/langgraph": "/private/tmp/agt-q1-run1/typescript/node_modules/@langchain/langgraph/dist/index.js"
+  },
+  "versions": {
+    "@agent-topology/spec": "0.1.0-beta.2",
+    "@agent-topology/langgraph": "0.1.0-beta.2",
+    "@langchain/langgraph": "1.4.14"
+  },
+  "checks": [
+    {
+      "file": "typescript-esm.json",
+      "valid": true,
+      "hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218"
+      },
+      "canonical": true
+    },
+    {
+      "file": "typescript-commonjs.json",
+      "valid": true,
+      "hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218"
+      },
+      "canonical": true
+    }
+  ]
+}

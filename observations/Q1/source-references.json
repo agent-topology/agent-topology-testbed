@@ -1,0 +1,50 @@
+{
+  "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "files": [
+    {
+      "path": ".github/workflows/python-packages.yml",
+      "sha256": "5df6d51e34aab6f5881c9655be42035f66442618b463887f42f8b52efef29649",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/.github/workflows/python-packages.yml"
+    },
+    {
+      "path": ".github/workflows/typescript-packages.yml",
+      "sha256": "68d4d21b72c89d76b6c4a6bdd9f0da98b749f94ea7d1cc7e0195aec3122a4e73",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/.github/workflows/typescript-packages.yml"
+    },
+    {
+      "path": "docs/getting-started/python.md",
+      "sha256": "a0dff02f4c39c95f1a9e9b90a516636c46517be6269b2ffc24ca8a8dd7d7edeb",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/getting-started/python.md"
+    },
+    {
+      "path": "docs/getting-started/typescript.md",
+      "sha256": "50c5050b1e6b7bad6fd0b915a2730bb714d59bb803ff79c4d39b450e299524c2",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/getting-started/typescript.md"
+    },
+    {
+      "path": "packages/typescript/spec/scripts/smoke-install.mjs",
+      "sha256": "5bf88020a27f4558e820ca8540010cce03701227e5e6660220d982b291435195",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/spec/scripts/smoke-install.mjs"
+    },
+    {
+      "path": "scripts/smoke_langgraph_installation.py",
+      "sha256": "c444cdb4ef988bde271b0a0fdc77d6ec472f43cd3cf0d393eb71e6d57559b7e5",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/scripts/smoke_langgraph_installation.py"
+    },
+    {
+      "path": "scripts/smoke_spec_install.py",
+      "sha256": "314c22e74b1d42e55c14628ee647d8dcd00dd0c48e5c70c22cdb29b3df4019e8",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/scripts/smoke_spec_install.py"
+    },
+    {
+      "path": "scripts/smoke_typescript_installation.mjs",
+      "sha256": "b90b3720f0c879220e709f5f5892a697e23ad6dbca93199151cf1015be49da6b",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/scripts/smoke_typescript_installation.mjs"
+    },
+    {
+      "path": "tests/test_public_docs.py",
+      "sha256": "eed3170f1abfc451b2d4e4cee036026550de4e25843a6b280d56436d90bd4953",
+      "url": "https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/tests/test_public_docs.py"
+    }
+  ]
+}

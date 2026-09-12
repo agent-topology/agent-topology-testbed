@@ -39,6 +39,13 @@ integrated consumer evidence. These cross-cutting relationships do not settle F7
 
 ## Dispositions and unresolved evidence
 
+[Q1](../observations/Q1/README.md) records a bounded **doc-to-registry quickstart
+non-finding**: unchanged Python CLI/API/strict and JavaScript ESM/CommonJS sequences
+pass twice in fresh registry installations, with matching semantic output and
+artifact identities. The final TypeScript type-interface block is explicitly
+illustrative, not claimed compiled. This extends existing local-artifact smoke and
+documentation checks; it is not an upstream transfer or release qualification.
+
 [D1](../observations/D1/README.md) records a bounded **producer-determinism
 non-finding** for published beta.2: 208 describes in 104 fresh processes retain
 structure/hash under the tested irrelevant changes, while node/edge changes and
