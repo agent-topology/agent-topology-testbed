@@ -39,7 +39,7 @@ design seven new ones.
 | --- | --- | --- |
 | Apache Airflow | 2.10.5 | Declarative DAG authored in Python (TaskFlow + classic operators); structure is fixed at parse time, independent of runtime data. |
 | Dagster (ops/graphs) | 1.13.22 | Declarative `GraphDefinition`/`JobDefinition` composed from Python-decorated ops; structure is fixed at definition time. Assets and partitions are out of scope (epic non-goal). |
-| CrewAI Flows | Untested here; version to be pinned and recorded in [#13](https://github.com/agent-topology/agent-topology-testbed/issues/13). | Python `@start`/`@listen`/`@router`-decorated flow methods; not yet probed. |
+| CrewAI Flows | 1.15.21, recorded in [C1](../observations/C1/README.md) ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)). | Python `@start`/`@listen`/`@router`-decorated flow methods; a public, no-kickoff `Flow.flow_definition()` classmethod (and the exported `crewai.flow.build_flow_structure()` projection of it) extracts the whole declared graph, including each listener's literal `and_()`/`or_()` `condition_type`, from the class alone. |
 | Amazon States Language (ASL) | Untested here; spec revision to be recorded in [#14](https://github.com/agent-topology/agent-topology-testbed/issues/14). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
 | Temporal (Python SDK) | Untested here; SDK version to be pinned and recorded in [#15](https://github.com/agent-topology/agent-topology-testbed/issues/15). | Imperative Python workflow code; per [F1's note](../findings/F1-fan-out-semantics/README.md#note-on-the-core-field-test), structure is not statically available without execution — this is itself a candidate-boundary fact, not an assumed impossibility. |
 | Prefect 3 | Untested here; SDK version to be pinned and recorded in [#16](https://github.com/agent-topology/agent-topology-testbed/issues/16). | Python-decorated flows/tasks; structure is inferred from the decorated call graph versus runtime task invocation; not yet probed. |
@@ -57,7 +57,7 @@ model. No cell infers a negative from missing evidence.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Airflow | support | support | partial | partial | partial | untested | partial |
 | Dagster | partial | partial | partial | partial | partial | untested | partial |
-| CrewAI Flows | untested | untested | untested | untested | untested | untested | untested |
+| CrewAI Flows | support | support | partial | support | untested | untested | untested |
 | ASL | untested | untested | untested | untested | untested | untested | untested |
 | Temporal (Python) | untested | untested | untested | untested | untested | untested | untested |
 | Prefect 3 | untested | untested | untested | untested | untested | untested | untested |
@@ -85,6 +85,16 @@ model. No cell infers a negative from missing evidence.
   restricted to documented-public accessors alone remains an open gap. This is
   the native-capability-versus-public-extractability distinction, not a claim
   that the structure is unavailable.
+- **CrewAI Flows — support.** `Flow.flow_definition()` (public classmethod)
+  and `crewai.flow.build_flow_structure()` (exported in `crewai.flow.__all__`)
+  read the whole declared graph from the class alone, no `kickoff()`:
+  [C1](../observations/C1/README.md). Native, source-visible extractability
+  and public, exported extractability both hold here — sharper than
+  Dagster's gap. The nuance: `build_flow_structure()` itself is not mentioned
+  in the pinned docs page, and a router's own possible output labels are only
+  statically enumerable when the author opts into `emit=`/a `Literal` return
+  annotation — otherwise they are execution-only facts, a distinct,
+  narrower gap than Q1 (see [C1](../observations/C1/README.md#what-public-definition-inspection-exposes-without-kickoff)).
 
 ### Q2 — explicit nodes and edges
 
@@ -99,6 +109,12 @@ model. No cell infers a negative from missing evidence.
   two invocations (`left`, `right`) of the same `GraphDefinition` keep distinct
   invocation-scoped node identities, and an extractor that reads only the
   shared definition name loses them.
+- **CrewAI Flows — support.** `build_flow_structure()` returns typed
+  `nodes`/`edges` with a literal `condition_type` per AND/OR-derived edge:
+  [C1](../observations/C1/README.md). A router's edges to labels it did not
+  declare via `emit=`/`Literal` are not derivable this way (untested-value
+  case, not an unenumerable-identity case): the node/edge identities
+  themselves are explicit wherever they are derivable at all.
 
 ### Q3 — fan-out selection and execution semantics
 
@@ -117,6 +133,15 @@ model. No cell infers a negative from missing evidence.
   say which outputs a given run emits; only **execution** evidence
   distinguishes `none`/`single`/`multiple` and shows which consumers were
   skipped. See [P2's claim record](../observations/P2/README.md#claim-record).
+- **CrewAI Flows — partial.** A router's declared downstream label set is
+  only statically visible when the author opts into `emit=`/a `Literal`
+  return annotation (Q1); the static section is otherwise identical
+  regardless of which label a router selects, and does not say how many
+  listeners a given label triggers — **execution** evidence
+  (`kickoff()`) is what shows a single selected label triggering two
+  listeners at once, or zero: [C1](../observations/C1/README.md#router-cardinality-one-label-two-listeners-cardinality-is-a-runtime-fact).
+  One label need not imply one listener, the CrewAI-specific analogue of
+  Airflow's and Dagster's multi-target-selection counterexamples above.
 
 ### Q4 — AND/OR convergence semantics
 
@@ -140,8 +165,27 @@ model. No cell infers a negative from missing evidence.
   information gap** — this cell records what ops/graphs execution showed, not
   a completeness claim about Dagster overall (assets/sensors are out of scope
   here). The normative comparison this caution requires belongs to CrewAI's
-  own AND/OR investigation ([#13](https://github.com/agent-topology/agent-topology-testbed/issues/13)),
-  not to Dagster.
+  own AND/OR investigation, resolved below, not to Dagster.
+- **CrewAI Flows — support.** `and_()`/`or_()` (`crewai.flow.dsl._conditions`)
+  are a first-class, literal AND/OR distinction from the moment the decorator
+  runs, preserved through both `flow_definition()` and the exported
+  `build_flow_structure()` as a `condition_type` field, and behaviorally
+  distinct at execution: AND fires exactly once, only once every named
+  trigger has completed; OR fires exactly once, as soon as the first named
+  trigger completes, and is not re-armed by a later one outside a
+  router-driven cyclic-flow path: [C1](../observations/C1/README.md#andor-convergence-the-distinction-survives-both-structurally-and-behaviorally).
+  Checked against the upstream normative contract itself
+  ([C1](../observations/C1/README.md#the-upstream-joins-contract-already-models-and-or-is-an-ordinary-edge-relationship)):
+  `agent-topology`'s `joins[]` is already AND-only by construction (no
+  `type`/`mode` field; the Python spec's own docstring and the consuming-guide
+  state "AND convergence" outright), and an OR-style convergence needs no new
+  construct — ordinary independent edges already mean it. **No information
+  loss was reproduced; the F7 hypothesis is withdrawn as unsupported** — see
+  [C1's claim record](../observations/C1/README.md#claim-record). Separately,
+  replicating the pinned docs' own `or_()` example against the pinned
+  installation does not reproduce the docs' claimed output (logger fires once
+  where the docs show twice) — a documentation-versus-execution mismatch, not
+  a contract gap.
 
 ### Q5 — opaque nested-graph visibility and boundaries
 
@@ -470,6 +514,46 @@ no execution evidence. `test_dynamic.py` checks that dependency-kind loss,
 `is_dynamic`-flag loss, a duplicate mapping key, a wrong cardinality, and an
 unsupported version all exit nonzero under `-O`; it also prevents execution
 entry points in a standalone static run.
+
+## CrewAI Flows setup and run (C1)
+
+Read [the flow probe](crewai/flow_probe.py) and
+[C1's question/expected facts](../observations/C1/README.md) before running.
+Uses a new `.venvs/crewai` directory, independent of the Airflow/Dagster
+environments above.
+
+```sh
+cat probes/crewai/requirements.txt
+uv --version
+uv python install 3.11.16
+uv venv --python 3.11.16 .venvs/crewai
+uv pip sync --python .venvs/crewai/bin/python --require-hashes probes/crewai/requirements.lock
+uv pip check --python .venvs/crewai/bin/python
+```
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for case in router-route_a router-route_b and-both and-only_a or-both or-only_a; do
+  for mode in static callable execution; do
+    for n in 1 2; do
+      .venvs/crewai/bin/python probes/crewai/flow_probe.py \
+        --case "$case" --mode "$mode" \
+        --output ".probe-runs/c1-$case-$mode-$n.json" > ".probe-runs/c1-$case-$mode-$n.log" 2>&1
+    done
+    cmp ".probe-runs/c1-$case-$mode-1.json" ".probe-runs/c1-$case-$mode-2.json"
+  done
+done
+```
+
+Each of the six cases builds its `Flow` class fresh, in-process, from a
+factory function (flow methods are not inherited by subclassing in this
+framework — see [C1](../observations/C1/README.md#minimal-input)). No
+scheduler, database, or LLM call is involved; `kickoff()` is a single
+in-process call. See
+[C1's side-effect note](../observations/C1/README.md#a-framework-level-side-effect-controlled-and-documented)
+for the one framework-level local file this may write on a machine's first
+ever `crewai` `Flow.kickoff()`.
 
 ## Failure interpretation
 

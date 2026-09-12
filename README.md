@@ -64,6 +64,7 @@ that a heavy dependency in one probe stays in that probe.
 ```
 probes/airflow/    apache-airflow 2.10.5
 probes/dagster/    dagster 1.13.22
+probes/crewai/     crewai 1.15.21
 ```
 
 ### `gallery/`
@@ -84,8 +85,8 @@ For the isolated two-node baselines, follow [probe reproduction](probes/README.m
 New observations live in [P0](observations/P0/README.md),
 [P1](observations/P1/README.md), [P2](observations/P2/README.md),
 [P3](observations/P3/README.md), [P4](observations/P4/README.md),
-[P5](observations/P5/README.md), and [P6](observations/P6/README.md),
-following the
+[P5](observations/P5/README.md), [P6](observations/P6/README.md), and
+[C1](observations/C1/README.md), following the
 [evidence conventions](docs/evidence.md). The original `airflow_probe.py` and
 `OUTPUT.txt` remain historical beta.2 evidence, not these smoke/branch cases;
 `airflow_probe.py`'s unsupported exclusive/concurrent conclusion was itself
