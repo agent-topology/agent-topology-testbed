@@ -7,7 +7,7 @@ attached. This file is the index.
 
 | ID | Claim | Status | Upstream |
 | --- | --- | --- | --- |
-| [F1](F1-fan-out-semantics/) | A fan-out cannot be read as exclusive or concurrent | trialled | not filed |
+| [F1](F1-fan-out-semantics/) | Declared fan-out does not establish selection or execution | supported (bounded); upstream interpretation improved | [draft](F1-fan-out-semantics/ISSUE.md), not filed; existing [#97](https://github.com/agent-topology/agent-topology/issues/97), [#103](https://github.com/agent-topology/agent-topology/issues/103) |
 | [F2](#f2--entrynodeids-conflates-a-graph-entry-with-a-node-that-lost-its-predecessor) | `entryNodeIds` conflates entry with orphaned-by-gap | reproduced | not filed |
 | [F3](F3-opaque-subgraph/) | An opaque subgraph is indistinguishable from an ordinary node | reproduced | not filed |
 | [F4](#f4--join-connections-exist-only-in-joins-never-in-edges) | Join connections absent from `edges[]` | reproduced | not filed |
@@ -15,7 +15,11 @@ attached. This file is the index.
 | [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | ESM-only package, unactionable error | reproduced | not filed |
 | [F7](F7-or-firing-policy/) | OR first-trigger/once-only firing policy is unrepresented by ordinary edges; implicit AND is supported. Original “no join semantics” hypothesis withdrawn; C1's blanket edge equivalence corrected. | supported (bounded contract inspection) | [draft](F7-or-firing-policy/ISSUE.md), not filed |
 
-F1–F6 above were observed against `@agent-topology/spec@0.1.0-beta.2`.
+F1–F6 originated against `@agent-topology/spec@0.1.0-beta.2`.
+F1 now reconciles P1/P2/C1, S1 and T1 with upstream `eb0e2d8` (2026-09-12):
+experimental declaration facts are available; router selection remains unknown.
+Its [historical text and trial](F1-fan-out-semantics/HISTORY.md) remain preserved;
+the superseded modes are not the current experimental contract.
 F7 separately compares beta.2, C1's upstream pin `3715dd3`, and current upstream
 `eb0e2d8` (2026-09-12), using CrewAI 1.15.21 records. Its
 [exact mappings and limits](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample)

@@ -1,119 +1,112 @@
-**Title:** 0.1: a fan-out cannot be read as exclusive or concurrent
+**Title:** F1 evidence update: declared fan-out, selected targets and executed listeners
 
----
+**Unposted draft for existing upstream work.** This evidence updates
+[#94](https://github.com/agent-topology/agent-topology/issues/94),
+[#95](https://github.com/agent-topology/agent-topology/issues/95),
+[#96](https://github.com/agent-topology/agent-topology/issues/96),
+[#97](https://github.com/agent-topology/agent-topology/issues/97), and
+[#103](https://github.com/agent-topology/agent-topology/issues/103).
+It does not request a duplicate F1 issue or a new core branch contract.
+[Exact original text and beta.2 trial evidence](HISTORY.md) are preserved;
+[the finding](README.md) provides the expanded evidence trail.
 
-Consumer evidence from building a renderer against
-`@agent-topology/spec@0.1.0-beta.2`, using `conformance/fixtures/*/expected.json`
-as the corpus. Reproductions and rendered output:
-[agent-topology-testbed F1](https://github.com/agent-topology/agent-topology-testbed/tree/main/findings/F1-fan-out-semantics).
+## Supported claim and current disposition
 
-## What a consumer cannot do
+Declared possible destinations, selected labels/targets, listener multiplicity,
+and actual execution are different facts. A consumer cannot infer one from the
+other merely from edge kind, operator class, fixture name or return annotation.
+The observations below support that boundary. Upstream's
+[integrated F1 disposition](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/conformance/consumer/README.md#finding-disposition)
+is **improved; selection remains unknown**, at fixed commit
+`eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe` (main checked 2026-09-12).
+This is current source, not a claim about released beta.2 or beta.3 qualification.
 
-Determine whether the several destinations of a branching node are alternatives or
-run together. Anything that draws or reasons about a graph has to decide this, and
-the document does not.
+The [beta.2 producer reproduction](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/research/f1-f6-reproduction/README.md#disposition-table)
+extracted identical graphs and structure hashes from single- and list-returning
+LangGraph.js routers with identical declared destinations. Extraction did not
+invoke either callback; this establishes a static distinction left unknown,
+not runtime scheduling behavior.
 
-Rendered from the corpus, two fixtures describing different execution semantics
-come out as the same picture with a different dash pattern:
+## Completed branch evidence
 
-| Fixture | Edges out of the branching node |
-| --- | --- |
-| `parallel-fanout` | `fork → left`, `fork → right`, both `kind: "direct"` |
-| `conditional-routing` | `router → left`, `router → right`, both `kind: "conditional"` |
+| Pinned model | Static fact | Selection/emission and execution evidence |
+| --- | --- | --- |
+| [P1: Airflow 2.10.5](../../observations/P1/README.md#observed-results) | Same `BranchPythonOperator` and declared `a,b` destinations | Direct callback returns one target, two targets or none. `dag.test()` records one, both or neither succeeding. Operator class does not prove exclusivity. With only `a` successful, the same incoming edges give a skipped `all_success` join but a successful `none_failed_min_one_success` join. |
+| [P2: Dagster 1.13.22](../../observations/P2/README.md#observed-results) | Same two optional outputs and dependencies | `execute_in_process()` events record zero/one/two emitted outputs and corresponding skipped/successful consumers; the ordinary required-output control completes both consumers in every case. Config is input, not measured emission. |
+| [C1: CrewAI 1.15.21](../../observations/C1/README.md#observed-results) | Two listeners share `route_a`, with `route_a,route_b` declared via `emit=` | The callable selects one label. For `route_a`, kickoff logs `begin, route, listener_one, listener_two`; for `route_b`, neither listener runs. **One selected label can trigger two listeners.** |
 
-`kind` does not settle it. A LangGraph conditional router may return a list of
-destinations, so a `conditional` fan-out can also be concurrent. Reading multiple
-`conditional` edges as exclusive is an unsound inference that a consumer is
-nonetheless pushed toward.
+Each linked observation includes paired saved records, reproduction and limits.
+P1/P2 local execution does not measure wall-clock concurrency. C1's accessible
+`flow_definition()` and exported `build_flow_structure()` expose native facts,
+but neither appears in its pinned Flows guide; native exposure and documented
+public API guarantees remain distinct. These probes are framework-native
+observations, not topology producers or proof of a lossless target mapping.
 
-The README records that the format does not establish this. This issue is about its
-cost: every consumer guesses, and each guesses differently. That is the failure
-mode `conformance/fixtures/` prevents among producers, with no equivalent on the
-consuming side.
+[S1's ASL control](../../observations/S1/README.md#observed-results) preserves
+ordered Choice rules and separate Default, Parallel branch scopes with documented
+all-branch convergence, and Map's concurrency bound separately from runtime item
+count. This is static/documentary evidence against the ASL spec retrieved
+2026-09-11 (no dated revision published). No rule was evaluated or AWS service
+called; local JSON/reference checks prove neither authoritative validation nor
+execution or revision-1 producer conformance.
 
-## The asymmetry
+[T1](../../observations/T1/README.md#public-api-and-graphexport-search) found no
+documented public definition-to-topology export in its reviewed Temporal Python
+SDK **1.18.0** surface, source commit
+`3fe7e422b008bcb8cd94e985f18ebec2de70e8e6`, for two decorated workflows and two
+activities. It inspected definitions/signatures and SDK sources without entering
+workflow/activity bodies, invoking callbacks, constructing a worker/server or
+executing workflows. Source reasoning is separate from exported invocation
+edges. Other SDKs, releases and application DSLs are unexamined; restricted
+source analysis and history observation remain unvalidated candidates. This is
+no universal Temporal exclusion or decision about core-field eligibility.
 
-The format models convergence as a structure-level collection with explicit members
-(`joins[]`, carrying `sources` and `target`). It has no representation of
-divergence.
+## Convergence disposition
 
-Convergence is often inferable from edges. Divergence is the genuinely ambiguous
-one. The missing half of the pair is the half that needed writing down.
+[Testbed #27](https://github.com/agent-topology/agent-topology-testbed/issues/27) published
+[F7](../F7-or-firing-policy/README.md): `joins[]` carries implicit AND/all-sources
+semantics. F7 distinguishes beta.2's ADR/fixture evidence from later explicit
+consuming guidance. No mode property does not mean no semantics, and a join
+cannot establish its upstream divergence's selection policy.
 
-## Proposed shape
+The separate supported limitation is narrower: ordinary incoming edges preserve
+C1 OR connectivity but do not establish first-trigger/once-only firing. In the
+saved `or-both` run, `join` fires before `b` and never fires again after `b`;
+`or-only_a` fires once too. [F7's counterexample](../F7-or-firing-policy/README.md#smallest-mapping-and-counterexample)
+shows that the inspected contract does not supply the suppression/reset rule.
+This is contract under-specification for those observations, not a universal
+CrewAI promise or measured behavior of an upstream scheduler. F7 owns the OR
+policy question; it does not revive the withdrawn convergence-asymmetry argument.
 
-A structure-level collection mirroring `joins[]`:
+## Reconcile the proposed remedy
 
-```json
-"branches": [
-  {
-    "id": "branch:router",
-    "sourceId": "router",
-    "mode": "exclusive",
-    "edgeIds": ["edge:router:left:conditional:1", "edge:router:right:conditional:1"]
-  }
-]
-```
+[Accepted ADR 0008](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md)
+and its [schema](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/spec/experimental/interpretation-v1.schema.json) define
+graph-level `graphs[i]["x-topology-interpretation"]` revision `"1"`, with
+per-node facts. Known branch `all-declared` requires at least two unconditional
+ordinary direct declarations and complete scoped evidence excluding conditional,
+dynamic or unresolved routing. It is not a promise of execution, success or
+simultaneous scheduling. Inspected routers are `unknown` with
+`selection-not-observable`; uninspected scopes use `scope-not-inspected`.
+Absence means no assertion. Core validation alone does not validate these facts.
 
-`mode` in `exclusive | concurrent | unknown`. `unknown` keeps the "honest about
-gaps" posture where a producer genuinely cannot tell, and is distinct from the
-format being unable to express it — a distinction consumers currently cannot make.
+The former core `branches[]` and structure-level `x-topology-branch` trial using
+`exclusive | concurrent | unknown` are **historical, superseded proposals**,
+not aliases or current recommendations. Revision 1 contains no known
+exclusive/concurrent value. [Real producer evidence](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/conformance/branch-evidence.md)
+and [integrated consumers](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/conformance/consumer/README.md) now cover the
+accepted experiment in Python and TypeScript LangGraph; two implementations
+of one framework do not prove vendor neutrality. Core promotion requires a
+separate ADR, independent evidence and an explicit migration/hash decision.
 
-## Trialled as an extension
+The [historical four-fixture trial](HISTORY.md) injected modes by fixture name;
+its successful validation and unchanged hashes show extension acceptance/hash
+exclusion, not producer knowledge. [The upstream correction](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/research/f1-f6-reproduction/README.md#f1-consumer-injection-is-not-extraction)
+retains that limit. Equal structure hashes do not imply equal metadata or
+interpretation; [ADR 0008](https://github.com/agent-topology/agent-topology/blob/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/decisions/0008-experimental-consumer-interpretation.md#compatibility-and-promotion)
+requires comparing revision and canonical extension content for interpretation
+caches. Hash equality does not automatically preserve qualification receipts.
 
-Injected as `structure["x-topology-branch"]` and rendered before and after:
-
-| Fixture | Declared mode | Valid 0.1 document | Structure hash |
-| --- | --- | --- | --- |
-| `conditional-routing` | `exclusive` | yes | unchanged |
-| `parallel-fanout` | `concurrent` | yes | unchanged |
-| `multi-source-join` | `concurrent` | yes | unchanged |
-| `loop` | `unknown` | yes | unchanged |
-
-The hash does not move because `_NODE_HASH_FIELDS` and its edge and join
-counterparts project a fixed field set (`_canonical.py:14`), leaving `x-*` outside
-the hash by construction. A producer can therefore trial this field without
-invalidating any published fixture hash or qualification receipt.
-
-## Against the core field test
-
-> Would Temporal, Airflow, CrewAI, and LangGraph all be able to emit this?
-
-Airflow: yes, and checked rather than argued. Constructing a DAG and reading its
-structure — no scheduler, webserver, metadata database, or `airflow db init` —
-gives:
-
-```
-task           downstream                   fan-out mode
-fork           left,right                   concurrent
-router         a,b                          exclusive
-```
-
-`BranchPythonOperator` selects among its downstream tasks; every other operator
-runs all of them. A producer reads `mode` off the operator type. Script:
-`probes/airflow/airflow_probe.py`.
-
-Temporal is a separate matter. Its workflows are imperative code whose structure is
-not available without execution, so it cannot emit this field — or, for the same
-reason, most existing core fields. A "no" from Temporal may mean the framework is
-not a candidate producer rather than that the field is vendor-specific. Raising it
-here only because the test names it; happy to split that into its own issue.
-
-## Not yet proven
-
-The modes above are asserted from each fixture's name, not derived by a producer.
-This shows what the field buys a consumer, and that a structurally different
-framework can see the distinction. It does not show an `agent-topology` producer
-populating it end to end.
-
-The natural next step is the Python LangGraph producer emitting
-`x-topology-branch` for real, before any schema change is proposed. Happy to do
-that work if the direction is welcome.
-
-## Correction
-
-The Airflow check above read `exclusive` off operator class alone. A follow-up
-probe (testbed issue #3) found a `BranchPythonOperator` callback returning
-`["a", "b"]` runs both targets — operator class does not establish exclusivity.
-See the "Correction (P1)" section in the linked finding before filing this
-issue upstream as written.
+The evidence supports retaining the accepted declaration/unknown distinction.
+Any stronger selection claim needs a separately justified source and revision;
+these completed probes do not authorize a schema change or upstream publication.
