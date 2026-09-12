@@ -2,17 +2,28 @@
 
 These are internal observation records, not a topology schema or producer API.
 Preserve each framework's identities and native facts without forcing a common
-classification. Historical beta.2 evidence is frozen at
-`571e881e6d509b6e26ff8bf14b98e207d12e7ce9`: keep `findings/`, `gallery/`, and
-the original Airflow transcripts and trial outputs intact. Add new records under
-`observations/` and link corrections explicitly when supported; P0 does not
-settle historical F1/F3 claims. The one exception is a probe's own unsupported
-classification code: P1 removed the operator-class `exclusive`/`concurrent`
-conclusion from `probes/airflow/airflow_probe.py` and its example comments once
-a counterexample invalidated it, per its explicit correction linked from
-[F1](../findings/F1-fan-out-semantics/README.md). `OUTPUT.txt` still reflects the
-pre-correction script and is kept as the frozen beta.2 transcript, not as current
-script output.
+classification.
+
+## Historical preservation and corrections
+
+Raw evidence is immutable: retain saved observation JSON, transcripts, gallery
+artifacts and trial outputs. Historical beta.2 claims and artifacts remain
+available at `571e881e6d509b6e26ff8bf14b98e207d12e7ce9`; do not silently
+rewrite them as current evidence. Add new records under `observations/`.
+Active finding prose, observation interpretations and unposted `ISSUE.md` drafts
+may be corrected with provenance: state the old claim, correction and reason,
+link the supporting records and exact baseline/version, and date the disposition.
+Preserve rejected hypotheses visibly in the findings index or a linked ledger;
+do not delete them or recycle their IDs as unrelated confirmed findings.
+
+Corrections do not regenerate historical outputs. For example, P1 removed the
+unsupported operator-class `exclusive`/`concurrent` inference from the original
+Airflow probe, with a correction linked from
+[F1](../findings/F1-fan-out-semantics/README.md#correction-p1).
+`OUTPUT.txt` remains the frozen pre-correction beta.2 transcript, not current
+script output. P0 alone does not settle historical F1/F3 claims.
+
+## Record requirements
 
 Each record needs:
 
@@ -77,11 +88,43 @@ apply wherever a probe answers one of those questions:
   those two runs; they do not establish that identifier is stable across
   arbitrary future runs, code changes, or framework versions. Never claim
   universal identity stability from a byte-identical `cmp` pair alone.
-- Treat a hypothesis label (such as `F7`, reserved for CrewAI's AND/OR
-  investigation) as exactly that — a name for an unresolved claim, not a
-  finding or a confirmed gap. A missing join-mode property in one framework's
-  API does not by itself prove an information gap; check the framework's own
-  normative join semantics before recommending a change.
-  F7's investigation now has a [published local disposition](../findings/F7-or-firing-policy/README.md):
-  the original no-semantics hypothesis stays withdrawn, while the narrower OR
-  firing-policy limitation is supported. The ID is retained and must not be reused.
+- A hypothesis is not a confirmed gap. F7 was the convergence investigation's
+  hypothesis label; [#27](https://github.com/agent-topology/agent-topology-testbed/issues/27)
+  has now published [F7's local disposition](../findings/F7-or-firing-policy/README.md).
+  The no-semantics hypothesis is withdrawn and the narrower OR firing-policy
+  limitation is supported within its recorded bounds. F7 is neither reserved
+  pending investigation nor available for reuse. C1's older “available” wording
+  remains explicitly superseded historical prose. Future hypotheses require
+  evidence-based disposition, regardless of their working label.
+
+## Promotion from observation to finding
+
+A completed probe needs the [closure disposition](issue-planning.md#probe-closure-disposition)
+before it is considered reconciled. Matrix support alone is not finding support.
+For each proposed format claim, distinguish these five questions:
+
+| Layer | Required distinction |
+| --- | --- |
+| Schema shape | What fields and relationships are allowed at the exact target version? Absence of a property alone does not prove a semantic gap. |
+| Normative semantics | What meaning do the contract, normative guidance and conformance evidence assign at that commit? Separate historical releases from later source guidance; joins can mean AND without a mode field. |
+| Framework capability | What does the pinned framework/programming model declare or actually do? Keep static, callable and execution evidence separate and bounded. |
+| Static API accessibility | Can that fact be read without execution through documented public APIs, merely exported/source-visible accessors, or unsupported inspection? Native capability does not establish a supported static producer. |
+| Consumer information loss | Under an explicit target mapping, what decision-relevant distinction can the consumer no longer recover from the contract? Supply a minimal mapping/counterexample, label authored trials, and state scope and uncertainty. |
+
+Promote a reproduced, contract-grounded gap to a new finding only when it is
+independent of existing findings; otherwise reinforce or correct the existing
+record. Supported framework behavior, rejected hypotheses and API limitations may
+be explicit non-findings. Missing decisive evidence gets a bounded unresolved
+disposition and the smallest follow-up that could change the decision, not an
+assumed defect or a forced new ID. Local publication does not authorize upstream
+filing, alter a contract, or qualify a release.
+
+## Three closure examples
+
+These apply the checklist to saved evidence; they require no new framework run.
+
+| Example / measured claims | Finding or explicit non-finding and evidence/index link | Decision impact | Unresolved evidence / minimal follow-up |
+| --- | --- | --- | --- |
+| New reproduced gap: C1 on CrewAI 1.15.21 fires OR before b and only once, unlike AND's all-required behavior. Static exposure and runtime counts are separate facts. | Supported, bounded [F7](../findings/F7-or-firing-policy/README.md#smallest-mapping-and-counterexample); [indexed C1-c](../findings/completed-cohort-dispositions.md#c1) links the saved pairs and the target-contract comparison. Ordinary edges preserve connectivity but supply no latch/reset rule. | A consumer must not infer once-only OR firing from ordinary edges; a schema change is not predetermined. #27 delivered this disposition locally. | For a stronger lossless claim, obtain a normative early-fire/suppress-later mapping with reset scope and check the same four records. Cycles/races stay untested; no broad rerun is required to reconcile this bounded finding. |
+| Rejected hypothesis: absence of a join mode means absence of AND semantics. | Withdrawn premise retained in [F7](../findings/F7-or-firing-policy/README.md#contract-versions-and-authority) and [C1-b](../findings/completed-cohort-dispositions.md#c1). Normative AND meaning defeats the schema-only inference; the narrower OR finding is separate. | Withdraw the no-semantics argument and retain the ID/provenance. This records #27's outcome, not a policy that assumed its verdict. | None for rejecting that premise at the audited commits. A changed contract would require a new pinned comparison, not reopening the old probe. |
+| Supported behavior, no new finding: P0's two-node Airflow 2.10.5 and Dagster 1.13.22 definitions expose a dependency and both steps succeed locally. | Explicit baseline-only non-finding [P0-a/b](../findings/completed-cohort-dispositions.md#p0), with [static/execution pairs](../observations/P0/README.md#observed-results). | Establishes viable minimal probe inputs; neither a format defect nor revalidation of F1/F3. #29 delivered the indexed disposition. | None for the baseline question. Production concurrency and universal identity stability remain outside scope; do not schedule speculative tasks to force a finding. |
