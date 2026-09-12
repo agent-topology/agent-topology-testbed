@@ -1,0 +1,12 @@
+{
+  "callable": {
+    "callback_result": "go_b"
+  },
+  "case_id": "C1-crewai-flow-probe-and-both",
+  "evidence_class": "callable",
+  "framework": "crewai",
+  "lock_sha256": "75d53c17d94df35e053d601e8ab013bf0919550da165041a8870d190d52e402f",
+  "python": "3.11.16",
+  "source_sha256": "3caf2e23fc8341f963cf20f9d5859798020b646e7e3085fb5a64fe035ef2c1f9",
+  "version": "1.15.21"
+}
