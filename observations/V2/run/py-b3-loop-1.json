@@ -1,0 +1,20 @@
+{
+  "identity": {
+    "version": "0.1.0b3",
+    "runtime": "3.14.7",
+    "imported_path": "/Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/installations/py-b3/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "executable": "/Users/minhokang/orca/workspaces/agent-topology-testbed/compare-structure-hashes-and-canonical-bytes-acr/.probe-runs/V2/installations/py-b3/bin/python"
+  },
+  "input_sha256": "c8b9445427a00806e5e4857a2a8ab0c2ddaf0a9c94333fd97f4c5970d350e661",
+  "validation": {
+    "accepted": true,
+    "errors": []
+  },
+  "canonical": "{\"completeness\":{\"gaps\":[],\"status\":\"complete\"},\"graphs\":[{\"id\":\"main\",\"structure\":{\"edges\":[{\"id\":\"edge:__start__:retry:direct:1\",\"kind\":\"direct\",\"source\":\"__start__\",\"target\":\"retry\"},{\"id\":\"edge:retry:__end__:conditional:1\",\"kind\":\"conditional\",\"source\":\"retry\",\"target\":\"__end__\"},{\"id\":\"edge:retry:retry:conditional:1\",\"kind\":\"conditional\",\"source\":\"retry\",\"target\":\"retry\"}],\"entryNodeIds\":[\"__start__\"],\"exitNodeIds\":[\"__end__\"],\"joins\":[],\"nodes\":[{\"id\":\"__end__\"},{\"id\":\"__start__\"},{\"id\":\"retry\"}]}}],\"producerLimitations\":[],\"provenance\":{\"framework\":{\"name\":\"conformance-fixture\",\"version\":\"1\"},\"generatedAt\":\"2000-01-01T00:00:00Z\",\"producer\":{\"name\":\"agent-topology-conformance\",\"version\":\"1\"},\"source\":{\"kind\":\"conformance-fixture\",\"locator\":\"loop\"}},\"structureHash\":{\"algorithm\":\"sha256\",\"algorithmVersion\":\"1\",\"value\":\"aefffb433065a52fadc55c3c9a748542ec7fe2a9d037f3716af931f489370af4\"},\"topologyVersion\":\"0.1\"}",
+  "structureHash": {
+    "algorithm": "sha256",
+    "algorithmVersion": "1",
+    "value": "aefffb433065a52fadc55c3c9a748542ec7fe2a9d037f3716af931f489370af4"
+  },
+  "status": "accepted"
+}

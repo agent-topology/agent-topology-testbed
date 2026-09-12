@@ -1,0 +1,225 @@
+{
+  "rejected": [],
+  "hash_disagreements": [],
+  "algorithm_transitions": [],
+  "canonical_differences": [],
+  "expectation_mismatches": [],
+  "comparisons": [
+    {
+      "input": "conditional-routing.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "conditional-routing.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "conditional-routing.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "interrupt-before.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "interrupt-before.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "interrupt-before.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "linear-flow.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "linear-flow.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "linear-flow.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "loop.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "loop.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "loop.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "minimal.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "minimal.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "minimal.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "multi-source-join.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "multi-source-join.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "multi-source-join.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "nested-subgraph.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "nested-subgraph.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "nested-subgraph.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "parallel-fanout.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "parallel-fanout.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "parallel-fanout.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "unknown-routing-targets.json",
+      "left": "py-b2",
+      "right": "py-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "unknown-routing-targets.json",
+      "left": "js-b2",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    },
+    {
+      "input": "unknown-routing-targets.json",
+      "left": "py-b3",
+      "right": "js-b3",
+      "validation": "accepted",
+      "canonical": "equal",
+      "structure_hash": "same-algorithm-equal"
+    }
+  ]
+}

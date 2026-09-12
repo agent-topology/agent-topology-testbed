@@ -1,0 +1,8 @@
+[
+  {
+    "command": ["python3", "-O", "probes/published-spec/compare_v2.py", "observations/V2/run", "--expected", "observations/V2/controls/corrupted-expectations.json", "--report", "observations/V2/controls/corrupted-comparison.json"],
+    "exit": 1,
+    "stdout": "{\"rejected\": 0, \"hash_disagreements\": 0, \"algorithm_transitions\": 0, \"canonical_differences\": 0, \"expectation_mismatches\": 3, \"comparisons\": 27}\n",
+    "stderr": ""
+  }
+]
