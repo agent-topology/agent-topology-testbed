@@ -83,6 +83,34 @@ case's return value, then isolates state exactly as the P0 Airflow run does.
 standalone `static`/`callable` modes skip `airflow db migrate` and `dag.test()`
 entirely, so they carry no execution evidence.
 
+## Airflow grouping/roots/join run (P3)
+
+Same `.venvs/airflow` environment as above; no separate install. Read
+[the grouping probe](airflow/grouping.py) and [P3's question/expected facts](../observations/P3/README.md)
+before running.
+
+```sh
+set -eu
+mkdir -p .probe-runs
+for n in 1 2; do
+  .venvs/airflow/bin/python probes/airflow/grouping.py --mode static \
+    --output ".probe-runs/grouping-static-$n.json" > ".probe-runs/grouping-static-$n.log" 2>&1
+  .venvs/airflow/bin/python probes/airflow/grouping.py --mode execution \
+    --output ".probe-runs/grouping-$n.json" > ".probe-runs/grouping-$n.log" 2>&1
+done
+cmp .probe-runs/grouping-static-1.json .probe-runs/grouping-static-2.json
+cmp .probe-runs/grouping-1.json .probe-runs/grouping-2.json
+```
+
+Builds DAG `p3_grouping`: one `TaskGroup` with two parallel members, a
+predecessor and successor crossing its boundary, and a two-source convergence
+join reusing P1's `none_failed_min_one_success` rule, then isolates state
+exactly as the P0 Airflow run does. `--mode execution` also produces the
+`static` section; the standalone `static` mode skips `airflow db migrate` and
+`dag.test()` entirely, so it carries no execution evidence. This probe runs one
+case, not P1's matrix, because it reuses P1's trigger-rule evidence rather than
+retesting it — see P3's README for why.
+
 ## Dagster setup
 
 ```sh
