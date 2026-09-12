@@ -1,0 +1,3639 @@
+{
+  "summary": {
+    "captures": 104,
+    "describes": 208,
+    "comparisons": 248,
+    "errors": 0
+  },
+  "errors": [],
+  "pairs": [
+    {
+      "language": "python",
+      "case": "linear-base",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-base",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-base",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-dictionary-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-dictionary-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-dictionary-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-dictionary-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-dictionary-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-comment",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-comment",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-comment",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-comment",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-comment",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-named",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-named",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-named",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-named",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-named",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-node-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "linear-edge-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-base",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-base",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-base",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-dictionary-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-dictionary-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-dictionary-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-dictionary-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-dictionary-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-comment",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-comment",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-comment",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-comment",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-comment",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-named",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-named",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-named",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-named",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-named",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-node-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "fanout-edge-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-base",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-base",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-base",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-dictionary-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-dictionary-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-dictionary-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-dictionary-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-dictionary-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-comment",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-comment",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-comment",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-comment",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-comment",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-named",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-named",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-named",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-named",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-named",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/4/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/graphs/0/structure/nodes/4/id",
+        "/graphs/0/structure/nodes/4/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-node-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/4/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/graphs/0/structure/nodes/4/id",
+        "/graphs/0/structure/nodes/4/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-edge-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-join-source-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-join-source-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-join-source-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-join-source-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-join-source-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-independent",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-independent",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-independent",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-independent",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "python",
+      "case": "join-independent",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-base",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-base",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-base",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-dictionary-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-dictionary-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-dictionary-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-dictionary-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-dictionary-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-comment",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-comment",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-comment",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-comment",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-comment",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-named",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-named",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-named",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-named",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-named",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-node-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/source",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/2/target",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "linear-edge-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-base",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-base",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-base",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-dictionary-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-dictionary-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-dictionary-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-dictionary-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-dictionary-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-comment",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-comment",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-comment",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-comment",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-comment",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-named",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-named",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-named",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-named",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-named",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-node-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/edges/2/id",
+        "/graphs/0/structure/edges/2/source",
+        "/graphs/0/structure/edges/3/id",
+        "/graphs/0/structure/edges/3/source",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "fanout-edge-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-base",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-base",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-base",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-dictionary-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-dictionary-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-dictionary-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-dictionary-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-dictionary-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-comment",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-comment",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-comment",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-comment",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-comment",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-named",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-named",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-named",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-named",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-named",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/4/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/graphs/0/structure/nodes/4/id",
+        "/graphs/0/structure/nodes/4/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-node-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/4/id"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges/0/id",
+        "/graphs/0/structure/edges/0/target",
+        "/graphs/0/structure/edges/1/id",
+        "/graphs/0/structure/edges/1/target",
+        "/graphs/0/structure/joins/0/id",
+        "/graphs/0/structure/joins/0/sources/0",
+        "/graphs/0/structure/joins/0/sources/1",
+        "/graphs/0/structure/nodes/2/id",
+        "/graphs/0/structure/nodes/2/x-langgraph/name",
+        "/graphs/0/structure/nodes/3/id",
+        "/graphs/0/structure/nodes/3/x-langgraph/name",
+        "/graphs/0/structure/nodes/4/id",
+        "/graphs/0/structure/nodes/4/x-langgraph/name",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-change",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-change",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-change",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-change",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-edge-change",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-join-source-order",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-join-source-order",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-join-source-order",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-join-source-order",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-join-source-order",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": false,
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-independent",
+      "repeat": 1,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-independent",
+      "repeat": 2,
+      "kind": "same-compiled",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-independent",
+      "kind": "fresh-process",
+      "structureEqual": true,
+      "hashEqual": true,
+      "classification": "stable",
+      "structuralDifferences": [],
+      "rawDifferences": [
+        "/provenance/generatedAt"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-independent",
+      "repeat": 1,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    },
+    {
+      "language": "typescript",
+      "case": "join-independent",
+      "repeat": 2,
+      "kind": "transformation",
+      "positiveControl": true,
+      "structureEqual": false,
+      "hashEqual": false,
+      "classification": "expected-structural-change",
+      "structuralDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins"
+      ],
+      "rawDifferences": [
+        "/graphs/0/structure/edges",
+        "/graphs/0/structure/joins",
+        "/provenance/generatedAt",
+        "/structureHash/value"
+      ]
+    }
+  ]
+}

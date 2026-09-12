@@ -1,0 +1,70 @@
+{
+  "commit": "eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe",
+  "files": [
+    {
+      "path": "packages/python/langgraph/pyproject.toml",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/langgraph/pyproject.toml",
+      "sha256": "f0c04832bd540093bb518f97e85e9e87427e5b77a9c4280efd72b7923610771a"
+    },
+    {
+      "path": "packages/python/langgraph/src/agent_topology/langgraph/_compatibility.json",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/langgraph/src/agent_topology/langgraph/_compatibility.json",
+      "sha256": "f114ff3bae0b3efeb2676debe1dbadd0c74af5bc4657f1994d3efd1c4f033527"
+    },
+    {
+      "path": "packages/typescript/langgraph/package.json",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/langgraph/package.json",
+      "sha256": "c0cd90596c7948a66a08ac1f40e8998f046d8f143eb386465fa2cfedb5243f57"
+    },
+    {
+      "path": "packages/typescript/langgraph/src/compatibility.json",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/langgraph/src/compatibility.json",
+      "sha256": "b738d583e54d6ababc17cdd8576c1539b12a6245ebb57b0dcb56b9024984e19a"
+    },
+    {
+      "path": "packages/python/langgraph/tests/test_conformance.py",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/langgraph/tests/test_conformance.py",
+      "sha256": "c0ad84f26cb67b17b25ae72f395e2ffabe1efce38405989e588d750ff6cb15a1"
+    },
+    {
+      "path": "packages/typescript/langgraph/tests/producer.test.mjs",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/langgraph/tests/producer.test.mjs",
+      "sha256": "678a74e5a7eedbcec949afa80d343ab7c4896fe012d3bea073a4cf80e932bdd1"
+    },
+    {
+      "path": "packages/python/spec/tests/test_canonical.py",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/spec/tests/test_canonical.py",
+      "sha256": "43113725ca4f48567a58c6f75cba4e6cda1de22930eaab723013a5682cb8d465"
+    },
+    {
+      "path": "tests/test_consumer_regression.py",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/tests/test_consumer_regression.py",
+      "sha256": "9ace02ed6df2b98fdf9b217a33758bed21111bca402249bb162ec6a8b2bc99f4"
+    },
+    {
+      "path": "conformance/consumer/README.md",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/conformance/consumer/README.md",
+      "sha256": "a958b584fef669a0414052c5e0acf8ec835f8d6e56490a7c714e19e541b687a8"
+    },
+    {
+      "path": "packages/python/langgraph/README.md",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/langgraph/README.md",
+      "sha256": "2ca5b1542fea10756e2424d618ac0734cf98b10cfbfbeb5f0020c994e12bf111"
+    },
+    {
+      "path": "packages/typescript/langgraph/README.md",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/typescript/langgraph/README.md",
+      "sha256": "0e41353ab2ebe77da913c40a0d6cee10da5dca2574171b8ba099ad4cac9dd0ec"
+    },
+    {
+      "path": "packages/python/spec/src/agent_topology/spec/_canonical.py",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/packages/python/spec/src/agent_topology/spec/_canonical.py",
+      "sha256": "5a2d2c41351f5b23b70e49fd5b68d5847cb6caabea4d9eb3d084eccf3d8c7407"
+    },
+    {
+      "path": "docs/0.1-contract.md",
+      "url": "https://raw.githubusercontent.com/agent-topology/agent-topology/eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe/docs/0.1-contract.md",
+      "sha256": "8ecfcfbc58515505318db5b4c3e4db2d91bb57f930ff9d9bcae9665bf9a0fcec"
+    }
+  ]
+}

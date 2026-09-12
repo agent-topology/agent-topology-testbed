@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    "a",
+    "b"
+  ],
+  "edges": [
+    [
+      "__start__",
+      "a"
+    ],
+    [
+      "a",
+      "b"
+    ],
+    [
+      "b",
+      "__end__"
+    ]
+  ],
+  "joins": [],
+  "callable": "lambda",
+  "metadata": {
+    "alpha": "one",
+    "beta": "two"
+  }
+}

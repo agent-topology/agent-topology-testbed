@@ -1,0 +1,36 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-O",
+      "probes/published-producer/verify.py",
+      "observations/D1/run",
+      "--report",
+      "observations/D1/verification/comparison.json"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/test-published-producer-determinism-under-struct",
+    "startedAt": "2026-09-12T13:19:40.423796+00:00",
+    "seconds": 0.1319551250016957,
+    "exit": 0,
+    "stdout": "{\"captures\": 104, \"describes\": 208, \"comparisons\": 248, \"errors\": 0}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-O",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "probes/published-producer",
+      "-v"
+    ],
+    "cwd": "/Users/minhokang/orca/workspaces/agent-topology-testbed/test-published-producer-determinism-under-struct",
+    "startedAt": "2026-09-12T13:19:40.556141+00:00",
+    "seconds": 0.3286041669998667,
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_corruption_fails_cli_under_optimization (test_verify.AuditTests.test_corruption_fails_cli_under_optimization) ... ok\ntest_duplicates_are_not_deduplicated (test_verify.AuditTests.test_duplicates_are_not_deduplicated) ... ok\ntest_hash_only_drift (test_verify.AuditTests.test_hash_only_drift) ... ok\ntest_metadata_remains_visible_outside_projection (test_verify.AuditTests.test_metadata_remains_visible_outside_projection) ... ok\ntest_missing_capture_and_wrong_version_fail (test_verify.AuditTests.test_missing_capture_and_wrong_version_fail) ... ok\ntest_positive_control_cannot_reuse_base (test_verify.AuditTests.test_positive_control_cannot_reuse_base) ... ok\ntest_process_repr_is_not_normalized (test_verify.AuditTests.test_process_repr_is_not_normalized) ... ok\ntest_saved_evidence (test_verify.AuditTests.test_saved_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.263s\n\nOK\n"
+  }
+]

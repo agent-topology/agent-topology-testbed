@@ -1,0 +1,7 @@
+{
+  "createdAt": "2026-09-12T13:17:15.922357+00:00",
+  "expected": "all variants retain structure/hash except node-change, edge-change, independent",
+  "processesPerCasePerLanguage": 2,
+  "describesPerCompiledGraph": 2,
+  "evidenceClass": "static extraction; public spec callable checks; no framework execution"
+}
