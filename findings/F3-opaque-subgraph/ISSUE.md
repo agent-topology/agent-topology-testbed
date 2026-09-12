@@ -1,3 +1,11 @@
+> **Historical unposted beta.2 draft; superseded proposal.** Existing upstream
+> [#98](https://github.com/agent-topology/agent-topology/issues/98) addresses F3;
+> use the [current disposition and corrections](README.md) and
+> [upstream status review](../upstream-status.md#f3). The original text below is
+> preserved, including its unsupported TaskGroup analogy and receipt claim.
+> Equal structure hashes do not establish equal metadata or preserve release
+> qualification receipts. This draft is not ready to post as a current proposal.
+
 **Title:** 0.1: an opaque subgraph is indistinguishable from an ordinary node
 
 ---

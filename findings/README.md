@@ -9,46 +9,64 @@ follow-up candidates. It links the completed F1/#28 and F7/#27 dispositions.
 
 ## Index
 
-| ID | Claim | Status | Upstream |
-| --- | --- | --- | --- |
-| [F1](F1-fan-out-semantics/) | Declared fan-out does not establish selection or execution | supported (bounded); upstream interpretation improved | [draft](F1-fan-out-semantics/ISSUE.md), not filed; existing [#97](https://github.com/agent-topology/agent-topology/issues/97), [#103](https://github.com/agent-topology/agent-topology/issues/103) |
-| [F2](#f2--entrynodeids-conflates-a-graph-entry-with-a-node-that-lost-its-predecessor) | `entryNodeIds` conflates entry with orphaned-by-gap | reproduced | not filed |
-| [F3](F3-opaque-subgraph/) | An opaque subgraph is indistinguishable from an ordinary node | reproduced | not filed |
-| [F4](#f4--join-connections-exist-only-in-joins-never-in-edges) | Join connections absent from `edges[]` | reproduced | not filed |
-| [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Sentinels cannot be hidden neutrally | reproduced | not filed |
-| [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | ESM-only package, unactionable error | reproduced | not filed |
-| [F7](F7-or-firing-policy/) | OR first-trigger/once-only firing policy is unrepresented by ordinary edges; implicit AND is supported. Original “no join semantics” hypothesis withdrawn; C1's blanket edge equivalence corrected. | supported (bounded contract inspection) | [draft](F7-or-firing-policy/ISSUE.md), not filed |
+**Observed version is not current disposition.** F1–F6 originated against npm
+`@agent-topology/spec@0.1.0-beta.2` (Python baseline `0.1.0b2` is a separate
+package identity). Historical claims and artifacts remain at
+[testbed `571e881`](https://github.com/agent-topology/agent-topology-testbed/tree/571e881e6d509b6e26ff8bf14b98e207d12e7ce9/findings).
+The [upstream status review](upstream-status.md) records the 2026-09-12 check,
+exact commits, dedicated issues, merged PRs, release boundary and remaining gaps.
+All current-source dispositions below refer to upstream `eb0e2d8`, not a newly
+published package or a fresh local consumer run.
 
-F1–F6 originated against `@agent-topology/spec@0.1.0-beta.2`.
-F1 now reconciles P1/P2/C1, S1 and T1 with upstream `eb0e2d8` (2026-09-12):
-experimental declaration facts are available; router selection remains unknown.
-Its [historical text and trial](F1-fan-out-semantics/HISTORY.md) remain preserved;
-the superseded modes are not the current experimental contract.
-F7 separately compares beta.2, C1's upstream pin `3715dd3`, and current upstream
-`eb0e2d8` (2026-09-12), using CrewAI 1.15.21 records. Its
-[exact mappings and limits](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample)
-preserve rejected claims visibly; F7 is not a reusable hypothesis label.
+| ID | Bounded claim and evidence | Observed against | Local disposition / current upstream disposition | Dedicated upstream relationship |
+| --- | --- | --- | --- | --- |
+| [F1](F1-fan-out-semantics/README.md) | Declaration does not establish selection, listener count or execution; [P1/P2/C1 evidence](F1-fan-out-semantics/README.md#measured-distinctions) | beta.2 trial; Airflow 2.10.5, Dagster 1.13.22, CrewAI 1.15.21 | Supported with corrections / improved declaration interpretation; selection remains unknown | [#97](https://github.com/agent-topology/agent-topology/issues/97) closed, [PR #110](https://github.com/agent-topology/agent-topology/pull/110) merged; [unposted draft](F1-fan-out-semantics/ISSUE.md) updates existing work |
+| [F2](#f2--entrynodeids-conflates-a-graph-entry-with-a-node-that-lost-its-predecessor) | Observed roots do not establish entry or gap causality; [historical drawing](../gallery/unknown-routing-targets.svg) | beta.2 | Reproduced historically / improved entry facts; orphan cause remains unknown | [#100](https://github.com/agent-topology/agent-topology/issues/100) closed, [PR #113](https://github.com/agent-topology/agent-topology/pull/113) merged |
+| [F3](F3-opaque-subgraph/README.md) | Core depth-0 nodes lack a child-presence contract; [historical evidence](F3-opaque-subgraph/README.md#reproduction) | beta.2 | Reproduced with narrowed grouping analogy / improved opaque-child facts; ordinary callable remains unknown | [#98](https://github.com/agent-topology/agent-topology/issues/98) closed, [PR #111](https://github.com/agent-topology/agent-topology/pull/111) merged |
+| [F4](#f4--join-connections-exist-only-in-joins-never-in-edges) | Edges-only readers omit join connections; [historical drawing](../gallery/multi-source-join.svg) | beta.2 | Reproduced consumer trap / helper affordance fixed in source; joins remain distinct AND relationships | [#101](https://github.com/agent-topology/agent-topology/issues/101) closed, [PR #114](https://github.com/agent-topology/agent-topology/pull/114) merged |
+| [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Core-only sentinel hiding requires framework knowledge; [historical gallery](../gallery/) | beta.2 | Reproduced / improved experimental roles; vendor neutrality remains unproven | [#99](https://github.com/agent-topology/agent-topology/issues/99) closed, [PR #112](https://github.com/agent-topology/agent-topology/pull/112) merged |
+| [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | CommonJS require failure lacks an ESM recovery hint; [package reproduction](upstream-status.md#f6) | beta.2; upstream recheck Node 22.16.0 | Failure reproduced; absent-docs/zero-dependencies claims withdrawn / guidance fixed, synchronous require unsupported | [#102](https://github.com/agent-topology/agent-topology/issues/102) closed, [PR #115](https://github.com/agent-topology/agent-topology/pull/115) merged |
+| [F7](F7-or-firing-policy/README.md) | Ordinary edges do not specify C1's first-trigger/once-only OR policy; [counterexample](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample) | CrewAI 1.15.21; beta.2, `3715dd3`, `eb0e2d8` contracts | Supported, bounded / stronger lossless OR mapping remains unresolved; no-semantics hypothesis withdrawn | [Unposted draft](F7-or-firing-policy/ISSUE.md); no dedicated upstream issue identified in this review |
 
-## Status lifecycle
+[#94](https://github.com/agent-topology/agent-topology/issues/94) is the open
+interpretation **epic**, not a dedicated filing for each finding.
+[#95](https://github.com/agent-topology/agent-topology/issues/95) preserves F1–F6
+reproduction, [#96](https://github.com/agent-topology/agent-topology/issues/96)
+owns the experimental contract, and
+[#103](https://github.com/agent-topology/agent-topology/issues/103) supplies the
+integrated consumer evidence. These cross-cutting relationships do not settle F7.
 
-```
-observed     someone hit it once
-reproduced   a script in this repository reproduces it from a fixture
-trialled     a candidate change is implemented here and its cost measured
-filed        an issue exists upstream
-resolved     upstream changed, or the finding was withdrawn with a reason
-withdrawn    the claim did not survive; the reason stays recorded
-supported    contract inspection and linked observations support a bounded claim
-```
+## Dispositions and unresolved evidence
 
-Two rules that keep this honest:
+The [47-claim ledger](completed-cohort-dispositions.md) routes all ten completed
+P0–P6/C1/S1/T1 groups to findings, corrections, rejected hypotheses, bounded
+limitations or precise follow-up candidates. F7 is the only distinct new finding
+from that cohort; its withdrawn original hypothesis retains the ID. No F8 is
+allocated. The [seven-question matrix](../probes/README.md#common-question-matrix-m1)
+records source capability, not automatic target-format representability.
 
-**Nothing is filed before it is reproduced.** An upstream issue without a
-reproduction spends a maintainer's attention to re-derive what this repository
-exists to have derived already.
+[Remaining gaps](upstream-status.md#remaining-evidence-and-follow-ups) include
+F1 selection, F2 causality, F3 public extraction/child scope, F7 OR reset policy,
+P3/P6 source-hash mismatches, and untested questions. P8/A1 dispositions and final
+P7 integration are later increments. Neither testbed epic #1, upstream epic #94,
+nor beta.3 is qualified by this refresh.
 
-**Withdrawn findings are not deleted.** A claim that did not survive is evidence
-about the format too, and deleting it means the next person re-opens it.
+## Status conventions
+
+Local evidence uses **observed**, **reproduced**, **trialled**, **supported**
+(bounded contract/observation support), **withdrawn** (reason retained), or
+**unresolved** (missing decisive evidence stated). A withdrawn premise can coexist
+with a narrower supported finding, as in F1/F7.
+
+Upstream relationship is separate: an existing dedicated issue may address a
+reproduced finding even though this repository's draft was never posted.
+New upstream filings still require reproduced evidence.
+An epic reference alone is not a filing. **Closed issue**, **merged source**,
+**recorded consumer verification**, **qualified artifact**, and **published and
+registry-verified release** are distinct claims requiring distinct evidence.
+Do not mark an entire finding resolved merely because its issue closed. When a
+specific affordance is fixed, state its source/version, verification and limits.
+Withdrawn findings remain discoverable rather than being deleted.
 
 ## What a finding directory contains
 
@@ -70,6 +88,14 @@ internal bookkeeping.
 ---
 
 ## F2 — `entryNodeIds` conflates a graph entry with a node that lost its predecessor
+
+> **Current disposition (2026-09-12).** Current source distinguishes confirmed entries
+> from observed candidates through experimental entry facts; it preserves core entry
+> arrays and the gap on the router. The original omission/extra-gap suggestion below is
+> historical, not the accepted remedy. See [F2 status](upstream-status.md#f2).
+>
+> The original beta.2 report follows unchanged; present-tense statements and
+> suggestions in that report describe the historical investigation.
 
 **Status: reproduced.** `gallery/unknown-routing-targets.svg`.
 
@@ -94,6 +120,14 @@ at the element that shows it.
 
 ## F4 — Join connections exist only in `joins[]`, never in `edges[]`
 
+> **Current disposition (2026-09-12).** The missing-guide/helper claim below is
+> historical: current source documents implicit AND joins and exports
+> provenance-preserving helpers in both packages. Ordinary edges still exclude join
+> connections by design. See [F4 status](upstream-status.md#f4).
+>
+> The original beta.2 report follows unchanged; present-tense statements and
+> suggestions in that report describe the historical investigation.
+
 **Status: reproduced.** `gallery/multi-source-join.svg`.
 
 There is no `left → joined` or `right → joined` edge in that fixture. The
@@ -115,6 +149,14 @@ producers, with no equivalent on the consuming side.
 
 ## F5 — Hiding framework sentinels requires vendor coupling
 
+> **Current disposition (2026-09-12).** Current source provides experimental sentinel
+> roles for the inspected LangGraph producers. The core-only and legacy boundary
+> remains; two language implementations do not establish vendor neutrality. See [F5
+> status](upstream-status.md#f5).
+>
+> The original beta.2 report follows unchanged; present-tense statements and
+> suggestions in that report describe the historical investigation.
+
 **Status: reproduced.** Visible in all eight drawings in `gallery/`.
 
 `__start__` and `__end__` are ordinary entries in `nodes[]`. In every fixture, two
@@ -134,6 +176,16 @@ to pay it.
 ---
 
 ## F6 — `@agent-topology/spec` is ESM-only, and the failure is not actionable
+
+> **Current disposition (2026-09-12).** The error remains a supported-module-boundary
+> issue, with current recovery guidance. The historical claims of absent ESM
+> documentation and zero runtime dependencies below are explicitly withdrawn: beta.2
+> already had an ESM notice and depends on Ajv and ajv-formats. Framework-free does not
+> mean dependency-free. No require bundle was added. See [F6
+> status](upstream-status.md#f6).
+>
+> The original beta.2 report follows unchanged; present-tense statements and
+> suggestions in that report describe the historical investigation.
 
 **Status: reproduced.** Hit while setting up `instrument/`.
 

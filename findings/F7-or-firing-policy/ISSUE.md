@@ -5,9 +5,9 @@ CrewAI 1.15.21's saved minimal sequential Flow runs show an OR listener on
 When `b` never runs it still fires once. The paired AND cases wait for both
 and do not fire when only `a` runs.
 
-[F7 evidence and reproduction](https://github.com/agent-topology/agent-topology-testbed/tree/workbench/27-convergence-finding-disposition/findings/F7-or-firing-policy)
+[F7 evidence and reproduction](https://github.com/agent-topology/agent-topology-testbed/tree/dc6e9a39fd62f66c091d677e0a04ed629e3428bd/findings/F7-or-firing-policy)
 links the four paired execution records, static/callable evidence and hash audit.
-This is a draft; replace the branch link with the merged evidence commit before filing.
+This is an unposted draft; the evidence link is pinned to the merged testbed input.
 
 At upstream `3715dd32a0efc3e7bd500d26d038774d6a37f4e6` and
 `eb0e2d8a95cb2fd0e0daebba18507ab5acdd34fe`, the schema, consuming guide and
