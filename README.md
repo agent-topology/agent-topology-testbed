@@ -3,6 +3,10 @@
 Evidence for decisions about the [`agent-topology`](https://github.com/agent-topology/agent-topology)
 format, gathered by consuming it.
 
+[Q1](observations/Q1/README.md) records two fresh registry installations of each
+documented quickstart: all five executable entry points pass, with unchanged
+snippets, artifact identities and a bounded non-finding disposition.
+
 [D1](observations/D1/README.md) records published beta.2 producer determinism across
 small Python/TypeScript LangGraph transformations, fresh-process repetitions and
 structural positive controls, with a bounded non-finding disposition.

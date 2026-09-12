@@ -1,0 +1,18 @@
+{
+  "HOME": "/private/tmp/agt-q1-first/home",
+  "PATH": "/private/tmp/agt-q1-first/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin",
+  "LANG": "C.UTF-8",
+  "PYTHONNOUSERSITE": "1",
+  "PIP_CONFIG_FILE": "/dev/null",
+  "PIP_INDEX_URL": "https://pypi.org/simple",
+  "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+  "PIP_ONLY_BINARY": ":all:",
+  "npm_config_registry": "https://registry.npmjs.org",
+  "npm_config_userconfig": "/private/tmp/agt-q1-first/home/.npmrc",
+  "npm_config_globalconfig": "/private/tmp/agt-q1-first/home/global-npmrc",
+  "npm_config_cache": "/private/tmp/agt-q1-first/home/npm-cache",
+  "npm_config_audit": "false",
+  "npm_config_fund": "false",
+  "npm_config_update_notifier": "false",
+  "npm_config_ignore_scripts": "true"
+}

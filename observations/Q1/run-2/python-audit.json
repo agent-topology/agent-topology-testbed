@@ -1,0 +1,52 @@
+{
+  "runtime": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "prefix": "/private/tmp/agt-q1-run2/python/.venv",
+  "imports": {
+    "agent_topology.spec": "/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages/agent_topology/spec/__init__.py",
+    "agent_topology.langgraph": "/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages/agent_topology/langgraph/__init__.py",
+    "langgraph.graph": "/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages/langgraph/graph/__init__.py"
+  },
+  "versions": {
+    "agent-topology-spec": "0.1.0b2",
+    "agent-topology-langgraph": "0.1.0b2",
+    "langgraph": "1.2.11"
+  },
+  "sysPath": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python314.zip",
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14",
+    "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload",
+    "/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages"
+  ],
+  "checks": [
+    {
+      "file": "python-cli.json",
+      "valid": true,
+      "hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218"
+      },
+      "canonical": true
+    },
+    {
+      "file": "python-api.json",
+      "valid": true,
+      "hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218"
+      },
+      "canonical": true
+    },
+    {
+      "file": "python-strict.json",
+      "valid": true,
+      "hash": {
+        "algorithm": "sha256",
+        "algorithmVersion": "1",
+        "value": "a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218"
+      },
+      "canonical": true
+    }
+  ]
+}

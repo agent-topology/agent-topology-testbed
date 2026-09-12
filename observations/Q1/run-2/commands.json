@@ -1,0 +1,233 @@
+[
+  {
+    "label": "python-runtime",
+    "command": [
+      "python",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "Python 3.14.7\n",
+    "stderr": "",
+    "seconds": 0.008703250001417473,
+    "completedAt": "2026-09-12T14:00:20.860419+00:00"
+  },
+  {
+    "label": "node-runtime",
+    "command": [
+      "node",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "v22.16.0\n",
+    "stderr": "",
+    "seconds": 0.01713404100155458,
+    "completedAt": "2026-09-12T14:00:20.877908+00:00"
+  },
+  {
+    "label": "npm-runtime",
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "11.4.1\n",
+    "stderr": "",
+    "seconds": 0.05345274999854155,
+    "completedAt": "2026-09-12T14:00:20.931584+00:00"
+  },
+  {
+    "label": "python-install",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "python -m venv .venv\nsource .venv/bin/activate\npython -m pip install \"agent-topology-langgraph==0.1.0b2\"\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "Collecting agent-topology-langgraph==0.1.0b2\n  Downloading agent_topology_langgraph-0.1.0b2-py3-none-any.whl.metadata (2.3 kB)\nCollecting agent-topology-spec<0.2.0,>=0.1.0b2 (from agent-topology-langgraph==0.1.0b2)\n  Downloading agent_topology_spec-0.1.0b2-py3-none-any.whl.metadata (2.1 kB)\nCollecting langgraph<=1.2.11,>=1.2.10 (from agent-topology-langgraph==0.1.0b2)\n  Downloading langgraph-1.2.11-py3-none-any.whl.metadata (4.9 kB)\nCollecting jsonschema==4.26.0 (from agent-topology-spec<0.2.0,>=0.1.0b2->agent-topology-langgraph==0.1.0b2)\n  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)\nCollecting attrs>=22.2.0 (from jsonschema==4.26.0->agent-topology-spec<0.2.0,>=0.1.0b2->agent-topology-langgraph==0.1.0b2)\n  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)\nCollecting jsonschema-specifications>=2023.03.6 (from jsonschema==4.26.0->agent-topology-spec<0.2.0,>=0.1.0b2->agent-topology-langgraph==0.1.0b2)\n  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)\nCollecting referencing>=0.28.4 (from jsonschema==4.26.0->agent-topology-spec<0.2.0,>=0.1.0b2->agent-topology-langgraph==0.1.0b2)\n  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)\nCollecting rpds-py>=0.25.0 (from jsonschema==4.26.0->agent-topology-spec<0.2.0,>=0.1.0b2->agent-topology-langgraph==0.1.0b2)\n  Downloading rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (4.1 kB)\nCollecting langchain-core<2,>=1.4.7 (from langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading langchain_core-1.6.3-py3-none-any.whl.metadata (4.8 kB)\nCollecting langgraph-checkpoint<5.0.0,>=4.1.0 (from langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading langgraph_checkpoint-4.2.0-py3-none-any.whl.metadata (6.7 kB)\nCollecting langgraph-prebuilt<1.2.0,>=1.1.0 (from langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading langgraph_prebuilt-1.1.0-py3-none-any.whl.metadata (5.2 kB)\nCollecting langgraph-sdk<0.5.0,>=0.4.2 (from langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading langgraph_sdk-0.4.4-py3-none-any.whl.metadata (5.1 kB)\nCollecting pydantic>=2.7.4 (from langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)\nCollecting xxhash>=3.5.0 (from langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading xxhash-4.0.1-cp314-cp314-macosx_11_0_arm64.whl.metadata (17 kB)\nCollecting httpx<1.0.0,>=0.23.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)\nCollecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)\nCollecting langchain-protocol>=0.0.17 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading langchain_protocol-0.0.19-py3-none-any.whl.metadata (2.4 kB)\nCollecting langsmith<1.0.0,>=0.3.45 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading langsmith-0.12.4-py3-none-any.whl.metadata (22 kB)\nCollecting packaging>=23.2.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)\nCollecting pyyaml<7.0.0,>=5.3.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.4 kB)\nCollecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)\nCollecting typing-extensions<5.0.0,>=4.7.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\nCollecting uuid-utils<1.0,>=0.12.0 (from langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading uuid_utils-0.17.1-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata (6.4 kB)\nCollecting anyio (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)\nCollecting certifi (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nCollecting httpcore==1.* (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)\nCollecting idna (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)\nCollecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)\nCollecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading jsonpointer-3.1.1-py3-none-any.whl.metadata (2.4 kB)\nCollecting ormsgpack>=1.12.0 (from langgraph-checkpoint<5.0.0,>=4.1.0->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading ormsgpack-1.12.2-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata (3.2 kB)\nCollecting orjson>=3.11.5 (from langgraph-sdk<0.5.0,>=0.4.2->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading orjson-3.12.0-cp314-cp314-macosx_15_0_arm64.whl.metadata (41 kB)\nCollecting websockets<17,>=14 (from langgraph-sdk<0.5.0,>=0.4.2->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading websockets-16.1.1-cp314-cp314-macosx_11_0_arm64.whl.metadata (6.8 kB)\nCollecting distro>=1.7.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)\nCollecting httpx2<3,>=2 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading httpx2-2.12.0-py3-none-any.whl.metadata (9.5 kB)\nCollecting requests-toolbelt>=1.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)\nCollecting requests>=2.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)\nCollecting sniffio>=1.1 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)\nCollecting zstandard>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading zstandard-0.25.0-cp314-cp314-macosx_11_0_arm64.whl.metadata (3.3 kB)\nCollecting httpcore2==2.12.0 (from httpx2<3,>=2->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading httpcore2-2.12.0-py3-none-any.whl.metadata (25 kB)\nCollecting truststore>=0.10 (from httpx2<3,>=2->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)\nCollecting annotated-types>=0.6.0 (from pydantic>=2.7.4->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)\nCollecting pydantic-core==2.46.5 (from pydantic>=2.7.4->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading pydantic_core-2.46.5-cp314-cp314-macosx_11_0_arm64.whl.metadata (6.6 kB)\nCollecting typing-inspection>=0.4.2 (from pydantic>=2.7.4->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)\nCollecting charset_normalizer<4,>=2 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading charset_normalizer-3.5.1-cp314-cp314-macosx_10_15_universal2.whl.metadata (45 kB)\nCollecting urllib3<3,>=1.26 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph<=1.2.11,>=1.2.10->agent-topology-langgraph==0.1.0b2)\n  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)\nDownloading agent_topology_langgraph-0.1.0b2-py3-none-any.whl (10 kB)\nDownloading agent_topology_spec-0.1.0b2-py3-none-any.whl (8.1 kB)\nDownloading jsonschema-4.26.0-py3-none-any.whl (90 kB)\nDownloading langgraph-1.2.11-py3-none-any.whl (248 kB)\nDownloading langchain_core-1.6.3-py3-none-any.whl (571 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 571.8/571.8 kB 18.3 MB/s  0:00:00\nDownloading httpx-0.28.1-py3-none-any.whl (73 kB)\nDownloading httpcore-1.0.9-py3-none-any.whl (78 kB)\nDownloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)\nDownloading langgraph_checkpoint-4.2.0-py3-none-any.whl (56 kB)\nDownloading langgraph_prebuilt-1.1.0-py3-none-any.whl (41 kB)\nDownloading langgraph_sdk-0.4.4-py3-none-any.whl (162 kB)\nDownloading langsmith-0.12.4-py3-none-any.whl (767 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 767.5/767.5 kB 37.9 MB/s  0:00:00\nDownloading httpx2-2.12.0-py3-none-any.whl (95 kB)\nDownloading httpcore2-2.12.0-py3-none-any.whl (83 kB)\nDownloading pydantic-2.13.5-py3-none-any.whl (472 kB)\nDownloading pydantic_core-2.46.5-cp314-cp314-macosx_11_0_arm64.whl (1.9 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 1.9/1.9 MB 49.6 MB/s  0:00:00\nDownloading pyyaml-6.0.3-cp314-cp314-macosx_11_0_arm64.whl (173 kB)\nDownloading tenacity-9.1.4-py3-none-any.whl (28 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nDownloading uuid_utils-0.17.1-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl (561 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 561.1/561.1 kB 24.6 MB/s  0:00:00\nDownloading websockets-16.1.1-cp314-cp314-macosx_11_0_arm64.whl (177 kB)\nDownloading annotated_types-0.8.0-py3-none-any.whl (13 kB)\nDownloading anyio-4.15.1-py3-none-any.whl (132 kB)\nDownloading attrs-26.1.0-py3-none-any.whl (67 kB)\nDownloading distro-1.9.0-py3-none-any.whl (20 kB)\nDownloading h11-0.16.0-py3-none-any.whl (37 kB)\nDownloading idna-3.19-py3-none-any.whl (68 kB)\nDownloading jsonpointer-3.1.1-py3-none-any.whl (7.7 kB)\nDownloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nDownloading langchain_protocol-0.0.19-py3-none-any.whl (7.3 kB)\nDownloading orjson-3.12.0-cp314-cp314-macosx_15_0_arm64.whl (123 kB)\nDownloading ormsgpack-1.12.2-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl (378 kB)\nDownloading packaging-26.3-py3-none-any.whl (129 kB)\nDownloading referencing-0.37.0-py3-none-any.whl (26 kB)\nDownloading requests-2.34.2-py3-none-any.whl (73 kB)\nDownloading charset_normalizer-3.5.1-cp314-cp314-macosx_10_15_universal2.whl (341 kB)\nDownloading urllib3-2.7.0-py3-none-any.whl (131 kB)\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\nDownloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)\nDownloading rpds_py-2026.6.3-cp314-cp314-macosx_11_0_arm64.whl (339 kB)\nDownloading sniffio-1.3.1-py3-none-any.whl (10 kB)\nDownloading truststore-0.10.4-py3-none-any.whl (18 kB)\nDownloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)\nDownloading xxhash-4.0.1-cp314-cp314-macosx_11_0_arm64.whl (35 kB)\nDownloading zstandard-0.25.0-cp314-cp314-macosx_11_0_arm64.whl (640 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 640.7/640.7 kB 25.8 MB/s  0:00:00\nInstalling collected packages: zstandard, xxhash, websockets, uuid-utils, urllib3, typing-extensions, truststore, tenacity, sniffio, rpds-py, pyyaml, packaging, ormsgpack, orjson, jsonpointer, idna, h11, distro, charset_normalizer, certifi, attrs, annotated-types, typing-inspection, requests, referencing, pydantic-core, langchain-protocol, jsonpatch, httpcore2, httpcore, anyio, requests-toolbelt, pydantic, jsonschema-specifications, httpx2, httpx, langsmith, jsonschema, langchain-core, agent-topology-spec, langgraph-sdk, langgraph-checkpoint, langgraph-prebuilt, langgraph, agent-topology-langgraph\n\nSuccessfully installed agent-topology-langgraph-0.1.0b2 agent-topology-spec-0.1.0b2 annotated-types-0.8.0 anyio-4.15.1 attrs-26.1.0 certifi-2026.7.22 charset_normalizer-3.5.1 distro-1.9.0 h11-0.16.0 httpcore-1.0.9 httpcore2-2.12.0 httpx-0.28.1 httpx2-2.12.0 idna-3.19 jsonpatch-1.33 jsonpointer-3.1.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 langchain-core-1.6.3 langchain-protocol-0.0.19 langgraph-1.2.11 langgraph-checkpoint-4.2.0 langgraph-prebuilt-1.1.0 langgraph-sdk-0.4.4 langsmith-0.12.4 orjson-3.12.0 ormsgpack-1.12.2 packaging-26.3 pydantic-2.13.5 pydantic-core-2.46.5 pyyaml-6.0.3 referencing-0.37.0 requests-2.34.2 requests-toolbelt-1.0.0 rpds-py-2026.6.3 sniffio-1.3.1 tenacity-9.1.4 truststore-0.10.4 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.7.0 uuid-utils-0.17.1 websockets-16.1.1 xxhash-4.0.1 zstandard-0.25.0\n",
+    "stderr": "+ python -m venv .venv\n+ source .venv/bin/activate\n++ deactivate nondestructive\n++ '[' -n '' ']'\n++ '[' -n '' ']'\n++ hash -r\n++ '[' -n '' ']'\n++ unset VIRTUAL_ENV\n++ unset VIRTUAL_ENV_PROMPT\n++ '[' '!' nondestructive = nondestructive ']'\n++ case \"$(uname)\" in\n+++ uname\n++ export VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ _OLD_VIRTUAL_PATH=/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ PATH=/private/tmp/agt-q1-run2/python/.venv/bin:/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ export PATH\n++ VIRTUAL_ENV_PROMPT=.venv\n++ export VIRTUAL_ENV_PROMPT\n++ '[' -n '' ']'\n++ '[' -z '' ']'\n++ _OLD_VIRTUAL_PS1=\n++ PS1='(.venv) '\n++ export PS1\n++ hash -r\n+ python -m pip install agent-topology-langgraph==0.1.0b2\n",
+    "seconds": 8.9410041250012,
+    "completedAt": "2026-09-12T14:00:29.873031+00:00"
+  },
+  {
+    "label": "python-export-inspect",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "source .venv/bin/activate\nagt describe graph.py:graph --out topology.json\npython -m json.tool topology.json\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "{\n    \"completeness\": {\n        \"gaps\": [],\n        \"status\": \"complete\"\n    },\n    \"graphs\": [\n        {\n            \"id\": \"main\",\n            \"name\": \"LangGraph\",\n            \"structure\": {\n                \"edges\": [\n                    {\n                        \"id\": \"edge:__start__:greet:direct:1\",\n                        \"kind\": \"direct\",\n                        \"source\": \"__start__\",\n                        \"target\": \"greet\"\n                    },\n                    {\n                        \"id\": \"edge:greet:__end__:direct:1\",\n                        \"kind\": \"direct\",\n                        \"source\": \"greet\",\n                        \"target\": \"__end__\"\n                    }\n                ],\n                \"entryNodeIds\": [\n                    \"__start__\"\n                ],\n                \"exitNodeIds\": [\n                    \"__end__\"\n                ],\n                \"joins\": [],\n                \"nodes\": [\n                    {\n                        \"id\": \"__end__\",\n                        \"x-langgraph\": {\n                            \"name\": \"__end__\",\n                            \"sentinel\": true\n                        }\n                    },\n                    {\n                        \"id\": \"__start__\",\n                        \"x-langgraph\": {\n                            \"name\": \"__start__\",\n                            \"sentinel\": true\n                        }\n                    },\n                    {\n                        \"id\": \"greet\",\n                        \"x-langgraph\": {\n                            \"name\": \"greet\",\n                            \"sentinel\": false\n                        }\n                    }\n                ]\n            },\n            \"x-langgraph\": {\n                \"traversalDepth\": 0\n            }\n        }\n    ],\n    \"producerLimitations\": [\n        {\n            \"code\": \"dynamic-interrupts\",\n            \"message\": \"Interrupts raised inside node bodies cannot be observed statically.\"\n        }\n    ],\n    \"provenance\": {\n        \"framework\": {\n            \"name\": \"langgraph\",\n            \"version\": \"1.2.11\"\n        },\n        \"generatedAt\": \"2026-09-12T14:00:31.770019Z\",\n        \"producer\": {\n            \"name\": \"agent-topology-langgraph\",\n            \"version\": \"0.1.0b2\"\n        },\n        \"source\": {\n            \"kind\": \"compiled-object\"\n        }\n    },\n    \"structureHash\": {\n        \"algorithm\": \"sha256\",\n        \"algorithmVersion\": \"1\",\n        \"value\": \"a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218\"\n    },\n    \"topologyVersion\": \"0.1\"\n}\n",
+    "stderr": "+ source .venv/bin/activate\n++ deactivate nondestructive\n++ '[' -n '' ']'\n++ '[' -n '' ']'\n++ hash -r\n++ '[' -n '' ']'\n++ unset VIRTUAL_ENV\n++ unset VIRTUAL_ENV_PROMPT\n++ '[' '!' nondestructive = nondestructive ']'\n++ case \"$(uname)\" in\n+++ uname\n++ export VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ _OLD_VIRTUAL_PATH=/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ PATH=/private/tmp/agt-q1-run2/python/.venv/bin:/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ export PATH\n++ VIRTUAL_ENV_PROMPT=.venv\n++ export VIRTUAL_ENV_PROMPT\n++ '[' -n '' ']'\n++ '[' -z '' ']'\n++ _OLD_VIRTUAL_PS1=\n++ PS1='(.venv) '\n++ export PS1\n++ hash -r\n+ agt describe graph.py:graph --out topology.json\n+ python -m json.tool topology.json\n",
+    "seconds": 1.9843190419996972,
+    "completedAt": "2026-09-12T14:00:31.857992+00:00"
+  },
+  {
+    "label": "python-inline-api",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "source .venv/bin/activate\npython graph.py > topology.json\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "+ source .venv/bin/activate\n++ deactivate nondestructive\n++ '[' -n '' ']'\n++ '[' -n '' ']'\n++ hash -r\n++ '[' -n '' ']'\n++ unset VIRTUAL_ENV\n++ unset VIRTUAL_ENV_PROMPT\n++ '[' '!' nondestructive = nondestructive ']'\n++ case \"$(uname)\" in\n+++ uname\n++ export VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ _OLD_VIRTUAL_PATH=/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ PATH=/private/tmp/agt-q1-run2/python/.venv/bin:/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ export PATH\n++ VIRTUAL_ENV_PROMPT=.venv\n++ export VIRTUAL_ENV_PROMPT\n++ '[' -n '' ']'\n++ '[' -z '' ']'\n++ _OLD_VIRTUAL_PS1=\n++ PS1='(.venv) '\n++ export PS1\n++ hash -r\n+ python graph.py\n",
+    "seconds": 0.32408708299772115,
+    "completedAt": "2026-09-12T14:00:32.182625+00:00"
+  },
+  {
+    "label": "python-strict",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "source .venv/bin/activate\nagt describe graph.py:graph --out topology.json --strict\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "+ source .venv/bin/activate\n++ deactivate nondestructive\n++ '[' -n '' ']'\n++ '[' -n '' ']'\n++ hash -r\n++ '[' -n '' ']'\n++ unset VIRTUAL_ENV\n++ unset VIRTUAL_ENV_PROMPT\n++ '[' '!' nondestructive = nondestructive ']'\n++ case \"$(uname)\" in\n+++ uname\n++ export VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ VIRTUAL_ENV=/private/tmp/agt-q1-run2/python/.venv\n++ _OLD_VIRTUAL_PATH=/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ PATH=/private/tmp/agt-q1-run2/python/.venv/bin:/private/tmp/agt-q1-run2/bin:/Users/minhokang/.nvm/versions/node/v22.16.0/bin:/usr/bin:/bin\n++ export PATH\n++ VIRTUAL_ENV_PROMPT=.venv\n++ export VIRTUAL_ENV_PROMPT\n++ '[' -n '' ']'\n++ '[' -z '' ']'\n++ _OLD_VIRTUAL_PS1=\n++ PS1='(.venv) '\n++ export PS1\n++ hash -r\n+ agt describe graph.py:graph --out topology.json --strict\n",
+    "seconds": 0.3209050000004936,
+    "completedAt": "2026-09-12T14:00:32.504161+00:00"
+  },
+  {
+    "label": "python-audit",
+    "command": [
+      "/private/tmp/agt-q1-run2/python/.venv/bin/python",
+      "-I",
+      "/private/tmp/agt-q1-run2/python/audit.py",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/execute-documented-quickstarts-against-registry/observations/Q1/run-2/python-cli.json",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/execute-documented-quickstarts-against-registry/observations/Q1/run-2/python-api.json",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/execute-documented-quickstarts-against-registry/observations/Q1/run-2/python-strict.json"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "{\n  \"runtime\": \"3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]\",\n  \"prefix\": \"/private/tmp/agt-q1-run2/python/.venv\",\n  \"imports\": {\n    \"agent_topology.spec\": \"/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages/agent_topology/spec/__init__.py\",\n    \"agent_topology.langgraph\": \"/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages/agent_topology/langgraph/__init__.py\",\n    \"langgraph.graph\": \"/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages/langgraph/graph/__init__.py\"\n  },\n  \"versions\": {\n    \"agent-topology-spec\": \"0.1.0b2\",\n    \"agent-topology-langgraph\": \"0.1.0b2\",\n    \"langgraph\": \"1.2.11\"\n  },\n  \"sysPath\": [\n    \"/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python314.zip\",\n    \"/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14\",\n    \"/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload\",\n    \"/private/tmp/agt-q1-run2/python/.venv/lib/python3.14/site-packages\"\n  ],\n  \"checks\": [\n    {\n      \"file\": \"python-cli.json\",\n      \"valid\": true,\n      \"hash\": {\n        \"algorithm\": \"sha256\",\n        \"algorithmVersion\": \"1\",\n        \"value\": \"a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218\"\n      },\n      \"canonical\": true\n    },\n    {\n      \"file\": \"python-api.json\",\n      \"valid\": true,\n      \"hash\": {\n        \"algorithm\": \"sha256\",\n        \"algorithmVersion\": \"1\",\n        \"value\": \"a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218\"\n      },\n      \"canonical\": true\n    },\n    {\n      \"file\": \"python-strict.json\",\n      \"valid\": true,\n      \"hash\": {\n        \"algorithm\": \"sha256\",\n        \"algorithmVersion\": \"1\",\n        \"value\": \"a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218\"\n      },\n      \"canonical\": true\n    }\n  ]\n}\n",
+    "stderr": "",
+    "seconds": 0.3200217080011498,
+    "completedAt": "2026-09-12T14:00:32.825123+00:00"
+  },
+  {
+    "label": "python-freeze",
+    "command": [
+      "/private/tmp/agt-q1-run2/python/.venv/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "agent-topology-langgraph==0.1.0b2\nagent-topology-spec==0.1.0b2\nannotated-types==0.8.0\nanyio==4.15.1\nattrs==26.1.0\ncertifi==2026.7.22\ncharset-normalizer==3.5.1\ndistro==1.9.0\nh11==0.16.0\nhttpcore==1.0.9\nhttpcore2==2.12.0\nhttpx==0.28.1\nhttpx2==2.12.0\nidna==3.19\njsonpatch==1.33\njsonpointer==3.1.1\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\nlangchain-core==1.6.3\nlangchain-protocol==0.0.19\nlanggraph==1.2.11\nlanggraph-checkpoint==4.2.0\nlanggraph-prebuilt==1.1.0\nlanggraph-sdk==0.4.4\nlangsmith==0.12.4\norjson==3.12.0\normsgpack==1.12.2\npackaging==26.3\npip==26.2.1\npydantic==2.13.5\npydantic_core==2.46.5\nPyYAML==6.0.3\nreferencing==0.37.0\nrequests==2.34.2\nrequests-toolbelt==1.0.0\nrpds-py==2026.6.3\nsniffio==1.3.1\ntenacity==9.1.4\ntruststore==0.10.4\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\nurllib3==2.7.0\nuuid_utils==0.17.1\nwebsockets==16.1.1\nxxhash==4.0.1\nzstandard==0.25.0\n",
+    "stderr": "",
+    "seconds": 0.11964799999987008,
+    "completedAt": "2026-09-12T14:00:32.945272+00:00"
+  },
+  {
+    "label": "python-dependencies",
+    "command": [
+      "/private/tmp/agt-q1-run2/python/.venv/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/python",
+    "exit": 0,
+    "stdout": "No broken requirements found.\n",
+    "stderr": "",
+    "seconds": 0.12581083399709314,
+    "completedAt": "2026-09-12T14:00:33.071462+00:00"
+  },
+  {
+    "label": "typescript-install",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "npm init -y\nnpm install @agent-topology/spec@0.1.0-beta.2 @agent-topology/langgraph@0.1.0-beta.2 @langchain/langgraph@1.4.14\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "Wrote to /private/tmp/agt-q1-run2/typescript/package.json:\n\n{\n  \"name\": \"typescript\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"type\": \"commonjs\"\n}\n\n\n\n\nadded 30 packages in 3s\n",
+    "stderr": "+ npm init -y\n+ npm install @agent-topology/spec@0.1.0-beta.2 @agent-topology/langgraph@0.1.0-beta.2 @langchain/langgraph@1.4.14\n",
+    "seconds": 3.2970773330016527,
+    "completedAt": "2026-09-12T14:00:36.369008+00:00"
+  },
+  {
+    "label": "typescript-esm",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "node graph.mjs > topology.json\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "+ node graph.mjs\n",
+    "seconds": 0.2134243750042515,
+    "completedAt": "2026-09-12T14:00:36.583224+00:00"
+  },
+  {
+    "label": "typescript-commonjs",
+    "command": [
+      "/bin/bash",
+      "--noprofile",
+      "--norc",
+      "-exc",
+      "node graph.cjs > topology.json\n"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "+ node graph.cjs\n",
+    "seconds": 0.20127395800227532,
+    "completedAt": "2026-09-12T14:00:36.785511+00:00"
+  },
+  {
+    "label": "typescript-audit",
+    "command": [
+      "node",
+      "/private/tmp/agt-q1-run2/typescript/audit.mjs",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/execute-documented-quickstarts-against-registry/observations/Q1/run-2/typescript-esm.json",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/execute-documented-quickstarts-against-registry/observations/Q1/run-2/typescript-commonjs.json"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "{\n  \"runtime\": \"v22.16.0\",\n  \"mode\": \"ESM audit; examples .mjs and .cjs with dynamic import\",\n  \"imports\": {\n    \"@agent-topology/spec\": \"/private/tmp/agt-q1-run2/typescript/node_modules/@agent-topology/spec/dist/index.js\",\n    \"@agent-topology/langgraph\": \"/private/tmp/agt-q1-run2/typescript/node_modules/@agent-topology/langgraph/dist/index.js\",\n    \"@langchain/langgraph\": \"/private/tmp/agt-q1-run2/typescript/node_modules/@langchain/langgraph/dist/index.js\"\n  },\n  \"versions\": {\n    \"@agent-topology/spec\": \"0.1.0-beta.2\",\n    \"@agent-topology/langgraph\": \"0.1.0-beta.2\",\n    \"@langchain/langgraph\": \"1.4.14\"\n  },\n  \"checks\": [\n    {\n      \"file\": \"typescript-esm.json\",\n      \"valid\": true,\n      \"hash\": {\n        \"algorithm\": \"sha256\",\n        \"algorithmVersion\": \"1\",\n        \"value\": \"a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218\"\n      },\n      \"canonical\": true\n    },\n    {\n      \"file\": \"typescript-commonjs.json\",\n      \"valid\": true,\n      \"hash\": {\n        \"algorithm\": \"sha256\",\n        \"algorithmVersion\": \"1\",\n        \"value\": \"a9841a735c058bea90bf42997c6a9e88941d4a9fd2014cd16692c7e32917e218\"\n      },\n      \"canonical\": true\n    }\n  ]\n}\n",
+    "stderr": "",
+    "seconds": 0.0739524589953362,
+    "completedAt": "2026-09-12T14:00:36.860549+00:00"
+  },
+  {
+    "label": "typescript-dependencies",
+    "command": [
+      "npm",
+      "ls",
+      "--all",
+      "--json"
+    ],
+    "cwd": "/private/tmp/agt-q1-run2/typescript",
+    "exit": 0,
+    "stdout": "{\n  \"version\": \"1.0.0\",\n  \"name\": \"typescript\",\n  \"dependencies\": {\n    \"@agent-topology/langgraph\": {\n      \"version\": \"0.1.0-beta.2\",\n      \"resolved\": \"https://registry.npmjs.org/@agent-topology/langgraph/-/langgraph-0.1.0-beta.2.tgz\",\n      \"overridden\": false,\n      \"dependencies\": {\n        \"@agent-topology/spec\": {\n          \"version\": \"0.1.0-beta.2\"\n        },\n        \"@langchain/langgraph\": {\n          \"version\": \"1.4.14\"\n        }\n      }\n    },\n    \"@agent-topology/spec\": {\n      \"version\": \"0.1.0-beta.2\",\n      \"resolved\": \"https://registry.npmjs.org/@agent-topology/spec/-/spec-0.1.0-beta.2.tgz\",\n      \"overridden\": false,\n      \"dependencies\": {\n        \"ajv-formats\": {\n          \"version\": \"3.0.1\",\n          \"resolved\": \"https://registry.npmjs.org/ajv-formats/-/ajv-formats-3.0.1.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"ajv\": {\n              \"version\": \"8.20.0\"\n            }\n          }\n        },\n        \"ajv\": {\n          \"version\": \"8.20.0\",\n          \"resolved\": \"https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"fast-deep-equal\": {\n              \"version\": \"3.1.3\",\n              \"resolved\": \"https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz\",\n              \"overridden\": false\n            },\n            \"fast-uri\": {\n              \"version\": \"3.1.7\",\n              \"resolved\": \"https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.7.tgz\",\n              \"overridden\": false\n            },\n            \"json-schema-traverse\": {\n              \"version\": \"1.0.0\",\n              \"resolved\": \"https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz\",\n              \"overridden\": false\n            },\n            \"require-from-string\": {\n              \"version\": \"2.0.2\",\n              \"resolved\": \"https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz\",\n              \"overridden\": false\n            }\n          }\n        }\n      }\n    },\n    \"@langchain/langgraph\": {\n      \"version\": \"1.4.14\",\n      \"resolved\": \"https://registry.npmjs.org/@langchain/langgraph/-/langgraph-1.4.14.tgz\",\n      \"overridden\": false,\n      \"dependencies\": {\n        \"@langchain/core\": {\n          \"version\": \"1.2.11\",\n          \"resolved\": \"https://registry.npmjs.org/@langchain/core/-/core-1.2.11.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"@cfworker/json-schema\": {\n              \"version\": \"4.1.1\",\n              \"resolved\": \"https://registry.npmjs.org/@cfworker/json-schema/-/json-schema-4.1.1.tgz\",\n              \"overridden\": false\n            },\n            \"@standard-schema/spec\": {\n              \"version\": \"1.1.0\"\n            },\n            \"js-tiktoken\": {\n              \"version\": \"1.0.21\",\n              \"resolved\": \"https://registry.npmjs.org/js-tiktoken/-/js-tiktoken-1.0.21.tgz\",\n              \"overridden\": false,\n              \"dependencies\": {\n                \"base64-js\": {\n                  \"version\": \"1.5.1\",\n                  \"resolved\": \"https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz\",\n                  \"overridden\": false\n                }\n              }\n            },\n            \"langsmith\": {\n              \"version\": \"0.10.3\",\n              \"resolved\": \"https://registry.npmjs.org/langsmith/-/langsmith-0.10.3.tgz\",\n              \"overridden\": false,\n              \"dependencies\": {\n                \"@opentelemetry/api\": {},\n                \"@opentelemetry/exporter-trace-otlp-proto\": {},\n                \"@opentelemetry/sdk-trace-base\": {},\n                \"openai\": {},\n                \"p-queue\": {\n                  \"version\": \"6.6.2\"\n                },\n                \"ws\": {}\n              }\n            },\n            \"mustache\": {\n              \"version\": \"4.2.0\",\n              \"resolved\": \"https://registry.npmjs.org/mustache/-/mustache-4.2.0.tgz\",\n              \"overridden\": false\n            },\n            \"p-queue\": {\n              \"version\": \"6.6.2\",\n              \"resolved\": \"https://registry.npmjs.org/p-queue/-/p-queue-6.6.2.tgz\",\n              \"overridden\": false,\n              \"dependencies\": {\n                \"eventemitter3\": {\n                  \"version\": \"4.0.7\",\n                  \"resolved\": \"https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz\",\n                  \"overridden\": false\n                },\n                \"p-timeout\": {\n                  \"version\": \"3.2.0\",\n                  \"resolved\": \"https://registry.npmjs.org/p-timeout/-/p-timeout-3.2.0.tgz\",\n                  \"overridden\": false,\n                  \"dependencies\": {\n                    \"p-finally\": {\n                      \"version\": \"1.0.0\",\n                      \"resolved\": \"https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz\",\n                      \"overridden\": false\n                    }\n                  }\n                }\n              }\n            },\n            \"zod\": {\n              \"version\": \"4.6.2\"\n            }\n          }\n        },\n        \"@langchain/langgraph-checkpoint\": {\n          \"version\": \"1.1.5\",\n          \"resolved\": \"https://registry.npmjs.org/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-1.1.5.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"@langchain/core\": {\n              \"version\": \"1.2.11\"\n            }\n          }\n        },\n        \"@langchain/langgraph-sdk\": {\n          \"version\": \"1.10.2\",\n          \"resolved\": \"https://registry.npmjs.org/@langchain/langgraph-sdk/-/langgraph-sdk-1.10.2.tgz\",\n          \"overridden\": false,\n          \"dependencies\": {\n            \"@langchain/core\": {\n              \"version\": \"1.2.11\"\n            },\n            \"@langchain/protocol\": {\n              \"version\": \"0.0.19\"\n            },\n            \"@types/json-schema\": {\n              \"version\": \"7.0.15\",\n              \"resolved\": \"https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz\",\n              \"overridden\": false\n            },\n            \"p-queue\": {\n              \"version\": \"9.3.3\",\n              \"resolved\": \"https://registry.npmjs.org/p-queue/-/p-queue-9.3.3.tgz\",\n              \"overridden\": false,\n              \"dependencies\": {\n                \"eventemitter3\": {\n                  \"version\": \"5.0.4\",\n                  \"resolved\": \"https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.4.tgz\",\n                  \"overridden\": false\n                },\n                \"p-timeout\": {\n                  \"version\": \"7.0.1\",\n                  \"resolved\": \"https://registry.npmjs.org/p-timeout/-/p-timeout-7.0.1.tgz\",\n                  \"overridden\": false\n                }\n              }\n            },\n            \"p-retry\": {\n              \"version\": \"7.1.1\",\n              \"resolved\": \"https://registry.npmjs.org/p-retry/-/p-retry-7.1.1.tgz\",\n              \"overridden\": false,\n              \"dependencies\": {\n                \"is-network-error\": {\n                  \"version\": \"1.3.2\",\n                  \"resolved\": \"https://registry.npmjs.org/is-network-error/-/is-network-error-1.3.2.tgz\",\n                  \"overridden\": false\n                }\n              }\n            },\n            \"react-dom\": {},\n            \"react\": {}\n          }\n        },\n        \"@langchain/protocol\": {\n          \"version\": \"0.0.19\",\n          \"resolved\": \"https://registry.npmjs.org/@langchain/protocol/-/protocol-0.0.19.tgz\",\n          \"overridden\": false\n        },\n        \"@standard-schema/spec\": {\n          \"version\": \"1.1.0\",\n          \"resolved\": \"https://registry.npmjs.org/@standard-schema/spec/-/spec-1.1.0.tgz\",\n          \"overridden\": false\n        },\n        \"zod\": {\n          \"version\": \"4.6.2\",\n          \"resolved\": \"https://registry.npmjs.org/zod/-/zod-4.6.2.tgz\",\n          \"overridden\": false\n        }\n      }\n    }\n  }\n}\n",
+    "stderr": "",
+    "seconds": 0.13643866699567297,
+    "completedAt": "2026-09-12T14:00:36.997569+00:00"
+  }
+]

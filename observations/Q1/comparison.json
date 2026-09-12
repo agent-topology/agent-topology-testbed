@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "runs": 2,
+  "documents": 10,
+  "comparison": "full documents; only provenance.generatedAt removed",
+  "artifactIdentitiesEqual": true,
+  "entryPoints": [
+    "python-cli",
+    "python-api",
+    "python-strict",
+    "typescript-esm",
+    "typescript-commonjs"
+  ],
+  "illustrativeBlock": "typescript-6 (not executed)"
+}

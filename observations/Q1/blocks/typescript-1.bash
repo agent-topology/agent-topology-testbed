@@ -1,0 +1,2 @@
+npm init -y
+npm install @agent-topology/spec@0.1.0-beta.2 @agent-topology/langgraph@0.1.0-beta.2 @langchain/langgraph@1.4.14

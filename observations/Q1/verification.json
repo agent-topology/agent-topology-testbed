@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-O",
+        "probes/registry-quickstarts/verify.py",
+        "observations/Q1/run-1",
+        "observations/Q1/run-2"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"runs\": 2,\n  \"documents\": 10,\n  \"comparison\": \"full documents; only provenance.generatedAt removed\",\n  \"artifactIdentitiesEqual\": true,\n  \"entryPoints\": [\n    \"python-cli\",\n    \"python-api\",\n    \"python-strict\",\n    \"typescript-esm\",\n    \"typescript-commonjs\"\n  ],\n  \"illustrativeBlock\": \"typescript-6 (not executed)\"\n}\n",
+      "stderr": "",
+      "seconds": 0.07473579200450331
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "probes/registry-quickstarts",
+        "-p",
+        "test_verify.py",
+        "-v"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "test_bad_hash_optimized_cli (test_verify.Controls.test_bad_hash_optimized_cli) ... ok\ntest_baseline (test_verify.Controls.test_baseline) ... ok\ntest_duplicate_edge (test_verify.Controls.test_duplicate_edge) ... ok\ntest_import_escape (test_verify.Controls.test_import_escape) ... ok\ntest_missing_command (test_verify.Controls.test_missing_command) ... ok\ntest_missing_greet (test_verify.Controls.test_missing_greet) ... ok\ntest_nonzero_command (test_verify.Controls.test_nonzero_command) ... ok\ntest_only_clock_is_removed (test_verify.Controls.test_only_clock_is_removed) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.064s\n\nOK\n",
+      "seconds": 0.11619749999954365
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.007703167000727262
+    }
+  ],
+  "sources": {
+    "run.py": "e484040303dcca2647d2ace003f3804446023e270c778586c7f26d1cd40bc696",
+    "audit.py": "c66185a72c9a6df754e30f3c8f70c245ee4de27e15215e6f3287451ac4dcd146",
+    "test_verify.py": "7f9dc1c1424857e1a068a68f7c2c82a259217b90deb98eb256a396c7e7cdf49f",
+    "verify.py": "951f7c9865fc23de6406e0e1f4d669a918c0addd167ec0981ea1261c25e897ab",
+    "audit.mjs": "ef23625811515b84986a9ae48b6fe8236409479c0de79908e16e01c12fa81f3d"
+  }
+}
