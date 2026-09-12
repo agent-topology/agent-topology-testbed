@@ -1,0 +1,200 @@
+{
+  "tag": "python-v0.7.5",
+  "sources": [
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/teams/_group_chat/_graph/_digraph_group_chat.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/teams/_group_chat/_graph/_digraph_group_chat.py",
+      "sha256": "9f867674438242fd9719803bd3a1f8fd219fdd07959dab819b0a0a7cd160818e",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/teams/_group_chat/_selector_group_chat.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/teams/_group_chat/_selector_group_chat.py",
+      "sha256": "0bb012f7b9985d69ab458710c3836d5b13af506fd0b0f4f2a5f539ecce63c2ad",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/teams/__init__.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/teams/__init__.py",
+      "sha256": "e578c4ba6319f87f39ce368fe64836bd6bcca3c7efae41d19aa32e640ea9831f",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/teams/_group_chat/_base_group_chat.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/teams/_group_chat/_base_group_chat.py",
+      "sha256": "3a50976a393dbe0aaa27b3fa72517a4b89c70437c237865463a2b87c38ce8134",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/agents/_user_proxy_agent.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/agents/_user_proxy_agent.py",
+      "sha256": "ecea3cfd82957941b6cdec7497c43daa83862ad2da01109a19fdbf82063896d5",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/conditions/_terminations.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/conditions/_terminations.py",
+      "sha256": "cd9c0da75906da1728432fc96ae0566591dfb180524d3fb585bfdb8ff0260f5d",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-agentchat/src/autogen_agentchat/messages.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-agentchat/src/autogen_agentchat/messages.py",
+      "sha256": "574381c2f9690ab24502f64c6b81cbe65ffcb797f30dce6f624487cda2cb875e",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/packages/autogen-ext/src/autogen_ext/models/replay/_replay_chat_completion_client.py",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/packages/autogen-ext/src/autogen_ext/models/replay/_replay_chat_completion_client.py",
+      "sha256": "298ebbebf0d9a30ceccd129016f58f2da2c820a8fb7a86e7442191a1b03d0a92",
+      "installed_bytes_match": true
+    },
+    {
+      "path": "python/docs/src/user-guide/agentchat-user-guide/graph-flow.ipynb",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/docs/src/user-guide/agentchat-user-guide/graph-flow.ipynb",
+      "sha256": "eb10d5a9ae7e42f3945bb4a71ef12d65e1409582fc2174af5a5fa925e67b5159"
+    },
+    {
+      "path": "python/docs/src/user-guide/agentchat-user-guide/tutorial/human-in-the-loop.ipynb",
+      "url": "https://raw.githubusercontent.com/microsoft/autogen/python-v0.7.5/python/docs/src/user-guide/agentchat-user-guide/tutorial/human-in-the-loop.ipynb",
+      "sha256": "5901fa11dd23c906824f5a50d18ac5297d6750398eed484b0634d7530ef9f293"
+    }
+  ],
+  "releases": [
+    {
+      "package": "autogen-agentchat",
+      "version": "0.7.5",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "autogen-core==0.7.5"
+      ],
+      "url": "https://pypi.org/pypi/autogen-agentchat/0.7.5/json",
+      "files": [
+        {
+          "filename": "autogen_agentchat-0.7.5-py3-none-any.whl",
+          "upload_time": "2025-09-30T06:16:12.895879Z",
+          "sha256": "d19ca8ec26cb15e071a56c4269140aea2bf3c718bdc7e06f6677af9a905815ba"
+        },
+        {
+          "filename": "autogen_agentchat-0.7.5.tar.gz",
+          "upload_time": "2025-09-30T06:16:14.413623Z",
+          "sha256": "8d9c718db52ef24a518806b3a0ef848f0e4c1902877675dc0abed73a8e6e7755"
+        }
+      ]
+    },
+    {
+      "package": "autogen-core",
+      "version": "0.7.5",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "jsonref~=1.1.0",
+        "opentelemetry-api>=1.34.1",
+        "pillow>=11.0.0",
+        "protobuf~=5.29.3",
+        "pydantic<3.0.0,>=2.10.0",
+        "typing-extensions>=4.0.0"
+      ],
+      "url": "https://pypi.org/pypi/autogen-core/0.7.5/json",
+      "files": [
+        {
+          "filename": "autogen_core-0.7.5-py3-none-any.whl",
+          "upload_time": "2025-09-30T06:16:24.306172Z",
+          "sha256": "4f4a0d3b88a36da75b2ef0d40be2d5e3a207cae7f7d951511e498ad1d68f8ef4"
+        },
+        {
+          "filename": "autogen_core-0.7.5.tar.gz",
+          "upload_time": "2025-09-30T06:16:25.957419Z",
+          "sha256": "70c2871389f1d0a7f6db8ef78717a51b7ce877ff4a08a836b7758d604dece203"
+        }
+      ]
+    },
+    {
+      "package": "autogen-ext",
+      "version": "0.7.5",
+      "requires_python": ">=3.10",
+      "requires_dist": [
+        "autogen-core==0.7.5",
+        "anthropic>=0.48; extra == \"anthropic\"",
+        "azure-ai-inference>=1.0.0b9; extra == \"azure\"",
+        "azure-ai-projects>=1.0.0b11; extra == \"azure\"",
+        "azure-core; extra == \"azure\"",
+        "azure-identity; extra == \"azure\"",
+        "azure-search-documents>=11.4.0; extra == \"azure\"",
+        "unidiff>=0.7.5; extra == \"canvas\"",
+        "chromadb>=1.0.0; extra == \"chromadb\"",
+        "diskcache>=5.6.3; extra == \"diskcache\"",
+        "asyncio-atexit>=1.0.1; extra == \"docker\"",
+        "docker~=7.0; extra == \"docker\"",
+        "aiohttp>=3.11.16; extra == \"docker-jupyter-executor\"",
+        "asyncio-atexit>=1.0.1; extra == \"docker-jupyter-executor\"",
+        "docker~=7.0; extra == \"docker-jupyter-executor\"",
+        "requests>=2.32.3; extra == \"docker-jupyter-executor\"",
+        "websockets>=15.0.1; extra == \"docker-jupyter-executor\"",
+        "autogen-agentchat==0.7.5; extra == \"file-surfer\"",
+        "magika>=0.6.1rc2; extra == \"file-surfer\"",
+        "markitdown[all]~=0.1.0a3; extra == \"file-surfer\"",
+        "google-genai>=1.0.0; extra == \"gemini\"",
+        "graphrag>=2.3.0; extra == \"graphrag\"",
+        "grpcio~=1.70.0; extra == \"grpc\"",
+        "httpx>=0.27.0; extra == \"http-tool\"",
+        "json-schema-to-pydantic>=0.2.0; extra == \"http-tool\"",
+        "ipykernel>=6.29.5; extra == \"jupyter-executor\"",
+        "nbclient>=0.10.2; extra == \"jupyter-executor\"",
+        "langchain-core~=0.3.3; extra == \"langchain\"",
+        "llama-cpp-python>=0.3.8; extra == \"llama-cpp\"",
+        "autogen-agentchat==0.7.5; extra == \"magentic-one\"",
+        "magika>=0.6.1rc2; extra == \"magentic-one\"",
+        "markitdown[all]~=0.1.0a3; extra == \"magentic-one\"",
+        "pillow>=11.0.0; extra == \"magentic-one\"",
+        "playwright>=1.48.0; extra == \"magentic-one\"",
+        "mcp>=1.11.0; extra == \"mcp\"",
+        "mem0ai>=0.1.98; extra == \"mem0\"",
+        "chromadb>=1.0.0; extra == \"mem0-local\"",
+        "mem0ai>=0.1.98; extra == \"mem0-local\"",
+        "neo4j>=5.25.0; extra == \"mem0-local\"",
+        "ollama>=0.4.7; extra == \"ollama\"",
+        "tiktoken>=0.8.0; extra == \"ollama\"",
+        "aiofiles; extra == \"openai\"",
+        "openai>=1.93; extra == \"openai\"",
+        "tiktoken>=0.8.0; extra == \"openai\"",
+        "redis>=5.2.1; extra == \"redis\"",
+        "redisvl>=0.6.0; extra == \"redisvl\"",
+        "rich>=13.9.4; extra == \"rich\"",
+        "semantic-kernel[anthropic,aws,dapr,google,hugging-face,mistralai,ollama,onnx,pandas,usearch]>=1.17.1; extra == \"semantic-kernel-all\"",
+        "semantic-kernel[anthropic]>=1.17.1; extra == \"semantic-kernel-anthropic\"",
+        "semantic-kernel[aws]>=1.17.1; extra == \"semantic-kernel-aws\"",
+        "semantic-kernel>=1.17.1; extra == \"semantic-kernel-core\"",
+        "semantic-kernel[dapr]>=1.17.1; extra == \"semantic-kernel-dapr\"",
+        "semantic-kernel[google]>=1.17.1; extra == \"semantic-kernel-google\"",
+        "semantic-kernel[hugging-face]>=1.17.1; extra == \"semantic-kernel-hugging-face\"",
+        "semantic-kernel[mistralai]>=1.17.1; extra == \"semantic-kernel-mistralai\"",
+        "semantic-kernel[ollama]>=1.17.1; extra == \"semantic-kernel-ollama\"",
+        "semantic-kernel[onnx]>=1.17.1; extra == \"semantic-kernel-onnx\"",
+        "semantic-kernel[pandas]>=1.17.1; extra == \"semantic-kernel-pandas\"",
+        "chromadb>=1.0.0; extra == \"task-centric-memory\"",
+        "autogen-agentchat==0.7.5; extra == \"video-surfer\"",
+        "ffmpeg-python; extra == \"video-surfer\"",
+        "openai-whisper; extra == \"video-surfer\"",
+        "opencv-python>=4.5; extra == \"video-surfer\"",
+        "autogen-agentchat==0.7.5; extra == \"web-surfer\"",
+        "magika>=0.6.1rc2; extra == \"web-surfer\"",
+        "markitdown[all]~=0.1.0a3; extra == \"web-surfer\"",
+        "pillow>=11.0.0; extra == \"web-surfer\"",
+        "playwright>=1.48.0; extra == \"web-surfer\""
+      ],
+      "url": "https://pypi.org/pypi/autogen-ext/0.7.5/json",
+      "files": [
+        {
+          "filename": "autogen_ext-0.7.5-py3-none-any.whl",
+          "upload_time": "2025-09-30T06:16:22.832378Z",
+          "sha256": "18cecc8aab37c7c4861fbad038a1017f0ef25e35e273aa158066ccf9d93fea4f"
+        },
+        {
+          "filename": "autogen_ext-0.7.5.tar.gz",
+          "upload_time": "2025-09-30T06:16:24.278716Z",
+          "sha256": "711ab9238ea66ff2abef163c331e538092bdea661620727a4a9b2ebce1c22df9"
+        }
+      ]
+    }
+  ]
+}

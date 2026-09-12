@@ -43,8 +43,8 @@ design seven new ones.
 | Amazon States Language (ASL) | [states-language.net spec](https://states-language.net/spec.html), retrieved 2026-09-11 (no dated revision tag published); see [S1](../observations/S1/README.md). | Declarative JSON/YAML state-machine document, no SDK; interpreted by AWS Step Functions, a general workflow engine (not agent-specific), scoped here as a boundary/control probe. Local parsing/structural checks are documentary evidence, not AWS validation or cloud execution. |
 | Temporal (Python SDK) | 1.18.0, recorded in [T1](../observations/T1/README.md) ([#15](https://github.com/agent-topology/agent-topology-testbed/issues/15)). | Imperative decorated workflow/activity definitions. Public authoring and registration do not themselves export invocation edges; T1 found no public definition-to-graph API in its bounded review. Source reasoning and execution-history export remain distinct paths, not a framework-wide impossibility claim. |
 | Prefect 3 | 3.6.22, recorded in [P8](../observations/P8/README.md) ([#16](https://github.com/agent-topology/agent-topology-testbed/issues/16)). | Imperative Python-decorated flows/tasks, direct synchronous calls. Static metadata identifies supplied definitions; visualization evaluates flow code; public task-run records retain observed invocation multiplicity and dependencies. |
-| AutoGen SelectorGroupChat | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent group chat; a selector function chooses the next speaker at runtime, not from a pre-declared edge set. |
-| AutoGen GraphFlow | Untested here; SDK version to be pinned and recorded in [#17](https://github.com/agent-topology/agent-topology-testbed/issues/17). | Python multi-agent flow over an explicitly constructed digraph of agents; a potential positive control against GroupChat-based negative claims. |
+| AutoGen SelectorGroupChat | 0.7.5, recorded in [A1](../observations/A1/README.md). | Python multi-agent group chat; a selector function chooses the next speaker at runtime, not from a pre-declared edge set. |
+| AutoGen GraphFlow | 0.7.5, recorded in [A1](../observations/A1/README.md). | Public experimental API over an explicit agent execution graph; observed positive control for static extraction of the tested chain. Execution dependencies differ from message routing. |
 
 ## Answer matrix
 
@@ -61,8 +61,8 @@ model. No cell infers a negative from missing evidence.
 | ASL | support | support | partial | partial | support | partial | partial |
 | Temporal (Python) | partial | partial | untested | untested | untested | partial | partial |
 | Prefect 3 | partial | partial | partial | untested | untested | partial | partial |
-| AutoGen SelectorGroupChat | untested | untested | untested | untested | untested | untested | untested |
-| AutoGen GraphFlow | untested | untested | untested | untested | untested | untested | untested |
+| AutoGen SelectorGroupChat | partial | partial | partial | untested | untested | partial | partial |
+| AutoGen GraphFlow | support | support | partial | partial | untested | partial | partial |
 
 ### Q1 — structure available without execution
 
@@ -111,6 +111,9 @@ model. No cell infers a negative from missing evidence.
   records.
   See [P8](../observations/P8/README.md).
 
+- **AutoGen (A1).** **SelectorGroupChat — partial, static:** public component configuration lists participants but omits the selector callable and contains no execution graph. **GraphFlow — support, static:** public DiGraph nodes/edges and serialized configuration expose the declared chain without running agents.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
+
 ### Q2 — explicit nodes and edges
 
 - **Airflow — support.** Same static sections as Q1 carry typed `task_ids` and
@@ -148,6 +151,9 @@ model. No cell infers a negative from missing evidence.
   UUIDs and `task_inputs` expose repeated invocation nodes and input edges after
   execution; a supplied task inventory is not selected-flow membership.
   See [P8](../observations/P8/README.md).
+
+- **AutoGen (A1).** **SelectorGroupChat — partial, static:** alpha/beta are explicit participant identities, not dependency edges. **GraphFlow — support, static:** alpha/beta nodes, alpha → beta edge, root and leaf are explicit execution structure, distinct from message routing.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
 
 ### Q3 — fan-out selection and execution semantics
 
@@ -192,6 +198,9 @@ model. No cell infers a negative from missing evidence.
   0/4 task runs and 0/2 input edges. This measures input-dependent invocation
   cardinality, not declared fan-out or concurrency.
   See [P8](../observations/P8/README.md).
+
+- **AutoGen (A1).** **SelectorGroupChat — partial, execution:** supplied forward/reverse state produces alpha/beta versus beta/alpha. **GraphFlow — partial, static + execution:** both inputs follow declared alpha → beta. Neither two-agent chain measures fan-out or concurrency.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
 
 ### Q4 — AND/OR convergence semantics
 
@@ -252,6 +261,9 @@ model. No cell infers a negative from missing evidence.
   no AND/OR conclusion follows.
   See [P8](../observations/P8/README.md).
 
+- **AutoGen (A1).** **SelectorGroupChat — untested:** no join fixture. **GraphFlow — partial, static + documentary:** node activation and edge activation group/condition defaults are visible; all/any are documented. Multi-source convergence and upstream join equivalence were not executed or established.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
+
 ### Q5 — opaque nested-graph visibility and boundaries
 
 - **Airflow — partial.** A `TaskGroup`'s membership, qualified task IDs, and
@@ -290,10 +302,13 @@ model. No cell infers a negative from missing evidence.
   Documentary run-graph subflow support does not establish static boundary visibility.
   See [P8](../observations/P8/README.md).
 
+- **AutoGen (A1).** **Both models — untested:** no nested team/graph, opaque boundary, membership-port or repeated nested invocation fixture.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
+
 ### Q6 — interrupt/HITL concepts and structural visibility
 
-**Untested for Airflow, Dagster, CrewAI Flows, and both
-AutoGen shapes.** No probe among P0–P6 or #13/#17 constructs an interrupt
+**Untested for Airflow, Dagster, and CrewAI Flows.** No probe among
+P0–P6 or #13 constructs an interrupt
 or human-in-the-loop case; this remains a follow-up candidate for those
 frameworks, not a claim that any of them lacks the concept.
 
@@ -313,6 +328,9 @@ frameworks, not a claim that any of them lacks the concept.
 - **Prefect 3 — partial, documentary.** Public pause/resume and typed human input exist.
   No pause was executed and no static before/after interrupt placement was extracted.
   See [P8](../observations/P8/README.md).
+
+- **AutoGen (A1).** **Both models — partial, static + execution + documentary:** turn limits and stopping are observed. UserProxy input, handoff termination, state save/load and experimental pause/resume are documented distinct concepts; no resumable HITL or structural interrupt placement was tested.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
 
 ### Q7 — stable definition identifiers across runs
 
@@ -351,6 +369,9 @@ frameworks, not a claim that any of them lacks the concept.
   across two processes. Run IDs and this direct-call path's dynamic keys are generated
   UUIDs; native records retain them separately. Repeated invocations are not collapsed.
   See [P8](../observations/P8/README.md).
+
+- **AutoGen (A1).** **Both models — partial, static + execution:** authored alpha/beta identities match across two processes; GraphFlow edge endpoints match too. Native message UUIDs are retained, unique, and disjoint between runs. No public run ID was collected; private team IDs are not structural IDs. This establishes no universal stability.
+  See [A1 evidence and limitations](../observations/A1/README.md#seven-question-answers).
 
 ## Priority
 
@@ -747,3 +768,14 @@ a temporary SQLite database and local API subprocess; no persistent service,
 deployment, or cloud workspace is involved. Native UUID records and normalized
 comparisons remain separate. P8 covers direct synchronous calls with a two-task
 linear flow and loop counts 0/2, not all Prefect programming models or Prefect 2.
+
+## AutoGen programming-model boundary (A1)
+
+AgentChat/Core/Ext 0.7.5 / Python 3.11.16 use a separate hash-locked environment
+under `probes/boundaries/autogen`. Follow [A1 reproduction](../observations/A1/README.md#reproduction)
+for static inspection, two fresh-process replay runs, optimized verification and
+corruption tests. GraphFlow is a positive control for the tested explicit graph;
+SelectorGroupChat membership does not declare execution dependencies. The
+[model-specific candidate assessment](../observations/A1/README.md#disposition-and-decision-relevance)
+revises applicability without assuming every AutoGen programming model shares
+one answer. No live model, credentials, service, or combined framework CI.
