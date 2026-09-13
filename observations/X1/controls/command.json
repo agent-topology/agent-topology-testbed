@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/minhokang/.local/bin/python3.11",
+    "-O",
+    "/Users/minhokang/orca/workspaces/agent-topology-testbed/observe-f1-f6-consumer-affordances-in-registry-p/probes/registry-affordances/verify.py",
+    "/Users/minhokang/orca/workspaces/agent-topology-testbed/observe-f1-f6-consumer-affordances-in-registry-p/observations/X1/run",
+    "--expected",
+    "/Users/minhokang/orca/workspaces/agent-topology-testbed/observe-f1-f6-consumer-affordances-in-registry-p/observations/X1/controls/wrong-expectations.json",
+    "--report",
+    "/Users/minhokang/orca/workspaces/agent-topology-testbed/observe-f1-f6-consumer-affordances-in-registry-p/observations/X1/controls/comparison.json"
+  ],
+  "exit": 1,
+  "stdout": "{\"captures\": 28, \"comparisons\": 22, \"errors\": 4, \"commonjsExpectedFailures\": 2, \"cliGraphIdChecks\": 2}\n",
+  "stderr": ""
+}

@@ -1,0 +1,15 @@
+{
+  "upstream_revision": "848b179aee32789a6f8b0ad4552a3a1262a05d55",
+  "files": [
+    {"path": "docs/decisions/0008-experimental-consumer-interpretation.md", "git_blob_sha1": "f5d196aebee11ac97946f4951fd771cc0e64eb4d"},
+    {"path": "spec/experimental/interpretation-v1.schema.json", "git_blob_sha1": "3d206fd94be9f9b0ab2c15a78e9f473ab2367b7e"},
+    {"path": "docs/guides/consuming-documents.md", "git_blob_sha1": "a644ad319a21d20e7a8f356ac54d2be79de02a41"},
+    {"path": "docs/getting-started/typescript.md", "git_blob_sha1": "8417fd86b91cdf791774113946524d122bdb33cc"},
+    {"path": "packages/python/langgraph/src/agent_topology/langgraph/_describe.py", "git_blob_sha1": "7f0979a593af70e7d816864b6fe80801b9a90d6a"},
+    {"path": "packages/python/langgraph/src/agent_topology/langgraph/_cli.py", "git_blob_sha1": "7e27b411d1721ba566d104b83a69af117aca140e"},
+    {"path": "packages/python/spec/src/agent_topology/spec/_joins.py", "git_blob_sha1": "98a96818fd6221c926dbfe9bd1190aa047dcc487"},
+    {"path": "packages/typescript/langgraph/src/internal.ts", "git_blob_sha1": "d4a21ebdc7697f6e47568e36bbee7de3573a3c85"},
+    {"path": "packages/typescript/spec/src/joins.ts", "git_blob_sha1": "64ea1313d4c82419c36723c8dd69c633d1ebcdf2"},
+    {"path": "packages/typescript/spec/src/index.ts", "git_blob_sha1": "9ec07eb4a5460d92f7222f993623023ff3798351"}
+  ]
+}

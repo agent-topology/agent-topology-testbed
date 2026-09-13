@@ -168,5 +168,10 @@ The beta.3 registry set (`agent-topology-spec`/`agent-topology-langgraph`
 It is registry-published, not a testbed-verified release or a replacement for
 the historical baseline.
 
+[X1](observations/X1/README.md) observes the F1–F6 consumer affordances in those
+four registry artifacts with pinned LangGraph 1.2.11/LangGraph.js 1.4.14 inputs,
+fresh-process pairs and a negative control. Its per-affordance results do not
+resolve whole findings or qualify beta.3.
+
 New P0 observations record Python 3.11.16, framework versions, and lock/source
 hashes independently; they do not revalidate F1/F3 or the gallery.

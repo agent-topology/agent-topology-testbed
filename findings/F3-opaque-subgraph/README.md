@@ -1,15 +1,18 @@
 # F3 — An opaque subgraph is indistinguishable from an ordinary node
 
-> **Current disposition (2026-09-12): improved in beta.3 source `848b179`; registry re-observation pending.**
+> **Current disposition (2026-09-12): improved in beta.3 source `848b179` and registry-observed by X1.**
 > [Dedicated #98 / merged #111 and consumer evidence](../upstream-status.md#f3)
-> provide experimental `opaque-child` facts without dangling `subgraphId`.
+> provide experimental `opaque-child` facts without dangling `subgraphId`;
+> [X1](../../observations/X1/README.md#f3--opaque-child) observes the compiled-child
+> fact and same-shaped ordinary-callable unknown in both registry producers.
 > The historical core-marker proposal below is superseded by that experiment.
 > “Nothing of any kind” is too broad: framework metadata may differ without a
 > child-presence contract. The gallery comparison is qualitative, not an equal
 > node-count control; upstream's minimal comparison supplies that control.
 > The beta.2 report below and its P3 correction are preserved; P3 does not prove
 > opaque-child equivalence. See also [P4](../completed-cohort-dispositions.md#p4)
-> and [S1](../completed-cohort-dispositions.md#s1). This is no published fix claim.
+> and [S1](../completed-cohort-dispositions.md#s1). This is not a whole-finding
+> resolution or release-qualification claim.
 
 **Status: reproduced.** Observed against `@agent-topology/spec@0.1.0-beta.2`.
 Upstream issue body in [ISSUE.md](ISSUE.md).

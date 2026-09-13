@@ -1,0 +1,420 @@
+{
+  "contractRevision": "848b179aee32789a6f8b0ad4552a3a1262a05d55",
+  "evidenceClass": "static producer extraction and direct public spec callable evaluation; no node bodies or framework graphs are executed",
+  "cases": {
+    "direct-fanout": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "a",
+        "b",
+        "router"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "router",
+          "direct"
+        ],
+        [
+          "a",
+          "__end__",
+          "direct"
+        ],
+        [
+          "b",
+          "__end__",
+          "direct"
+        ],
+        [
+          "router",
+          "a",
+          "direct"
+        ],
+        [
+          "router",
+          "b",
+          "direct"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "fact": [
+        "router",
+        "branch",
+        {
+          "status": "known",
+          "value": "all-declared",
+          "evidence": {
+            "kind": "unconditional-edges"
+          }
+        }
+      ]
+    },
+    "conditional-router": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "a",
+        "b",
+        "router"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "router",
+          "direct"
+        ],
+        [
+          "a",
+          "__end__",
+          "direct"
+        ],
+        [
+          "b",
+          "__end__",
+          "direct"
+        ],
+        [
+          "router",
+          "a",
+          "conditional"
+        ],
+        [
+          "router",
+          "b",
+          "conditional"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "fact": [
+        "router",
+        "branch",
+        {
+          "status": "unknown",
+          "reason": "selection-not-observable"
+        }
+      ]
+    },
+    "orphan-router": {
+      "graphId": "custom-router",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "router",
+        "target"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "router",
+          "direct"
+        ],
+        [
+          "target",
+          "__end__",
+          "direct"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__",
+        "target"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [
+        {
+          "code": "unknown-routing-targets",
+          "element": {
+            "graphId": "custom-router",
+            "kind": "node",
+            "id": "router"
+          }
+        }
+      ],
+      "facts": [
+        [
+          "__start__",
+          "entry",
+          {
+            "observedRoot": true,
+            "status": "known",
+            "value": "confirmed",
+            "evidence": {
+              "kind": "framework-entry"
+            }
+          }
+        ],
+        [
+          "target",
+          "entry",
+          {
+            "observedRoot": true,
+            "status": "unknown",
+            "reason": "entry-not-established"
+          }
+        ],
+        [
+          "router",
+          "branch",
+          {
+            "status": "unknown",
+            "reason": "selection-not-observable"
+          }
+        ]
+      ]
+    },
+    "opaque-child": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "child"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "child",
+          "direct"
+        ],
+        [
+          "child",
+          "__end__",
+          "direct"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "fact": [
+        "child",
+        "subgraph",
+        {
+          "status": "known",
+          "value": "opaque-child",
+          "evidence": {
+            "kind": "compiled-child"
+          }
+        }
+      ]
+    },
+    "ordinary-node": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "child"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "child",
+          "direct"
+        ],
+        [
+          "child",
+          "__end__",
+          "direct"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "fact": [
+        "child",
+        "subgraph",
+        {
+          "status": "unknown",
+          "reason": "identity-unavailable"
+        }
+      ]
+    },
+    "multi-source-join": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "a",
+        "b",
+        "joined"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a",
+          "direct"
+        ],
+        [
+          "__start__",
+          "b",
+          "direct"
+        ],
+        [
+          "joined",
+          "__end__",
+          "direct"
+        ]
+      ],
+      "joins": [
+        [
+          "join:a+b:joined",
+          [
+            "a",
+            "b"
+          ],
+          "joined"
+        ]
+      ],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "derivedJoinEdges": [
+        {
+          "joinId": "join:a+b:joined",
+          "source": "a",
+          "target": "joined"
+        },
+        {
+          "joinId": "join:a+b:joined",
+          "source": "b",
+          "target": "joined"
+        }
+      ]
+    },
+    "independent-edges": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__",
+        "a",
+        "b",
+        "joined"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "a",
+          "direct"
+        ],
+        [
+          "__start__",
+          "b",
+          "direct"
+        ],
+        [
+          "a",
+          "joined",
+          "direct"
+        ],
+        [
+          "b",
+          "joined",
+          "direct"
+        ],
+        [
+          "joined",
+          "__end__",
+          "direct"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "derivedJoinEdges": []
+    },
+    "sentinels": {
+      "graphId": "main",
+      "nodes": [
+        "__end__",
+        "__start__"
+      ],
+      "edges": [
+        [
+          "__start__",
+          "__end__",
+          "direct"
+        ]
+      ],
+      "joins": [],
+      "entryNodeIds": [
+        "__start__"
+      ],
+      "exitNodeIds": [
+        "__end__"
+      ],
+      "gaps": [],
+      "facts": [
+        [
+          "__start__",
+          "sentinel",
+          {
+            "status": "known",
+            "value": "start",
+            "evidence": {
+              "kind": "framework-sentinel"
+            }
+          }
+        ],
+        [
+          "__end__",
+          "sentinel",
+          {
+            "status": "known",
+            "value": "end",
+            "evidence": {
+              "kind": "framework-sentinel"
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "commonjs": {
+    "exit": "nonzero",
+    "errorCode": "ERR_PACKAGE_PATH_NOT_EXPORTED",
+    "documentedRecovery": "await import(\"@agent-topology/spec\")",
+    "synchronousRequireSupported": false
+  },
+  "residualUnknowns": {
+    "F1": "selection remains unknown",
+    "F2": "orphan causality remains unknown",
+    "F3": "ordinary-callable child scope remains unknown",
+    "F5": "vendor neutrality remains unproven"
+  }
+}

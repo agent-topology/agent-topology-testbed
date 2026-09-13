@@ -1,0 +1,17 @@
+{
+  "HOME": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/home",
+  "PATH": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/bin:/usr/local/bin:/usr/bin:/bin",
+  "LANG": "C.UTF-8",
+  "PYTHONNOUSERSITE": "1",
+  "PIP_CONFIG_FILE": "/dev/null",
+  "PIP_INDEX_URL": "https://pypi.org/simple",
+  "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+  "npm_config_registry": "https://registry.npmjs.org",
+  "npm_config_userconfig": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/home/.npmrc",
+  "npm_config_globalconfig": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/home/global-npmrc",
+  "npm_config_cache": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/home/npm-cache",
+  "npm_config_audit": "false",
+  "npm_config_fund": "false",
+  "npm_config_update_notifier": "false",
+  "npm_config_ignore_scripts": "true"
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/minhokang/.nvm/versions/node/v22.16.0/bin/node",
+    "/private/tmp/agent-topology-x1-55.U2r7ku/envs/typescript/require-spec.cjs"
+  ],
+  "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/typescript",
+  "startedAt": "2026-09-13T00:03:26.991918+00:00",
+  "seconds": 0.025415167001483496,
+  "exit": 1,
+  "stdout": "",
+  "stderr": "node:internal/modules/cjs/loader:664\n      throw e;\n      ^\n\nError [ERR_PACKAGE_PATH_NOT_EXPORTED]: No \"exports\" main defined in /private/tmp/agent-topology-x1-55.U2r7ku/envs/typescript/node_modules/@agent-topology/spec/package.json\n    at exportsNotFound (node:internal/modules/esm/resolve:314:10)\n    at packageExportsResolve (node:internal/modules/esm/resolve:604:13)\n    at resolveExports (node:internal/modules/cjs/loader:657:36)\n    at Function._findPath (node:internal/modules/cjs/loader:749:31)\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1387:27)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24) {\n  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'\n}\n\nNode.js v22.16.0\n"
+}
