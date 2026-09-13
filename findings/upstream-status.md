@@ -254,3 +254,49 @@ and async ESM guidance alongside the unchanged synchronous `require` boundary
 neutrality remain unresolved. X1 does not re-judge F7, qualify beta.3, replace the
 historical beta.2 artifacts, or turn source/registry publication into upstream
 release verification.
+
+## Epic #51 outcome review
+
+This review closes the local evidence loop requested by
+[#51](https://github.com/agent-topology/agent-topology-testbed/issues/51). It
+assesses the delivered records rather than treating closed child issues as
+proof. The review boundary remains upstream `848b179aee32789a6f8b0ad4552a3a1262a05d55`
+and the registry artifacts identified in the dated snapshot; no live source,
+registry or release claim is advanced beyond that boundary.
+
+| Epic success evidence | Reviewed disposition |
+| --- | --- |
+| S2 dated status snapshot and complete `eb0e2d8` impact trace | **Satisfied with a corrected planning count.** #52 expected eight artifact filenames, but the two npm tarballs plus four PyPI distributions make six; the snapshot records that contradiction and all six digests/integrities. It also retains the tag, provenance, publisher, dist-tags, absent GitHub Release, #106 state and candidate wording. The impact trace above classifies every retained `eb0e2d8` reference and every consumer-audit/R3 source dependency without rewriting historical records. |
+| V2 same-input beta.2/beta.3 comparison | **Satisfied with corpus bounds.** [V2](../observations/V2/README.md) records 72/72 zero-exit fresh-process calls in each of two captures over V1's nine unchanged documents. All 27 transition/cross-language comparisons retain acceptance, canonical bytes and complete hash tuples; the corpus contains no numeric extension. |
+| E2 replay of F8 | **Satisfied with population bounds.** [E2](../observations/E2/README.md) reuses, rather than regenerates, E1's 600 saved inputs and 16 minima in two lock-only captures. Beta.3 has full byte parity and unchanged hash tuples throughout; the two unsafe-integer cases remain a separately classified narrowing compatibility transition. The beta.2 F8 evidence is preserved. |
+| X1 registry observation of F1–F6 | **Satisfied per affordance.** [X1](../observations/X1/README.md) records 32/32 producer captures, matching fresh-process/language comparisons, graph-ID API/CLI agreement, two expected CommonJS failures, artifact identities and a failing wrong-expectation control. F1 selection, F2 causality, F3 ordinary-callable scope and F5 vendor neutrality remain unresolved; no whole finding is marked resolved. |
+| Child closure dispositions | **Satisfied.** S2 records a bounded static/source and registry-metadata review; V2 and E2 record callable non-finding/finding dispositions; X1 records static producer-extraction and callable helper/module-boundary dispositions. Each links evidence/index, decision impact, limits and the smallest remaining evidence. |
+| Review actual outcomes and deferred candidates | **Satisfied here.** The disposition inventory and candidate decisions below are based on those records, not on child count or expected passing outcomes. |
+
+The resulting current-versus-historical inventory is:
+
+| Prior dependency | Beta.3 disposition |
+| --- | --- |
+| F1–F6 affordances previously attributed only to source `eb0e2d8` | Re-observed per affordance in registry beta.3 by X1, with the named residual unknowns unchanged. Historical beta.2 findings, reproduction and gallery artifacts remain historical. |
+| V1's nine beta.1/beta.2 spec documents | Re-observed for the beta.2→beta.3 transition by V2. V1 remains the immutable earlier comparison. |
+| F8/E1 numeric-extension population and minima | Re-observed by E2 and resolved only within that saved population on beta.3. F8 remains a supported beta.2 finding. |
+| F7/C1 OR-policy evidence and the current-source contract audit | Retained with their original evidence classes and pins. S2 relates the current-source boundary to upstream #119; neither X1 nor registry publication re-executes C1 or resolves reset policy. |
+| Q1 quickstarts, D1 producer determinism and K1 compatibility boundaries | Explicitly retained as bounded published beta.2 observations. Q1 remains the documented beta.2 path at the reviewed tag; D1's determinism question and K1's mutation matrix were not silently promoted to beta.3. |
+| Consumer-contract audit, Cordboard R3, P7 inputs and the committed gallery | Explicitly retained as frozen source/package or beta.2 history. Changed audit citations require a new judgment; R3 cites no pinned `eb0e2d8` source path, and the gallery is not regenerated in place. |
+
+Deferred candidates are refined as follows; none is scheduled by this review:
+
+| Candidate | Decision and reason |
+| --- | --- |
+| D2 | **Retain and refine.** X1 satisfies the prerequisite by observing interpretation facts and caller-supplied graph IDs in beta.3 artifacts. A beta.3 producer-determinism study is now independently scopeable, but X1's static extraction does not answer it and #51 does not require it. |
+| Q2 | **Retain.** At the reviewed tag the getting-started commands still select beta.2, so Q1 remains the documented path. Reconsider only after the documentation selects beta.3. |
+| K2 | **Drop from this re-baseline.** S2 found no changed compatibility obligation requiring K1's full mutation matrix beyond the numeric-domain transition directly exercised by E2. A future contract change may justify a newly scoped check; K1 remains historical. |
+| Audit/R3 re-judgment | **Refine to the consumer-contract audit only.** Its contract, consumer-guide and spec-README citations changed and need a new pinned judgment for a current verdict. R3 cites no pinned `eb0e2d8` source and remains a beta.2 package trial; no R3 rerun follows from S2. |
+| G1 | **Retain behind a location decision.** The committed gallery is historical beta.2 evidence and must not be overwritten. A beta.3 rendering belongs in a separate location if later approved. |
+
+**Outcome disposition:** the registry beta.3 re-baseline is satisfied locally at
+the recorded boundary. It yields a bounded V2 non-finding, a bounded beta.3 F8
+resolution, registry observations for F1–F6 with unchanged residual unknowns,
+and explicit historical retention for evidence not rerun. It does not qualify a
+release, verify upstream publication, alter a topology contract, regenerate the
+historical gallery, file upstream work or gate a release.

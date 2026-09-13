@@ -45,6 +45,10 @@ integrated consumer evidence. These cross-cutting relationships do not settle F7
 
 ## Dispositions and unresolved evidence
 
+The [registry beta.3 epic review](upstream-status.md#epic-51-outcome-review)
+checks S2, V2, E2 and X1 against their delivered records and explicitly retains
+the source/beta.2 evidence that was not re-observed.
+
 [E2](../observations/E2/README.md) records F8's **published beta.3 bounded
 resolution**: E1's exact saved 600-line population and all 16 minimized
 counterexamples produce equal Python/npm beta.3 canonical bytes across two fresh

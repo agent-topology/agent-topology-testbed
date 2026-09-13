@@ -173,5 +173,10 @@ four registry artifacts with pinned LangGraph 1.2.11/LangGraph.js 1.4.14 inputs,
 fresh-process pairs and a negative control. Its per-affordance results do not
 resolve whole findings or qualify beta.3.
 
+The [epic #51 outcome review](findings/upstream-status.md#epic-51-outcome-review)
+reconciles S2, V2, E2 and X1 against the actual records, classifies the remaining
+source/beta.2 evidence as current or historical, and records keep/refine/drop
+decisions for the deferred candidates without scheduling new work.
+
 New P0 observations record Python 3.11.16, framework versions, and lock/source
 hashes independently; they do not revalidate F1/F3 or the gallery.
