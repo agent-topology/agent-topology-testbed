@@ -1,0 +1,92 @@
+[
+  {
+    "command": [
+      "python3.11",
+      "-m",
+      "venv",
+      "/private/tmp/agent-topology-x1-55.U2r7ku/envs/python"
+    ],
+    "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs",
+    "startedAt": "2026-09-13T00:01:38.694842+00:00",
+    "seconds": 1.4934539169989876,
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/private/tmp/agent-topology-x1-55.U2r7ku/envs/python/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "install",
+      "--only-binary=:all:",
+      "--report",
+      "/Users/minhokang/orca/workspaces/agent-topology-testbed/observe-f1-f6-consumer-affordances-in-registry-p/observations/X1/setup/pip-report.json",
+      "agent-topology-langgraph==0.1.0b3",
+      "agent-topology-spec==0.1.0b3",
+      "langgraph==1.2.11"
+    ],
+    "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs",
+    "startedAt": "2026-09-13T00:01:40.188732+00:00",
+    "seconds": 7.7205753329981235,
+    "exit": 0,
+    "stdout": "Collecting agent-topology-langgraph==0.1.0b3\n  Downloading agent_topology_langgraph-0.1.0b3-py3-none-any.whl.metadata (2.5 kB)\nCollecting agent-topology-spec==0.1.0b3\n  Downloading agent_topology_spec-0.1.0b3-py3-none-any.whl.metadata (3.2 kB)\nCollecting langgraph==1.2.11\n  Downloading langgraph-1.2.11-py3-none-any.whl.metadata (4.9 kB)\nCollecting jsonschema==4.26.0 (from agent-topology-spec==0.1.0b3)\n  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)\nCollecting langchain-core<2,>=1.4.7 (from langgraph==1.2.11)\n  Downloading langchain_core-1.6.3-py3-none-any.whl.metadata (4.8 kB)\nCollecting langgraph-checkpoint<5.0.0,>=4.1.0 (from langgraph==1.2.11)\n  Downloading langgraph_checkpoint-4.2.0-py3-none-any.whl.metadata (6.7 kB)\nCollecting langgraph-prebuilt<1.2.0,>=1.1.0 (from langgraph==1.2.11)\n  Downloading langgraph_prebuilt-1.1.0-py3-none-any.whl.metadata (5.2 kB)\nCollecting langgraph-sdk<0.5.0,>=0.4.2 (from langgraph==1.2.11)\n  Downloading langgraph_sdk-0.4.4-py3-none-any.whl.metadata (5.1 kB)\nCollecting pydantic>=2.7.4 (from langgraph==1.2.11)\n  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.2/110.2 kB 3.8 MB/s eta 0:00:00\nCollecting xxhash>=3.5.0 (from langgraph==1.2.11)\n  Downloading xxhash-4.0.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (17 kB)\nCollecting attrs>=22.2.0 (from jsonschema==4.26.0->agent-topology-spec==0.1.0b3)\n  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)\nCollecting jsonschema-specifications>=2023.03.6 (from jsonschema==4.26.0->agent-topology-spec==0.1.0b3)\n  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)\nCollecting referencing>=0.28.4 (from jsonschema==4.26.0->agent-topology-spec==0.1.0b3)\n  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)\nCollecting rpds-py>=0.25.0 (from jsonschema==4.26.0->agent-topology-spec==0.1.0b3)\n  Downloading rpds_py-2026.6.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.1 kB)\nCollecting httpx<1.0.0,>=0.23.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)\nCollecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)\nCollecting langchain-protocol>=0.0.17 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading langchain_protocol-0.0.19-py3-none-any.whl.metadata (2.4 kB)\nCollecting langsmith<1.0.0,>=0.3.45 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading langsmith-0.12.4-py3-none-any.whl.metadata (22 kB)\nCollecting packaging>=23.2.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)\nCollecting pyyaml<7.0.0,>=5.3.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading pyyaml-6.0.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.4 kB)\nCollecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)\nCollecting typing-extensions<5.0.0,>=4.7.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\nCollecting uuid-utils<1.0,>=0.12.0 (from langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading uuid_utils-0.17.1-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata (6.4 kB)\nCollecting ormsgpack>=1.12.0 (from langgraph-checkpoint<5.0.0,>=4.1.0->langgraph==1.2.11)\n  Downloading ormsgpack-1.12.2-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata (3.2 kB)\nCollecting orjson>=3.11.5 (from langgraph-sdk<0.5.0,>=0.4.2->langgraph==1.2.11)\n  Downloading orjson-3.12.0-cp311-cp311-macosx_15_0_arm64.whl.metadata (41 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.0/42.0 kB 5.1 MB/s eta 0:00:00\nCollecting websockets<17,>=14 (from langgraph-sdk<0.5.0,>=0.4.2->langgraph==1.2.11)\n  Downloading websockets-16.1.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.8 kB)\nCollecting annotated-types>=0.6.0 (from pydantic>=2.7.4->langgraph==1.2.11)\n  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)\nCollecting pydantic-core==2.46.5 (from pydantic>=2.7.4->langgraph==1.2.11)\n  Downloading pydantic_core-2.46.5-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.6 kB)\nCollecting typing-inspection>=0.4.2 (from pydantic>=2.7.4->langgraph==1.2.11)\n  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)\nCollecting anyio (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)\nCollecting certifi (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\nCollecting httpcore==1.* (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)\nCollecting idna (from httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)\nCollecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.23.0->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)\nCollecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading jsonpointer-3.1.1-py3-none-any.whl.metadata (2.4 kB)\nCollecting distro>=1.7.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)\nCollecting httpx2<3,>=2 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading httpx2-2.12.0-py3-none-any.whl.metadata (9.5 kB)\nCollecting requests-toolbelt>=1.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)\nCollecting requests>=2.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)\nCollecting sniffio>=1.1 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)\nCollecting zstandard>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading zstandard-0.25.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.3 kB)\nCollecting httpcore2==2.12.0 (from httpx2<3,>=2->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading httpcore2-2.12.0-py3-none-any.whl.metadata (25 kB)\nCollecting truststore>=0.10 (from httpx2<3,>=2->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)\nCollecting charset_normalizer<4,>=2 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading charset_normalizer-3.5.1-cp311-cp311-macosx_10_9_universal2.whl.metadata (45 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.9/45.9 kB 6.9 MB/s eta 0:00:00\nCollecting urllib3<3,>=1.26 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.4.7->langgraph==1.2.11)\n  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)\nDownloading agent_topology_langgraph-0.1.0b3-py3-none-any.whl (12 kB)\nDownloading agent_topology_spec-0.1.0b3-py3-none-any.whl (10 kB)\nDownloading langgraph-1.2.11-py3-none-any.whl (248 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 248.9/248.9 kB 6.8 MB/s eta 0:00:00\nDownloading jsonschema-4.26.0-py3-none-any.whl (90 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 9.5 MB/s eta 0:00:00\nDownloading langchain_core-1.6.3-py3-none-any.whl (571 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 571.8/571.8 kB 16.4 MB/s eta 0:00:00\nDownloading langgraph_checkpoint-4.2.0-py3-none-any.whl (56 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.8/56.8 kB 7.8 MB/s eta 0:00:00\nDownloading langgraph_prebuilt-1.1.0-py3-none-any.whl (41 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.0/41.0 kB 4.8 MB/s eta 0:00:00\nDownloading langgraph_sdk-0.4.4-py3-none-any.whl (162 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.3/162.3 kB 16.6 MB/s eta 0:00:00\nDownloading pydantic-2.13.5-py3-none-any.whl (472 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.6/472.6 kB 31.5 MB/s eta 0:00:00\nDownloading pydantic_core-2.46.5-cp311-cp311-macosx_11_0_arm64.whl (1.9 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 36.8 MB/s eta 0:00:00\nDownloading xxhash-4.0.1-cp311-cp311-macosx_11_0_arm64.whl (36 kB)\nDownloading annotated_types-0.8.0-py3-none-any.whl (13 kB)\nDownloading attrs-26.1.0-py3-none-any.whl (67 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 7.5 MB/s eta 0:00:00\nDownloading httpx-0.28.1-py3-none-any.whl (73 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 8.1 MB/s eta 0:00:00\nDownloading httpcore-1.0.9-py3-none-any.whl (78 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 9.8 MB/s eta 0:00:00\nDownloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)\nDownloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)\nDownloading langchain_protocol-0.0.19-py3-none-any.whl (7.3 kB)\nDownloading langsmith-0.12.4-py3-none-any.whl (767 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 767.5/767.5 kB 38.5 MB/s eta 0:00:00\nDownloading orjson-3.12.0-cp311-cp311-macosx_15_0_arm64.whl (124 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.0/124.0 kB 13.0 MB/s eta 0:00:00\nDownloading ormsgpack-1.12.2-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl (378 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 378.3/378.3 kB 24.3 MB/s eta 0:00:00\nDownloading packaging-26.3-py3-none-any.whl (129 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 12.8 MB/s eta 0:00:00\nDownloading pyyaml-6.0.3-cp311-cp311-macosx_11_0_arm64.whl (175 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 175.6/175.6 kB 17.9 MB/s eta 0:00:00\nDownloading referencing-0.37.0-py3-none-any.whl (26 kB)\nDownloading rpds_py-2026.6.3-cp311-cp311-macosx_11_0_arm64.whl (345 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 345.5/345.5 kB 19.8 MB/s eta 0:00:00\nDownloading tenacity-9.1.4-py3-none-any.whl (28 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 5.4 MB/s eta 0:00:00\nDownloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)\nDownloading uuid_utils-0.17.1-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl (562 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 562.9/562.9 kB 32.5 MB/s eta 0:00:00\nDownloading websockets-16.1.1-cp311-cp311-macosx_11_0_arm64.whl (177 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 177.5/177.5 kB 15.0 MB/s eta 0:00:00\nDownloading anyio-4.15.1-py3-none-any.whl (132 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 14.0 MB/s eta 0:00:00\nDownloading distro-1.9.0-py3-none-any.whl (20 kB)\nDownloading httpx2-2.12.0-py3-none-any.whl (95 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.4/95.4 kB 8.3 MB/s eta 0:00:00\nDownloading httpcore2-2.12.0-py3-none-any.whl (83 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.1/83.1 kB 10.7 MB/s eta 0:00:00\nDownloading idna-3.19-py3-none-any.whl (68 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.5/68.5 kB 8.2 MB/s eta 0:00:00\nDownloading jsonpointer-3.1.1-py3-none-any.whl (7.7 kB)\nDownloading requests-2.34.2-py3-none-any.whl (73 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 10.6 MB/s eta 0:00:00\nDownloading certifi-2026.7.22-py3-none-any.whl (136 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 kB 17.2 MB/s eta 0:00:00\nDownloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 5.9 MB/s eta 0:00:00\nDownloading sniffio-1.3.1-py3-none-any.whl (10 kB)\nDownloading zstandard-0.25.0-cp311-cp311-macosx_11_0_arm64.whl (640 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 640.6/640.6 kB 28.3 MB/s eta 0:00:00\nDownloading charset_normalizer-3.5.1-cp311-cp311-macosx_10_9_universal2.whl (363 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 363.6/363.6 kB 26.1 MB/s eta 0:00:00\nDownloading h11-0.16.0-py3-none-any.whl (37 kB)\nDownloading truststore-0.10.4-py3-none-any.whl (18 kB)\nDownloading urllib3-2.7.0-py3-none-any.whl (131 kB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.1/131.1 kB 15.3 MB/s eta 0:00:00\nInstalling collected packages: zstandard, xxhash, websockets, uuid-utils, urllib3, typing-extensions, truststore, tenacity, sniffio, rpds-py, pyyaml, packaging, ormsgpack, orjson, jsonpointer, idna, h11, distro, charset_normalizer, certifi, attrs, annotated-types, typing-inspection, requests, referencing, pydantic-core, langchain-protocol, jsonpatch, httpcore2, httpcore, anyio, requests-toolbelt, pydantic, jsonschema-specifications, httpx2, httpx, langsmith, jsonschema, langchain-core, agent-topology-spec, langgraph-sdk, langgraph-checkpoint, langgraph-prebuilt, langgraph, agent-topology-langgraph\nSuccessfully installed agent-topology-langgraph-0.1.0b3 agent-topology-spec-0.1.0b3 annotated-types-0.8.0 anyio-4.15.1 attrs-26.1.0 certifi-2026.7.22 charset_normalizer-3.5.1 distro-1.9.0 h11-0.16.0 httpcore-1.0.9 httpcore2-2.12.0 httpx-0.28.1 httpx2-2.12.0 idna-3.19 jsonpatch-1.33 jsonpointer-3.1.1 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 langchain-core-1.6.3 langchain-protocol-0.0.19 langgraph-1.2.11 langgraph-checkpoint-4.2.0 langgraph-prebuilt-1.1.0 langgraph-sdk-0.4.4 langsmith-0.12.4 orjson-3.12.0 ormsgpack-1.12.2 packaging-26.3 pydantic-2.13.5 pydantic-core-2.46.5 pyyaml-6.0.3 referencing-0.37.0 requests-2.34.2 requests-toolbelt-1.0.0 rpds-py-2026.6.3 sniffio-1.3.1 tenacity-9.1.4 truststore-0.10.4 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.7.0 uuid-utils-0.17.1 websockets-16.1.1 xxhash-4.0.1 zstandard-0.25.0\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "install",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund"
+    ],
+    "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs/typescript",
+    "startedAt": "2026-09-13T00:01:47.910584+00:00",
+    "seconds": 3.8123226669995347,
+    "exit": 0,
+    "stdout": "\nadded 30 packages in 4s\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/private/tmp/agent-topology-x1-55.U2r7ku/envs/python/bin/python",
+      "-I",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ],
+    "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs",
+    "startedAt": "2026-09-13T00:02:00.365218+00:00",
+    "seconds": 0.2250354999996489,
+    "exit": 0,
+    "stdout": "agent-topology-langgraph==0.1.0b3\nagent-topology-spec==0.1.0b3\nannotated-types==0.8.0\nanyio==4.15.1\nattrs==26.1.0\ncertifi==2026.7.22\ncharset-normalizer==3.5.1\ndistro==1.9.0\nh11==0.16.0\nhttpcore==1.0.9\nhttpcore2==2.12.0\nhttpx==0.28.1\nhttpx2==2.12.0\nidna==3.19\njsonpatch==1.33\njsonpointer==3.1.1\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\nlangchain-core==1.6.3\nlangchain-protocol==0.0.19\nlanggraph==1.2.11\nlanggraph-checkpoint==4.2.0\nlanggraph-prebuilt==1.1.0\nlanggraph-sdk==0.4.4\nlangsmith==0.12.4\norjson==3.12.0\normsgpack==1.12.2\npackaging==26.3\npip==24.0\npydantic==2.13.5\npydantic_core==2.46.5\nPyYAML==6.0.3\nreferencing==0.37.0\nrequests==2.34.2\nrequests-toolbelt==1.0.0\nrpds-py==2026.6.3\nsetuptools==79.0.1\nsniffio==1.3.1\ntenacity==9.1.4\ntruststore==0.10.4\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\nurllib3==2.7.0\nuuid_utils==0.17.1\nwebsockets==16.1.1\nxxhash==4.0.1\nzstandard==0.25.0\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "node",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs",
+    "startedAt": "2026-09-13T00:02:00.590799+00:00",
+    "seconds": 0.017028290996677242,
+    "exit": 0,
+    "stdout": "v22.16.0\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "cwd": "/private/tmp/agent-topology-x1-55.U2r7ku/envs",
+    "startedAt": "2026-09-13T00:02:00.608273+00:00",
+    "seconds": 0.056650541999260895,
+    "exit": 0,
+    "stdout": "11.4.1\n",
+    "stderr": ""
+  }
+]

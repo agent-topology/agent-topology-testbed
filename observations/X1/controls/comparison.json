@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "captures": 28,
+    "comparisons": 22,
+    "errors": 4,
+    "commonjsExpectedFailures": 2,
+    "cliGraphIdChecks": 2
+  },
+  "errors": [
+    "python-direct-fanout-1: fact router/branch",
+    "python-direct-fanout-2: fact router/branch",
+    "typescript-direct-fanout-1: fact router/branch",
+    "typescript-direct-fanout-2: fact router/branch"
+  ],
+  "pairs": [
+    {
+      "language": "python",
+      "case": "conditional-router",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "python",
+      "case": "orphan-router",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "python",
+      "case": "opaque-child",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "python",
+      "case": "ordinary-node",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "python",
+      "case": "multi-source-join",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "python",
+      "case": "independent-edges",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "python",
+      "case": "sentinels",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "conditional-router",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "orphan-router",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "opaque-child",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "ordinary-node",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "multi-source-join",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "independent-edges",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "language": "typescript",
+      "case": "sentinels",
+      "kind": "fresh-process",
+      "semanticEqual": true,
+      "distinctPid": true
+    },
+    {
+      "case": "conditional-router",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "case": "orphan-router",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "case": "opaque-child",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "case": "ordinary-node",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "case": "multi-source-join",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "case": "independent-edges",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "case": "sentinels",
+      "kind": "cross-language",
+      "semanticEqual": true
+    },
+    {
+      "kind": "F3-control",
+      "sameCore": true,
+      "sameHash": true,
+      "sameExtension": false
+    }
+  ],
+  "residualUnknowns": {
+    "F1": "selection remains unknown",
+    "F2": "orphan causality remains unknown",
+    "F3": "ordinary-callable child scope remains unknown",
+    "F5": "vendor neutrality remains unproven"
+  }
+}

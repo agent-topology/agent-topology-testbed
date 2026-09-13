@@ -235,3 +235,22 @@ valid history but need the named deferred re-judgment for a current verdict.
 Cordboard R3 cites no `eb0e2d8` source path; its captured beta.2 package metadata
 contains moving `main` documentation URLs. Those raw installation records remain
 historical and are not source evidence for beta.3.
+
+### X1 registry-observation addendum
+
+The pending language above records the beta.3 review boundary before testbed #55
+ran; it is preserved as dated history. [X1](../observations/X1/README.md) now adds
+the separate registry-artifact result for F1–F6: 32 successful producer captures
+across two fresh processes per language, two matching Python API/CLI custom graph-ID
+captures, two expected synchronous CommonJS failures, verified registry artifact
+digests and a deliberately wrong expectation that fails nonzero.
+
+Per affordance, registry beta.3 exposes direct `all-declared` and conditional
+unknown branch facts (F1), confirmed START plus an unconfirmed orphan and unchanged
+router gap (F2), an opaque-child fact while the ordinary callable stays unknown
+(F3), provenance-preserving join helpers (F4), experimental sentinel roles (F5),
+and async ESM guidance alongside the unchanged synchronous `require` boundary
+(F6). F1 selection, F2 causality, F3 ordinary-callable scope and F5 vendor
+neutrality remain unresolved. X1 does not re-judge F7, qualify beta.3, replace the
+historical beta.2 artifacts, or turn source/registry publication into upstream
+release verification.

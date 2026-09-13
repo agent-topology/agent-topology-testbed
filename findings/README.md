@@ -21,18 +21,18 @@ package identity). Historical claims and artifacts remain at
 The [upstream status review](upstream-status.md) records the 2026-09-12 checks,
 exact commits, dedicated issues, merged PRs, release boundary and remaining gaps.
 The prior `eb0e2d8` source dispositions are historical review records; beta.3
-source is pinned at `848b179`, V2 and E2 now supply registry re-observation, and
-X1 remains pending.
+source is pinned at `848b179`, and V2, E2 and X1 now supply separate registry
+re-observations without qualifying the release or rewriting beta.2 history.
 
 | ID | Bounded claim and evidence | Observed against | Local disposition / current upstream disposition | Dedicated upstream relationship |
 | --- | --- | --- | --- | --- |
-| [F1](F1-fan-out-semantics/README.md) | Declaration does not establish selection, listener count or execution; [P1/P2/C1 evidence](F1-fan-out-semantics/README.md#measured-distinctions) | beta.2 trial; Airflow 2.10.5, Dagster 1.13.22, CrewAI 1.15.21 | Supported with corrections / improved declaration interpretation; selection remains unknown; [X1 #55](https://github.com/agent-topology/agent-topology-testbed/issues/55) pending | [#97](https://github.com/agent-topology/agent-topology/issues/97) closed, [PR #110](https://github.com/agent-topology/agent-topology/pull/110) merged; [unposted draft](F1-fan-out-semantics/ISSUE.md) updates existing work |
-| [F2](#f2--entrynodeids-conflates-a-graph-entry-with-a-node-that-lost-its-predecessor) | Observed roots do not establish entry or gap causality; [historical drawing](../gallery/unknown-routing-targets.svg) | beta.2 | Reproduced historically / improved entry facts; orphan cause remains unknown | [#100](https://github.com/agent-topology/agent-topology/issues/100) closed, [PR #113](https://github.com/agent-topology/agent-topology/pull/113) merged |
-| [F3](F3-opaque-subgraph/README.md) | Core depth-0 nodes lack a child-presence contract; [historical evidence](F3-opaque-subgraph/README.md#reproduction) | beta.2 | Reproduced with narrowed grouping analogy / improved opaque-child facts; ordinary callable remains unknown | [#98](https://github.com/agent-topology/agent-topology/issues/98) closed, [PR #111](https://github.com/agent-topology/agent-topology/pull/111) merged |
-| [F4](#f4--join-connections-exist-only-in-joins-never-in-edges) | Edges-only readers omit join connections; [historical drawing](../gallery/multi-source-join.svg) | beta.2 | Reproduced consumer trap / helper affordance fixed in source; joins remain distinct AND relationships | [#101](https://github.com/agent-topology/agent-topology/issues/101) closed, [PR #114](https://github.com/agent-topology/agent-topology/pull/114) merged |
-| [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Core-only sentinel hiding requires framework knowledge; [historical gallery](../gallery/) | beta.2 | Reproduced / improved experimental roles; vendor neutrality remains unproven | [#99](https://github.com/agent-topology/agent-topology/issues/99) closed, [PR #112](https://github.com/agent-topology/agent-topology/pull/112) merged |
-| [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | CommonJS require failure lacks an ESM recovery hint; [package reproduction](upstream-status.md#f6) | beta.2; upstream recheck Node 22.16.0 | Failure reproduced; absent-docs/zero-dependencies claims withdrawn / guidance fixed, synchronous require unsupported | [#102](https://github.com/agent-topology/agent-topology/issues/102) closed, [PR #115](https://github.com/agent-topology/agent-topology/pull/115) merged |
-| [F7](F7-or-firing-policy/README.md) | Ordinary edges do not specify C1's first-trigger/once-only OR policy; [counterexample](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample) | CrewAI 1.15.21; beta.2, `3715dd3`, `eb0e2d8` contracts | Supported, bounded; beta.3 artifact wording remains [X1 #55](https://github.com/agent-topology/agent-topology-testbed/issues/55) pending; stronger lossless OR mapping remains unresolved | [#119](https://github.com/agent-topology/agent-topology/issues/119) closed source documentation; not registry-verified |
+| [F1](F1-fan-out-semantics/README.md) | Declaration does not establish selection, listener count or execution; [P1/P2/C1 evidence](F1-fan-out-semantics/README.md#measured-distinctions) | beta.2 trial; Airflow 2.10.5, Dagster 1.13.22, CrewAI 1.15.21; registry beta.3 | Supported with corrections / **registry-observed:** direct fan-out is `all-declared`, conditional routing remains `unknown`; [X1 evidence](../observations/X1/README.md#f1--branch-interpretation) leaves selection unknown | [#97](https://github.com/agent-topology/agent-topology/issues/97) closed, [PR #110](https://github.com/agent-topology/agent-topology/pull/110) merged; [unposted draft](F1-fan-out-semantics/ISSUE.md) updates existing work |
+| [F2](#f2--entrynodeids-conflates-a-graph-entry-with-a-node-that-lost-its-predecessor) | Observed roots do not establish entry or gap causality; [historical drawing](../gallery/unknown-routing-targets.svg) | beta.2; registry beta.3 | Reproduced historically / **registry-observed:** START confirmed, orphan target unconfirmed, router gap retained; [X1 evidence](../observations/X1/README.md#f2--entries-and-orphan-causality) leaves causality unknown | [#100](https://github.com/agent-topology/agent-topology/issues/100) closed, [PR #113](https://github.com/agent-topology/agent-topology/pull/113) merged |
+| [F3](F3-opaque-subgraph/README.md) | Core depth-0 nodes lack a child-presence contract; [historical evidence](F3-opaque-subgraph/README.md#reproduction) | beta.2; registry beta.3 | Reproduced with narrowed grouping analogy / **registry-observed:** compiled child is `opaque-child`, same-shaped ordinary callable remains unknown; [X1 evidence](../observations/X1/README.md#f3--opaque-child) | [#98](https://github.com/agent-topology/agent-topology/issues/98) closed, [PR #111](https://github.com/agent-topology/agent-topology/pull/111) merged |
+| [F4](#f4--join-connections-exist-only-in-joins-never-in-edges) | Edges-only readers omit join connections; [historical drawing](../gallery/multi-source-join.svg) | beta.2; registry beta.3 | Reproduced consumer trap / **registry-observed:** both helpers return sorted `joinId`-preserving links while independent edges return none; [X1 evidence](../observations/X1/README.md#f4--join-helper) | [#101](https://github.com/agent-topology/agent-topology/issues/101) closed, [PR #114](https://github.com/agent-topology/agent-topology/pull/114) merged |
+| [F5](#f5--hiding-framework-sentinels-requires-vendor-coupling) | Core-only sentinel hiding requires framework knowledge; [historical gallery](../gallery/) | beta.2; registry beta.3 | Reproduced / **registry-observed:** experimental START/END roles are present in both LangGraph producers; [X1 evidence](../observations/X1/README.md#f5--sentinel-roles) leaves vendor neutrality unproven | [#99](https://github.com/agent-topology/agent-topology/issues/99) closed, [PR #112](https://github.com/agent-topology/agent-topology/pull/112) merged |
+| [F6](#f6--agent-topologyspec-is-esm-only-and-the-failure-is-not-actionable) | CommonJS require failure lacks an ESM recovery hint; [package reproduction](upstream-status.md#f6) | beta.2; registry beta.3 on Node 22.16.0 | Failure reproduced; absent-docs/zero-dependencies claims withdrawn / **registry-observed:** synchronous `require` still fails while pinned guidance supplies async ESM recovery; [X1 evidence](../observations/X1/README.md#f6--commonjs-boundary) | [#102](https://github.com/agent-topology/agent-topology/issues/102) closed, [PR #115](https://github.com/agent-topology/agent-topology/pull/115) merged |
+| [F7](F7-or-firing-policy/README.md) | Ordinary edges do not specify C1's first-trigger/once-only OR policy; [counterexample](F7-or-firing-policy/README.md#smallest-mapping-and-counterexample) | CrewAI 1.15.21; beta.2, `3715dd3`, `eb0e2d8` contracts | Supported, bounded; beta.3 artifact re-judgment was outside [X1's F1–F6 scope](../observations/X1/README.md#closure-disposition); stronger lossless OR mapping remains unresolved | [#119](https://github.com/agent-topology/agent-topology/issues/119) closed source documentation; not registry-verified |
 | [F8](F8-extension-number-canonicalization/README.md) | Numeric extensions produce different full canonical bytes; [E1](../observations/E1/README.md) retains generated inputs and minimized replays | Published Python 0.1.0b2 / npm 0.1.0-beta.2 | Supported historical beta.2 gap; [E2](../observations/E2/README.md) resolves it within E1's saved population and 16 minima on published beta.3, with unchanged hash tuples; unsafe integers remain a separately labeled narrowing transition | [#117](https://github.com/agent-topology/agent-topology/issues/117), [#118](https://github.com/agent-topology/agent-topology/issues/118), [#124](https://github.com/agent-topology/agent-topology/issues/124), [#125](https://github.com/agent-topology/agent-topology/issues/125) closed source work |
 
 [#94](https://github.com/agent-topology/agent-topology/issues/94) is the open
@@ -148,7 +148,8 @@ internal bookkeeping.
 > **Current disposition (2026-09-12).** Current source distinguishes confirmed entries
 > from observed candidates through experimental entry facts; it preserves core entry
 > arrays and the gap on the router. The original omission/extra-gap suggestion below is
-> historical, not the accepted remedy. See [F2 status](upstream-status.md#f2).
+> historical, not the accepted remedy. X1 [observes those facts in registry beta.3](../observations/X1/README.md#f2--entries-and-orphan-causality)
+> without resolving causality. See [F2 status](upstream-status.md#f2).
 >
 > The original beta.2 report follows unchanged; present-tense statements and
 > suggestions in that report describe the historical investigation.
@@ -179,7 +180,8 @@ at the element that shows it.
 > **Current disposition (2026-09-12).** The missing-guide/helper claim below is
 > historical: current source documents implicit AND joins and exports
 > provenance-preserving helpers in both packages. Ordinary edges still exclude join
-> connections by design. See [F4 status](upstream-status.md#f4).
+> connections by design. X1 [observes both registry helpers](../observations/X1/README.md#f4--join-helper).
+> See [F4 status](upstream-status.md#f4).
 >
 > The original beta.2 report follows unchanged; present-tense statements and
 > suggestions in that report describe the historical investigation.
@@ -207,7 +209,8 @@ producers, with no equivalent on the consuming side.
 
 > **Current disposition (2026-09-12).** Current source provides experimental sentinel
 > roles for the inspected LangGraph producers. The core-only and legacy boundary
-> remains; two language implementations do not establish vendor neutrality. See [F5
+> remains; X1 [observes the roles in both registry producers](../observations/X1/README.md#f5--sentinel-roles),
+> but two language implementations do not establish vendor neutrality. See [F5
 > status](upstream-status.md#f5).
 >
 > The original beta.2 report follows unchanged; present-tense statements and
@@ -237,7 +240,8 @@ to pay it.
 > issue, with current recovery guidance. The historical claims of absent ESM
 > documentation and zero runtime dependencies below are explicitly withdrawn: beta.2
 > already had an ESM notice and depends on Ajv and ajv-formats. Framework-free does not
-> mean dependency-free. No require bundle was added. See [F6
+> mean dependency-free. No require bundle was added. X1 [observes the registry failure
+> and pinned recovery guidance](../observations/X1/README.md#f6--commonjs-boundary). See [F6
 > status](upstream-status.md#f6).
 >
 > The original beta.2 report follows unchanged; present-tense statements and
